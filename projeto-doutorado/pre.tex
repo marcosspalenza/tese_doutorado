@@ -1,0 +1,109 @@
+% Capa
+\begin{titlepage}
+% Se quiser uma figura de fundo na capa ative o pacote wallpaper
+% e descomente a linha abaixo.
+% \ThisCenterWallPaper{0.8}{nomedafigura}
+
+\begin{center}
+
+\centering
+{\normalsize UNIVERSIDADE FEDERAL DO ESPÍRITO SANTO \\ PROGRAMA DE PÓS-GRADUAÇÃO EM INFORMÁTICA}
+
+\centering
+\includegraphics[width=0.25\textwidth]{img/ufes.png}
+
+\par
+\vspace{160pt}
+{\LARGE GERAÇÃO AUTOMÁTICA DE \textit{RUBRICS} ATRAVÉS DA IDENTIFICAÇÃO DE INFORMAÇÕES-CHAVE EM RESPOSTAS DISCURSIVAS}
+\par
+{\Large MARCOS ALÉCIO SPALENZA}
+\vfill
+{\large VITÓRIA-ES}\\
+{\large 2017}
+\end{center}
+\end{titlepage}
+
+% A partir daqui páginas sem cabeçalho
+\pagestyle{empty}
+% Faz com que a página seguinte sempre seja ímpar (insere pg em branco)
+\cleardoublepage
+
+% Números das páginas em algarismos romanos
+\pagenumbering{roman}
+
+\newpage
+\vspace*{10pt}
+% Abstract
+\begin{center}
+  \emph{\begin{large}Resumo\end{large}}\label{resumo}
+\vspace{2pt}
+\end{center}
+% Pode parecer estranho, mas colocar uma frase por linha ajuda a organizar e reescrever o texto quando necessário.
+% Além disso, ajuda se você estiver comparando versões diferentes do mesmo texto.
+% Para separar parágrafos utilize uma linha em branco.
+
+O processo de avaliação é muito importante para a verificação de aprendizagem dos estudantes e manutenção do andamento do ensino conforme o currículo previsto. A avaliação formativa garante ao professor uma visão geral do ensino, medindo a efetividade do aprendizado. Porém, conforme é ampliado o acesso à educação, a aplicação de métodos avaliativos se torna ainda mais necessária e a carência de apoio em sua aplicação é considerada como um fator limitante.
+
+O suporte computacional dos métodos pedagógicos visa melhorar a qualidade dos materiais para impactar diretamente a aprendizagem. Neste trabalho, apresentamos uma ferramenta de apoio à correção de respostas discursivas curtas segundo os termos e sua representatividade por classe de nota. A adoção da seleção de características proporciona a criação de modelos de avaliação mais próximos ao critério do professor. Com os trechos de respostas identificados, esperamos padrões que tornem o sistema um avaliador em potencial. Assim, a ferramenta proposta para modelagem do método avaliativo e \textit{feedback} para suporte ao ensino é aqui chamada de mapas de características.
+
+Para desenvolvimento deste projeto coletamos cinco bases de dados: duas nacionais e três estrangeiras. Os experimentos iniciais buscavam analisar a interpretação da base de dados pelo sistema para modelar o critério avaliativo, com a finalidade de identificar o padrão de classificação do professor. Em duas das bases de dados testadas, de disciplinas da Universidade Federal do Espírito Santo e da Universidade do Norte do Texas, o resultado obtido foi de uma classificação equivalente após a redução de dimensionalidade com respectivamente 24,84\% e 11,48\% da informação.
+
+\noindent
+
+\par
+\vspace{1em}
+\noindent\textbf{Palavras-chave:} Mapa de Características, Avaliação Assistida por Computador, Mineração de Dados Educacionais, Aprendizado Semiautomático, Extração de Informação
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Definição do formato de cabeçalho (package fancyhdr.sty)
+% Este material deveria estar em um local mais apropriado
+
+% Definir um estilo para páginas completas (cabeçalho + rodapé)
+\pagestyle{fancyplain}
+
+% Marca de capítulo do tipo "2. Blábláblá..." no cabeçalho
+%\renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ {#1}}{}}
+
+% Para aumentar o tamanho da caixa para o cabeçalho
+\addtolength{\headheight}{\baselineskip}
+
+% Definindo o conteúdo do cabeçalho...
+\fancyhf{}
+%\fancyhead[LO,LE]{\nouppercase{\textsf{\leftmark}}}
+\fancyhead[L]{\nouppercase{\textsf{\leftmark}}}
+%\fancyhead[RO,RE]{\thepage}
+\fancyhead[R]{\thepage}
+
+% Para garantir que a primeira página de cada capítulo...
+\fancypagestyle{plain}{%
+\fancyhf{}%                         % não terá head ou foot
+\renewcommand{\headrulewidth}{0pt}} % nem linhas de cabeçalho
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Capítulos são numerados normalmente
+\pagenumbering{arabic}
+\setcounter{page}{2}
+
+
+
+
+
+
+\newpage
+
+% Abreviações
+% Para imprimir as abreviações siga as instruções em 
+% http://code.google.com/p/mestre-em-latex/wiki/ListaDeAbreviaturas
+%\printnomenclature
+
+% Índice
+\tableofcontents
+\newpage

@@ -37,7 +37,7 @@
 
 % Conserta o erro "No room for a new \count"
 \usepackage{etex}
-\reserveinserts{28}
+% \reserveinserts{28}
 
 % Usa a fonte Latin Modern.
 \usepackage{lmodern}
@@ -257,38 +257,38 @@
 
 % Versão 2: caso você tenha que inserir sua própria ficha catalográfica.
 % (*) Neste caso, preencher palavras-chave e adicione co-orientador (se houver).
-\begin{fichacatalografica}
-	\vspace*{\fill}
-	\hrule
-	\begin{center}
-	\begin{minipage}[c]{12.5cm}
-	
-	\imprimirautor
-	
-	\hspace{0.5cm} \imprimirtitulo  / \imprimirautor. --
-	\imprimirlocal, \imprimirdata-
-	
-	\hspace{0.5cm} \pageref{LastPage} p. : il. (algumas color.) ; 30 cm.\\
-	
-	\hspace{0.5cm} \imprimirorientadorRotulo~\imprimirorientador\\
-	
-	\hspace{0.5cm}
-	\parbox[t]{\textwidth}{\imprimirtipotrabalho~--~\imprimirinstituicao,
-	\imprimirdata.}\\
-	
-	\hspace{0.5cm}
-		1. Palavra-chave1.
-		2. Palavra-chave2.
-		I. Souza, Vítor Estêvão Silva.
-		II. Universidade Federal do Espírito Santo.
-		IV. \imprimirtitulo \\ 			
-	
-	\hspace{8.75cm} CDU 02:141:005.7\\
-	
-	\end{minipage}
-	\end{center}
-	\hrule
-\end{fichacatalografica}
+% \begin{fichacatalografica}
+%	\vspace*{\fill}
+%	\hrule
+%	\begin{center}
+%	\begin{minipage}[c]{12.5cm}
+%	
+%	\imprimirautor
+%	
+%	\hspace{0.5cm} \imprimirtitulo  / \imprimirautor. --
+%	\imprimirlocal, \imprimirdata-
+%	
+%	\hspace{0.5cm} \pageref{LastPage} p. : il. (algumas color.) ; 30 cm.\\
+%	
+%	\hspace{0.5cm} \imprimirorientadorRotulo~\imprimirorientador\\
+%	
+%	\hspace{0.5cm}
+%	\parbox[t]{\textwidth}{\imprimirtipotrabalho~--~\imprimirinstituicao,
+%	\imprimirdata.}\\
+%	
+%	\hspace{0.5cm}
+%		1. Palavra-chave1.
+%		2. Palavra-chave2.
+%		I. Souza, Vítor Estêvão Silva.
+%		II. Universidade Federal do Espírito Santo.
+%		IV. \imprimirtitulo \\ 			
+%	
+%	\hspace{8.75cm} CDU 02:141:005.7\\
+%	
+%	\end{minipage}
+%	\end{center}
+%	\hrule
+%\end{fichacatalografica}
 
 
 % Folha de aprovação.
@@ -368,9 +368,7 @@ Fusce ac pretium leo, in convallis augue. Mauris pulvinar elit rhoncus velit auc
 % (*) Escrever resumo e palavras-chave.
 \setlength{\absparsep}{18pt}
 \begin{resumo}
-As questões discursivas são um método comum para avaliar o aprendizado do aluno. Muito aplicado no Brasil, este tipo de questão exige ao aluno atender aos requerimentos da atividade de forma escrita livre e direta. Assim, segundo o conteúdo lecionado, é esperado que o aluno seja suscinto e demonstre o aprendizado no tema. Apesar da pequena quantidade de texto produzido, é necessário que o professor avalie cautelosamente todos os alunos para identificar possíveis problemas no aprendizado. O tempo concorrente entre a análise de desempenho dos alunos, planejamento das aulas e atualização dos materiais impossibilita o acompanhamento detalhado do aluno em classe. Deste modo, neste trabalho apresentamos um método de análise e avaliação automática de respostas discursivas para apoiar o trabalho do tutor com redução do tempo de avaliação. Aproveitando-se de técnicas de Aprendizado de Máquina para avaliação, esperamos que o professor torne-se um auditor das atividades, concentrando-se na verificação dos resultados obtidos. Portanto, o sistema proposto utiliza análise textual e linguística documental com resultados equivalentes aos encontrados entre avaliadores humanos. Os resultados obtidos em datasets da literatura apresentam coeficiente Kappa de X\% em relação a tutores humanos.
-
-\textbf{Palavras-chaves}: Avaliação Automática de Questões Discursivas. Aprendizado Semi-Supervisionado. Sistemas de Apoio ao Tutor. Processamento de Linguagem Natural. Classificação de Texto.
+\input{capitulos/ch0-resumo}
 \end{resumo}
 
 
@@ -378,9 +376,7 @@ As questões discursivas são um método comum para avaliar o aprendizado do alu
 % (*) Escrever resumo e palavras-chave.
 \begin{resumo}[Abstract]
 \begin{otherlanguage*}{english}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada laoreet leo at interdum. Nullam neque eros, dignissim sed ipsum sed, sagittis laoreet nisi. Duis a pulvinar nisl. Aenean varius nisl eu magna facilisis porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut mattis tortor nisi, facilisis molestie arcu hendrerit sed. Donec placerat velit at odio dignissim luctus. Suspendisse potenti. Integer tristique mattis arcu, ut venenatis nulla tempor non. Donec at tincidunt nulla. Cras ac dignissim neque. Morbi in odio nulla. Donec posuere sem finibus, auctor nisl eu, posuere nisl. Duis sit amet neque id massa vehicula commodo dapibus eu elit. Sed nec leo eu sem viverra aliquet. Nam at nunc nec massa rutrum aliquam sed ac ante.
-
-\textbf{Keywords}: Automatic Short Answer Grader. Semi-Supervised Learning. Tutor Support Systems. Natural Language Processing. Text Categorization.
+\input{capitulos/ch0-abstract}
 \end{otherlanguage*}
 \end{resumo}
 
@@ -398,9 +394,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada laoreet 
 % Lista de abreviaturas e siglas.
 % (*) Preencher com as siglas usadas ao longo do texto e seus significados.
 \begin{siglas}
-  \item[AM] Aprendizado de Máquina
-  \item[NLP] Processamento de Linguagem Natural
-  \item[SAG] \textit{Short Answer Grader}
+  \item[ML] \textit{Machine Learning} (Aprendizado de Máquina)
+  \item[NLP] \textit{Natural Language Processing} (Processamento de Linguagem Natural)
+  \item[SAG] \textit{Short Answer Grader} (Avaliação de Questões Discursivas Curtas)
+  \item[EDM] \textit{Educational Data Mining} (Mineração de Dados Educacionais)
+  \item[PR] \textit{Pattern Recognition} (Reconhecimento de Padrões)
+  \item[IR] \textit{Information Retrieval} (Recuperação de Informação)
+  \item[CAA] \textit{Computer-Assisted Assessment} (Avaliação Assistida por Computadores)
 \end{siglas}
 
 % Insere o sumário.

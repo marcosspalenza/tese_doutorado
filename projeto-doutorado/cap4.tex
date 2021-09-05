@@ -1,0 +1,57 @@
+%\pagestyle{empty}
+%\cleardoublepage
+%\pagestyle{fancy}
+%\pagenumbering{arabic}
+
+\section{Metodologia}\label{cap4}
+
+O mapa de características foi uma técnica desenvolvida com base no método de avaliação de respostas discursivas \cite{spalenza2016SBIE}. Com esta ferramenta, o professor corrige cada questão com notas que serão interpretadas como classes no sistema para, automaticamente, identificar trechos relevantes para cada uma delas. Em geral o processo segue as etapas de coleta de dados, padronização, agrupamento, seleção de características e elaboração de relatórios, apresentados na Figura \ref{mapa-ga}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{img/mapa-alg-genetico.png}
+\caption{Etapas do mapa de características para captura do modelo avaliativo do professor.}
+\label{mapa-ga}
+\end{figure}
+
+Para a coleta de dados utilizamos o Ambiente Virtual de Aprendizagem - AVA Moodle\footnote{\textit{Modular Object Oriented Distance LEarning} - Moodle - \texttt{\url{moodle.org}}}. O uso dessa plataforma é muito conhecido nos cursos EaD e conta também com várias aplicações de sucesso em turmas presenciais. A submissão de tarefas em texto \textit{online} no AVA permite que a atividade, quando finalizada, seja coletada pelo \textit{software} de extração de informações descrito por \cite{pissinati2014-master} para ser processado pelo sistema.
+
+Após a coleta o sistema realiza processos de padronização textual como a eliminação de sinais gráficos, \textit{stemming} (radicalização), contagem de \textit{n-grams} e remoção de \textit{stopwords}. Essa etapa de padronização é uma tentativa de tratamento do conteúdo do documento para garantir equivalência entre as informações apresentadas. Após esse pré-processamento ocorre a vetorização de documentos para interpretação computacional do seu conteúdo. A vetorização adotada usa a frequência dos termos indexados a partir dos textos, ou \textit{Term Frequency - TF} em inglês. Esse modelo se baseia na técnica de processamento de textos ``\textit{bag of words}'' onde cada índice é associado a um termo distinto encontrado no conjunto de documentos.
+
+No modelo vetorial, cada documento \textit{d} de um conjunto $ D = \{ d_{1} , d_{2} , d_{3} , \dots , d_{|D|} \} $ de documentos é representado como um vetor de termos \textit{t}. Durante a vetorização. é verificada a frequência de ocorrência (TF) de cada um dos \textit{t} termos em cada documento \textit{d} em \textit{|D|}, sendo \textit{|D|} o total de documentos desse conjunto. Para cada \textit{d}, portanto, é computada a frequência individual dos $ t = \{ t_{1}, t_{2}, t_{3}, \dots , t_{k} \} $ termos que existem na base de dados, sendo \textit{k} o número de termos distintos encontrados na coleção. Assim, cada documento \textit{d} é representado como um vetor com as frequências individuais \textit{n} de cada um dos \textit{k} termos distintos, como o exemplo visto na Equação \ref{modelo-vetorial}.
+
+\begin{equation}
+\label{modelo-vetorial}
+\begin{aligned}
+d_{0} = \{ n_{t_{1}} , n_{t_{2}} , n_{t_{3}} , \dots , n_{t_{k}} \}
+\\
+d_{1} = \{ n_{t_{1}} , n_{t_{2}} , n_{t_{3}} , \dots , n_{t_{k}} \}
+\\
+\vdots
+\\
+d_{|D|} = \{ n_{t_{1}} , n_{t_{2}} , n_{t_{3}} , \dots , n_{t_{k}} \}
+\\
+\end{aligned}
+\end{equation}
+
+Depois do processo de vetorização ocorre a análise de similaridade dos documentos. Durante esse processo os documentos são clusterizados, particionados em treino e teste conforme os principais padrões selecionados nos grupos resultantes do algoritmo de \textit{clustering}. Definimos o número de grupos \textit{a priori} pelo agrupamento de melhor \textit{silhouette score} \cite{rousseeuw1987}. Após a amostragem, os itens são avaliados pelo especialista e cada nota é considerada uma classe.
+
+Para seleção das informações que representem a essência das tarefas, o mapa de características busca a resposta mínima de cada classe. Sabendo que o professor já efetuou a correção, o sistema agrupa as respostas com notas equivalentes. Em cada grupo o conjunto mínimo de resposta é recuperado com a análise iterativa da densidade do agrupamento com um Algoritmo Genético. Nesse método de otimização tentamos reduzir o número de termos selecionados avaliando o conjunto de informações da classe. Assim, a cada ciclo do algoritmo, o \textit{fitness} é calculado pela razão entre o número de características selecionadas para esses documentos e a densidade de similaridade.
+
+As características selecionadas são utilizadas para representar as partes significativas de cada grupo de documentos, sumarizando-os. Com um peso atribuido pela frequência de ocorrência do termo na classe, uma visualização em HTML é gerada para discussão colaborativa dos resultados. Nessa visualização, exemplificada nas Figuras \ref{mod-mapa-a} e \ref{mod-mapa-b}, cada termo é colorido conforme a representatividade na sua classe correlata.
+
+\begin{figure}[h]
+  \centering
+  \begin{minipage}{\linewidth}
+  \includegraphics[width=\linewidth]{img/mapa-doc.png}
+  \subcaption{Exemplo de visão geral em HTML para uma atividade.}
+  \label{mod-mapa-a}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{\linewidth}
+  \includegraphics[width=\linewidth]{img/mapa-ava.png}
+  \subcaption{Exemplo de visão do aluno com \textit{feedback} no AVA.}
+  \label{mod-mapa-b}
+  \end{minipage}
+  \caption{Termos selecionados e ponderados com mapa de características apresentando a visão geral e individual para discussão dos resultados.}
+\end{figure}

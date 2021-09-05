@@ -1,0 +1,114 @@
+%\pagestyle{empty}
+%\cleardoublepage
+%\pagestyle{fancy}
+%\pagenumbering{arabic}
+
+\section{Bases de Dados e Experimentos Iniciais}\label{cap5}
+Foram realizados três experimentos com o protótipo. O primeiro para verificar a adequação ao modelo de avaliação do especialista. Após isso, constatamos a relação de determinados termos por classe de nota em respostas discursivas curtas. Por fim, analisamos a relação do conteúdo do grupo de documentos com o método avaliativo do professor. Para realizar os testes temos disponíveis cinco bases de dados de questões discursivas:
+
+\begin{itemize}
+\item Ufes Disciplinas 2015-2016
+\item Ufes Vestibular 2012
+\item Curso de Introdução a Ciência da \textit{Open University} da Inglaterra.
+\item Curso de Estrutura de Dados da Universidade do Norte do Texas (\textit{Texas Dataset})
+\item Competição ASAP da \textit{Hewllet Foundation}
+\end{itemize}
+
+Testes prévios em quatro dessas bases de dados indicaram o potencial da ferramenta. O \textit{dataset} da \textit{Open University}, por ter sido recentemente adquirido, ainda não foi testado. Cada uma dessas bases de dados é descrita a seguir.
+
+\subsection{Base de Dados do Vestibular UFES} \label{vest-ufes-db}
+Conjunto de atividades discursivas transcritas do vestibular de 2012 da Universidade Federal do Espírito Santo - UFES da prova de língua portuguesa. No total são 460 respostas para as cinco questões avaliadas por dois avaliadores, contendo 92 cada. Na avaliação do vestibular, caso houvesse divergências de mais de 1 ponto entre as duas correções, um terceiro avaliador era acionado.
+
+\subsection{Base de Dados das Disciplinas UFES} \label{disciplinas-ufes-db}
+Essa base de dados foi coletada de algumas disciplinas ministradas na Universidade Federal do Espírito Santo - UFES entre 2015 e 2016 através do Moodle do Laboratório Computação de Alto Desempenho - LCAD. Entre as disciplinas estão Metodologia e Técnicas de Pesquisa Científica, Filosofia e Tecnologia da Informação II. Totalizando 45 atividades, neste \textit{dataset} foram recebidas 1162 submissões com média 25,82 e desvio padrão de 13,54 respostas por atividade.
+
+O diferencial dessa base de dados é a mudança de características nas respostas encontradas nas múltiplas disciplinas, professores e alunos. Observam-se alterações consideráveis quanto ao tamanho, número de grupos, critério avaliativo ou objetividade. 
+
+\subsection{Base de dados da Universidade do Norte do Texas (Inglês)} \label{ds-cc-unt-db}
+\textit{Dataset} coletado com alunos de Estrutura de Dados do curso de Ciência da Computação na Universidade do Norte do Texas. Resultado do trabalho realizado por \cite{mohler2011}, a base de dados, em sua segunda versão, constitui-se de dez atividades com até sete questões somados a dois exames com dez questões cada. As provas foram avaliadas em intervalos de 0 a 10 e as atividades de 0 a 5 pontos. A correção foi feita por dois professores para as respostas de, em média, 30 alunos participantes. Após a avaliação foi extraída a média entre os dois corretores. No total, essa base de dados contém 86 atividades e 630 respostas curtas e, para cada atividade, existe uma resposta criada pelo professor para correção.
+
+\subsection{Base de Dados do Concurso ASAG-SAS no \it{Kaggle} \bf{(Inglês)}}
+\label{kaggle-db}
+A competição de avaliação automática de questões discursivas curtas - \textit{ASAP - Automated Student Assessment Prize}, foi uma competição organizada no \textit{Kaggle}. O \textit{Kaggle} é uma plataforma de competições em Mineração de Dados que reúne tarefas complexas formadas por problemas reais enfrentados por grandes empresas. A sua comunidade era de 536 mil usuários registrados em 2016, que disputam prêmios e compartilham aprendizados em análise estatística e ciência de dados.
+
+No \textit{Kaggle}, a organização \textit{Hewllet Foundation} patrocinou três competições. As três foram denominadas como as seguintes fases da ASAP:
+\begin{itemize}
+\item Fase 1:  Demonstração em respostas longas (redações); 
+\item Fase 2:  Demonstração em respostas curtas (discursivas);
+\item Fase 3:  Demonstração simbólica matemática/lógica (gráficos e diagramas).
+\end{itemize}
+
+A Avaliação Automática de Respostas Curtas (\textit{Automatic Short Answer Grader}) \textit{ASAG - SAS} premiou com um total de 100 mil dólares os cinco primeiros colocados. A base de dados de respostas curtas, contém dez questões de artes a ciências. Ao final do concurso, os dados disponíveis avaliados por dois professores totalizam 17043 itens com aproximadamente 1700 itens por atividade.
+
+\subsection{Base de Dados da \it{UK Open University}}
+Utilizada por \citeonline{butcher2010}, essa base de dados foi coletada na disciplina de Introdução à Ciência da \textit{Open University} da Inglaterra. Foram coletadas 20 questões que contém entre 511 e 1897 respostas cada, com em média 1247 respostas. Foram avaliadas por ao menos um especialista e pelo sistema \textit{Intelligent Assessment Technologies FreeText Author}. A distribuição de classes é binária, marcando cada resposta como correta ou incorreta. Os diferenciais apresentados pelo \textit{dataset} são a avaliação binária e o número de tentativas utilizadas pelo aluno.
+
+\subsection{Experimento: Conformidade com a Avaliação Humana}
+Esse experimento foi um comparativo com os resultados de \citeonline{pissinati2014-master}, onde o autor relacionou a influência de diferentes tipos de pré-processamento na nota final. Os testes foram realizados no \textit{dataset} do vestibular da Universidade Federal do Espírito Santo de 2012. Para a construção da base de dados foram transcritas as 5 questões discursivas para a disciplina de Português, totalizando 460 respostas como foi descrito na Seção \ref{vest-ufes-db}.
+
+O melhor resultado alcançado por aquele autor nos testes foi de 1,36 pontos de erro médio absoluto e 1,54 pontos de desvio padrão do erro. Entre os dois especialistas avaliadores o erro alcançado foi de 1,46 pontos e com desvios de 1,57 pontos. No trabalho inicial, nossos testes alcançaram resultados de 1,25 pontos de erro médio absoluto e desvio padrão de 1,2 pontos. 
+
+Podemos inferir então que o sistema coletou adequadamente as principais respostas para treinamento e comparou-as adequadamente. Sabendo que \citeonline{pissinati2014-master} fez testes para adequação ao modelo avaliativo do professor através do pré-processamento, seus resultados se aproximaram do obtido entre humanos. Nosso modelo, sem testes direcionados para otimizar esses resultados, já alcançou 0,25 pontos de melhoria do valor entre humanos. Porém, os resultados daquele autor para um segundo avaliador foram regulares enquanto nosso sistema resultou em erros bem maiores. Isso indica a influência da análise linguística nos métodos de interpretação do conteúdo. Por isso, buscamos estudar de forma mais detalhada os padrões coletados e as técnicas de pré-processamento para padronização das ocorrências dos termos. Esperamos assim, estudar os resultados e propor melhorias na adequação com a avaliação do humano.
+
+\subsection{Experimento: Relação Termo-Nota}\label{termo-nota}
+
+Esse experimento foi resultado de testes com dados coletados na universidade, que formaram o \textit{dataset} de disciplinas de UFES (Seção \ref{disciplinas-ufes-db}) e da literatura (Seção \ref{ds-cc-unt-db}). Nesses, buscamos identificar a relação do conteúdo objetivo por classe com a sumarização do conteúdo. Assim, para o estudo do modelo de classificação foi utilizado o Algoritmo Genético, como detalhado na Seção \ref{cap4}. 
+
+Na base de dados de disciplinas da UFES foram processadas 45 atividades com 1162 documentos. Na base da Universidade do Norte do Texas foram 86 atividades com 2415 documentos. A diferença na classificação após a seleção de características pelo Algoritmo Genético - GA foi testada com os classificadores \textit{K-Nearest Neighbors Classifier - K-NN} e com o \textit{Nearest Centroid Classifier - NC}. Os resultados são apresentados nas Tabelas \ref{fs-classificacao-ufes} e \ref{fs-classificacao-unt}.
+
+\begin{center}
+  \begin{tabular}{|r|c|c|c|c|}
+	\hline
+  	& \multicolumn{2}{|c|}{\textit{Precision}} & \multicolumn{2}{|c|}{\textit{Recall}} \\ 
+  	Classificador & Antes do GA & Depois do GA & Antes do GA & Depois do GA \\
+    \hline
+    \textit{K-NN} & 89,52 & 89,93 & 81,54 & 81,70 \\ \hline
+    \textit{NC} & 89,32 & 90,02 & 81,10 & 81,90 \\ \hline
+    \hline
+  \end{tabular}
+  \captionof{table}{Classificação do \textit{dataset} da Universidade Federal do Espírito Santo antes e depois da seleção de características.}
+  \label{fs-classificacao-ufes}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{|r|c|c|c|c|}
+    \hline
+  	& \multicolumn{2}{|c|}{\textit{Precision}} & \multicolumn{2}{|c|}{\textit{Recall}} \\
+  	Classificador & Antes do GA & Depois do GA & Antes do GA & Depois do GA \\
+    \hline
+    \textit{K-NN} & 88,48 & 87,23 & 80,98 & 78,29 \\ \hline
+    \textit{NC} & 90,57 & 84,72 & 84,46 & 72,20 \\ \hline
+    \hline
+  \end{tabular}
+  \captionof{table}{Classificação do \textit{dataset} da Universidade do Norte do Texas antes e depois da seleção de características.}
+  \label{fs-classificacao-unt}
+\end{center}
+
+Podemos ver pelas Tabelas \ref{fs-classificacao-ufes} e \ref{fs-classificacao-unt} que o sistema teve desempenhos equivalentes para a base de dados da UFES e \textit{Texas Dataset}. Essa consideração é válida apesar da ocorrência de uma pequena melhoria em \textit{precision} e \textit{recall} na primeira e uma pequena queda na segunda. Porém, a quantidade de informações para classificação após o GA foi de, respectivamente, 24,84 \% e 11,48\% das características. Assim, esperamos que o estudo aprofundado da seleção termo-nota permita que com pouca informação sejam realizadas classificações mais equivalentes ao modelo do especialista. Ainda através da construção desses sumários de resposta, após a classificação, esperamos que o sistema seja capaz de representar seu modelo avaliativo pelo mapa de características. Essa queda na classificação apresentada na Tabela \ref{fs-classificacao-unt}, ainda foi alvo de um estudo sobre a extração do critério avaliativo apresentado na próxima seção. 
+
+\subsection{Experimento: Conteúdo-Chave para Avaliação}
+Em geral o mapa de características tem um efeito positivo nas bases de dados processadas. A redução de dimensionalidade quando existe uma tendência de resposta condiciona os classificadores a interpretarem melhor o critério de correção do professor. Aprendendo o modelo do professor, por consequência, torna mais simples relatar a forma avaliativa da máquina e a discussão dos resultados. Podemos ver isso, por exemplo, na atividade 1.5 apresentada na Figura \ref{UNT-15}. 
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=\textwidth]{img/UNT-1-5.png}
+\caption{Mapa de características de todos os alunos para a atividade \textit{DS CC UNT 1-5}.}
+\label{UNT-15}
+\end{figure}
+
+Para a atividade 1.5 os alunos responderam a seguinte pergunta: ``\textit{what is a variable?}''. Nas respostas vemos marcações que relacionam quatro notas distintas com os termos. Essas marcações variam em 10 tons de coloração de 0, equivalente a uma baixa correlação, até 9 com alta correlação à nota. Os termos não marcados são dados como de baixa relevância pelo sistema. As alterações de tonalidade são dispostas em até 6 cores vinculadas cada qual a uma classe de nota.
+
+Na Figura \ref{UNT-15} podemos ver que as palavras \textit{location}, \textit{memory} e \textit{value} são fortemente ligadas com a nota máxima \textit{5,0} em azul. Enquanto isso \textit{program} e \textit{string} pertencem ao grupo de nota \textit{4,0} em amarelo, \textit{variable} \textit{name} e \textit{stored} ao de nota \textit{3,0} em verde e \textit{data} e \textit{assigned} remetem à nota \textit{2,0} em vermelho. Palavras pouco correlacionadas como \textit{symbol}, \textit{example}, \textit{computers} e \textit{programmer} são consideradas neutras. Porém, se compararmos as marcações com a resposta esperada apresentada pelo professor ``\textit{a location in memory that can store a value}'', temos as principais palavras diretamente relacionadas ao critério de correção.
+
+Porém, como visto na classificação dada na Seção \ref{termo-nota}, a perda de informação durante a redução pode afetar negativamente a ação do classificador. No \textit{Texas dataset}, a queda de 5,85\% apresentada na Tabela \ref{fs-classificacao-unt} representa esses casos. Na atividade \textit{2-6}, por exemplo, ocorrem avaliações que não caracterizam termos correlatos com a nota atribuída. Isso ocorre para a pergunta ``\textit{what is the difference between a function prototype and a function definition?}''. Os documentos de resposta são apresentados na Figura \ref{UNT-26}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{img/UNT-2-6.png}
+\caption{Mapa de características de todos os alunos para a atividade \textit{DS CC UNT 2-6}.}
+\label{UNT-26}
+\end{figure}
+
+Podemos analisar a Figura \ref{UNT-26} paralelamente com a chave de correção do professor para verificar os possíveis motivos da quantidade de marcações neutras. A resposta aguardada era ``\textit{a function prototype includes the function signature, i.e., the name of the function, the return type, and the parameters' type. The function definition includes the actual body of the function}''. Pelos documentos da figura e a chave de correção vemos que a enumeração de partes de uma função era a essência da resposta. Porém, ao contrário do aguardado, não temos intercessão observável exceto em \textit{function prototype} e \textit{function definition}. Tais trechos são encontrados nas respostas das três notas disponíveis (\textit{5,0 3,0} e \textit{1,0}). Assim, o processo de avaliação foi criterioso quanto a diferenciação entre as funções, independentemente do aspecto elencado. Isso confunde o algoritmo pela ausência de termos semelhantes por classes de nota ao coexistirem várias respostas possíveis.
+
+O intúito deste projeto, portanto, é investigar com mais detalhes a atribuição de nota. Sabendo que existe, em geral, um modelo avaliativo do professor, esperamos reconstituir seu padrão para contribuir com o método avaliativo. Assim, ao relacionar termos com notas específicas esperamos criar modelos mais próximos do professor para a máquina, de forma mais adequada, colaborar com o processo de aprendizado. Com conhecimento adquirido sobre a disciplina através da avaliação, podemos atribuir funções mais específicas ao sistema, apoiando melhor a correção e gerando feedbacks mais próximos da resposta esperada.

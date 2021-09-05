@@ -1,0 +1,181 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Arter e Chappuis 2006]{arter2006}
+\abntrefinfo{Arter e Chappuis}{ARTER; CHAPPUIS}{2006}
+{ARTER, J.~A.; CHAPPUIS, J. \emph{Creating \& Recognizing Quality Rubrics}. Nee
+  York, USA: Pearson Education, 2006.  (Assessment Training Institute, Inc
+  Series).}
+
+\bibitem[Bailey e Meurers 2008]{bailey2008}
+\abntrefinfo{Bailey e Meurers}{BAILEY; MEURERS}{2008}
+{BAILEY, S.; MEURERS, D. {Diagnosing Meaning Errors in Short Answers to Reading
+  Comprehension Questions}. In:  \emph{Proceedings of the 3rd Workshop on
+  Innovative Use of NLP for Building Educational Applications, held at ACL
+  2008}. Columbus, Ohio, USA: Association for Computational Linguistics, 2008.
+  p. 107--115.}
+
+\bibitem[Barreira, Boavida e Ara{\'u}jo 2006]{barreira2006}
+\abntrefinfo{Barreira, Boavida e Ara{\'u}jo}{BARREIRA; BOAVIDA;
+  ARA{\'U}JO}{2006}
+{BARREIRA, C.; BOAVIDA, J.; ARA{\'U}JO, N. {Avalia{\c c}{\~a}o Formativa: Novas
+  Formas de Ensinar e Aprender}.
+\emph{Revista Portuguesa de Pedagogia}, Universidade de Coimbra, v.~40, n.~3,
+  p. 95--133, 2006.}
+
+\bibitem[Burrows, Gurevych e Stein 2015]{burrows2015}
+\abntrefinfo{Burrows, Gurevych e Stein}{BURROWS; GUREVYCH; STEIN}{2015}
+{BURROWS, S.; GUREVYCH, I.; STEIN, B. {The Eras and Trends of Automatic Short
+  Answer Grading}.
+\emph{International Journal of Artificial Intelligence in Education}, v.~25,
+  n.~1, p. 60--117, 2015.}
+
+\bibitem[Butcher e Jordan 2010]{butcher2010}
+\abntrefinfo{Butcher e Jordan}{BUTCHER; JORDAN}{2010}
+{BUTCHER, P.~G.; JORDAN, S.~E. {A Comparison of Human and Computer Marking of
+  Short Free-Text Student Responses}.
+\emph{Computers \& Education}, v.~55, n.~2, p. 489 -- 499, 2010.}
+
+\bibitem[Dzikovska, Nielsen e Brew 2012]{dzikovska2012}
+\abntrefinfo{Dzikovska, Nielsen e Brew}{DZIKOVSKA; NIELSEN; BREW}{2012}
+{DZIKOVSKA, M.~O.; NIELSEN, R.~D.; BREW, C. {Towards Effective Tutorial
+  Feedback for Explanation Questions: A Dataset and Baselines}. In:  . USA:
+  Association for Computational Linguistics, 2012.  (NAACL HLT '12), p.
+  200--210.}
+
+\bibitem[Galhardi, Souza e Brancher 2020]{galhardi2018}
+\abntrefinfo{Galhardi, Souza e Brancher}{GALHARDI; SOUZA; BRANCHER}{2020}
+{GALHARDI, L.; SOUZA, R.; BRANCHER, J. {Automatic Grading of Portuguese Short
+  Answers Using a Machine Learning Approach}. In:  \emph{Anais Estendidos do
+  XVI Simp{\'o}sio Brasileiro de Sistemas de Informa{\c c}{\~a}o}. Porto
+  Alegre-RS, Brasil: SBC, 2020. p. 109--124.}
+
+\bibitem[Gomaa e Fahmy 2012]{gomaa2012}
+\abntrefinfo{Gomaa e Fahmy}{GOMAA; FAHMY}{2012}
+{GOMAA, W.~H.; FAHMY, A.~A. {Short Answer Grading Using String Similarity And
+  Corpus-Based Similarity}.
+\emph{International Journal of Advanced Computer Science and
+  Applications(IJACSA)}, v.~3, n.~11, 2012.}
+
+\bibitem[Leffa 2003]{leffa2003}
+\abntrefinfo{Leffa}{LEFFA}{2003}
+{LEFFA, V.~J. {An{\'a}lise Autom{\'a}tica da Resposta do Aluno em Ambiente
+  Virtual}.
+\emph{{Revista Brasileira de Lingu{\'i}stica Aplicada}}, SciELO, v.~3, p. 25 --
+  40, 00 2003.}
+
+\bibitem[Mohler, Bunescu e Mihalcea 2011]{mohler2011}
+\abntrefinfo{Mohler, Bunescu e Mihalcea}{MOHLER; BUNESCU; MIHALCEA}{2011}
+{MOHLER, M.; BUNESCU, R.; MIHALCEA, R. {Learning to Grade Short Answer
+  Questions Using Semantic Similarity Measures and Dependency Graph
+  Alignments}. In:  \emph{Proceedings of the 49th Annual Meeting of the
+  Association for Computational Linguistics: Human Language Technologies -
+  Volume 1}. Stroudsburg, PA, USA: Association for Computational Linguistics,
+  2011.  (HLT '11), p. 752--762.}
+
+\bibitem[Nascimento, Kauark e Moura 2020]{nascimento2020}
+\abntrefinfo{Nascimento, Kauark e Moura}{NASCIMENTO; KAUARK; MOURA}{2020}
+{NASCIMENTO, P.~V.; KAUARK, F.~S.; MOURA, P. R.~G. \emph{{Construindo uma
+  Atividade Experimental Problematizada (AEP) e Avaliando Seu N{\'i}vel
+  Cognitivo de Aprendizagem Atrav{\'e}s do Software {pNota} no Contexto do
+  Ensino Fundamental}}. Vila Velha-ES, Brasil: Instituto Federal do
+  Esp{\'i}rito Santo, 2020. v.~9.  (S{\'e}rie Guia Did{\'a}tico de
+  Ci{\^e}ncias/Qu{\'i}mica, v.~9).}
+
+\bibitem[Noorbehbahani e Kardan 2011]{noorbehbahani2011}
+\abntrefinfo{Noorbehbahani e Kardan}{NOORBEHBAHANI; KARDAN}{2011}
+{NOORBEHBAHANI, F.; KARDAN, A.~A. The automatic assessment of free text answers
+  using a modified bleu algorithm.
+\emph{Computers \& Education}, Elsevier Science Ltd., Oxford, UK, UK, v.~56,
+  n.~2, p. 337--345, feb 2011.}
+
+\bibitem[Oliveira et al. 2014]{oliveira2014}
+\abntrefinfo{Oliveira et al.}{OLIVEIRA et al.}{2014}
+{OLIVEIRA, E. et al. {Combining Clustering and Classification Approaches for
+  Reducing the Effort of Automatic Tweets Classification}. In:  \emph{{KDIR}
+  2014 - Proceedings of the International Conference on Knowledge Discovery and
+  Information Retrieval}. Rome, Italy: ScitePress, 2014. v.~6, p. 465--472.}
+
+\bibitem[Oliveira et al. 2010]{oliveira2010}
+\abntrefinfo{Oliveira et al.}{OLIVEIRA et al.}{2010}
+{OLIVEIRA, E. et al. {Uma Tecnologia de Agrupamento de Respostas para Redu{\c
+  c}{\~a}o de Esfor{\c c}o de Corre{\c c}{\~a}o de Atividades em Sistema Online
+  de Apoio {\`a} Avalia{\c c}{\~a}o Formativa em Indexa{\c c}{\~a}o}. In:
+  \emph{XI Encontro Nacional de Pesquisa em Ci{\^e}ncia da Informa{\c
+  c}{\~a}o}. Rio de Janeiro, RJ, Brasil: Associa{\c c}{\~a}o Nacional de
+  Pesquisa e P{\'o}s-Gradua{\c c}{\~a}o em Ci{\^e}ncia da Informa{\c c}{\~a}o
+  (Ancib), 2010.}
+
+\bibitem[Oliveira e Santos 2005]{oliveira2005}
+\abntrefinfo{Oliveira e Santos}{OLIVEIRA; SANTOS}{2005}
+{OLIVEIRA, K. L.~d.; SANTOS, A. A.~A. {Compreens{\~a}o em Leitura e Avalia{\c
+  c}{\~a}o da Aprendizagem em Universit{\'a}rios}.
+\emph{{Psicologia: Reflex{\~a}o e Cr{\'i}tica}}, SciELO, v.~18, p. 118 -- 124,
+  04 2005.}
+
+\bibitem[Oliveira, Ciarelli e Oliveira 2013]{oliveira2013}
+\abntrefinfo{Oliveira, Ciarelli e Oliveira}{OLIVEIRA; CIARELLI; OLIVEIRA}{2013}
+{OLIVEIRA, M.~G.; CIARELLI, P.~M.; OLIVEIRA, E. {Recommendation of Programming
+  Activities by Multi-label Classification for a Formative Assessment of
+  Students}.
+\emph{Expert Syst. Appl.}, Pergamon Press, Inc., Tarrytown, NY, USA, v.~40,
+  n.~16, p. 6641--6651, nov 2013.}
+
+\bibitem[Paiva et al. 2012]{paiva2012}
+\abntrefinfo{Paiva et al.}{PAIVA et al.}{2012}
+{PAIVA, R. et al. {Minera{\c c}{\~a}o de Dados e a Gest{\~a}o Inteligente da
+  Aprendizagem: Desafios e Direcionamentos}. In:  \emph{I Workshop de Desafios
+  da Computa{\c c}{\~a}o Aplicada {\'a} Educação (DesafIE!2012)}. Curitiba,
+  PR, Brasil: Sociedade Brasileira de Computa{\c c}{\~ a}o, 2012. v.~1.}
+
+\bibitem[P{\'e}rez-Mar{\'\i}n, Pascual-Nieto e Rodr{\'\i}guez
+  2009]{perez-marin2009}
+\abntrefinfo{P{\'e}rez-Mar{\'\i}n, Pascual-Nieto e
+  Rodr{\'\i}guez}{P{\'E}REZ-MAR{\'I}N; PASCUAL-NIETO; RODR{\'I}GUEZ}{2009}
+{P{\'E}REZ-MAR{\'I}N, D.; PASCUAL-NIETO, I.; RODR{\'I}GUEZ, P.
+  {Computer-Assisted Assessment of Free-Text Answers}.
+\emph{The Knowledge Engineering Review}, Cambridge University Press, v.~24,
+  n.~4, p. 353--374, 2009.}
+
+\bibitem[Pissinati 2014]{pissinati2014}
+\abntrefinfo{Pissinati}{PISSINATI}{2014}
+{PISSINATI, E.~M.
+\emph{{Uma Proposta de Corre{\c c}{\~a}o Semi-Autom{\'a}tica de Quest{\~o}es
+  Discursivas e de Visualiza{\c c}{\~a}o de Atividades para Apoio {\`a} Atua{\c
+  c}{\~a}o do Docente}}.
+Disserta\c{c}\~{a}o (Mestrado) --- PPGI - Universidade Federal do Esp{\'i}rito
+  Santo, Vit{\'o}ria, ES, Setembro 2014.}
+
+\bibitem[Ramachandran, Cheng e Foltz 2015]{ramachandran2015a}
+\abntrefinfo{Ramachandran, Cheng e Foltz}{RAMACHANDRAN; CHENG; FOLTZ}{2015}
+{RAMACHANDRAN, L.; CHENG, J.; FOLTZ, P.~W. Identifying patterns for short
+  answer scoring using graph-based lexico-semantic text matching. In:
+  \emph{BEA@NAACL-HLT}. Denver, Colorado: Association for Computational
+  Linguistics, 2015.}
+
+\bibitem[Ramachandran e Foltz 2015]{ramachandran2015b}
+\abntrefinfo{Ramachandran e Foltz}{RAMACHANDRAN; FOLTZ}{2015}
+{RAMACHANDRAN, L.; FOLTZ, P.~W. Generating reference texts for short answer
+  scoring using graph-based summarization. In:  \emph{BEA@NAACL-HLT}. Denver,
+  Colorado: Association for Computational Linguistics, 2015.}
+
+\bibitem[Rousseeuw 1987]{rousseeuw1987}
+\abntrefinfo{Rousseeuw}{ROUSSEEUW}{1987}
+{ROUSSEEUW, P.~J. Silhouettes: A graphical aid to the interpretation and
+  validation of cluster analysis.
+\emph{Journal of Computational and Applied Mathematics}, v.~20, p. 53 -- 65,
+  1987.}
+
+\bibitem[Spalenza et al. 2016]{spalenza2016SBIE}
+\abntrefinfo{Spalenza et al.}{SPALENZA et al.}{2016}
+{SPALENZA, M.~A. et al. {Uso de Mapa de Caracter{\'i}sticas na Avalia{\c
+  c}{\~a}o de Textos Curtos nos Ambientes Virtuais de Aprendizagem Classes de
+  Respostas Discursivas}. In:  \emph{Simp{\'o}sio Brasileiro de Inform{\'a}tica
+  na Educa{\c c}{\~a}o (SBIE)}. Uberl{\^a}ndia, MG, Brasil: Sociedade
+  Brasileira de Computa{\c c}{\~ a}o, 2016. v.~27.}
+
+\end{thebibliography}
