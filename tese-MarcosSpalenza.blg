@@ -16,6 +16,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated field_info (elt_size=4) to 12107 items from 5000.
 Database file #1: abntex2-options.bib
 Database file #2: bibliografia.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -27,44 +28,44 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 24 entries,
+You've used 103 entries,
             6714 wiz_defined-function locations,
-            1362 strings with 15326 characters,
-and the built_in function-call counts, 22071 in all, are:
-= -- 1754
-> -- 907
-< -- 51
-+ -- 381
-- -- 268
-* -- 1714
-:= -- 2868
-add.period$ -- 89
-call.type$ -- 24
-change.case$ -- 289
-chr.to.int$ -- 69
-cite$ -- 23
-duplicate$ -- 1022
-empty$ -- 1560
-format.name$ -- 1272
-if$ -- 5284
-int.to.chr$ -- 0
+            1865 strings with 34327 characters,
+and the built_in function-call counts, 104061 in all, are:
+= -- 8123
+> -- 4097
+< -- 307
++ -- 1559
+- -- 1195
+* -- 8120
+:= -- 12920
+add.period$ -- 431
+call.type$ -- 103
+change.case$ -- 1311
+chr.to.int$ -- 399
+cite$ -- 102
+duplicate$ -- 5051
+empty$ -- 7668
+format.name$ -- 5757
+if$ -- 25235
+int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 433
-newline$ -- 112
-num.names$ -- 115
-pop$ -- 587
+missing$ -- 1950
+newline$ -- 452
+num.names$ -- 510
+pop$ -- 2579
 preamble$ -- 1
-purify$ -- 105
+purify$ -- 467
 quote$ -- 0
-skip$ -- 1156
+skip$ -- 5279
 stack$ -- 1
-substring$ -- 834
-swap$ -- 542
-text.length$ -- 36
+substring$ -- 4668
+swap$ -- 2888
+text.length$ -- 208
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 14
+type$ -- 60
 warning$ -- 0
-while$ -- 171
+while$ -- 872
 width$ -- 0
-write$ -- 389
+write$ -- 1747

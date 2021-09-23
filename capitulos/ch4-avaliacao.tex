@@ -7,36 +7,36 @@
 Esse capítulo apresenta três séries de experimentos. A primeira apresenta a parte fundamental do aprendizado semi-supervisionado do sistema \textit{p}Nota, utilizando clustering para a identificação dos principais itens de resposta em cada base de dados. A segunda apresenta os métodos de classificação, a qualidade do aprendizado do sistema na predição de notas e sua adequação ao modelo esperado pelo tutor. Por fim, o terceiro módulo reflete como os modelos de resposta são formados pelo sistema e apresentados como feedback aos alunos e professores. Os experimentos foram realizados utilizando conjuntos de dados da literatura que apresentam diferentes características.
 
 \section{Base de Dados}
-Oito bases de dados foram selecionadas de acordo com a literatura, em português e inglês. Cada base de dados foi utilizada conforme as suas características. As bases de dados foram organizadas segundo o formato da nota, entre discreta, gradual e contínua.
+Oito bases de dados foram selecionadas de acordo com a literatura, em português e inglês. Cada base de dados foi utilizada conforme as suas características. As bases de dados foram organizadas segundo o formato da nota, entre ordinais, discretas e contínua \cite{morettin2010}.
 
-Em bases de dados com notas \textit{discretas} o método avaliativo do tutor é dado de forma textual e categórica. A representação do rótulo não estabelece escalas para o sistema, não sendo possível mensurar a diferenças na escala \textit{a priori}. O modelo formado deve compreender as estruturas textuais de forma simbólica, caracterizando a essência de cada nível. Portanto, o classificador deve ser robusto para aprender a relevância das respostas pela equivalência de palavras-chave. Basicamente, é fundamental para o classificador produzir um modelo com as informações essenciais para a resposta receber tal categoria e reproduzir o modelo.
+Em bases de dados com notas \textit{ordinais} o método avaliativo do tutor é dado de forma textual e categórica. A representação do rótulo não estabelece escalas para o sistema, não sendo possível mensurar a diferenças na escala \textit{a priori}. O modelo formado deve compreender as estruturas textuais de forma simbólica, caracterizando a essência de cada nível. Portanto, o classificador deve ser robusto para aprender a relevância das respostas pela equivalência de palavras-chave. Basicamente, é fundamental para o classificador produzir um modelo com as informações essenciais para a resposta receber tal categoria e reproduzir o modelo.
 
 Por outro lado, outra situação acontece com bases de dados avaliados com notas contínuas. As notas \textit{contínuas} não apresentam níveis, mas sim intervalos numéricos. As respostas recebem notas de acordo com o intervalo avaliativo. Apesar de numérico, o fato da variável não definir uma categoria que represente a divergência entre respostas dificulta o aprendizado do modelo avaliativo. Ao sistema, isso torna subjetiva a espectativa de resposta subjetivo. Assim, esse tipo de atividade é avaliada por interpolação. Nesse caso, o sistema realiza uma regressão de acordo com os pontos conhecidos, gerando a nota pela referência ao grau de similaridade para as demais respostas.
 
-Por fim, a avaliação \textit{gradativa} numérica é a mais comum. Esse modelo favorece também os sistemas computacionais na criação da representação de resposta por categoria de nota. Ao tempo que a categoria induz a equivalência de todas as respostas ao qual foi associada. Assim, o sistema consegue mensurar equivalência e divergências pelos indícios de proximidade entre respostas avaliadas já conhecidas para além da mesma categoria. O desafio do sistema com este tipo de nota é criar um bom modelo de classificação que aprenda essa relação dupla. Para além da categoria das respostas, o sistema passa a ter que interpretar as informações fundamentais de cada classe e a escala de divergência para as demais categorias. A Tabela \ref{tb-datasets} apresenta os detalhes de cada \textit{dataset}, incluindo o número de questões, o total de respostas, o modelo avaliativo aplicado e a linguagem.
+Por fim, a avaliação \textit{discreta} numérica é a mais comum. Esse modelo favorece também os sistemas computacionais na criação da representação de resposta por categoria de nota. Ao tempo que a categoria induz a equivalência de todas as respostas ao qual foi associada. Assim, o sistema consegue mensurar equivalência e divergências pelos indícios de proximidade entre respostas avaliadas já conhecidas para além da mesma categoria. O desafio do sistema com este tipo de nota é criar um bom modelo de classificação que aprenda essa relação dupla. Para além da categoria das respostas, o sistema passa a ter que interpretar as informações fundamentais de cada classe e a escala de divergência para as demais categorias. A Tabela \ref{tab-datasets} apresenta os detalhes de cada \textit{dataset}, incluindo o número de questões, o total de respostas, o modelo avaliativo aplicado e a linguagem.
 
-\begin{table}[h]
 \begin{center}
+\begin{table}[!h]
 \begin{tabular}{r |c c c c} 
  \hline
  Base de Dados & Quest{\~o}es & Respostas & Modelo Avaliativo & Linguagem \\ \hline
- Kaggle ASAP-SAS & 10 & 17043 & gradual & Ingl{\^e}s \\
- Kaggle PTASAG & 15 & 7473 & gradual & Portugu{\^e}s \\
- Projeto Feira Liter{\'a}ria & 10 & 700 & gradual & Portugu{\^e}s \\
- SEMEVAL'2013 Beetle II & 47 & 3941 & discreto & Ingl{\^e}s \\
- SEMEVAL'2013 SciEntBank & 143 & 5251 & discreto & Ingl{\^e}s \\
- UK Open University & 20 & 23790 & gradual & Ingl{\^e}s \\
- University of North Texas & 87 & 2610 & contínua & Ingl{\^e}s \\
+ Kaggle ASAP-SAS & 10 & 17043 & discreto & Ingl{\^e}s \\
+ Kaggle PTASAG & 15 & 7473 & discreto & Portugu{\^e}s \\
+ Projeto Feira Liter{\'a}ria & 10 & 700 & discreto & Portugu{\^e}s \\
+ SEMEVAL2013 Beetle & 47 & 3941 & ordinal & Ingl{\^e}s \\
+ SEMEVAL2013 SciEntBank & 143 & 5251 & ordinal & Ingl{\^e}s \\
+ UK Open University & 20 & 23790 & discreto & Ingl{\^e}s \\
+ University of North Texas & 87 & 2610 & cont{\'i}nuo & Ingl{\^e}s \\
  VestUFES & 5 & 460 & cont{\'i}nuo & Portugu{\^e}s \\
  \hline
  \hline
 \end{tabular}
-\end{center}
 \caption{Bases de dados e suas principais caracter{\'i}sticas.}
-\label{tb-datasets}
+\label{tab-datasets}
 \end{table}
+\end{center}
 
-A Tabela \ref{tb-datasets} descreve os oito \textit{datasets} utilizados nos experimentos deste capítulo. Através das características apresentadas, sabendo que cada \textit{dataset} contém uma quantidade regular de respotas, observamos a grande diversidade de quantidade de respostas por questão. Com questões de 30 até mais de 1800 respostas. No total, esse \textit{corpora} apresenta um total de 337 questões e 61.268 respostas. Cada base de dados e sua descrição completa é apresentada a seguir:
+A Tabela \ref{tab-datasets} descreve os oito \textit{datasets} utilizados nos experimentos deste capítulo. Através das características apresentadas, sabendo que cada \textit{dataset} contém uma quantidade regular de respotas, observamos a grande diversidade de quantidade de respostas por questão. Com questões de 30 até mais de 1800 respostas. No total, esse \textit{corpora} apresenta um total de 337 questões e 61.268 respostas. Cada base de dados e sua descrição completa é apresentada a seguir:
 
 \subsection{Base de Dados do Concurso ASAP-SAS no \textit{Kaggle} \textit{(Inglês)}}
 \label{kaggle-db}
@@ -56,7 +56,7 @@ Neste contexto, a competição apresentou 10 questões multidiciplinares, de ci�
 \subsection{Base de dados \textit{PTASAG} no \textit{Kaggle} \textit{(Português)}}
 \label{ptasag-db}
 
-A \textit{PTASAG - Portuguese Automatic Short Answer Grading Data} é uma base de dados brasileira apresentada por \cite{galhardi2018} e disponibilizada na plataforma \textit{Kaggle}. Foi coletada pela Universidade Federal do Pampa - Unipampa em conjunto com cinco professores de biologia do Ensino Fundamental. Foram criadas 15 atividades com base no sistema Auto-Avaliador CIR. Em biologia, os tópicos abordados foram sobre o corpo humano. Cada questão acompanha uma lista de conceitos, as respostas avaliadas e as respostas candidatas criadas pelos professores como referência. Foram criadas entre duas e quatro respostas candidatas contendo entre três e seis palavras-chave.
+A \textit{PTASAG - Portuguese Automatic Short Answer Grading Data} é uma base de dados brasileira apresentada por \cite{galhardi2018b} e disponibilizada na plataforma \textit{Kaggle}. Foi coletada pela Universidade Federal do Pampa - Unipampa em conjunto com cinco professores de biologia do Ensino Fundamental. Foram criadas 15 atividades com base no sistema Auto-Avaliador CIR. Em biologia, os tópicos abordados foram sobre o corpo humano. Cada questão acompanha uma lista de conceitos, as respostas avaliadas e as respostas candidatas criadas pelos professores como referência. Foram criadas entre duas e quatro respostas candidatas contendo entre três e seis palavras-chave.
 
 As atividades foram aplicadas ao Ensino Fundamental para 326 estudantes de 12 a 14 anos do 8\textsuperscript{\b{o}} e 9\textsuperscript{\b{o}} ano. Somados a estes, também foram aplicados a 333 alunos do Ensino Médio de 14 a 17 anos. As respostas foram avalidas por 14 estudantes de uma turma do último ano, considerando uma escala de notas de 0 a 3:
 
@@ -69,10 +69,10 @@ As atividades foram aplicadas ao Ensino Fundamental para 326 estudantes de 12 a 
 
 No total, participaram 659 estudantes com um total de 7473 respostas. Cada uma das 15 questões apresenta entre 348 e 615 respostas. Apenas 4 questões foram avalidas por mais de um avaliador para verificar a concordância entre avaliadores. O coefficiente \textit{Kappa} observado foi de, em média, 53.25\%.
 
-\subsection{Base de Dados \textit{Beetle II} do \textit{SEMEVAL'2013 : Task 7} \textit{(Inglês)}}
+\subsection{Base de Dados \textit{Beetle} do \textit{SEMEVAL'2013 : Task 7} \textit{(Inglês)}}
 \label{beetle-db}
 
-\textit{Beetle} \cite{dzikovska2012} é um dos \textit{datasets} utilizados durante o \textit{International Workshop on Semantic Evaluation - SEMEVAL'2013}. O \textit{SEMEVAL} seleciona anualmente uma série de desafios em análise semântica e apresenta no formato de competição. O \textit{corpus Beetle} foi selecionado para a \textit{Task 7: The Joint Student Response Analysis and 8th Recognizing Textual Entailment Challenge}. Portanto, a competição consistia em duas propostas. A primeira é a análise e avaliação das respostas obtidas e a segunda o reconhecimento da relação textual entre as respostas coletadas e a expectativa de resposta do professor.
+\textit{Beetle} \cite{dzikovska2013} é um dos \textit{datasets} utilizados durante o \textit{International Workshop on Semantic Evaluation - SEMEVAL'2013}. O \textit{SEMEVAL} seleciona anualmente uma série de desafios em análise semântica e apresenta no formato de competição. O \textit{corpus Beetle} foi selecionado para a \textit{Task 7: The Joint Student Response Analysis and 8th Recognizing Textual Entailment Challenge}. Portanto, a competição consistia em duas propostas. A primeira é a análise e avaliação das respostas obtidas e a segunda o reconhecimento da relação textual entre as respostas coletadas e a expectativa de resposta do professor.
 
 Esse \textit{dataset} consiste em uma coleção de interações entre estudantes e o sistema \textit{Beetle II}. Beetle II é um Sistema Tutor Inteligente (STI) para aprendizado de conhecimentos básicos em Eletricidade e Eletrônica do Ensino Médio. Os alunos foram acompanhados durante 3 a 5 horas para preparar materiais, construir e observar circuitos no simulador e interagir com o STI. Esse sistema faz questões aos alunos, avalia as respostas e envia \textit{feedbacks} via \textit{chat}. Na construção deste \textit{dataset} foram acompanhados 73 estudantes voluntários da \textit{Southeastern University} dos Estados Unidos.
 
@@ -81,9 +81,9 @@ Foram aplicadas questões categorizadas em dois tipos factuais e explicativas. A
 \subsection{Base de Dados \textit{SciEntsBank} do \textit{SEMEVAL'2013 : Task 7} \textit{(Inglês)}}
 \label{scientsbank-db}
 
-O \textit{corpus Science Entailments Bank (SciEntsBank)} \cite{dzikovska2012} é um dos \textit{datasets} utilizados durante o \textit{International Workshop on Semantic Evaluation - SEMEVAL'2013}, com foco na avaliação de sistemas conforme a sua capacidade de análise e exploração semântica da linguagem. É uma base de dados formadas pela avaliação de questões da disciplina de Ciências. Na avaliação 16 assuntos distintos são abordados entre ciências físicas, ciências da terra, ciências da vida, ciências do espaço, pensamento científico e tecnologia. 
+O \textit{corpus Science Entailments Bank (SciEntsBank)} \cite{dzikovska2013} é um dos \textit{datasets} utilizados durante o \textit{International Workshop on Semantic Evaluation - SEMEVAL'2013}, com foco na avaliação de sistemas conforme a sua capacidade de análise e exploração semântica da linguagem. É uma base de dados formadas pela avaliação de questões da disciplina de Ciências. Na avaliação 16 assuntos distintos são abordados entre ciências físicas, ciências da terra, ciências da vida, ciências do espaço, pensamento científico e tecnologia. 
 
-As questões são parte da \textit{Berkeley Lawrence Hall of Science Assessing Science Knowledge (ASK)} com avaliações padronizadas de acordo com o material de apoio \textit{Full Option Science System (FOSS)}. Participaram estudantes dos Estados Unidos de terceira a sexta série, coletando em torno de 16 mil respostas. Porém, dentre as questões de preenchimento, objetivas e discursivas, foram utilizadas apenas as discursivas, que requisitavam explicações dos alunos segundo o tema. As respostas foram graduadas em cinco notas: \textit{correct}, \textit{partially-correct-incomplete}, \textit{contradictory}, \textit{irrelevant} e \textit{non-domain}. Portanto, o \textit{SciEntsBank} consiste em um conjunto com 143 questões selecionadas e 5251 respostas. No processo de avaliação foi observado o coeficiente \textit{Kappa} com 72.8\% de concordância.
+As questões são parte da \textit{Berkeley Lawrence Hall of Science Assessing Science Knowledge (ASK)} com avaliações padronizadas de acordo com o material de apoio \textit{Full Option Science System (FOSS)}. Participaram estudantes dos Estados Unidos de terceira a sexta série, coletando em torno de 16 mil respostas. Porém, dentre as questões de preenchimento, objetivas e discursivas, foram utilizadas apenas as discursivas, que requisitavam explicações dos alunos segundo o tema. As respostas foram graaduadas em cinco notas ordinais: \textit{correct}, \textit{partially-correct-incomplete}, \textit{contradictory}, \textit{irrelevant} e \textit{non-domain}. Portanto, o \textit{SciEntsBank} consiste em um conjunto com 143 questões selecionadas e 5251 respostas. No processo de avaliação foi observado o coeficiente \textit{Kappa} com 72.8\% de concordância.
 
 \subsection{Base de Dados do Projeto Feira Literária das Ciências Exatas \textit{(Português)}}
 \label{findes-db}
@@ -97,14 +97,14 @@ Conforme o livro, os professores formularam 10 atividades e ministraram para 70 
 
 A base de dados da \textit{UK Open University} é um conjunto de questões coletadas na disciplina de introdução à ciências, denominada \textit{S103 - Discovering Science} \cite{jordan2012}. O foco do conjunto de atividades são abordagens em questões factuais bem concisas, não excedendo 20 palavras. Os alunos receberam as atividades através do ambiente da \textit{Intelligent Assessment Technologies (IAT)}, o \textit{FreeText Author}. O \textit{FreeText Author} foi utilizado como um método de \textit{CAA} de modo interativo e com resultado automático analizando a resposta do aluno segundo os padrões de resposta conhecidos. O sistema permitiu uma sequência de envios e apresentava comentários da resposta como \textit{feedback} para os alunos. Dependendo da complexidade da resposta, o tempo de retorno dos resultado varia muito entre alguns poucos minutos até mais do que um dia.
 
-Dentre as 20 questões, esse \textit{dataset} apresenta diferentes quantidades de respostas entre 511 e 1897. A avaliação é gradual e binária, definindo cada resposta como correta ou incorreta. Não existe notas intermediárias, representando diretamente se o aluno atendeu ou não os requisitos da resposta.
+Dentre as 20 questões, esse \textit{dataset} apresenta diferentes quantidades de respostas entre 511 e 1897. A avaliação é discreta e binária, definindo cada resposta como correta ou incorreta. Não existe notas intermediárias, representando diretamente se o aluno atendeu ou não os requisitos da resposta.
 
 \subsection{Base de dados da \textit{University of North Texas} \textit{(Inglês)}}
 \label{ntexasunv-db}
 
 O \textit{dataset} da \textit{University of North Texas - UNT} \cite{mohler2011}, conhecido como \textit{Texas dataset}, é uma coleção de questões discursivas extraída no curso de Ciência da Computação. Composta por 80 atividades únicas, esse conjunto é composto por dez listas de exercícios com até sete questões e dois testes com dez questões cada. Foram aplicados em um ambiente virtual de aprendizagem durante a disciplina de Estrutura de Dados para 31 alunos. No total o \textit{dataset} é composto por 2273 respostas de alunos dentre as 80 atividades.
 
-A avaliação foi feita com cinco notas gradativas, de 5 equivalente a resposta perfeita até 0 completamente incorreta. Foram avaliadas por dois avaliadores independentes, estudantes do curso de Ciência da Computação. Para os autores, o modelo seguido pelo sistema é a resultante da média ente os avaliadores, em intervalo contínuo. Dentre as notas atribuídas, 57,7\% das respostas receberam a mesma nota. Enquanto isso, um nível de diferença entre as notas representou 22,9\% do total de respostas. Foi constatado também que, dentre as diferenças na avaliação, o avaliador 1 atribuia maiores notas 76\% das vezes.
+A avaliação foi feita com cinco notas discretas, de 5 equivalente a resposta perfeita até 0 completamente incorreta. Foram avaliadas por dois avaliadores independentes, estudantes do curso de Ciência da Computação. Para os autores, o modelo seguido pelo sistema deve ser a resultante da média ente os avaliadores, em intervalo contínuo. Dentre as notas atribuídas, 57,7\% das respostas receberam a mesma nota. Enquanto isso, um nível de diferença entre as notas representou 22,9\% do total de respostas. Foi constatado também que, dentre as diferenças na avaliação, o avaliador 1 atribuia maiores notas 76\% das vezes.
 
 \subsection{Base de Dados do Vestibular UFES \textit{(Português)}}
 \label{vest-ufes-db}
@@ -124,15 +124,78 @@ O diferencial dessa base de dados é a mudança de características nas resposta
 
 \section{Experimentos} % de Classificação}
 
-\begin{table}[h]
+\begin{table}
 \begin{center}
-\begin{tabular}{r |c c c c} 
+\begin{tabular}{l r r r r r r r}
+    \hline
+    \multicolumn{8}{l}{\textbf{Beetle} (5 Categorias)} \\ \hline
+     & \multicolumn{7}{c}{M{\'e}tricas} \\ \cline{2-8}
 
+    \input{tabelas/tab-Beetle75.tex}
+
+    \hline
+    \hline
 \end{tabular}
 \end{center}
-\caption{Bases de dados e suas principais caracter{\'i}sticas.}
-\label{tb-datasets}
+\caption{}
+\label{tab-beetle75}
+\end{table}
+
+\begin{table}
+\begin{center}
+\begin{tabular}{l r r r r r r r}
+    \hline
+    \multicolumn{8}{l}{\textbf{SciEntsBank} (5 Categorias)} \\ \hline
+     & \multicolumn{7}{c}{M{\'e}tricas} \\ \cline{2-8}
+
+    \input{tabelas/tab-SciEntsBank75.tex}
+
+    \hline
+    \hline
+\end{tabular}
+\end{center}
+\caption{}
+\label{tab-scientsbank75}
 \end{table}
 
 
+\begin{table}
+\begin{center}
+\begin{tabular}{p{5cm} r r r }
+    \hline
+    \multicolumn{4}{l}{\textbf{North Texas University} (Notas 0 - 5)} \\ \hline
+     & \multicolumn{3}{c}{M{\'e}tricas} \\
+
+    \input{tabelas/tab-NTU75.tex}
+
+    \hline
+    \hline
+\end{tabular}
+\end{center}
+\caption{}
+\label{tab-NTU75}
+\end{table}
+
+
+\begin{table}
+\begin{center}
+\begin{tabular}{l r r r r r r r}
+    \hline
+    \multicolumn{8}{l}{\textbf{Projeto Feira Liter{\'a}ria (Notas 0 - 3)}} \\ \hline
+     & \multicolumn{7}{c}{M{\'e}tricas} \\ \cline{2-8}
+
+    \input{tabelas/tab-findes75.tex}
+
+    \hline
+    \hline
+\end{tabular}
+\end{center}
+\caption{}
+\label{tab-findes75}
+\end{table}
+
+
+
 \section{Discussão de Resultados}
+
+É importante destacar que, apesar de serem comuns os modelos rígidos, direcionados a domínios específicos ou dependentes de regras, o modelo proposto neste trabalho foi o mesmo aplicado para todas as questões. Assim, são passadas ao sistema apenas alguns poucos parâmetros sobre as questões, como sua linguagem. Os parâmetros do modelo estão todos descritos em ANEXO.

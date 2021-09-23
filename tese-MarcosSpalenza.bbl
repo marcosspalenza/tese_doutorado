@@ -5,19 +5,64 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
+\bibitem[Almeida-J{\'u}nior, Spalenza e Oliveira 2017]{almeida-junior2017}
+\abntrefinfo{Almeida-J{\'u}nior, Spalenza e Oliveira}{ALMEIDA-J{\'U}NIOR;
+  SPALENZA; OLIVEIRA}{2017}
+{ALMEIDA-J{\'U}NIOR, C. R.~C.; SPALENZA, M.~A.; OLIVEIRA, E. de. {Proposta de
+  um Sistema de Avalia{\c{c}}{\~a}o Autom{\'a}tica de Reda{\c{c}}{\~o}es do
+  ENEM Utilizando T{\'e}cnicas de Aprendizagem de M{\'a}quina e Processamento
+  de Linguagem Natural}. In:  \emph{Computer on the Beach}. Florian{\'o}polis
+  (SC), Brasil: Sociedade Brasileira de Computa{\c c}{\~ a}o, 2017. v.~8, p.
+  474--483.}
+
 \bibitem[Arter e Chappuis 2006]{arter2006}
 \abntrefinfo{Arter e Chappuis}{ARTER; CHAPPUIS}{2006}
-{ARTER, J.~A.; CHAPPUIS, J. \emph{Creating \& Recognizing Quality Rubrics}. Nee
-  York, USA: Pearson Education, 2006.  (Assessment Training Institute, Inc
-  Series).}
+{ARTER, J.~A.; CHAPPUIS, J. \emph{{Creating \& Recognizing Quality Rubrics}}.
+  1st. ed. New York (NY), USA: Pearson Education, 2006.  (Assessment Training
+  Institute, Inc Series).}
+
+\bibitem[Artstein e Poesio 2008]{artstein2008}
+\abntrefinfo{Artstein e Poesio}{ARTSTEIN; POESIO}{2008}
+{ARTSTEIN, R.; POESIO, M. {Inter-Coder Agreement for Computational
+  Linguistics}.
+\emph{Computational Linguistics}, MIT Press, v.~34, n.~4, p. 555--596, 2008.}
+
+\bibitem[Azad et al. 2020]{azad2020}
+\abntrefinfo{Azad et al.}{AZAD et al.}{2020}
+{AZAD, S. et al. {Strategies for Deploying Unreliable AI Graders in
+  High-Transparency High-Stakes Exams}. In:  \emph{Proceedings of the 21st
+  International Conference on Artificial Intelligence in Education}. Ifrane,
+  Morocco: Springer International Publishing, 2020.  (AIED' 2020, v.~21), p.
+  16--28.}
+
+\bibitem[Baeza-Yates e Ribeiro-Neto 2011]{baeza2011}
+\abntrefinfo{Baeza-Yates e Ribeiro-Neto}{BAEZA-YATES; RIBEIRO-NETO}{2011}
+{BAEZA-YATES, R.; RIBEIRO-NETO, B. \emph{Modern Information Retrieval: The
+  Concepts and Technology behind Search}. 2nd. ed. Boston (MA), USA:
+  Addison-Wesley Publishing Company, 2011.}
 
 \bibitem[Bailey e Meurers 2008]{bailey2008}
 \abntrefinfo{Bailey e Meurers}{BAILEY; MEURERS}{2008}
 {BAILEY, S.; MEURERS, D. {Diagnosing Meaning Errors in Short Answers to Reading
-  Comprehension Questions}. In:  \emph{Proceedings of the 3rd Workshop on
-  Innovative Use of NLP for Building Educational Applications, held at ACL
-  2008}. Columbus, Ohio, USA: Association for Computational Linguistics, 2008.
-  p. 107--115.}
+  Comprehension Questions}. In:  \emph{Proceedings of the Third Workshop on
+  Innovative Use of NLP for Building Educational Applications}. Columbus (OH),
+  USA: Association for Computational Linguistics, 2008.  (EANL '08, v.~3), p.
+  107--115.}
+
+\bibitem[Banjade et al. 2016]{banjade2016}
+\abntrefinfo{Banjade et al.}{BANJADE et al.}{2016}
+{BANJADE, R. et al. {Evaluation Dataset (DT-Grade) and Word Weighting Approach
+  Towards Constructed Short Answers Assessment in Tutorial Dialogue Context}.
+  In:  \emph{Proceedings of the 11th Workshop on Innovative Use of NLP for
+  Building Educational Applications}. San Diego (CA), USA: Association for
+  Computational Linguistics, 2016. v.~11, p. 182--187.}
+
+\bibitem[Banjade, Rus e Niraula 2015]{banjade2015}
+\abntrefinfo{Banjade, Rus e Niraula}{BANJADE; RUS; NIRAULA}{2015}
+{BANJADE, R.; RUS, V.; NIRAULA, N.~B. {Using an Implicit Method for Coreference
+  Resolution and Ellipsis Handling in Automatic Student Answer Assessment}. In:
+   \emph{The Twenty-Eighth International Flairs Conference}. Hollywood (FL),
+  USA: AAAI Press, 2015. v.~28, p. 150--155.}
 
 \bibitem[Barreira, Boavida e Ara{\'u}jo 2006]{barreira2006}
 \abntrefinfo{Barreira, Boavida e Ara{\'u}jo}{BARREIRA; BOAVIDA;
@@ -27,119 +72,422 @@
 \emph{Revista Portuguesa de Pedagogia}, Universidade de Coimbra, v.~40, n.~3,
   p. 95--133, 2006.}
 
+\bibitem[Basu, Jacobs e Vanderwende 2013]{basu2013}
+\abntrefinfo{Basu, Jacobs e Vanderwende}{BASU; JACOBS; VANDERWENDE}{2013}
+{BASU, S.; JACOBS, C.; VANDERWENDE, L. {Powergrading: A Clustering Approach to
+  Amplify Human Effort for Short Answer Grading}.
+\emph{Transactions of the Association for Computational Linguistics}, MIT
+  Press, v.~1, n.~1, p. 391--402, 2013.}
+
+\bibitem[Bezerra 2008]{bezerra2008}
+\abntrefinfo{Bezerra}{BEZERRA}{2008}
+{BEZERRA, M.~A. {Quest{\~o}es Discursivas para Avalia{\c c}{\~a}o Escolar}.
+\emph{Acta Scientiarum. Language and Culture}, Universidade Estadual de
+  Maring{\'a}, v.~30, n.~2, p. 149--157, 2008.}
+
+\bibitem[Biggs 1998]{biggs1998}
+\abntrefinfo{Biggs}{BIGGS}{1998}
+{BIGGS, J. {Assessment and Classroom Learning: A Role for Summative
+  Assessment?}
+\emph{Assessment in Education: Principles, Policy \& Practice}, Routledge,
+  v.~5, n.~1, p. 103--110, 1998.}
+
+\bibitem[Bilgin, Rowe e Clark 2017]{bilgin2017}
+\abntrefinfo{Bilgin, Rowe e Clark}{BILGIN; ROWE; CLARK}{2017}
+{BILGIN, A.~A.; ROWE, A.~D.; CLARK, L. {Academic Workload Implications of
+  Assessing Student Learning in Work-Integrated Learning}.
+\emph{Asia-Pacific Journal of Cooperative Education}, ERIC, v.~18, n.~2, p.
+  167--183, 2017.}
+
 \bibitem[Burrows, Gurevych e Stein 2015]{burrows2015}
 \abntrefinfo{Burrows, Gurevych e Stein}{BURROWS; GUREVYCH; STEIN}{2015}
 {BURROWS, S.; GUREVYCH, I.; STEIN, B. {The Eras and Trends of Automatic Short
   Answer Grading}.
-\emph{International Journal of Artificial Intelligence in Education}, v.~25,
-  n.~1, p. 60--117, 2015.}
+\emph{International Journal of Artificial Intelligence in Education}, Springer,
+  v.~25, n.~1, p. 60--117, 2015.}
 
 \bibitem[Butcher e Jordan 2010]{butcher2010}
 \abntrefinfo{Butcher e Jordan}{BUTCHER; JORDAN}{2010}
 {BUTCHER, P.~G.; JORDAN, S.~E. {A Comparison of Human and Computer Marking of
   Short Free-Text Student Responses}.
-\emph{Computers \& Education}, v.~55, n.~2, p. 489 -- 499, 2010.}
+\emph{Computers \& Education}, Elsevier, v.~55, n.~2, p. 489--499, 2010.}
+
+\bibitem[Cali{\'n}ski e J. 1974]{calinskiharabasz1974}
+\abntrefinfo{Cali{\'n}ski e J.}{CALI{\'N}SKI; J.}{1974}
+{CALI{\'N}SKI, T.; J., H. {A Dendrite Method for Cluster Analysis}.
+\emph{Communications in Statistics}, Taylor \& Francis, v.~3, n.~1, p. 1--27,
+  1974.}
+
+\bibitem[Camus e Filighera 2020]{camus2020}
+\abntrefinfo{Camus e Filighera}{CAMUS; FILIGHERA}{2020}
+{CAMUS, L.; FILIGHERA, A. {Investigating Transformers for Automatic Short
+  Answer Grading}. In:  \emph{Proceedings of the 21st International Conference
+  on Artificial Intelligence in Education}. Ifrane, Morocco: Springer
+  International Publishing, 2020.  (AIED' 2020, v.~21), p. 43--48.}
+
+\bibitem[Chakraborty, Roy e Choudhury 2017]{chakraborty2017}
+\abntrefinfo{Chakraborty, Roy e Choudhury}{CHAKRABORTY; ROY; CHOUDHURY}{2017}
+{CHAKRABORTY, U.~K.; ROY, S.; CHOUDHURY, S. {A Fuzzy Indiscernibility Based
+  Measure of Distance between Semantic Spaces Towards Automatic Evaluation of
+  Free Text Answers}.
+\emph{International Journal of Uncertainty, Fuzziness and Knowledge-Based
+  Systems}, World Scientific, v.~25, n.~6, p. 987--1004, 2017.}
+
+\bibitem[Condor 2020]{condor2020}
+\abntrefinfo{Condor}{CONDOR}{2020}
+{CONDOR, A. {Exploring Automatic Short Answer Grading as a Tool to Assist in
+  Human Rating}. In:  \emph{Proceedings of the 21st International Conference on
+  Artificial Intelligence in Education}. Ifrane, Morocco: Springer
+  International Publishing, 2020.  (AIED' 2020, v.~21), p. 74--79.}
+
+\bibitem[Davies e Bouldin 1979]{daviesbouldin1979}
+\abntrefinfo{Davies e Bouldin}{DAVIES; BOULDIN}{1979}
+{DAVIES, D.~L.; BOULDIN, D.~W. {A Cluster Separation Measure}.
+\emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, IEEE,
+  v.~1, n.~2, p. 224--227, 1979.}
+
+\bibitem[Ding et al. 2020]{ding2020}
+\abntrefinfo{Ding et al.}{DING et al.}{2020}
+{DING, Y. et al. {Don't Take {``}nswvtnvakgxpm{''} for an Answer - The
+  Surprising Vulnerability of Automatic Content Scoring Systems to Adversarial
+  Input}. In:  \emph{Proceedings of the 28th International Conference on
+  Computational Linguistics}. Barcelona, Spain (Virtual Event): International
+  Committee on Computational Linguistics, 2020. v.~28, p. 882--892.}
+
+\bibitem[Dzikovska et al. 2013]{dzikovska2013}
+\abntrefinfo{Dzikovska et al.}{DZIKOVSKA et al.}{2013}
+{DZIKOVSKA, M. et al. {{S}em{E}val-2013 Task 7: The Joint Student Response
+  Analysis and 8th Recognizing Textual Entailment Challenge}. In:  \emph{Second
+  Joint Conference on Lexical and Computational Semantics (*{SEM}), Volume 2:
+  Proceedings of the Seventh International Workshop on Semantic Evaluation
+  ({S}em{E}val 2013)}. Atlanta (GE), USA: Association for Computational
+  Linguistics, 2013. v.~7, p. 263--274.}
 
 \bibitem[Dzikovska, Nielsen e Brew 2012]{dzikovska2012}
 \abntrefinfo{Dzikovska, Nielsen e Brew}{DZIKOVSKA; NIELSEN; BREW}{2012}
 {DZIKOVSKA, M.~O.; NIELSEN, R.~D.; BREW, C. {Towards Effective Tutorial
-  Feedback for Explanation Questions: A Dataset and Baselines}. In:  . USA:
-  Association for Computational Linguistics, 2012.  (NAACL HLT '12), p.
-  200--210.}
+  Feedback for Explanation Questions: A Dataset and Baselines}. In:
+  \emph{Proceedings of the 2012 Conference of the North {A}merican Chapter of
+  the Association for Computational Linguistics: Human Language Technologies}.
+  Montr{\'e}al, Canada: Association for Computational Linguistics, 2012. v.~11,
+  p. 200--210.}
 
-\bibitem[Galhardi, Souza e Brancher 2020]{galhardi2018}
-\abntrefinfo{Galhardi, Souza e Brancher}{GALHARDI; SOUZA; BRANCHER}{2020}
-{GALHARDI, L.; SOUZA, R.; BRANCHER, J. {Automatic Grading of Portuguese Short
-  Answers Using a Machine Learning Approach}. In:  \emph{Anais Estendidos do
-  XVI Simp{\'o}sio Brasileiro de Sistemas de Informa{\c c}{\~a}o}. Porto
-  Alegre-RS, Brasil: SBC, 2020. p. 109--124.}
+\bibitem[Everitt et al. 2011]{everitt2011}
+\abntrefinfo{Everitt et al.}{EVERITT et al.}{2011}
+{EVERITT, B.~S. et al. \emph{{Cluster Analysis}}. 5th. ed. Chichester, United
+  Kingdom: John Wiley, 2011.}
 
-\bibitem[Gomaa e Fahmy 2012]{gomaa2012}
-\abntrefinfo{Gomaa e Fahmy}{GOMAA; FAHMY}{2012}
-{GOMAA, W.~H.; FAHMY, A.~A. {Short Answer Grading Using String Similarity And
-  Corpus-Based Similarity}.
-\emph{International Journal of Advanced Computer Science and
-  Applications(IJACSA)}, v.~3, n.~11, 2012.}
+\bibitem[Ferreira-Mello et al. 2019]{ferreiramello2019}
+\abntrefinfo{Ferreira-Mello et al.}{FERREIRA-MELLO et al.}{2019}
+{FERREIRA-MELLO, R. et al. {Text Mining in Education}.
+\emph{WIREs Data Mining and Knowledge Discovery}, Wiley Online Library, v.~9,
+  n.~6, p. e1332.1--e1332.49, 2019.}
+
+\bibitem[Filighera, Steuer e Rensing 2020]{filighera2020}
+\abntrefinfo{Filighera, Steuer e Rensing}{FILIGHERA; STEUER; RENSING}{2020}
+{FILIGHERA, A.; STEUER, T.; RENSING, C. {Fooling Automatic Short Answer Grading
+  Systems}. In:  \emph{Proceedings of the 21st International Conference on
+  Artificial Intelligence in Education}. Ifrane, Morocco: Springer
+  International Publishing, 2020.  (AIED' 2020, v.~21), p. 177--190.}
+
+\bibitem[Fowler et al. 2021]{fowler2021}
+\abntrefinfo{Fowler et al.}{FOWLER et al.}{2021}
+{FOWLER, M. et al. {Autograding {``}Explain in Plain English{''} Questions
+  Using NLP}. In:  \emph{Proceedings of the 52nd ACM Technical Symposium on
+  Computer Science Education}. New York (NY), USA (Virtual Event): Association
+  for Computing Machinery, 2021.  (SIGCSE'21, v.~52), p. 1163--1169.}
+
+\bibitem[Funayama et al. 2020]{funayama2020}
+\abntrefinfo{Funayama et al.}{FUNAYAMA et al.}{2020}
+{FUNAYAMA, H. et al. Preventing critical scoring errors in short answer scoring
+  with confidence estimation. In:  \emph{Proceedings of the 58th Annual Meeting
+  of the Association for Computational Linguistics: Student Research Workshop}.
+  Online Event: Association for Computational Linguistics, 2020. v.~58, p.
+  237--243.}
+
+\bibitem[Galhardi e Brancher 2018]{galhardi2018a}
+\abntrefinfo{Galhardi e Brancher}{GALHARDI; BRANCHER}{2018}
+{GALHARDI, L.~B.; BRANCHER, J.~D. {Machine Learning Approach for Automatic
+  Short Answer Grading: A Systematic Review}. In:  \emph{Proceedings of the
+  16th Ibero-American Conference on Artificial Intelligence - IBERAMIA 2018}.
+  Trujillo, Peru: Springer International Publishing, 2018.  (IBERAMIA 2018,
+  v.~16), p. 380--391.}
+
+\bibitem[Galhardi et al. 2018]{galhardi2018b}
+\abntrefinfo{Galhardi et al.}{GALHARDI et al.}{2018}
+{GALHARDI, L.~B. et al. {Exploring Distinct Features for Automatic Short Answer
+  Grading}. In:  \emph{Anais do XV Encontro Nacional de Intelig{\^e}ncia
+  Artificial e Computacional}. S{\~a}o Paulo (SP), Brazil: Sociedade Brasileira
+  de Computa{\c c}{\~ a}o, 2018.  (XV ENIAC, v.~15), p. 1--12.}
+
+\bibitem[Ghavidel, Zouaq e Desmarais 2020]{ghavidel2020}
+\abntrefinfo{Ghavidel, Zouaq e Desmarais}{GHAVIDEL; ZOUAQ; DESMARAIS}{2020}
+{GHAVIDEL, H.; ZOUAQ, A.; DESMARAIS, M. {Using BERT and XLNET for the Automatic
+  Short Answer Grading Task}. In:  \emph{Proceedings of the 12th International
+  Conference on Computer Supported Education (CSEDU)}. Prague, Czechia (Virtual
+  Event): SciTePress, 2020.  (CSEDU 2020, v.~12), p. 58--67.}
+
+\bibitem[Goldberg e Hirst 2017]{goldberg2017}
+\abntrefinfo{Goldberg e Hirst}{GOLDBERG; HIRST}{2017}
+{GOLDBERG, Y.; HIRST, G. \emph{{Neural Network Methods in Natural Language
+  Processing}}. 1st. ed. San Rafael (CA), USA: Morgan \& Claypool Publishers,
+  2017.}
+
+\bibitem[Gunther e Lopes-J{\'u}nior 2012]{gunther2012}
+\abntrefinfo{Gunther e Lopes-J{\'u}nior}{GUNTHER; LOPES-J{\'U}NIOR}{2012}
+{GUNTHER, H.; LOPES-J{\'U}NIOR, J. {Perguntas Abertas Versus Perguntas
+  Fechadas: Uma Compara{\c c}{\~a}o Emp{\'\i}rica}.
+\emph{Psicologia: Teoria e Pesquisa}, Universidade de Bras{\'i}lia, v.~6, n.~2,
+  p. 203--213, 2012.}
+
+\bibitem[Han, Pei e Kamber 2011]{han2011}
+\abntrefinfo{Han, Pei e Kamber}{HAN; PEI; KAMBER}{2011}
+{HAN, J.; PEI, J.; KAMBER, M. \emph{{Data Mining: Concepts and Techniques}}.
+  3rd. ed. Waltham (MA), USA: Elsevier, 2011.}
+
+\bibitem[Heilman e Madnani 2015]{heilman2015}
+\abntrefinfo{Heilman e Madnani}{HEILMAN; MADNANI}{2015}
+{HEILMAN, M.; MADNANI, N. {The Impact of Training Data on Automated Short
+  Answer Scoring Performance}. In:  \emph{Proceedings of the Tenth Workshop on
+  Innovative Use of {NLP} for Building Educational Applications}. Denver (CO),
+  USA: Association for Computational Linguistics, 2015. v.~10, p. 81--85.}
+
+\bibitem[Higgins et al. 2014]{higgins2014}
+\abntrefinfo{Higgins et al.}{HIGGINS et al.}{2014}
+{HIGGINS, D. et al. \emph{{Is Getting the Right Answer Just About Choosing the
+  Right Words? The Role of Syntactically-Informed Features in Short Answer
+  Scoring}}.
+Princeton (NJ), USA, 2014.}
+
+\bibitem[Horbach e Pinkal 2018]{horbach2018}
+\abntrefinfo{Horbach e Pinkal}{HORBACH; PINKAL}{2018}
+{HORBACH, A.; PINKAL, M. Semi-supervised clustering for short answer scoring.
+  In:  \emph{Proceedings of the Eleventh International Conference on Language
+  Resources and Evaluation ({LREC} 2018)}. Miyazaki, Japan: European Language
+  Resources Association (ELRA), 2018.  (LREC 2018, v.~11), p. 4065--4071.}
+
+\bibitem[Jimenez, Becerra e Gelbukh 2013]{jimenez2013}
+\abntrefinfo{Jimenez, Becerra e Gelbukh}{JIMENEZ; BECERRA; GELBUKH}{2013}
+{JIMENEZ, S.; BECERRA, C.; GELBUKH, A. {SOFTCARDINALITY: Hierarchical Text
+  Overlap for Student Response Analysis}. In:  \emph{Second Joint Conference on
+  Lexical and Computational Semantics (* SEM), Volume 2: Proceedings of the
+  Seventh International Workshop on Semantic Evaluation (SemEval 2013)}.
+  Atlanta (GA), USA: Association for Computational Linguistics, 2013. v.~7, p.
+  280--284.}
+
+\bibitem[Johnstone, Ashbaugh e Warfield 2002]{johnstone2002}
+\abntrefinfo{Johnstone, Ashbaugh e Warfield}{JOHNSTONE; ASHBAUGH;
+  WARFIELD}{2002}
+{JOHNSTONE, K.~M.; ASHBAUGH, H.; WARFIELD, T.~D. {Effects of Repeated Practice
+  and Contextual-Writing Experiences on College Students' Writing Skills}.
+\emph{Journal of Educational Psychology}, American Psychological Association,
+  v.~94, n.~2, p. 305--315, 2002.}
+
+\bibitem[Jordan 2012]{jordan2012}
+\abntrefinfo{Jordan}{JORDAN}{2012}
+{JORDAN, S. {Student Engagement with Assessment and Feedback: Some Lessons from
+  Short-Answer Free-Text e-Assessment Questions}.
+\emph{Computers \& Education}, Elsevier, v.~58, n.~2, p. 818--834, 2012.}
+
+\bibitem[Jurafsky e Martin 2009]{jurafsky2009}
+\abntrefinfo{Jurafsky e Martin}{JURAFSKY; MARTIN}{2009}
+{JURAFSKY, D.; MARTIN, J.~H. \emph{{Speech and Language Processing}}. 2nd. ed.
+  Upper Saddle River (NJ), USA: Prentice-Hall, Inc., 2009.}
+
+\bibitem[Kar, Chatterjee e Mandal 2017]{kar2017}
+\abntrefinfo{Kar, Chatterjee e Mandal}{KAR; CHATTERJEE; MANDAL}{2017}
+{KAR, S.~P.; CHATTERJEE, R.; MANDAL, J.~K. A novel automated assessment
+  technique in e-learning using short answer type questions. In:
+  \emph{Proceedings of the 1st International Conference on Computational
+  Intelligence, Communications, and Business Analytics}. Kolkata, India:
+  Springer Singapore, 2017.  (CICBA 2017, v.~1), p. 141--149.}
+
+\bibitem[Krithika e Narayanan 2015]{krithika2015}
+\abntrefinfo{Krithika e Narayanan}{KRITHIKA; NARAYANAN}{2015}
+{KRITHIKA, R.; NARAYANAN, J. Learning to grade short answers using machine
+  learning techniques. In:  \emph{Proceedings of the Third International
+  Symposium on Women in Computing and Informatics}. Kochi, India: Association
+  for Computing Machinery, 2015.  (WCI '15, v.~3), p. 262--271.}
+
+\bibitem[Kumar, Chakrabarti e Roy 2017]{kumar2017}
+\abntrefinfo{Kumar, Chakrabarti e Roy}{KUMAR; CHAKRABARTI; ROY}{2017}
+{KUMAR, S.; CHAKRABARTI, S.; ROY, S. {Earth Mover's Distance Pooling over
+  Siamese LSTMs for Automatic Short Answer Grading}. In:  \emph{Proceedings of
+  the 26th International Joint Conference on Artificial Intelligence}.
+  Melbourne, Australia: AAAI Press, 2017.  (IJCAI'17, v.~26), p. 2046--2052.}
+
+\bibitem[Kumar et al. 2019]{kumar2019}
+\abntrefinfo{Kumar et al.}{KUMAR et al.}{2019}
+{KUMAR, Y. et al. {Get it Scored Using AutoSAS - An Automated System for
+  Scoring Short Answers}. In:  \emph{{Proceedings of the AAAI Conference on
+  Artificial Intelligence}}. Honolulu (HI), USA: AAAI Press, 2019. v.~33, p.
+  9662--9669.}
+
+\bibitem[Landauer, Foltz e Laham 1998]{landauer1998}
+\abntrefinfo{Landauer, Foltz e Laham}{LANDAUER; FOLTZ; LAHAM}{1998}
+{LANDAUER, T.~K.; FOLTZ, P.~W.; LAHAM, D. {An Introduction to Latent Semantic
+  Analysis}.
+\emph{Discourse Processes}, Routledge, v.~25, n.~2, p. 259--284, 1998.}
 
 \bibitem[Leffa 2003]{leffa2003}
 \abntrefinfo{Leffa}{LEFFA}{2003}
 {LEFFA, V.~J. {An{\'a}lise Autom{\'a}tica da Resposta do Aluno em Ambiente
   Virtual}.
-\emph{{Revista Brasileira de Lingu{\'i}stica Aplicada}}, SciELO, v.~3, p. 25 --
-  40, 00 2003.}
+\emph{Revista Brasileira de Lingu{\'i}stica Aplicada}, SciELO, v.~3, n.~2, p.
+  25--40, 2003.}
+
+\bibitem[Lun et al. 2020]{lun2020}
+\abntrefinfo{Lun et al.}{LUN et al.}{2020}
+{LUN, J. et al. {Multiple Data Augmentation Strategies for Improving
+  Performance on Automatic Short Answer Scoring}. In:  \emph{Proceedings of the
+  AAAI Conference on Artificial Intelligence}. New York (NY), USA: AAAI Press,
+  2020. v.~34, n.~09, p. 13389--13396.}
+
+\bibitem[Madero 2019]{madero2019}
+\abntrefinfo{Madero}{MADERO}{2019}
+{MADERO, C. {Secondary Teacher’s Dissatisfaction with the Teaching Profession
+  in Latin America: The Case of Brazil, Chile, and Mexico}.
+\emph{Teachers and Teaching}, Routledge, v.~25, n.~3, p. 358--378, 2019.}
+
+\bibitem[Maimon e Rokach 2005]{maimon2005}
+\abntrefinfo{Maimon e Rokach}{MAIMON; ROKACH}{2005}
+{MAIMON, O.; ROKACH, L. \emph{{Data Mining and Knowledge Discovery Handbook}}.
+  1st. ed. New York (NY), USA: Springer, 2005.}
+
+\bibitem[Manning e Schutze 1999]{manning1999}
+\abntrefinfo{Manning e Schutze}{MANNING; SCHUTZE}{1999}
+{MANNING, C.; SCHUTZE, H. \emph{{Foundations of Statistical Natural Language
+  Processing}}. 1st. ed. Cambridge (MA), USA: MIT Press, 1999.}
+
+\bibitem[Mao et al. 2018]{mao2018}
+\abntrefinfo{Mao et al.}{MAO et al.}{2018}
+{MAO, L. et al. {Validation of Automated Scoring for a Formative Assessment
+  that Employs Scientific Argumentation}.
+\emph{Educational Assessment}, Routledge, v.~23, n.~2, p. 121--138, 2018.}
+
+\bibitem[Maquin{\'e} 2020]{maquine2020}
+\abntrefinfo{Maquin{\'e}}{MAQUIN{\'E}}{2020}
+{MAQUIN{\'E}, G. {Recursos para Avalia{\c c}{\~ a}o da Aprendizagem: Estudo
+  Comparativo entre Ambientes Virtuais de Aprendizagem}. In:  \emph{Anais do
+  XXVI Workshop de Inform{\'a}tica na Escola}. Natal (RN) (Online), Brasil:
+  Sociedade Brasileira de Computa{\c c}{\~ a}o, 2020. v.~26, p. 299--308.}
+
+\bibitem[Marneffe et al. 2021]{marneffe2021}
+\abntrefinfo{Marneffe et al.}{MARNEFFE et al.}{2021}
+{MARNEFFE, M.-C. et al. {Universal Dependencies}.
+\emph{Computational Linguistics}, MIT Press, v.~47, n.~2, p. 255--308, 2021.}
+
+\bibitem[Marvaniya et al. 2018]{marvaniya2018}
+\abntrefinfo{Marvaniya et al.}{MARVANIYA et al.}{2018}
+{MARVANIYA, S. et al. {Creating Scoring Rubric from Representative Student
+  Answers for Improved Short Answer Grading}. In:  \emph{Proceedings of the
+  27th ACM International Conference on Information and Knowledge Management}.
+  Torino, Italy: Association for Computing Machinery, 2018.  (CIKM '18, v.~27),
+  p. 993--1002.}
+
+\bibitem[Menini et al. 2019]{menini2019}
+\abntrefinfo{Menini et al.}{MENINI et al.}{2019}
+{MENINI, S. et al. {Automated Short Answer Grading: A Simple Solution for a
+  Difficult Task}. In:  \emph{Proceedings of the Sixth Italian Conference on
+  Computational Linguistics}. Bari, Italy: CEUR-WS, 2019.  (CLiC-it, v.~6), p.
+  48.1--48.7.}
+
+\bibitem[Ming 2005]{ming2005}
+\abntrefinfo{Ming}{MING}{2005}
+{MING, L.~S. {Reduction of Teacher Workload in a Formative Assessment
+  Environment through use of Online Technology}. In:  \emph{6th International
+  Conference on Information Technology Based Higher Education and Training}.
+  Santo Domingo, Dominican Republic: IEEE, 2005. v.~6, p. 18--21.}
+
+\bibitem[Mizumoto et al. 2019]{mizumoto2019}
+\abntrefinfo{Mizumoto et al.}{MIZUMOTO et al.}{2019}
+{MIZUMOTO, T. et al. {Analytic Score Prediction and Justification
+  Identification in Automated Short Answer Scoring}. In:  \emph{Proceedings of
+  the Fourteenth Workshop on Innovative Use of NLP for Building Educational
+  Applications}. Florence, Italy: Association for Computational Linguistics,
+  2019. v.~14, p. 316--325.}
 
 \bibitem[Mohler, Bunescu e Mihalcea 2011]{mohler2011}
 \abntrefinfo{Mohler, Bunescu e Mihalcea}{MOHLER; BUNESCU; MIHALCEA}{2011}
 {MOHLER, M.; BUNESCU, R.; MIHALCEA, R. {Learning to Grade Short Answer
-  Questions Using Semantic Similarity Measures and Dependency Graph
+  Questions using Semantic Similarity Measures and Dependency Graph
   Alignments}. In:  \emph{Proceedings of the 49th Annual Meeting of the
-  Association for Computational Linguistics: Human Language Technologies -
-  Volume 1}. Stroudsburg, PA, USA: Association for Computational Linguistics,
-  2011.  (HLT '11), p. 752--762.}
+  Association for Computational Linguistics: Human Language Technologies}.
+  Portland (OR), USA: Association for Computational Linguistics, 2011. v.~10,
+  p. 752--762.}
+
+\bibitem[Mohler e Mihalcea 2009]{mohler2009}
+\abntrefinfo{Mohler e Mihalcea}{MOHLER; MIHALCEA}{2009}
+{MOHLER, M.; MIHALCEA, R. Text-to-text semantic similarity for automatic short
+  answer grading. In:  \emph{Proceedings of the 12th Conference of the
+  {E}uropean Chapter of the {ACL} ({EACL} 2009)}. Athens, Greece: Association
+  for Computational Linguistics, 2009. v.~12, p. 567--575.}
+
+\bibitem[Morettin e Bussab 2010]{morettin2010}
+\abntrefinfo{Morettin e Bussab}{MORETTIN; BUSSAB}{2010}
+{MORETTIN, P.~A.; BUSSAB, W.~O. \emph{{Estat{\'i}stica B{\'a}sica}}. 6. ed.
+  Pinheiros (SP), Brasil: Editora Saraiva, 2010.}
 
 \bibitem[Nascimento, Kauark e Moura 2020]{nascimento2020}
 \abntrefinfo{Nascimento, Kauark e Moura}{NASCIMENTO; KAUARK; MOURA}{2020}
 {NASCIMENTO, P.~V.; KAUARK, F.~S.; MOURA, P. R.~G. \emph{{Construindo uma
   Atividade Experimental Problematizada (AEP) e Avaliando Seu N{\'i}vel
   Cognitivo de Aprendizagem Atrav{\'e}s do Software {pNota} no Contexto do
-  Ensino Fundamental}}. Vila Velha-ES, Brasil: Instituto Federal do
-  Esp{\'i}rito Santo, 2020. v.~9.  (S{\'e}rie Guia Did{\'a}tico de
-  Ci{\^e}ncias/Qu{\'i}mica, v.~9).}
-
-\bibitem[Noorbehbahani e Kardan 2011]{noorbehbahani2011}
-\abntrefinfo{Noorbehbahani e Kardan}{NOORBEHBAHANI; KARDAN}{2011}
-{NOORBEHBAHANI, F.; KARDAN, A.~A. The automatic assessment of free text answers
-  using a modified bleu algorithm.
-\emph{Computers \& Education}, Elsevier Science Ltd., Oxford, UK, UK, v.~56,
-  n.~2, p. 337--345, feb 2011.}
+  Ensino Fundamental}}. 9. ed. Vila Velha (ES), Brasil: Instituto Federal do
+  Esp{\'i}rito Santo, 2020.  (S{\'e}rie Guia Did{\'a}tico de
+  Ci{\^e}ncias/Qu{\'i}mica).}
 
 \bibitem[Oliveira et al. 2014]{oliveira2014}
 \abntrefinfo{Oliveira et al.}{OLIVEIRA et al.}{2014}
 {OLIVEIRA, E. et al. {Combining Clustering and Classification Approaches for
-  Reducing the Effort of Automatic Tweets Classification}. In:  \emph{{KDIR}
-  2014 - Proceedings of the International Conference on Knowledge Discovery and
-  Information Retrieval}. Rome, Italy: ScitePress, 2014. v.~6, p. 465--472.}
-
-\bibitem[Oliveira et al. 2010]{oliveira2010}
-\abntrefinfo{Oliveira et al.}{OLIVEIRA et al.}{2010}
-{OLIVEIRA, E. et al. {Uma Tecnologia de Agrupamento de Respostas para Redu{\c
-  c}{\~a}o de Esfor{\c c}o de Corre{\c c}{\~a}o de Atividades em Sistema Online
-  de Apoio {\`a} Avalia{\c c}{\~a}o Formativa em Indexa{\c c}{\~a}o}. In:
-  \emph{XI Encontro Nacional de Pesquisa em Ci{\^e}ncia da Informa{\c
-  c}{\~a}o}. Rio de Janeiro, RJ, Brasil: Associa{\c c}{\~a}o Nacional de
-  Pesquisa e P{\'o}s-Gradua{\c c}{\~a}o em Ci{\^e}ncia da Informa{\c c}{\~a}o
-  (Ancib), 2010.}
+  Reducing the Effort of Automatic Tweets Classification}. In:
+  \emph{Proceedings of the International Conference on Knowledge Discovery and
+  Information Retrieval - KDIR, (IC3K 2014)}. Rome, Italy: SciTePress, 2014.
+  (KDIR '14, v.~6), p. 465--472.}
 
 \bibitem[Oliveira e Santos 2005]{oliveira2005}
 \abntrefinfo{Oliveira e Santos}{OLIVEIRA; SANTOS}{2005}
 {OLIVEIRA, K. L.~d.; SANTOS, A. A.~A. {Compreens{\~a}o em Leitura e Avalia{\c
   c}{\~a}o da Aprendizagem em Universit{\'a}rios}.
-\emph{{Psicologia: Reflex{\~a}o e Cr{\'i}tica}}, SciELO, v.~18, p. 118 -- 124,
-  04 2005.}
+\emph{Psicologia: Reflex{\~a}o e Cr{\'i}tica}, SciELO, v.~18, n.~1, p.
+  118--124, 2005.}
 
 \bibitem[Oliveira, Ciarelli e Oliveira 2013]{oliveira2013}
 \abntrefinfo{Oliveira, Ciarelli e Oliveira}{OLIVEIRA; CIARELLI; OLIVEIRA}{2013}
 {OLIVEIRA, M.~G.; CIARELLI, P.~M.; OLIVEIRA, E. {Recommendation of Programming
   Activities by Multi-label Classification for a Formative Assessment of
   Students}.
-\emph{Expert Syst. Appl.}, Pergamon Press, Inc., Tarrytown, NY, USA, v.~40,
-  n.~16, p. 6641--6651, nov 2013.}
+\emph{Expert Systems with Applications}, Elsevier, v.~40, n.~16, p. 6641--6651,
+  2013.}
+
+\bibitem[Pad{\'o} e Pad{\'o} 2021]{pado2021}
+\abntrefinfo{Pad{\'o} e Pad{\'o}}{PAD{\'O}; PAD{\'O}}{2021}
+{PAD{\'O}, U.; PAD{\'O}, S. {Determinants of Grader Agreement: An Analysis of
+  Multiple Short Answer Corpora}.
+\emph{Language Resources and Evaluation}, Springer, v.~55, n.~2, p. 1--30,
+  2021.}
 
 \bibitem[Paiva et al. 2012]{paiva2012}
 \abntrefinfo{Paiva et al.}{PAIVA et al.}{2012}
 {PAIVA, R. et al. {Minera{\c c}{\~a}o de Dados e a Gest{\~a}o Inteligente da
   Aprendizagem: Desafios e Direcionamentos}. In:  \emph{I Workshop de Desafios
-  da Computa{\c c}{\~a}o Aplicada {\'a} Educação (DesafIE!2012)}. Curitiba,
-  PR, Brasil: Sociedade Brasileira de Computa{\c c}{\~ a}o, 2012. v.~1.}
+  da Computa{\c c}{\~a}o Aplicada {\'a} Educação (DesafIE!2012)}. Curitiba
+  (PR), Brasil: Sociedade Brasileira de Computa{\c c}{\~ a}o, 2012. v.~1.}
 
-\bibitem[P{\'e}rez-Mar{\'\i}n, Pascual-Nieto e Rodr{\'\i}guez
+\bibitem[P{\'e}rez-Mar{\'i}n, Pascual-Nieto e Rodr{\'i}guez
   2009]{perez-marin2009}
-\abntrefinfo{P{\'e}rez-Mar{\'\i}n, Pascual-Nieto e
-  Rodr{\'\i}guez}{P{\'E}REZ-MAR{\'I}N; PASCUAL-NIETO; RODR{\'I}GUEZ}{2009}
+\abntrefinfo{P{\'e}rez-Mar{\'i}n, Pascual-Nieto e
+  Rodr{\'i}guez}{P{\'E}REZ-MAR{\'I}N; PASCUAL-NIETO; RODR{\'I}GUEZ}{2009}
 {P{\'E}REZ-MAR{\'I}N, D.; PASCUAL-NIETO, I.; RODR{\'I}GUEZ, P.
   {Computer-Assisted Assessment of Free-Text Answers}.
 \emph{The Knowledge Engineering Review}, Cambridge University Press, v.~24,
   n.~4, p. 353--374, 2009.}
+
+\bibitem[Pirovani et al. 2019]{pirovani2019}
+\abntrefinfo{Pirovani et al.}{PIROVANI et al.}{2019}
+{PIROVANI, J. P.~C. et al. {Adapting NER (CRF+LG) for Many Textual Genres}. In:
+   \emph{Proceedings of the Iberian Languages Evaluation Forum (IberLEF 2019)}.
+  Bilbao, Spain: CEUR-WS, 2019.  (IberLEF - SEPLN 2019, v.~35), p. 421--433.}
 
 \bibitem[Pissinati 2014]{pissinati2014}
 \abntrefinfo{Pissinati}{PISSINATI}{2014}
@@ -148,34 +496,237 @@
   Discursivas e de Visualiza{\c c}{\~a}o de Atividades para Apoio {\`a} Atua{\c
   c}{\~a}o do Docente}}.
 Disserta\c{c}\~{a}o (Mestrado) --- PPGI - Universidade Federal do Esp{\'i}rito
-  Santo, Vit{\'o}ria, ES, Setembro 2014.}
+  Santo, Vit{\'o}ria (ES), Brasil, Set 2014.}
 
-\bibitem[Ramachandran, Cheng e Foltz 2015]{ramachandran2015a}
+\bibitem[Pribadi et al. 2017]{pribadi2017}
+\abntrefinfo{Pribadi et al.}{PRIBADI et al.}{2017}
+{PRIBADI, F.~S. et al. {Automatic Short Answer Scoring Using Words Overlapping
+  Methods}. In:  \emph{AIP Conference Proceedings}. Bandung, Indonesia: AIP
+  Publishing LLC, 2017. v.~1818, p. 020042:1--020042:6.}
+
+\bibitem[Raes et al. 2020]{raes2020}
+\abntrefinfo{Raes et al.}{RAES et al.}{2020}
+{RAES, A. et al. {A Systematic Literature Review on Synchronous Hybrid
+  Learning: Gaps Identified}.
+\emph{Learning Environments Research}, Springer, v.~23, n.~3, p. 269--290,
+  2020.}
+
+\bibitem[Ramachandran, Cheng e Foltz 2015]{ramachandran2015b}
 \abntrefinfo{Ramachandran, Cheng e Foltz}{RAMACHANDRAN; CHENG; FOLTZ}{2015}
-{RAMACHANDRAN, L.; CHENG, J.; FOLTZ, P.~W. Identifying patterns for short
-  answer scoring using graph-based lexico-semantic text matching. In:
-  \emph{BEA@NAACL-HLT}. Denver, Colorado: Association for Computational
-  Linguistics, 2015.}
+{RAMACHANDRAN, L.; CHENG, J.; FOLTZ, P. {Identifying Patterns For Short Answer
+  Scoring Using Graph-based Lexico-Semantic Text Matching}. In:
+  \emph{Proceedings of the Tenth Workshop on Innovative Use of {NLP} for
+  Building Educational Applications}. Denver (CO), USA: Association for
+  Computational Linguistics, 2015. v.~10, p. 97--106.}
 
-\bibitem[Ramachandran e Foltz 2015]{ramachandran2015b}
+\bibitem[Ramachandran e Foltz 2015]{ramachandran2015a}
 \abntrefinfo{Ramachandran e Foltz}{RAMACHANDRAN; FOLTZ}{2015}
-{RAMACHANDRAN, L.; FOLTZ, P.~W. Generating reference texts for short answer
-  scoring using graph-based summarization. In:  \emph{BEA@NAACL-HLT}. Denver,
-  Colorado: Association for Computational Linguistics, 2015.}
+{RAMACHANDRAN, L.; FOLTZ, P. {Generating Reference Texts for Short Answer
+  Scoring Using Graph-based Summarization}. In:  \emph{Proceedings of the Tenth
+  Workshop on Innovative Use of {NLP} for Building Educational Applications}.
+  Denver (CO), USA: Association for Computational Linguistics, 2015. v.~10, p.
+  207--212.}
+
+\bibitem[Riordan, Flor e Pugh 2019]{riordan2019}
+\abntrefinfo{Riordan, Flor e Pugh}{RIORDAN; FLOR; PUGH}{2019}
+{RIORDAN, B.; FLOR, M.; PUGH, R. {How to Account for Mispellings: Quantifying
+  the Benefit of Character Representations in Neural Content Scoring Models}.
+  In:  \emph{Proceedings of the Fourteenth Workshop on Innovative Use of NLP
+  for Building Educational Applications}. Florence, Italy: Association for
+  Computational Linguistics, 2019. v.~14, p. 116--126.}
+
+\bibitem[Riordan et al. 2017]{riordan2017}
+\abntrefinfo{Riordan et al.}{RIORDAN et al.}{2017}
+{RIORDAN, B. et al. {Investigating Neural Architectures for Short Answer
+  Scoring}. In:  \emph{Proceedings of the 12th Workshop on Innovative Use of
+  {NLP} for Building Educational Applications}. Copenhagen, Denmark:
+  Association for Computational Linguistics, 2017. v.~12, p. 159--168.}
+
+\bibitem[Romero et al. 2010]{romero2010}
+\abntrefinfo{Romero et al.}{ROMERO et al.}{2010}
+{ROMERO, C. et al. \emph{{Handbook of Educational Data Mining}}. 1st. ed. Boca
+  Raton (FL), USA: CRC Press, 2010.}
 
 \bibitem[Rousseeuw 1987]{rousseeuw1987}
 \abntrefinfo{Rousseeuw}{ROUSSEEUW}{1987}
-{ROUSSEEUW, P.~J. Silhouettes: A graphical aid to the interpretation and
-  validation of cluster analysis.
-\emph{Journal of Computational and Applied Mathematics}, v.~20, p. 53 -- 65,
-  1987.}
+{ROUSSEEUW, P.~J. {Silhouettes: A Graphical Aid to the Interpretation and
+  Validation of Cluster Analysis}.
+\emph{Journal of Computational and Applied Mathematics}, Elsevier, v.~20, n.~1,
+  p. 53--65, 1987.}
 
-\bibitem[Spalenza et al. 2016]{spalenza2016SBIE}
-\abntrefinfo{Spalenza et al.}{SPALENZA et al.}{2016}
+\bibitem[Roy et al. 2016]{roy2016}
+\abntrefinfo{Roy et al.}{ROY et al.}{2016}
+{ROY, S. et al. {Wisdom of Students: A Consistent Automatic Short Answer
+  Grading Technique}. In:  \emph{Proceedings of the 13th International
+  Conference on Natural Language Processing}. Varanasi, India: NLP Association
+  of India, 2016. v.~13, p. 178--187.}
+
+\bibitem[Roy, Rajkumar e Narahari 2018]{roy2018}
+\abntrefinfo{Roy, Rajkumar e Narahari}{ROY; RAJKUMAR; NARAHARI}{2018}
+{ROY, S.; RAJKUMAR, A.; NARAHARI, Y. {Selection of Automatic Short Answer
+  Grading Techniques Using Contextual Bandits for Different Evaluation
+  Measures}.
+\emph{International Journal of Advances in Engineering Sciences and Applied
+  Mathematics}, Springer, v.~10, n.~1, p. 105--113, 2018.}
+
+\bibitem[Saha et al. 2018]{saha2018}
+\abntrefinfo{Saha et al.}{SAHA et al.}{2018}
+{SAHA, S. et al. {Sentence Level or Token Level Features for Automatic Short
+  Answer Grading?: Use Both}. In:  \emph{Proceedings of the 19th International
+  Conference on Artificial Intelligence in Education}. London, United Kingdom:
+  Springer International Publishing, 2018.  (AIED' 2018, v.~19), p. 503--517.}
+
+\bibitem[Saha et al. 2019]{saha2019}
+\abntrefinfo{Saha et al.}{SAHA et al.}{2019}
+{SAHA, S. et al. \emph{{Joint Multi-Domain Learning for Automatic Short Answer
+  Grading}}.
+New Delhi, India, 2019.}
+
+\bibitem[Sahu e Bhowmick 2020]{sahu2020}
+\abntrefinfo{Sahu e Bhowmick}{SAHU; BHOWMICK}{2020}
+{SAHU, A.; BHOWMICK, P.~K. {Feature Engineering and Ensemble-Based Approach for
+  Improving Automatic Short-Answer Grading Performance}.
+\emph{IEEE Transactions on Learning Technologies}, IEEE, v.~13, n.~1, p.
+  77--90, 2020.}
+
+\bibitem[Sakaguchi, Heilman e Madnani 2015]{sakaguchi2015}
+\abntrefinfo{Sakaguchi, Heilman e Madnani}{SAKAGUCHI; HEILMAN; MADNANI}{2015}
+{SAKAGUCHI, K.; HEILMAN, M.; MADNANI, N. {Effective Feature Integration for
+  Automated Short Answer Scoring}. In:  \emph{Proceedings of the 2015
+  Conference of the North American Chapter of the Association for Computational
+  Linguistics: Human Language Technologies}. Denver (CO), USA: Association for
+  Computational Linguistics, 2015. v.~14, p. 1049--1054.}
+
+\bibitem[Siddiqi e Harrison 2008]{siddiqi2008}
+\abntrefinfo{Siddiqi e Harrison}{SIDDIQI; HARRISON}{2008}
+{SIDDIQI, R.; HARRISON, C.~J. {On the Automated Assessment of Short Free-Text
+  Responses}. In:  \emph{Proceedings of the 34th International Association for
+  Educational Assessment Annual Conference}. Cambridge, United Kingdom: IAEA,
+  2008.  (IAEA Conference, v.~34), p. 1--11.}
+
+\bibitem[Siemens e Baker 2012]{siemens2012}
+\abntrefinfo{Siemens e Baker}{SIEMENS; BAKER}{2012}
+{SIEMENS, G.; BAKER, R. S. J.~d. {Learning Analytics and Educational Data
+  Mining: Towards Communication and Collaboration}. In:  \emph{Proceedings of
+  the 2nd International Conference on Learning Analytics and Knowledge}.
+  Vancouver, Canada: Association for Computing Machinery, 2012.  (LAK '12,
+  v.~2), p. 252--254.}
+
+\bibitem[Spalenza et al. 2016]{spalenza2016b}
+\abntrefinfo{Spalenza et al.}{SPALENZA et al.}{2016a}
+{SPALENZA, M.~A. et al. Constru{\c c}{\~a}o de mapas de caracter{\'i}sticas em
+  classes de respostas discursivas. In:  \emph{Confer{\^e}ncia Internacional
+  sobre Inform{\'a}tica na Educa{\c c}{\~a}o (TISE 2016)}. Santiago, Chile:
+  Centro de Computaci{\'o}n y Comunicaci{\'o}n para la Construcci{\'o}n del
+  Conocimiento (C5), 2016.  (TISE 2016, v.~12), p. 630--635.}
+
+\bibitem[Spalenza et al. 2016]{spalenza2016a}
+\abntrefinfo{Spalenza et al.}{SPALENZA et al.}{2016b}
 {SPALENZA, M.~A. et al. {Uso de Mapa de Caracter{\'i}sticas na Avalia{\c
-  c}{\~a}o de Textos Curtos nos Ambientes Virtuais de Aprendizagem Classes de
-  Respostas Discursivas}. In:  \emph{Simp{\'o}sio Brasileiro de Inform{\'a}tica
-  na Educa{\c c}{\~a}o (SBIE)}. Uberl{\^a}ndia, MG, Brasil: Sociedade
-  Brasileira de Computa{\c c}{\~ a}o, 2016. v.~27.}
+  c}{\~a}o de Textos Curtos nos Ambientes Virtuais de Aprendizagem}. In:
+  \emph{XXVII Brazilian Symposium on Computers in Education (Simp{\'o}sio
+  Brasileiro de Inform{\'a}tica na Educa{\c c}{\~a}o}. Uberl{\^a}ndia (MG),
+  Brazil: Sociedade Brasileira de Computa{\c c}{\~ a}o, 2016.  (SBIE 2016,
+  v.~27), p. 1165--1174.}
+
+\bibitem[Spalenza et al. 2020]{spalenza2020}
+\abntrefinfo{Spalenza et al.}{SPALENZA et al.}{2020}
+{SPALENZA, M.~A. et al. {Using NER + ML to Automatically Detect Fake News}. In:
+   \emph{Proceedings of the 20th International Conference on Intelligent
+  Systems Design and Applications}. Online Event: Springer International
+  Publishing, 2020.  (ISDA 2020, v.~20), p. 1176--1187.}
+
+\bibitem[Spalenza, Pirovani e Oliveira 2019]{spalenza2019}
+\abntrefinfo{Spalenza, Pirovani e Oliveira}{SPALENZA; PIROVANI; OLIVEIRA}{2019}
+{SPALENZA, M.~A.; PIROVANI, J. P.~C.; OLIVEIRA, E. de. {Structures Discovering
+  for Optimizing External Clustering Validation Metrics}. In:
+  \emph{Proceedings of the 19th International Conference on Intelligent Systems
+  Design and Applications}. Auburn (WA), USA: Springer International
+  Publishing, 2019.  (ISDA 2019, v.~19), p. 150--161.}
+
+\bibitem[Sultan, Salazar e Sumner 2016]{sultan2016}
+\abntrefinfo{Sultan, Salazar e Sumner}{SULTAN; SALAZAR; SUMNER}{2016}
+{SULTAN, M.~A.; SALAZAR, C.; SUMNER, T. {Fast and Easy Short Answer Grading
+  with High Accuracy}. In:  \emph{Proceedings of the 2016 Conference of the
+  North {A}merican Chapter of the Association for Computational Linguistics:
+  Human Language Technologies}. San Diego (CA), USA: Association for
+  Computational Linguistics, 2016. v.~15, p. 1070--1075.}
+
+\bibitem[Sung et al. 2019]{sung2019a}
+\abntrefinfo{Sung et al.}{SUNG et al.}{2019}
+{SUNG, C. et al. {Pre-Training {BERT} on Domain Resources for Short Answer
+  Grading}. In:  \emph{Proceedings of the 2019 Conference on Empirical Methods
+  in Natural Language Processing and the 9th International Joint Conference on
+  Natural Language Processing (EMNLP-IJCNLP)}. Hong Kong, China: Association
+  for Computational Linguistics, 2019. v.~9, p. 6071--6075.}
+
+\bibitem[Sung, Dhamecha e Mukhi 2019]{sung2019b}
+\abntrefinfo{Sung, Dhamecha e Mukhi}{SUNG; DHAMECHA; MUKHI}{2019}
+{SUNG, C.; DHAMECHA, T.~I.; MUKHI, N. {Improving Short Answer Grading Using
+  Transformer-Based Pre-training}. In:  \emph{Proceedings of the 20th
+  International Conference on Artificial Intelligence in Education}. Chicago
+  (IL), USA: Springer, 2019.  (AIED' 2019, v.~20), p. 469--481.}
+
+\bibitem[S{\"u}zen et al. 2020]{suzen2020}
+\abntrefinfo{S{\"u}zen et al.}{S{\"U}ZEN et al.}{2020}
+{S{\"U}ZEN, N. et al. {Automatic Short Answer Grading and Feedback Using Text
+  Mining Methods}.
+\emph{Procedia Computer Science}, Elsevier, v.~169, n.~1, p. 726--743, 2020.}
+
+\bibitem[Tan et al. 2020]{tan2020}
+\abntrefinfo{Tan et al.}{TAN et al.}{2020}
+{TAN, H. et al. {Automatic Short Answer Grading by Encoding Student Responses
+  via a Graph Convolutional Network}.
+\emph{Interactive Learning Environments}, Taylor \& Francis, v.~28, n.~1, p.
+  1--15, 2020.}
+
+\bibitem[Wang et al. 2019]{wang2019}
+\abntrefinfo{Wang et al.}{WANG et al.}{2019}
+{WANG, T. et al. {Inject Rubrics into Short Answer Grading System}. In:
+  \emph{Proceedings of the 2nd Workshop on Deep Learning Approaches for
+  Low-Resource NLP (DeepLo 2019)}. Hong Kong, China: Association for
+  Computational Linguistics, 2019.  (DeepLo 2019, v.~2), p. 175--182.}
+
+\bibitem[Yang et al. 2021]{yang2021}
+\abntrefinfo{Yang et al.}{YANG et al.}{2021}
+{YANG, S. J.~H. et al. {Human-Centered Artificial Intelligence in Education:
+  Seeing the Invisible through the Visible}.
+\emph{Computers and Education: Artificial Intelligence}, Elsevier, v.~2, n.~1,
+  p. 100008, 2021.}
+
+\bibitem[Zesch, Heilman e Cahill 2015]{zesch2015}
+\abntrefinfo{Zesch, Heilman e Cahill}{ZESCH; HEILMAN; CAHILL}{2015}
+{ZESCH, T.; HEILMAN, M.; CAHILL, A. {Reducing Annotation Efforts in Supervised
+  Short Answer Scoring}. In:  \emph{Proceedings of the Tenth Workshop on
+  Innovative Use of {NLP} for Building Educational Applications}. Denver (CO),
+  USA: Association for Computational Linguistics, 2015. v.~10, p. 124--132.}
+
+\bibitem[Zesch e Horbach 2018]{zesch2018}
+\abntrefinfo{Zesch e Horbach}{ZESCH; HORBACH}{2018}
+{ZESCH, T.; HORBACH, A. {{ESCRITO} - An {NLP}-Enhanced Educational Scoring
+  Toolkit}. In:  \emph{Proceedings of the Eleventh International Conference on
+  Language Resources and Evaluation ({LREC} 2018)}. Miyazaki, Japan: European
+  Language Resources Association (ELRA), 2018. v.~11, p. 2310--2316.}
+
+\bibitem[Zhang, Lin e Chi 2020]{zhang2020}
+\abntrefinfo{Zhang, Lin e Chi}{ZHANG; LIN; CHI}{2020}
+{ZHANG, Y.; LIN, C.; CHI, M. {Going Deeper: Automatic Short-Answer Grading by
+  Combining Student and Question Models}.
+\emph{User Modeling and User-Adapted Interaction}, Springer, v.~30, n.~1, p.
+  51--80, 2020.}
+
+\bibitem[Zhang, Shah e Chi 2016]{zhang2016}
+\abntrefinfo{Zhang, Shah e Chi}{ZHANG; SHAH; CHI}{2016}
+{ZHANG, Y.; SHAH, R.; CHI, M. {Deep Learning+ Student Modeling+ Clustering: A
+  Recipe for Effective Automatic Short Answer Grading}. In:  \emph{Proceedings
+  of the 9th International Conference on Educational Data Mining}. Raleigh
+  (NC), USA: ERIC, 2016.  (EDM 2016, v.~09), p. 562--567.}
+
+\bibitem[Ziai, Ott e Meurers 2012]{ziai2012}
+\abntrefinfo{Ziai, Ott e Meurers}{ZIAI; OTT; MEURERS}{2012}
+{ZIAI, R.; OTT, N.; MEURERS, D. {Short Answer Assessment: Establishing Links
+  Between Research Strands}. In:  \emph{Proceedings of the Seventh Workshop on
+  Building Educational Applications Using NLP}. Montreal, Canada: Association
+  for Computational Linguistics, 2012.  (NAACL HLT '12, v.~7), p. 190--200.}
 
 \end{thebibliography}
