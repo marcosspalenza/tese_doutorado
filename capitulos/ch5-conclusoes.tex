@@ -5,6 +5,25 @@
 \chapter{Considerações Finais}
 \label{cap-conclusao}
 
-\section{Trabalhos Futuros}
+O processo de avaliação de questões discursivas compreende um longo ciclo, da formulação das atividades até a análise de desempenho e redimensionamento das práticas de ensino. Portanto, é fundamental a produção de técnicas que resultem na redução do esforço do professor e a aplicação cotidiana de atividades. Em especial as que contribuem na melhoria da leitura e escrita dos estudantes em todos os níveis de instrução. Por conta disso, apresentamos neste trabalho um método semi-automático de avaliação de respostas discursivas curtas. Como destaque dos resultados obtidos com este trabalho listamos uma série de contribuições que compõe deste estudo:
+
+\begin{itemize}
+  \item Técnica que combina \textit{clusterização} e classificação / regressão na avaliação textual;
+  \item Dinâmica de otimização em \textit{clusterização} com \textit{Gaussian Process};
+  \item Análise de \textit{clusters} com amostragem por distribuição;
+  \item Modelo vetorial complexo com múltiplas estruturas textuais;
+  \item Identificação dos modelos de resposta, domínio e alinhamento contextual através do reconhecimento de padrões de amostras;
+  \item Criação de formatos próprios para relatórios e \textit{feedbacks} de questões discursivas curtas.
+\end{itemize}
 
 \section{Conclusões}
+
+O suporte computacional do processo avaliativo compõe importante parte da integração do ensino em meio digital. Para além da avaliação automática, a avaliação em meio digital visa tornar prático e rápido o processo de avaliativo, possibilitiando sua aplicação em massa \cite{romero2010}. Deste modo, o professor em um mesmo ambiente consegue interagir com todos os seus alunos e acompanhar seu desempenho na disciplina. 
+
+Por meio destas plataformas de ensino, possibilitamos o emprego de múltiplas técnicas de EDM para análise do conteúdo e, consequentemente, o aumento da capacidade avaliativa. Esse trabalho apresenta um estudo complexo de análise da estrutura textual das respostas curtas produzidas pelos estudantes. Neste, descrevemos o \textit{p}Nota, um sistema para construção de modelos avaliativos através de interações diretas com o tutor. Integram o sistema vários módulos que, em sequência, realizam o reconhecimento de padrões e identificação do conteúdo. Para isso compõe este processo técnicas de extração das componentes textuais, clusterização, amostragem, classificação e regressão.
+
+Deste modo, o método semi-automático elabora uma forma de interagir com o professor para criação de modelos textuais para representar cada nota. O modelo alcançou níveis similares aos observados entre humanos na qualidade de atribuição de notas, com F1-ponderado médio de 57,84\%. Destacamos que tais valores refletem que, das 200 atividades de classificação, 56 foram avaliadas com mais de 75\% nesta métrica. Enquanto isso, em atividades de regressão, o RMSE médio alcançado, de 0,619 pontos, é menor do que 0,66 pontos da avaliação entre humanos. Deste modo, com esse modelo esperamos que o professor atue de forma conjunta com o sistema, corrigindo atividades e utilizando os resultados em função do desenvolvimento de seus métodos de ensino. Adicionalmente, através dos \textit{feedbacks}, esperamos compor materiais que auxiliem várias etapas do método avaliativo, incluindo a discussão de resultados em sala.
+
+\section{Trabalhos Futuros}
+
+Em uma perspectiva de próximos estudos em torno do modelo proposto, despontam alguns estudos. O principal é a integração de critérios mais sofisticadas para a seleção de resultados para clusterização, classificação e regressão. Tais métodos podem ser relevantes para alcançar ainda mais qualidade na atribuição de notas, inclusive compreendendo a formação de cada conjunto de respostas. Adicionalmente, seria de grande valia, ter mais proximidade da interação do sistema sob a ótica do professor. Em especial o acompanhamento de escolas, turmas ou grupos de alunos sob a concepção das técnicas de ensino-aprendizagem. Nesse aspecto, enquadram-se os estudos detalhados da evolução dos alunos, questões aplicadas e a construção dos segmentos textuais dentro da produção textual dos estudantes.

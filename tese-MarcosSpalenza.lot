@@ -1,6 +1,16 @@
 \babel@toc {brazil}{}
-\contentsline {table}{\numberline {1}{\ignorespaces Bases de dados e suas principais caracter{\'i}sticas.\relax }}{56}{table.caption.15}%
-\contentsline {table}{\numberline {2}{\ignorespaces \relax }}{61}{table.caption.16}%
-\contentsline {table}{\numberline {3}{\ignorespaces \relax }}{61}{table.caption.17}%
-\contentsline {table}{\numberline {4}{\ignorespaces \relax }}{62}{table.caption.18}%
-\contentsline {table}{\numberline {5}{\ignorespaces \relax }}{62}{table.caption.19}%
+\contentsline {table}{\numberline {1}{\ignorespaces Particionamento em amostras para treino e teste dos classificadores na atividade exemplo \textit {Sandstone}.\relax }}{58}{table.caption.18}%
+\contentsline {table}{\numberline {2}{\ignorespaces Características das respostas encontradas na atividade exemplo \textit {Sandstone}.\relax }}{59}{table.caption.19}%
+\contentsline {table}{\numberline {3}{\ignorespaces Tabela de \textit {rubrics} para as duas notas encontradas na atividade exemplo e as respostas mais alinhadas com as palavras selecionadas pelo LDA.\relax }}{63}{table.caption.21}%
+\contentsline {table}{\numberline {4}{\ignorespaces Bases de dados e suas principais caracter{\'i}sticas.\relax }}{66}{table.caption.23}%
+\contentsline {table}{\numberline {5}{\ignorespaces Bases de dados e índices qualitativos de \textit {clusterização}.\relax }}{72}{table.caption.24}%
+\contentsline {table}{\numberline {6}{\ignorespaces Resultados dos seis classificadores testados nos \textit {datasets} do \textit {SEMEVAL' 2013}.\relax }}{75}{table.caption.27}%
+\contentsline {table}{\numberline {7}{\ignorespaces Resultados de classificação para o \textit {dataset OpenUniversity}.\relax }}{78}{table.caption.29}%
+\contentsline {table}{\numberline {8}{\ignorespaces Resultados de classificação para o \textit {dataset Powergrading}.\relax }}{79}{table.caption.31}%
+\contentsline {table}{\numberline {9}{\ignorespaces Índices de erro para cada algoritmos de regressão resultantes de cada um dos três cenários de avaliação do \textit {dataset} da \textit {University of North Texas}.\relax }}{80}{table.caption.33}%
+\contentsline {table}{\numberline {10}{\ignorespaces Resultados de classificação para o \textit {Projeto Feira Literária}.\relax }}{82}{table.caption.36}%
+\contentsline {table}{\numberline {11}{\ignorespaces Amostra de parte do relatório com 50 respostas extraídas da atividade exemplo.\relax }}{108}{table.B.11}%
+\contentsline {table}{\numberline {12}{\ignorespaces Clusters formados com cada uma das respostas da atividade \textit {Sandstone}.\relax }}{112}{table.B.12}%
+\contentsline {table}{\numberline {13}{\ignorespaces Seleção de amostras aplicada para a atividade \textit {Sandstone}.\relax }}{117}{table.B.13}%
+\contentsline {table}{\numberline {14}{\ignorespaces Características mais frequentes e menos frequentes encontradas nas respostas da atividade.\relax }}{118}{table.caption.43}%
+\contentsline {table}{\numberline {15}{\ignorespaces Resultados individuais para as atividades da base de dados da UNT.\relax }}{137}{table.C.15}%

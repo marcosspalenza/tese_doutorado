@@ -5,6 +5,12 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
+\bibitem[Aleksander, Thomas e Bowden 1984]{aleksander1984}
+\abntrefinfo{Aleksander, Thomas e Bowden}{ALEKSANDER; THOMAS; BOWDEN}{1984}
+{ALEKSANDER, I.; THOMAS, W.~V.; BOWDEN, P.~A. Wisard - a radical step forward
+  in image recognition.
+\emph{Sensor Review}, MCB UP Ltd, v.~4, n.~3, p. 120--124, 1984.}
+
 \bibitem[Almeida-J{\'u}nior, Spalenza e Oliveira 2017]{almeida-junior2017}
 \abntrefinfo{Almeida-J{\'u}nior, Spalenza e Oliveira}{ALMEIDA-J{\'U}NIOR;
   SPALENZA; OLIVEIRA}{2017}
@@ -12,7 +18,7 @@
   um Sistema de Avalia{\c{c}}{\~a}o Autom{\'a}tica de Reda{\c{c}}{\~o}es do
   ENEM Utilizando T{\'e}cnicas de Aprendizagem de M{\'a}quina e Processamento
   de Linguagem Natural}. In:  \emph{Computer on the Beach}. Florian{\'o}polis
-  (SC), Brasil: Sociedade Brasileira de Computa{\c c}{\~ a}o, 2017. v.~8, p.
+  (SC), Brasil: Universidade do Vale do Itaja{\'i} - UNIVALI, 2017. v.~8, p.
   474--483.}
 
 \bibitem[Arter e Chappuis 2006]{arter2006}
@@ -99,6 +105,13 @@
 \emph{Asia-Pacific Journal of Cooperative Education}, ERIC, v.~18, n.~2, p.
   167--183, 2017.}
 
+\bibitem[Bogar{\'\i}n, Cerezo e Romero 2018]{bogarin2018}
+\abntrefinfo{Bogar{\'\i}n, Cerezo e Romero}{BOGAR{\'I}N; CEREZO; ROMERO}{2018}
+{BOGAR{\'I}N, A.; CEREZO, R.; ROMERO, C. {A Survey on Educational Process
+  Mining}.
+\emph{Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery},
+  Wiley Online Library, v.~8, n.~1, p. e1230, 2018.}
+
 \bibitem[Burrows, Gurevych e Stein 2015]{burrows2015}
 \abntrefinfo{Burrows, Gurevych e Stein}{BURROWS; GUREVYCH; STEIN}{2015}
 {BURROWS, S.; GUREVYCH, I.; STEIN, B. {The Eras and Trends of Automatic Short
@@ -125,6 +138,14 @@
   on Artificial Intelligence in Education}. Ifrane, Morocco: Springer
   International Publishing, 2020.  (AIED' 2020, v.~21), p. 43--48.}
 
+\bibitem[Casiraghi e Almeida 2017]{casiraghi2017}
+\abntrefinfo{Casiraghi e Almeida}{CASIRAGHI; ALMEIDA}{2017}
+{CASIRAGHI, B.; ALMEIDA, L.~S. {Elabora{\c c}{\~a}o de um Instrumento de
+  Avalia{\c c}{\~a}o do Pensamento Cr{\'\i}tico em Estudantes
+  Universit{\'a}rios}. In:  \emph{Atas do V Semin{\'a}rio Internacional
+  Cogni{\c{c}}{\~a}o, Aprendizagem e Desempenho}. Braga, Portugal:
+  CIEd-Universidade do Minho Portugal, 2017. v.~5, p. 30--41.}
+
 \bibitem[Chakraborty, Roy e Choudhury 2017]{chakraborty2017}
 \abntrefinfo{Chakraborty, Roy e Choudhury}{CHAKRABORTY; ROY; CHOUDHURY}{2017}
 {CHAKRABORTY, U.~K.; ROY, S.; CHOUDHURY, S. {A Fuzzy Indiscernibility Based
@@ -132,6 +153,12 @@
   Free Text Answers}.
 \emph{International Journal of Uncertainty, Fuzziness and Knowledge-Based
   Systems}, World Scientific, v.~25, n.~6, p. 987--1004, 2017.}
+
+\bibitem[Cohen 1960]{cohen1960}
+\abntrefinfo{Cohen}{COHEN}{1960}
+{COHEN, J. {A Coefficient of Agreement for Nominal Scales}.
+\emph{Educational and Psychological Measurement}, SAGE Publishing, v.~20, n.~1,
+  p. 37--46, 1960.}
 
 \bibitem[Condor 2020]{condor2020}
 \abntrefinfo{Condor}{CONDOR}{2020}
@@ -336,6 +363,12 @@ Princeton (NJ), USA, 2014.}
 \emph{Revista Brasileira de Lingu{\'i}stica Aplicada}, SciELO, v.~3, n.~2, p.
   25--40, 2003.}
 
+\bibitem[Lima-Filho et al. 2020]{wisard2020}
+\abntrefinfo{Lima-Filho et al.}{LIMA-FILHO et al.}{2020}
+{LIMA-FILHO, A.~S. et al. \emph{{wisardpkg -- A Library for WiSARD-Based
+  Models}}.
+Rio de Janeiro (RJ), Brazil, 2020.}
+
 \bibitem[Lun et al. 2020]{lun2020}
 \abntrefinfo{Lun et al.}{LUN et al.}{2020}
 {LUN, J. et al. {Multiple Data Augmentation Strategies for Improving
@@ -527,6 +560,14 @@ Disserta\c{c}\~{a}o (Mestrado) --- PPGI - Universidade Federal do Esp{\'i}rito
   Denver (CO), USA: Association for Computational Linguistics, 2015. v.~10, p.
   207--212.}
 
+\bibitem[Ribeiro, Singh e Guestrin 2016]{ribeiro2016}
+\abntrefinfo{Ribeiro, Singh e Guestrin}{RIBEIRO; SINGH; GUESTRIN}{2016}
+{RIBEIRO, M.~T.; SINGH, S.; GUESTRIN, C. {"Why Should {I} Trust You?":
+  Explaining the Predictions of Any Classifier}. In:  \emph{Proceedings of the
+  22nd {ACM} {SIGKDD} International Conference on Knowledge Discovery and Data
+  Mining}. San Francisco (CA), USA: Association for Computing Machinery, 2016.
+  (KDD '16, v.~22), p. 1135--1144.}
+
 \bibitem[Riordan, Flor e Pugh 2019]{riordan2019}
 \abntrefinfo{Riordan, Flor e Pugh}{RIORDAN; FLOR; PUGH}{2019}
 {RIORDAN, B.; FLOR, M.; PUGH, R. {How to Account for Mispellings: Quantifying
@@ -611,6 +652,14 @@ New Delhi, India, 2019.}
   the 2nd International Conference on Learning Analytics and Knowledge}.
   Vancouver, Canada: Association for Computing Machinery, 2012.  (LAK '12,
   v.~2), p. 252--254.}
+
+\bibitem[Spalenza et al. 2018]{spalenza2018}
+\abntrefinfo{Spalenza et al.}{SPALENZA et al.}{2018}
+{SPALENZA, M.~A. et al. {Uma Ferramenta para Minera{\c c}{\~a}o de Dados
+  Educacionais: Extra{\c c}{\~a}o de Informa{\c c}{\~a}o em Ambientes Virtuais
+  de Aprendizagem}. In:  \emph{Computer on the Beach}. Florian{\'o}polis (SC),
+  Brasil: Universidade do Vale do Itaja{\'i} - UNIVALI, 2018. v.~9, p.
+  741--750.}
 
 \bibitem[Spalenza et al. 2016]{spalenza2016b}
 \abntrefinfo{Spalenza et al.}{SPALENZA et al.}{2016a}

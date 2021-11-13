@@ -32,9 +32,14 @@
 
 %%% Importação de pacotes. %%%
 % ---- Inicio import do autor ----
+\usepackage{pdflscape}
 \usepackage{verbatim}
 \usepackage{float}
+\usepackage{longtable}
 \usepackage{multirow}
+\usepackage{multicol}
+\usepackage{csquotes}
+\usepackage{subcaption}
 
 % ---- Fim import do autor    ----
 
@@ -180,8 +185,8 @@
 \autor{Marcos Alécio Spalenza}
 \local{Vitória, ES}
 \data{2021}
-\orientador{Prof. Ph.D. Elias de Oliveira}
-% \coorientador{Nome do Co-orientador}
+\orientador{Profª. Dra. Claudine Badue}
+\coorientador{Prof. Dr. Elias de Oliveira}
 \instituicao{
   Universidade Federal do Espírito Santo -- UFES
   \par
@@ -368,6 +373,43 @@ Fusce ac pretium leo, in convallis augue. Mauris pulvinar elit rhoncus velit auc
 \end{epigrafe}
 
 
+\chapter*{Publicações}
+Como parte desse trabalho, foram desenvolvidos e publicados os seguintes trabalhos,
+no período do Doutorado, que apresentam, em maior ou menor grau, relação com o tema
+proposto.
+
+\noindent Publicação de trabalhos em anais de congressos:
+
+\begin{itemize}[label={}]
+\scriptsize
+\item SPALENZA, M. A.; LUSQUINO-FILHO, L. A. D.; LIMA, P. M. V.; FRANÇA, F. M. G.; OLIVEIRA E. \textit{LCAD-UFES at FakeDeS 2021: Fake News Detection Using Named Entity Recognition and Part-of-Speech Sequences. In: Proceedings of the Iberian Languages Evaluation Forum}. M{\'a}laga, Spain: CEUR-WS, 2021. (IberLEF - SEPLN 2021, v. 37), p. 646-654.
+
+\item SPALENZA, M. A.; OLIVEIRA E.; LUSQUINO-FILHO, L. A. D.; LIMA, P. M. V.; FRANÇA, F. M. G. \textit{Using NER + ML to Automatically Detect Fake News. In: Proceedings of the 20th International Conference on Intelligent Systems Design and Applications}. Online Event: Springer International Publishing, 2020. (ISDA 2020, v. 20), p. 1176-1187.
+
+\item SPALENZA, M. A.; PIROVANI, J. P. C.; OLIVEIRA, E. \textit{Structures Discovering for Optimizing External Clustering Validation Metrics. In: Proceedings of the 19th International Conference on Intelligent Systems Design and Applications}. Auburn (WA), USA: Springer International Publishing, 2019. (ISDA 2019, v. 19), p. 150-161.
+
+\item SPALENZA, M. A.; NOGUEIRA, M. A.; ANDRADE, L. B.; OLIVEIRA E. \textit{Uma Ferramenta para Minera{\c c}{\~a}o de Dados Educacionais: Extra{\c c}{\~a}o de Informa{\c c}{\~a}o em Ambientes Virtuais de Aprendizagem In: Computer on the Beach}. Florian{\'o}polis (SC), Brasil: Universidade do Vale do Itajaí - UNIVALI, 2018. v. 9, p. 741-750.
+
+\end{itemize}
+
+\noindent Participação em trabalhos publicados em anais de congressos:
+
+\begin{itemize}[label={}]
+\scriptsize
+\item OLIVEIRA, E.; SPALENZA, M. A. ; PIROVANI, J. P. C. \textit{rAVA: A Robot for Virtual Support of Learning.} In: Proceedings of the 20th International Conference on Intelligent Systems Design and Applications. Online Event: Springer International Publishing, 2020. (ISDA 2020, v. 20), p. 1238-1247.
+
+\item SILVA, W.; SPALENZA, M. A.; Bourguet, J. R.; OLIVEIRA, E. \textit{Towards a Tailored Hybrid Recommendation-based System for Computerized Adaptive Testing through Clustering and IRT. In: Proceedings of the International Conference on Computer Supported Education}. Libon, Portugal: SCITEPRESS, 2020. (CSEDU 2020, v. 12), p. 260-268.
+
+\item SILVA, W.; SPALENZA, M. A.; Bourguet, J. R.; OLIVEIRA, E. \textit{Recommendation Filtering {\`a} la carte for Intelligent Tutoring Systems. In: Proceedings of the International Workshop on Algorithmic Bias in Search and Recommendation}. Online Event:  Springer International Publishing, 2020. (BIAS 2020, v. 1), p. 58-65.
+
+\item PIROVANI, J. P. C.; ALVES, J. SPALENZA, M. A.; SILVA, W.; COLOMBO, C. S.; OLIVEIRA, E. \textit{Adapting NER (CRF+LG) for Many Textual Genres. In: Proceedings of the Iberian Languages Evaluation Forum}. Bilbao, Spain: CEUR-WS, 2019. (IberLEF - SEPLN 2019, v. 35), p. 421-433. 
+
+\item PIROVANI, J. P. C.; SPALENZA, M. A. ; OLIVEIRA, E. \textit{Gera{\c c}{\~a}o Autom{\'a}tica de Quest{\~o}es a Partir do Reconhecimento de Entidades Nomeadas em Textos Did{\'a}ticos In: XXVIII Simp{\'o}sio Brasileiro de Inform{\'a}tica na Educa{\c c}{\~a}o}. Recife (PE), Brasil: Sociedade Brasileira de Computa{\c c}{\~a}o, 2017. (SBIE 2017, v. 28), p. 1147-1156.
+
+\end{itemize}
+
+\cleardoublepage
+
 % Resumo em português.
 % (*) Escrever resumo e palavras-chave.
 \setlength{\absparsep}{18pt}
@@ -412,6 +454,7 @@ Fusce ac pretium leo, in convallis augue. Mauris pulvinar elit rhoncus velit auc
 \tableofcontents*
 \cleardoublepage
 
+\newpage
 
 
 %%% Início da parte de conteúdo do documento. %%%
@@ -447,14 +490,9 @@ Fusce ac pretium leo, in convallis augue. Mauris pulvinar elit rhoncus velit auc
 % Imprime uma página indicando o início dos apêndices.
 \partapendices
 
-% (*) Incluir como apêndice a documentação técnica produzida durante o TCC (especificação de requisitos,
-% projeto arquitetural, etc.). Utilizar o exemplo \includepdf caso o documento seja produzido em outro
-% editor de texto (Microsoft Word, LibreOffice Writer) e transformado em PDF. Utilizar o exemplo \include
-% caso os documentos tenham sido também escritos em LaTeX.
-% \includepdf[pages={1-}]{apendices/apendice01-requisitos.pdf}
-% \includepdf[pages={1-}]{apendices/apendice02-projeto.pdf}
-% \include{ap1-requisitos}
-% \include{ap2-projeto}
+
+\include{apendices}
+
 \end{apendicesenv}
 
 
