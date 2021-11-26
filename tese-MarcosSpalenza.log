@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.7.29)  11 NOV 2021 03:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.15)  24 NOV 2021 18:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -501,16 +501,16 @@ File: babel.def 2020/02/14 3.40 Babel common definitions
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
 Package babel Info: \l@australian = using hyphenrules for ukenglish
-(babel)             (\language14) on input line 105.
+(babel)             (\language33) on input line 105.
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
-(babel)             (\language14) on input line 108.
+(babel)             (\language33) on input line 108.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel-french/french.ldf
 Language: french 2020/01/30 v3.5g French support from the babel system
 Package babel Info: \l@acadian = using hyphenrules for french
-(babel)             (\language79) on input line 91.
+(babel)             (\language30) on input line 91.
 Package babel Info: \l@canadien = using hyphenrules for french
-(babel)             (\language79) on input line 92.
+(babel)             (\language30) on input line 92.
 \FB@nonchar=\count308
 Package babel Info: Making : an active character on input line 419.
 Package babel Info: Making ; an active character on input line 420.
@@ -545,7 +545,7 @@ Package babel Info: Making > an active character on input line 707.
 (/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/portuges.ldf
 Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 Package babel Info: \l@brazil = using hyphenrules for portuguese
-(babel)             (\language83) on input line 113.
+(babel)             (\language29) on input line 113.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
@@ -1639,8 +1639,8 @@ l.349 \end{dedicatoria}
 ] [5] [6
 
 ]
-Overfull \hbox (8.20079pt too wide) in paragraph at lines 401--402
-[]\T1/lmr/m/n/9 SILVA, W.; SPA-LENZA, M. A.; Bour-guet, J. R.; OLI-VEIRA, E. \T
+Overfull \hbox (25.19324pt too wide) in paragraph at lines 414--415
+[]\T1/lmr/m/n/9 SILVA, W.; SPA-LENZA, M. A.; BOUR-GUET, J. R.; OLI-VEIRA, E. \T
 1/lmr/m/it/9 Towards a Tai-lo-red Hy-brid Recommendation-
  []
 
@@ -1675,48 +1675,58 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
 (Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 69.
 
-Overfull \hbox (1.5877pt too wide) detected at line 71
+Overfull \hbox (1.5877pt too wide) detected at line 69
  \T1/lmss/bx/n/12 101
  []
 
 
+Overfull \hbox (1.5877pt too wide) detected at line 70
+ \T1/lmss/bx/n/12 101
+ []
+
+
+Overfull \hbox (1.5877pt too wide) detected at line 71
+ \T1/lmss/bx/n/12 103
+ []
+
+
 Overfull \hbox (1.5877pt too wide) detected at line 75
- \T1/lmss/bx/n/12 105
+ \T1/lmss/bx/n/12 107
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 76
- \T1/lmss/bx/n/12 106
- []
-
-
-Overfull \hbox (1.5877pt too wide) detected at line 77
  \T1/lmss/bx/n/12 108
  []
 
 
+Overfull \hbox (1.5877pt too wide) detected at line 77
+ \T1/lmss/bx/n/12 110
+ []
+
+
 Overfull \hbox (1.5877pt too wide) detected at line 78
- \T1/lmss/bx/n/12 113
+ \T1/lmss/bx/n/12 115
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 79
- \T1/lmss/bx/n/12 118
+ \T1/lmss/bx/n/12 120
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 80
- \T1/lmss/bx/n/12 119
+ \T1/lmss/bx/n/12 121
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 84
- \T1/lmss/bx/n/12 121
+ \T1/lmss/bx/n/12 123
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 85
- \T1/lmss/bx/n/12 121
+ \T1/lmss/bx/n/12 123
  []
 
 ) [20]
@@ -1730,34 +1740,42 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-Underfull \vbox (badness 1571) has occurred while \output is active []
-
- [22]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[22] [23]
+Underfull \vbox (badness 2269) has occurred while \output is active []
 
  [24]
-[25] [26] [27] [28]) [29]
+Underfull \vbox (badness 1571) has occurred while \output is active []
+
+ [25]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27]
+[28]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]
+[30]) [31]
 \openout2 = `capitulos/ch2-literatura.aux'.
 
- (./capitulos/ch2-literatura.tex [30
+ (./capitulos/ch2-literatura.tex [32
 
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [31]
-<figuras/tiposAtividade.png, id=672, 634.62094pt x 469.00218pt>
+ [33]
+<figuras/tiposAtividade.png, id=689, 634.62094pt x 469.00218pt>
 File: figuras/tiposAtividade.png Graphic file (type png)
 <use figuras/tiposAtividade.png>
 Package pdftex.def Info: figuras/tiposAtividade.png  used on input line 19.
 (pdftex.def)             Requested size: 455.0pt x 336.26434pt.
 
-[32 <./figuras/tiposAtividade.png>]
-<figuras/aprendizadoSAG.png, id=689, 707.64375pt x 228.10219pt>
+[34 <./figuras/tiposAtividade.png>]
+<figuras/aprendizadoSAG.png, id=706, 707.64375pt x 228.10219pt>
 File: figuras/aprendizadoSAG.png Graphic file (type png)
 <use figuras/aprendizadoSAG.png>
 Package pdftex.def Info: figuras/aprendizadoSAG.png  used on input line 30.
@@ -1765,14 +1783,8 @@ Package pdftex.def Info: figuras/aprendizadoSAG.png  used on input line 30.
 
 Underfull \vbox (badness 2941) has occurred while \output is active []
 
- [33 <./figuras/aprendizadoSAG.png>] [34]
+ [35 <./figuras/aprendizadoSAG.png>] [36]
 Underfull \vbox (badness 1571) has occurred while \output is active []
-
- [35]
-Underfull \vbox (badness 1571) has occurred while \output is active []
-
- [36]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [37]
 Underfull \vbox (badness 1571) has occurred while \output is active []
@@ -1780,58 +1792,64 @@ Underfull \vbox (badness 1571) has occurred while \output is active []
  [38]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39])
-[40]
+ [39]
+Underfull \vbox (badness 1571) has occurred while \output is active []
+
+ [40]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41])
+[42]
 \openout2 = `capitulos/ch3-proposta.aux'.
 
  (./capitulos/ch3-proposta.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41
+ [43
 
 
 
 ]
-<figuras/framework-moodle.png, id=993, 881.2925pt x 431.6125pt>
+<figuras/framework-moodle.png, id=1010, 881.2925pt x 431.6125pt>
 File: figuras/framework-moodle.png Graphic file (type png)
 <use figuras/framework-moodle.png>
 Package pdftex.def Info: figuras/framework-moodle.png  used on input line 16.
 (pdftex.def)             Requested size: 455.0pt x 222.83282pt.
 
-[42 <./figuras/framework-moodle.png>] [43] [44] [45] [46] [47] [48]
+[44 <./figuras/framework-moodle.png>] [45] [46] [47] [48] [49] [50]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49]
-[50] [51] [52]
+ [51]
+[52] [53] [54]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 227.
- [53]
+ [55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54]
-[55] [56]
+ [56]
+[57] [58]
 Underfull \hbox (badness 1221) in paragraph at lines 287--287
  [][] [][]\T1/lmr/m/n/10 (+20) Sandstone - Open Uni-ver-sity. Dis-po-ní-vel em 
 https://www.open.edu/openlearn/science-maths-
  []
 
-<figuras/exemplo/sandstone-enunciado.png, id=1154, 559.33969pt x 350.05782pt>
+<figuras/exemplo/sandstone-enunciado.png, id=1171, 559.33969pt x 350.05782pt>
 File: figuras/exemplo/sandstone-enunciado.png Graphic file (type png)
 <use figuras/exemplo/sandstone-enunciado.png>
 Package pdftex.def Info: figuras/exemplo/sandstone-enunciado.png  used on input
  line 291.
 (pdftex.def)             Requested size: 455.0pt x 284.76845pt.
-[57]
+[59]
 Underfull \vbox (badness 6493) has occurred while \output is active []
 
- [58 <./figuras/exemplo/sandstone-enunciado.png>] [59] [60]
-<figuras/exemplo/sandstone-evalRDF.png, id=1188, 462.528pt x 346.896pt>
+ [60 <./figuras/exemplo/sandstone-enunciado.png>] [61] [62]
+<figuras/exemplo/sandstone-evalRDF.png, id=1206, 462.528pt x 346.896pt>
 File: figuras/exemplo/sandstone-evalRDF.png Graphic file (type png)
 <use figuras/exemplo/sandstone-evalRDF.png>
 Package pdftex.def Info: figuras/exemplo/sandstone-evalRDF.png  used on input l
 ine 372.
 (pdftex.def)             Requested size: 227.5pt x 170.62628pt.
-<figuras/exemplo/sandstone-cmRDF.png, id=1189, 462.528pt x 346.896pt>
+<figuras/exemplo/sandstone-cmRDF.png, id=1207, 462.528pt x 346.896pt>
 File: figuras/exemplo/sandstone-cmRDF.png Graphic file (type png)
 <use figuras/exemplo/sandstone-cmRDF.png>
 Package pdftex.def Info: figuras/exemplo/sandstone-cmRDF.png  used on input lin
@@ -1842,7 +1860,7 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 370--378
 [][] [] 
  []
 
-[61 <./figuras/exemplo/sandstone-evalRDF.png> <./figuras/exemplo/sandstone-cmRD
+[63 <./figuras/exemplo/sandstone-evalRDF.png> <./figuras/exemplo/sandstone-cmRD
 F.png>]
 Underfull \hbox (badness 1824) in paragraph at lines 405--405
 []|\T1/lmr/m/it/10 (+20) the \T1/lmr/m/n/10 (+20) sands-tone trans-por-ted \T1/
@@ -1859,7 +1877,7 @@ Overfull \hbox (4.59428pt too wide) in paragraph at lines 420--439
 [][] 
  []
 
-<figuras/exemplo/exemplo-lime.png, id=1203, 733.23938pt x 261.22594pt>
+<figuras/exemplo/exemplo-lime.png, id=1221, 733.23938pt x 261.22594pt>
 File: figuras/exemplo/exemplo-lime.png Graphic file (type png)
 <use figuras/exemplo/exemplo-lime.png>
 Package pdftex.def Info: figuras/exemplo/exemplo-lime.png  used on input line 4
@@ -1871,12 +1889,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 )
 Underfull \vbox (badness 1924) has occurred while \output is active []
 
- [62]
-[63] [64 <./figuras/exemplo/exemplo-lime.PNG>]
+ [64]
+[65] [66 <./figuras/exemplo/exemplo-lime.PNG>]
 \openout2 = `capitulos/ch4-avaliacao.aux'.
 
  (./capitulos/ch4-avaliacao.tex
-[65
+[67
 
 
 
@@ -1887,27 +1905,27 @@ Overfull \hbox (0.85017pt too wide) in paragraph at lines 21--36
 
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 44.
-[66] [67] [68] [69] [70] (./tabelas/tab-ind-clstr.tex)
+[68] [69] [70] [71] [72] (./tabelas/tab-ind-clstr.tex)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[71]
-<figuras/hmq2.png, id=1299, 722.7pt x 722.7pt>
+[73]
+<figuras/hmq2.png, id=1317, 722.7pt x 722.7pt>
 File: figuras/hmq2.png Graphic file (type png)
 <use figuras/hmq2.png>
 Package pdftex.def Info: figuras/hmq2.png  used on input line 178.
 (pdftex.def)             Requested size: 227.5pt x 227.49731pt.
-<figuras/hmq4.png, id=1300, 722.7pt x 722.7pt>
+<figuras/hmq4.png, id=1318, 722.7pt x 722.7pt>
 File: figuras/hmq4.png Graphic file (type png)
 <use figuras/hmq4.png>
 Package pdftex.def Info: figuras/hmq4.png  used on input line 182.
 (pdftex.def)             Requested size: 227.5pt x 227.49731pt.
-<figuras/hmq19.png, id=1301, 722.7pt x 722.7pt>
+<figuras/hmq19.png, id=1319, 722.7pt x 722.7pt>
 File: figuras/hmq19.png Graphic file (type png)
 <use figuras/hmq19.png>
 Package pdftex.def Info: figuras/hmq19.png  used on input line 187.
 (pdftex.def)             Requested size: 227.5pt x 227.49731pt.
-<figuras/hmq20.png, id=1302, 722.7pt x 722.7pt>
+<figuras/hmq20.png, id=1320, 722.7pt x 722.7pt>
 File: figuras/hmq20.png Graphic file (type png)
 <use figuras/hmq20.png>
 Package pdftex.def Info: figuras/hmq20.png  used on input line 191.
@@ -1916,22 +1934,22 @@ Package pdftex.def Info: figuras/hmq20.png  used on input line 191.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuras/hmEM16b.png, id=1305, 722.7pt x 722.7pt>
+<figuras/hmEM16b.png, id=1323, 722.7pt x 722.7pt>
 File: figuras/hmEM16b.png Graphic file (type png)
 <use figuras/hmEM16b.png>
 Package pdftex.def Info: figuras/hmEM16b.png  used on input line 203.
 (pdftex.def)             Requested size: 227.5pt x 227.49731pt.
-<figuras/hmEM35.png, id=1306, 722.7pt x 722.7pt>
+<figuras/hmEM35.png, id=1324, 722.7pt x 722.7pt>
 File: figuras/hmEM35.png Graphic file (type png)
 <use figuras/hmEM35.png>
 Package pdftex.def Info: figuras/hmEM35.png  used on input line 207.
 (pdftex.def)             Requested size: 227.5pt x 227.49731pt.
-<figuras/hmEM45c.png, id=1307, 722.7pt x 722.7pt>
+<figuras/hmEM45c.png, id=1325, 722.7pt x 722.7pt>
 File: figuras/hmEM45c.png Graphic file (type png)
 <use figuras/hmEM45c.png>
 Package pdftex.def Info: figuras/hmEM45c.png  used on input line 212.
 (pdftex.def)             Requested size: 227.5pt x 227.49731pt.
-<figuras/hmFN17a.png, id=1308, 722.7pt x 722.7pt>
+<figuras/hmFN17a.png, id=1326, 722.7pt x 722.7pt>
 File: figuras/hmFN17a.png Graphic file (type png)
 <use figuras/hmFN17a.png>
 Package pdftex.def Info: figuras/hmFN17a.png  used on input line 216.
@@ -1942,37 +1960,43 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [72]
-[73 <./figuras/hmq2.png> <./figuras/hmq4.png> <./figuras/hmq19.png> <./figuras/
-hmq20.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [74]
+Underfull \vbox (badness 4713) has occurred while \output is active []
 
- [74 <./figuras/hmEM16b.png> <./figuras/hmEM35.png> <./figuras/hmEM45c.png> <./
+ [75 <./figuras/hmq2.png> <./figuras/hmq4.png> <./figuras/hmq19.png> <./figuras
+/hmq20.png>]
+Underfull \vbox (badness 5161) has occurred while \output is active []
+
+ [76 <./figuras/hmEM16b.png> <./figuras/hmEM35.png> <./figuras/hmEM45c.png> <./
 figuras/hmFN17a.png>] (./tabelas/tab-Beetle75.tex) (./tabelas/tab-SciEntsBank75
 .tex)
 Overfull \hbox (4.6212pt too wide) in paragraph at lines 235--254
  [] 
  []
 
-[75]
-<figuras/Beetle-75.png, id=1344, 971.63pt x 500.87125pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figuras/Beetle-75.png, id=1357, 971.63pt x 500.87125pt>
 File: figuras/Beetle-75.png Graphic file (type png)
 <use figuras/Beetle-75.png>
 Package pdftex.def Info: figuras/Beetle-75.png  used on input line 263.
 (pdftex.def)             Requested size: 455.0pt x 234.54588pt.
-<figuras/SciEntsBank-75.png, id=1345, 914.41624pt x 498.86375pt>
+<figuras/SciEntsBank-75.png, id=1358, 914.41624pt x 498.86375pt>
 File: figuras/SciEntsBank-75.png Graphic file (type png)
 <use figuras/SciEntsBank-75.png>
 Package pdftex.def Info: figuras/SciEntsBank-75.png  used on input line 265.
 (pdftex.def)             Requested size: 455.0pt x 248.22856pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [76]
+ [77]
+Underfull \vbox (badness 6047) has occurred while \output is active []
+
+ [78]
 (./tabelas/tab-OpenUniv75.tex)
 Overfull \hbox (4.6212pt too wide) in paragraph at lines 278--288
  [] 
@@ -1981,29 +2005,29 @@ Overfull \hbox (4.6212pt too wide) in paragraph at lines 278--288
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[77 <./figuras/Beetle-75.png> <./figuras/SciEntsBank-75.png>]
-<figuras/OU-75.png, id=1375, 901.3675pt x 437.635pt>
+[79 <./figuras/Beetle-75.png> <./figuras/SciEntsBank-75.png>]
+<figuras/OU-75.png, id=1392, 901.3675pt x 437.635pt>
 File: figuras/OU-75.png Graphic file (type png)
 <use figuras/OU-75.png>
 Package pdftex.def Info: figuras/OU-75.png  used on input line 297.
 (pdftex.def)             Requested size: 455.0pt x 220.91377pt.
- [78 <./figuras/OU-75.png>] (./tabelas/tab-Powergrading75.tex)
+ [80 <./figuras/OU-75.png>] (./tabelas/tab-Powergrading75.tex)
 Overfull \hbox (4.6212pt too wide) in paragraph at lines 308--318
  [] 
  []
 
-<figuras/Powergrading-75.png, id=1387, 1201.48875pt x 497.86pt>
+<figuras/Powergrading-75.png, id=1404, 1201.48875pt x 497.86pt>
 File: figuras/Powergrading-75.png Graphic file (type png)
 <use figuras/Powergrading-75.png>
 Package pdftex.def Info: figuras/Powergrading-75.png  used on input line 327.
 (pdftex.def)             Requested size: 455.0pt x 188.53545pt.
-[79 <./figuras/Powergrading-75.png>] (./tabelas/tab-UNT75.tex) [80]
-<figuras/UNT-MAE.png, id=1402, 602.25pt x 372.39125pt>
+[81 <./figuras/Powergrading-75.png>] (./tabelas/tab-UNT75.tex) [82]
+<figuras/UNT-MAE.png, id=1419, 602.25pt x 372.39125pt>
 File: figuras/UNT-MAE.png Graphic file (type png)
 <use figuras/UNT-MAE.png>
 Package pdftex.def Info: figuras/UNT-MAE.png  used on input line 366.
 (pdftex.def)             Requested size: 227.5pt x 140.66917pt.
-<figuras/UNT-MSE.png, id=1403, 602.25pt x 372.39125pt>
+<figuras/UNT-MSE.png, id=1420, 602.25pt x 372.39125pt>
 File: figuras/UNT-MSE.png Graphic file (type png)
 <use figuras/UNT-MSE.png>
 Package pdftex.def Info: figuras/UNT-MSE.png  used on input line 371.
@@ -2013,49 +2037,53 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 364--373
 [][]  [] 
  []
 
-<figuras/UNT-RMSE.png, id=1404, 905.3825pt x 559.08875pt>
+<figuras/UNT-RMSE.png, id=1421, 905.3825pt x 559.08875pt>
 File: figuras/UNT-RMSE.png Graphic file (type png)
 <use figuras/UNT-RMSE.png>
 Package pdftex.def Info: figuras/UNT-RMSE.png  used on input line 379.
 (pdftex.def)             Requested size: 455.0pt x 280.96835pt.
-[81 <./figuras/UNT-MAE.png> <./figuras/UNT-MSE.png> <./figuras/UNT-RMSE.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[83 <./figuras/UNT-MAE.png> <./figuras/UNT-MSE.png>]
 (./tabelas/tab-Findes75.tex)
 Overfull \hbox (4.6212pt too wide) in paragraph at lines 394--404
  [] 
  []
 
-[82]
-<figuras/Findes-75.png, id=1434, 602.25pt x 372.39125pt>
+[84 <./figuras/UNT-RMSE.png>]
+<figuras/Findes-75.png, id=1453, 602.25pt x 372.39125pt>
 File: figuras/Findes-75.png Graphic file (type png)
 <use figuras/Findes-75.png>
 Package pdftex.def Info: figuras/Findes-75.png  used on input line 413.
 (pdftex.def)             Requested size: 455.0pt x 281.3554pt.
- [83 <./figuras/Findes-75.png>]) [84]
+ [85 <./figuras/Findes-75.png>]) [86]
 \openout2 = `capitulos/ch5-conclusoes.aux'.
 
- (./capitulos/ch5-conclusoes.tex
-[85
+
+(./capitulos/ch5-conclusoes.tex [87
 
 
 
-]) [86] (./tese-MarcosSpalenza.bbl (./tese-MarcosSpalenza.brf)
+]) [88] (./tese-MarcosSpalenza.bbl
+(./tese-MarcosSpalenza.brf)
 \tf@brf=\write6
 \openout6 = `tese-MarcosSpalenza.brf'.
 
 
 bibitemlist
-[87
+[89
 
 
-] [88] [89] [90] [91] [92] [93] [94] [95]) [96]
+] [90] [91] [92] [93] [94] [95] [96] [97]) [98]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 492.
+(hyperref)                removing `\uppercase' on input line 506.
 
-[97
+[99
 
 
-] [98]
+] [100]
 \openout2 = `apendices.aux'.
 
  (./apendices.tex
@@ -2087,13 +2115,13 @@ Package microtype Info: Character `texttrademark ' is missing
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <9> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 72.
- [99
+ [101
 
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 72.
- [100]
+ [102]
 Overfull \hbox (30.49135pt too wide) in paragraph at lines 102--102
 []| \T1/lmtt/m/n/9 clusters.txt - Todos os índices de cluster resultantes de cl
 usterização dos testes completos. 
@@ -2105,40 +2133,40 @@ Overfull \hbox (33.79884pt too wide) in paragraph at lines 102--102
 m arquivos individuais de índices
  []
 
-[101] [102] [103] [104
+[103] [104] [105] [106
 
-] [105] (./tabelas/exemplo/sandstone-respostas.tex
-[106
+] [107] (./tabelas/exemplo/sandstone-respostas.tex
+[108
 
-]) [107] (./tabelas/exemplo/sandstone-clusters.tex [108] [109] [110])
-[111] [112] (./tabelas/exemplo/sandstone-amostras.tex [113] [114]) [115]
-[116] [117] (./tabelas/exemplo/sandstone-maxfeat.tex)
-(./tabelas/exemplo/sandstone-minfeat.tex) [118]
-<figuras/exemplo/sandstone-evalSVM.png, id=1863, 462.528pt x 346.896pt>
+]) [109] (./tabelas/exemplo/sandstone-clusters.tex [110] [111] [112])
+[113] [114] (./tabelas/exemplo/sandstone-amostras.tex [115] [116]) [117]
+[118] [119] (./tabelas/exemplo/sandstone-maxfeat.tex)
+(./tabelas/exemplo/sandstone-minfeat.tex) [120]
+<figuras/exemplo/sandstone-evalSVM.png, id=1882, 462.528pt x 346.896pt>
 File: figuras/exemplo/sandstone-evalSVM.png Graphic file (type png)
 <use figuras/exemplo/sandstone-evalSVM.png>
 Package pdftex.def Info: figuras/exemplo/sandstone-evalSVM.png  used on input l
 ine 282.
 (pdftex.def)             Requested size: 181.99722pt x 136.50102pt.
-<figuras/exemplo/sandstone-evalKNN.png, id=1864, 462.528pt x 346.896pt>
+<figuras/exemplo/sandstone-evalKNN.png, id=1883, 462.528pt x 346.896pt>
 File: figuras/exemplo/sandstone-evalKNN.png Graphic file (type png)
 <use figuras/exemplo/sandstone-evalKNN.png>
 Package pdftex.def Info: figuras/exemplo/sandstone-evalKNN.png  used on input l
 ine 288.
 (pdftex.def)             Requested size: 181.99722pt x 136.50102pt.
-<figuras/exemplo/sandstone-evalDTR.png, id=1865, 462.528pt x 346.896pt>
+<figuras/exemplo/sandstone-evalDTR.png, id=1884, 462.528pt x 346.896pt>
 File: figuras/exemplo/sandstone-evalDTR.png Graphic file (type png)
 <use figuras/exemplo/sandstone-evalDTR.png>
 Package pdftex.def Info: figuras/exemplo/sandstone-evalDTR.png  used on input l
 ine 294.
 (pdftex.def)             Requested size: 181.99722pt x 136.50102pt.
-<figuras/exemplo/sandstone-evalWSD.png, id=1866, 462.528pt x 346.896pt>
+<figuras/exemplo/sandstone-evalWSD.png, id=1885, 462.528pt x 346.896pt>
 File: figuras/exemplo/sandstone-evalWSD.png Graphic file (type png)
 <use figuras/exemplo/sandstone-evalWSD.png>
 Package pdftex.def Info: figuras/exemplo/sandstone-evalWSD.png  used on input l
 ine 300.
 (pdftex.def)             Requested size: 181.99722pt x 136.50102pt.
-<figuras/exemplo/sandstone-evalGBC.png, id=1867, 462.528pt x 346.896pt>
+<figuras/exemplo/sandstone-evalGBC.png, id=1886, 462.528pt x 346.896pt>
 File: figuras/exemplo/sandstone-evalGBC.png Graphic file (type png)
 <use figuras/exemplo/sandstone-evalGBC.png>
 Package pdftex.def Info: figuras/exemplo/sandstone-evalGBC.png  used on input l
@@ -2149,31 +2177,31 @@ File: figuras/exemplo/sandstone-evalRDF.png Graphic file (type png)
 Package pdftex.def Info: figuras/exemplo/sandstone-evalRDF.png  used on input l
 ine 312.
 (pdftex.def)             Requested size: 181.99722pt x 136.50102pt.
-<figuras/exemplo/sandstone-cmSVM.png, id=1868, 462.528pt x 346.896pt>
+<figuras/exemplo/sandstone-cmSVM.png, id=1887, 462.528pt x 346.896pt>
 File: figuras/exemplo/sandstone-cmSVM.png Graphic file (type png)
 <use figuras/exemplo/sandstone-cmSVM.png>
 Package pdftex.def Info: figuras/exemplo/sandstone-cmSVM.png  used on input lin
 e 322.
 (pdftex.def)             Requested size: 181.99722pt x 136.50102pt.
-<figuras/exemplo/sandstone-cmKNN.png, id=1869, 462.528pt x 346.896pt>
+<figuras/exemplo/sandstone-cmKNN.png, id=1888, 462.528pt x 346.896pt>
 File: figuras/exemplo/sandstone-cmKNN.png Graphic file (type png)
 <use figuras/exemplo/sandstone-cmKNN.png>
 Package pdftex.def Info: figuras/exemplo/sandstone-cmKNN.png  used on input lin
 e 328.
 (pdftex.def)             Requested size: 181.99722pt x 136.50102pt.
-<figuras/exemplo/sandstone-cmDTR.png, id=1870, 462.528pt x 346.896pt>
+<figuras/exemplo/sandstone-cmDTR.png, id=1889, 462.528pt x 346.896pt>
 File: figuras/exemplo/sandstone-cmDTR.png Graphic file (type png)
 <use figuras/exemplo/sandstone-cmDTR.png>
 Package pdftex.def Info: figuras/exemplo/sandstone-cmDTR.png  used on input lin
 e 334.
 (pdftex.def)             Requested size: 181.99722pt x 136.50102pt.
-<figuras/exemplo/sandstone-cmWSD.png, id=1871, 462.528pt x 346.896pt>
+<figuras/exemplo/sandstone-cmWSD.png, id=1890, 462.528pt x 346.896pt>
 File: figuras/exemplo/sandstone-cmWSD.png Graphic file (type png)
 <use figuras/exemplo/sandstone-cmWSD.png>
 Package pdftex.def Info: figuras/exemplo/sandstone-cmWSD.png  used on input lin
 e 340.
 (pdftex.def)             Requested size: 181.99722pt x 136.50102pt.
-<figuras/exemplo/sandstone-cmGBC.png, id=1872, 462.528pt x 346.896pt>
+<figuras/exemplo/sandstone-cmGBC.png, id=1891, 462.528pt x 346.896pt>
 File: figuras/exemplo/sandstone-cmGBC.png Graphic file (type png)
 <use figuras/exemplo/sandstone-cmGBC.png>
 Package pdftex.def Info: figuras/exemplo/sandstone-cmGBC.png  used on input lin
@@ -2188,18 +2216,18 @@ e 352.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[119
+[121
 
  <./figuras/exemplo/sandstone-evalSVM.png> <./figuras/exemplo/sandstone-evalKNN
 .png> <./figuras/exemplo/sandstone-evalDTR.png> <./figuras/exemplo/sandstone-ev
-alWSD.png> <./figuras/exemplo/sandstone-evalGBC.png>] [120 <./figuras/exemplo/s
+alWSD.png> <./figuras/exemplo/sandstone-evalGBC.png>] [122 <./figuras/exemplo/s
 andstone-cmSVM.png> <./figuras/exemplo/sandstone-cmKNN.png> <./figuras/exemplo/
 sandstone-cmDTR.png> <./figuras/exemplo/sandstone-cmWSD.png> <./figuras/exemplo
-/sandstone-cmGBC.png>] (./tabelas/tab-regressao-UNT.tex [121
+/sandstone-cmGBC.png>] (./tabelas/tab-regressao-UNT.tex [123
 
-] [122]
-[123] [124] [125] [126] [127] [128] [129] [130] [131] [132] [133] [134]
-[135] [136]) [137])
+] [124]
+[125] [126] [127] [128] [129] [130] [131] [132] [133] [134] [135] [136]
+[137] [138]) [139])
 No file tese-MarcosSpalenza.ind.
 
 Package caption Warning: Unused \captionsetup[lstlisting] on input line 135.
@@ -2216,23 +2244,32 @@ AED: lastpage setting LastPage
 \tf@toc=\write9
 \openout9 = `tese-MarcosSpalenza.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 504.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 504.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 518.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 518.
 (./tese-MarcosSpalenza.aux (./capitulos/ch1-introducao.aux)
 (./capitulos/ch2-literatura.aux) (./capitulos/ch3-proposta.aux)
 (./capitulos/ch4-avaliacao.aux) (./capitulos/ch5-conclusoes.aux)
 (./apendices.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 504.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 504.
-Package rerunfilecheck Info: File `tese-MarcosSpalenza.brf' has not changed.
-(rerunfilecheck)             Checksum: 83280646D596FA8C062C8FDD502A583B;14604.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 504.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 518.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 518.
+
+
+Package rerunfilecheck Warning: File `tese-MarcosSpalenza.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `tese-MarcosSpalenza.brf':
+(rerunfilecheck)             Before: ACFEEC7F98F406C0EDF1BECE1D801D47;14618
+(rerunfilecheck)             After:  6C17B3E9E56437B7B1C6856A11318E6F;14618.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 518.
  ) 
 Here is how much of TeX's memory you used:
- 33315 strings out of 481239
- 577229 string characters out of 5920377
- 1018878 words of memory out of 5000000
- 47156 multiletter control sequences out of 15000+600000
+ 33321 strings out of 481239
+ 577309 string characters out of 5920376
+ 1020363 words of memory out of 5000000
+ 47158 multiletter control sequences out of 15000+600000
  669494 words of font info for 233 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,13n,91p,2665b,896s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2282,10 +2319,10 @@ mf/fonts/type1/public/lm/lmsso17.pfb></usr/share/texmf/fonts/type1/public/lm/lm
 sy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/f
 onts/type1/public/lm/lmtt9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtti10.
 pfb>
-Output written on tese-MarcosSpalenza.pdf (139 pages, 2405930 bytes).
+Output written on tese-MarcosSpalenza.pdf (141 pages, 2416417 bytes).
 PDF statistics:
- 2346 PDF objects out of 2487 (max. 8388607)
- 2075 compressed objects within 21 object streams
- 375 named destinations out of 1000 (max. 500000)
+ 2364 PDF objects out of 2487 (max. 8388607)
+ 2091 compressed objects within 21 object streams
+ 379 named destinations out of 1000 (max. 500000)
  43306 words of extra memory for PDF output out of 51595 (max. 10000000)
 

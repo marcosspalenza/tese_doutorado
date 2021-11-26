@@ -5,10 +5,12 @@
 \chapter{Experimentos e Resultados}
 \label{cap-experimentos}
 
-Esse capítulo apresenta três séries de experimentos. A primeira apresenta a parte fundamental do aprendizado semi-supervisionado do sistema \textit{p}Nota, utilizando \textit{clusterização} para a identificação dos principais itens de resposta em cada base de dados. A segunda apresenta os métodos de classificação, a qualidade do aprendizado do sistema na predição de notas e sua adequação ao modelo esperado pelo tutor. Por fim, o terceiro módulo reflete como os modelos de resposta são formados pelo sistema e apresentados como feedback aos alunos e professores. Os experimentos foram realizados utilizando conjuntos de dados da literatura que apresentam diferentes características.
+O \textit{p}Nota é um sistema que foi produzido com o andamento de experimentos em plataformas AVA na Universidade Federal do Espírito Santo (UFES). Nesse período, durante o desenvolvimento foram adicionadas diferentes técnicas para validar a capacidade de compreensão linguística e avaliativa do modelo SAG proposto. Os testes envolveram um conjunto de atividades com mais de 126 questões e 2805 respostas. Nestes testes foram analisadas formas distintas de escrita e em diferentes níveis de instrução, do Ensino Básico à Pós-Graduação, abordando tópicos distintos como Computação, Ciências, Filosofia, Economia e Medicina. Entretanto, para avaliar o sistema apresentamos aqui uma série de experimentos com \textit{datasets} encontrados na literatura.
+
+Esse capítulo apresenta três séries de experimentos. A primeira avalia a parte fundamental da técnica de \textit{Active Learning} do sistema \textit{p}Nota, com o uso da \textit{clusterização} para a identificação dos principais itens de resposta em cada base de dados. A segunda apresenta os métodos de classificação, a qualidade do aprendizado do sistema na predição de notas e sua adequação ao modelo esperado pelo tutor. Por fim, o terceiro módulo reflete como os modelos de resposta são formados pelo sistema e apresentados como feedback aos alunos e professores.
 
 \section{Base de Dados}
-Oito bases de dados foram selecionadas de acordo com a literatura, em português e inglês. Cada base de dados foi utilizada conforme as suas características. As bases de dados foram organizadas segundo o formato da nota, entre ordinais, discretas e contínua \cite{morettin2010}.
+ Nove bases de dados foram selecionadas de acordo com a literatura, em português e inglês. Cada base de dados foi utilizada conforme as suas características. As bases de dados foram organizadas segundo o formato da nota, entre ordinais, discretas e contínua \cite{morettin2010}.
 
 Em bases de dados com notas \textit{ordinais} o método avaliativo do tutor é dado de forma textual e categórica. A representação do rótulo não estabelece escalas para o sistema, não sendo possível mensurar a diferenças na escala \textit{a priori}. O modelo formado deve compreender as estruturas textuais de forma simbólica, caracterizando a essência de cada nível. Portanto, o classificador deve ser robusto para aprender a relevância das respostas pela equivalência de palavras-chave. Basicamente, é fundamental para o classificador produzir um modelo com as informações essenciais para a resposta receber tal categoria e reproduzir o modelo.
 
@@ -38,7 +40,7 @@ Por fim, a avaliação \textit{discreta} numérica é a mais comum. Esse modelo 
 \end{table}
 \end{center}
 
-A Tabela \ref{tab-datasets} descreve os oito \textit{datasets} utilizados nos experimentos deste capítulo. Através das características apresentadas, sabendo que cada \textit{dataset} contém uma quantidade regular de respotas, observamos a grande diversidade de quantidade de respostas por questão. Com questões de 30 até mais de 1800 respostas. No total, esse \textit{corpora} apresenta um total de 337 questões e 61.268 respostas. Cada base de dados e sua descrição completa é apresentada a seguir:
+A Tabela \ref{tab-datasets} descreve os nove \textit{datasets} utilizados nos experimentos deste capítulo. Através das características apresentadas, sabendo que cada \textit{dataset} contém uma quantidade regular de respotas, observamos a grande diversidade de quantidade de respostas por questão. Com questões de 30 até mais de 1800 respostas. É importante destacar ainda que, a definição de respostas curtas e as características textuais das respostas de cada um destes \textit{datasets} foram apresentadas no Capítulo \label{cap1-intro}, em especial na Tabela \ref{tab-features}. No total, esse \textit{corpora} apresenta um total de 337 questões e 61.268 respostas. Cada base de dados e sua descrição completa é apresentada a seguir:
 
 
 \subsection{Base de Dados \textit{Beetle} do \textit{SEMEVAL'2013 : Task 7} \textit{(Inglês)}}
@@ -150,18 +152,36 @@ O diferencial dessa base de dados é a mudança de características nas resposta
 \section{Experimentos}
 \label{sec-experimentos}
 
-A série de experimentos realizados têm como intúito demonstrar o uso do \textit{p}Nota, em conjunto com o professor, de forma a criar modelos com bom desempenho na atribução de notas. Além disso, através dos \textit{datasets} conhecidos na literatura, podemos comparar a proposta de análise de estruturas textuais com os principais trabalhos publicados. Em uma primeira comparação avaliaremos a qualidade dos \textit{clusters} formados.
+A série de experimentos realizados têm como intúito demonstrar o uso do \textit{p}Nota, em conjunto com o professor, de forma a criar modelos com bom desempenho na atribução de notas. Além disso, através dos \textit{datasets} conhecidos na literatura, podemos comparar a proposta de análise de estruturas textuais com os principais trabalhos publicados. Em uma primeira comparação avaliaremos a qualidade dos \textit{clusters} formados. Na sequência, apresentamos comparativos com as técnicas utilizadas na literatura nos desafios de uma forma geral. E, por fim, verificamos o desempenho do sistema quanto ao ganho de informação, em uma forma de validar a capacidade de aprendizado do modelo linguístico.
 
 \subsection{Resultados de \textit{Clusterização}}
 \label{sec-res-clustering}
 
-Em uma primeira análise, observamos os resultados dos \textit{clusters} formados para os conjuntos de atividades através do processo de otimização \cite{spalenza2019}. Analisamos os resultados segundo três métricas de informação e o grau de similaridade entre grupos. Para isso, utilizamos as métricas ARI, NMI e CA, descritas na Seção \ref{subsec-clusterizacao}. Os resultados médios obtidos para os conjuntos de dados são apresentados na Tabela \ref{tab-clstr-index}.
+Em uma primeira análise, observamos o processo de \textit{clusterização} através do propósito da aplicação em \textit{Active Learning}. 
+
+
+
+os resultados dos \textit{clusters} formados para os conjuntos de atividades através do processo de otimização \cite{spalenza2019}. Os resultados obtidos, visando ter \textit{clusters} mais homogêneos após a otimização, são caracterizados pela 
+
+
+
+Analisamos os resultados segundo três métricas de informação e o grau de similaridade entre grupos. Para isso, utilizamos as métricas ARI, NMI e CA, descritas na Seção \ref{subsec-clusterizacao}. Os resultados médios obtidos para os conjuntos de dados são apresentados na Tabela \ref{tab-clstr-index}.
 
 \begin{table}[!h]
 \begin{center}
-\begin{tabular}{r | c c c}
+\begin{tabular}{r | r r r }
  \hline
- \input{tabelas/tab-ind-clstr.tex}
+
+\textit{Dataset}  & CA & HS & CS \\ \hline 
+SEMEVAL2013 Beetle & 0,5521 & 0,1127 & 0,3128 \\
+SEMEVAL2013 SciEntsBank SciEntsBank & 0,5747 & 0,1152 & 0,2071 \\
+UK Open University  & 0,7604 & 0,1752 & 0,0647 \\
+Projeto Feira Liter{\'a}ria & 0,5529 & 0,0848 & 0,2896 \\
+Kaggle ASAP-SAS   & 0,5215 & 0,0216 & 0,0801 \\
+Powergrading & 0,8537 & 0,3747 & 0,1331 \\
+Kaggle PTASAG  & 0,4863 & 0,0732 & 0,1663 \\
+University of North Texas & - & - & - \\
+VestUFES & - & - & - \\
  \hline
 \end{tabular}
 \end{center}

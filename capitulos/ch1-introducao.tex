@@ -7,24 +7,94 @@
 
 A avaliação é uma etapa fundamental para o ensino, inclusive para garantir a eficiência dos processos de ensino-aprendizagem. Através do método avaliativo que o professor mensura a assimilação do conteúdo ministrado. Portanto, é por meio das avaliações que o professor observa o desempenho da turma e seu progresso nos conteúdos. Nesse aspecto, é fundamental que o professor verifique com frequência o aprendizado dos estudantes no decorrer da disciplina. Assim, essa aplicação permite ao professor interagir com os alunos junto com os materiais pedagógicos para reformulação e aperfeiçoamento da dinâmica de ensino. Deste modo, é com o acompanhamento da disciplina e o apoio ao educando que as atividades estabelecem meios de reformular e controlar o processo de ensino-aprendizagem \cite{barreira2006}.
 
-
 Através das atividades, somada ao acompanhamento em sala, avaliamos a proficiência dos estudantes sobre determinado domínio. A proficiência envolve avaliar o raciocínio segundo a capacidade de resolver problemas, tomar decisões e realizar inferências sobre o assunto \cite{casiraghi2017}. O papel da avaliação, portanto, é diagnosticar, apreciar e verificar o aprendizado dos alunos para que o professor atue no processo de formação de modo a consolidar seu método de ensino \cite{oliveira2005}. Deste modo, além do desenvolvimento e da sequência de métodos avaliativos, são imprescindíveis a verificação dos resultados e a correção de problemas nos métodos de ensino-aprendizagem.
-
 
 O método avaliativo é o que torna possível o acompanamento e a solução dos problemas com o aprendizado dos alunos. Essa identificação de problemas e as ações para contorná-los tornam a estrutura curricular personalizada, alinhando a turma de acordo com os objetivos da disciplina \cite{biggs1998}. Portanto, é através das atividades que criamos o modelo para mensurar o conhecimento individual dos alunos. Para isso, a mediação tecnológica consolidou-se para aplicação das atividades em quantidade e qualidade. Deste modo, os Ambientes Virtuais de Aprendizagem (AVA) \cite{maquine2020} se tornaram modelos virtuais para suporte das aulas para turmas presenciais e a distância \cite{raes2020}. Com a mediação tecnológica, apoiamos o professor na criação, avaliação, recomendação e visualização de dados educacionais impactando diretamente no acompanhamento do currículo do aluno \cite{paiva2012}. Deste modo, é com as ferramentas de apoio que o tutor verifica a aptidão dos estudantes, de forma individual ou coletiva, para melhorar a adaptação e a experiência da disciplina.
 
 Nesse ponto, o acompanhamento, a formulação, a aplicação e os resultados dos métodos avaliativos em meio computacional são estudados pela área de \textit{Computer-Assisted Asssessment} (CAA) \cite{bogarin2018}, ou em tradução literal Avaliação Assistida por Computadores. Na literatura de CAA, existe uma extensa pesquisa por métodos avaliativos e sua aplicação de forma digital \cite{perez-marin2009}. Em especial, destacamos as questões discursivas curtas, fundamentais para o desenvolvimento da escrita para aplicação em ampla escala neste formato. A avaliação de questões discursivas é dispendiosa, demandando análises da relação de cada resposta com seu alinhamento com o tema. Portanto, o estudo de formas computacionais para suporte aos métodos de avaliação de respostas discursivas, garantem maior capacidade de aplicação e correção para mensurar o aprendizado.
 
-Nesse aspecto, sabendo que existe um critério formulado pelo professor para correção das respostas discursivas, propomos uma abordagem através da análise das estruturas textuais para reconhecimento de padrões. Assim, neste trabalho descrevemos o \textit{p}Nota, um modelo semi-supervisionado para identificação do método avaliativo, extração de padrões textuais, classificação da base de dados e produção de \textit{feedbacks}. Considerando a liberdade textual característica das respostas discursivas, verificamos a similaridade entre respostas e os grupos de termos referenciais para atribuir notas de forma equivalente ao avaliador humano. Com os modelos de avaliação de respostas discursivas curtas (ou \textit{Short Answer Graders} - SAG), esperamos identificar modelos de resposta, reproduzir o método avaliativo e criar \textit{feedbacks} descritivos para todos os participantes da disciplina \cite{arter2006, spalenza2016a}.
+As questões discursivas incluem vários modelos avaliativos, das questões de preenchimento até longas redações. Neste trabalho, entretanto, buscamos dar suporte ao professor na avaliação de respostas discursivas curtas. Ainda assim, com \textit{datasets} de diferentes características de resposta e avaliação, definimos como respostas curtas conjuntos textuais de até 3 sentenças, compostos por até 100 palavras. Para caracterizar as respostas discursivas curtas apresentamos na Tabela \ref{tab-pgq2-exemplo} a atividade de exemplo \textit{Powergrading-A2}.
+
+\begin{table}
+\centering
+\caption{Exemplo de respostas curtas com amostras da questão Q2 do \textit{dataset Powergrading}.}
+\label{tab-pgq2-exemplo}
+\begin{tabular}{ r | r}
+\hline
+\multicolumn{2}{l}{\textbf{Powergrading}} \\ \hline
+\multicolumn{2}{c}{\textbf{Q2}} \\ \hline 
+\multicolumn{2}{l}{\textit{What is one right or freedom from the First Amendment of the U.S. Constitution?}} \\ \hline
+ \# & Resposta \\ \hline
+fbccf723b6ca & freedom of speech  \\
+10814c63d220 & freedom of speech \\
+0704a8d6f8d9 & to bear arm \\
+256b545c9f10 & free excess of religion \\
+a83446496fcb & freedom of speech \\
+83bbefc5bbae & freedom of speech. \\
+f28ffbdde6b9 & to bear arms \\
+bc65e0296be8 & freedom of speech. \\
+3e1216d9295e & freedom of speech \\
+830444330cd9 & life \\
+815667698f42 & right to pursue happiness. \\
+\\
+\\
+\hline
+\hline
+\end{tabular}
+\end{table}
+
+A Tabela \ref{tab-pgq2-exemplo} apresenta o enunciado da questão e uma pequena amostra dos identificadores e respostas enviadas pelos estudantes. Vamos utilizar essa questão Q2 do \textit{dataset Powergrading} como modelo de questão discursiva curta. Nesta questão temos respostas sucintas para um enunciado que direciona para um ou poucos caminhos de resposta que podem ser desenvolvidos pelos estudantes. Nas respostas selecionadas vemos diferentes direções seguidas pelos estudantes. Porém, segundo a constituição americana:
+
+\begin{quote}
+\textit{Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the government for a redress of grievances.}
+\end{quote}
+
+Deste modo, todos que responderam algo descrito na \textit{Primeira Emenda} estão corretos. Entretanto, como o próprio exemplo indica, os \textit{datasets} são característicos pela liberdade de escrita e diversidade de conteúdos. A liberdade de escrita é caracteristica em questões abertas, ou seja, aonde há produção textual por parte do estudante. Assim, a liberdade de escrita é expressa pelas diferentes formas que os estudantes se referem a um ou mais modelos de resposta. Devido a essa liberdade, devemos formar representações do conteúdo que demonstram a perspectiva de cada um dos participantes do método avaliativo.
+
+Na aplicação de questões discursivas é comum que exista uma expectativa de convergência entre respostas, de forma a não criar respostas únicas e pessoais. Designamos então como \textit{modelo de respostas}, a tendência de determinados conjuntos de resposta de estudantes apresentarem entre si certo índice de similaridade. Por outro lado, em uma perspectiva avaliativa do professor, existe o alinhamento entre conteúdo ministrado em sala e conteúdo esperado nas respostas. Encontramos este alinhamento nas \textit{respostas candidatas}, ou seja, respostas produzidas pelo professor para caracterizar a expectativa de resposta de acordo com o enunciado da atividade. Por fim, na perspectiva do sistema, existem os padrões textuais. Com a análise do texto através de métodos de reconhecimento de padrões, identificamos características que definem grupos de conteúdo em meio a diversidade textual. Denominamos tais grupos como \textit{padrões de resposta}, pois caracterizam grupos de resposta ao sistema para compreensão do conteúdo e do tema abordado. 
+
+Cada uma das perspectivas sobre o conjunto de respostas é importante para designar as formas com a qual cada um no processo avaliativo observa a diversidade textual. Portanto, na visão dos alunos, temos a convergência das respostas na formação de modelos. Na análise do professor, os modelos têm viés avaliativo, e esse viés é representado através de respostas candidatas ou expectativas de resposta. As respostas candidatas são instâncias textuais, ou seja, são respostas de referência tal qual as produzidas pelos estudantes. Por outro lado, as expectativas de resposta são segmentos do conteúdos que demonstram traços da avaliação, caracterizando o processo avaliativo. E, por fim, na ótica do sistema, a equivalência entre as estruturas textuais indicam padrões, formados por grupos de resposta com as mesmas características.
+
+Sabendo da complexidade do processo avaliativo, caracterizado pela análise de todo conteúdo, atribuição de notas e revisão de resultados, enfatizamos diversidade textual. A diversidade textual inclui as diferentes formas de linguagem adotadas. Isso inclui todas as possibilidades de atingir a expectativa de resposta do professor de acordo com o método avaliativo. Assim como o professor, a automação do processo de análise textual inclui compreender as tendências de resposta de acordo com o conteúdo abordado. Deste modo, as características linguísticas do conjunto textual deve ser analisadas tal qual o realizado por um especialista, nesse caso o professor. Com essa perspectiva, o objetivo geral dos sistemas de CAA é reduzir o esforço avaliativo e a análise de toda diversidade textual. Para isso, os sistemas devem criar modelos linguísticos robustos, de forma a ter alto nível de compreensão linguística e interpretação textual. Essa robustez é indicada dado o potencial de identificar respostas distintas com mesmo viés de resposta, aproximando-se da linguagem dos professores e alunos.
+
+Por isso, o reconhecimento das estruturas que formam a linguagem escrita são fundamentais para a descoberta de modelos, padrões e características relevantes nas respostas. Cada resposta, como um documento textual, é composta por uma série de características. Cada característica é extraída de acordo com a construção da estrutura textual, seja ela no aspecto gramatical, morfológico, semântico, sintático, estatístico ou sequencial. Portanto, a identificação das características mais relevantes nas respostas que formam os padrões para o sistema. A Tabela \ref{tab-features} apresenta os valores médios da composição de cada \textit{dataset} segundo suas características textuais.
+
+% TABELA CARACTERISTICAS
+\begin{table}
+\centering
+\caption{Média de observados nas respostas }
+\label{tab-features}
+\begin{tabular}{|r | r r r|} \hline
+\textit{Dataset} & Características & Palavras & Caracteres \\
+\hline
+UNT & 140 & 20 & 107 \\
+ASAP & 2932 & 43 & 236 \\
+Beetle & 98 & 10 & 50 \\
+Open University & 418 & 10 & 55 \\
+Findes & 123 & 8 & 40 \\
+Powergrading & 178 & 4 & 20 \\
+PTASAG & 906 & 13 & 72 \\
+SEB & 110 & 13 & 64 \\
+VestUFES & 1391 & 92 & 536 \\
+\hline \hline
+\end{tabular}
+\end{table}
+
+Como a Tabela \ref{tab-features} destaca, mesmo sobre um tipo específico de questão, temos variações importantes no modelo de resposta. Apesar de todos os conjuntos se enquadrarem nas especificações de respostas com menos de 100 palavras ou 3 sentenças, são evidentes as diferenças entre \textit{datasets}. Enquanto majoritariamente temos conjuntos com respostas bem concisas (menores que 20 palavras), temos VestUFES e ASAP mais descritivos e, possívelmente, com enunciados mais abstratos. Diante do escopo delimitado para as respostas, sobressaem alguns desafios na compreensão computacional da linguagem e dos métodos avaliativos. Deste modo, é fundamental a produção de modelos avaliativos computacionais que demonstrem fluência no método adotado. Portanto, modelos avaliativos designam sistemas que aplicam o método de forma similar ao professor, realizando a inferência avaliativa.
+
+Por conta dos vários desafios nas técnicas de CAA, porpomos um modelo de \textit{Active Learning} com análise das estruturas que compõe o texto em uma aplicação de reconhecimento de padrões. Em \textit{Active Learning} utilizamos de técnicas em \textit{Unsupervised Learning}, para seleção de amostras pela distribuição espacial, e \textit{Supervised Learning}, para construção de avaliadores alinhados ao padrão de notas identificado. Assim, o sistema chamado \textit{p}Nota, apresenta a combinação de técnicas de pré-processamento, clusterização, amostragem, classificação e produção de \textit{feedbacks} para criar um modelo consistente em relação a expectativa do professor. Dentro das estruturas textuais, investigamos a construção de cada uma das sentenças sob diferentes perspectivas, avaliando aspectos gramaticais, morfológicos, semânticos, sintáticos, estatísticos e sequenciais que formam o conjunto de respostas. Sendo a atribuição de notas de interesse do professor, as respostas são comparadas diante de sua similaridade em diferentes modelos de classificação ou regressão. Deste modo, com o modelo proposto para avaliação de respostas discursivas curtas (ou \textit{Short Answer Graders} (SAG), esperamos identificar padrões de resposta, reproduzir o método avaliativo e criar \textit{feedbacks} descritivos para todos os participantes da disciplina \cite{arter2006, spalenza2016a}.
 
 \section{Problema} 
 \label{cap1-problema}
 
-Dentro da literatura dos sistemas SAG, encontramos determinados problemas listados por autores durante os anos de evolução da pesquisa. Os problemas são amplos, onde se busca aprimorar gradativamente os modelos avaliativos para conseguir resultados cada vez mais adequados aos do professor \cite{pado2021}. Assim, buscamos para além da redução do esforço de correção, a ampliação da análise e a proximidade dos modelos avaliativos do especialista e do avaliador automático. Nesse aspecto, apesar de ser um estudo já realizado há décadas, ainda encontramos nos modelos SAG uma série de desafios com demandas importantes e pouco estudadas até o momento.
+Dentro da literatura dos sistemas SAG, encontramos determinados problemas que foram listados por autores durante os anos de evolução da pesquisa. Os problemas são amplos, onde se busca aprimorar gradativamente os modelos avaliativos para conseguir resultados cada vez mais adequados aos do professor \cite{pado2021}. Assim, buscamos para além da redução do esforço de correção, a ampliação da análise e a proximidade entre modelos avaliativos. A expectativa é a redução de erros nos modelos avaliativos, com o modelo do avaliador automático aproximando-se do modelo do professor, enquanto especialista no tema. Nesse aspecto, mesmo que seja um trabalho realizado há decadas \cite{burrows2015}, a literatura dos modelos SAG descreve demandas importantes e pouco estudadas até o momento.
 
-Nos primeiros sistemas, a modelagem de questões discursivas era um trabalho realizado com o texto bruto \cite{perez-marin2009}. A partir disso, a busca por equivalência entre a resposta esperada e o texto dos estudantes falhou por inúmeras vezes na padronização dos documentos e na identificação de sinônimos \cite{leffa2003}. O estudo dessa pesquisa fomentou inúmeras discussões em torno da identificação do conhecimento obtido pelas respostas escritas pelo aluno. A robustez dessa análise é parte fundamental de boa parte dos algoritmos atuais em SAG \cite{filighera2020}.
+Nos primeiros sistemas, a modelagem de questões discursivas era um trabalho realizado com o texto bruto \cite{perez-marin2009}. A partir disso, a busca por equivalência entre a resposta esperada e o texto dos estudantes falhou por inúmeras vezes na padronização dos documentos e na identificação de sinônimos \cite{leffa2003}. O estudo dessa pesquisa fomentou inúmeras discussões em torno da identificação do conhecimento obtido pelas respostas escritas pelo aluno. Por conta disso, a robustez dessa análise é parte fundamental de boa parte dos algoritmos atuais em SAG \cite{filighera2020}.
 
-Na principal revisão da literatura sobre os sistemas SAG \cite{burrows2015}, os autores reúnem 37 trabalhos realizados na área. Durante esse estudo, o autor destaca o problema da  profundidade do aprendizado, em tradução literal para ``\textit{depth of learning}'', separando as atividades em dois grupos: de reconhecimento e de recuperação. No Brasil, conhecemos discriminamos os dois tipos de questão como abertas e fechadas \cite{gunther2012}. Então, é característica dos modelos SAG a produção de modelos complexos de correção de questões de recuperação, interpretando computacionalmente o conteúdo de respostas curtas em textos de escrita livre.
+Na principal revisão da literatura sobre os sistemas SAG \cite{burrows2015}, os autores reúnem 37 trabalhos realizados na área.
+% TODO
+
+ Durante esse estudo, o autor destaca o problema da  profundidade do aprendizado, em tradução literal para ``\textit{depth of learning}'', separando as atividades em dois grupos: de reconhecimento e de recuperação. No Brasil, conhecemos discriminamos os dois tipos de questão como abertas e fechadas \cite{gunther2012}. Então, é característica dos modelos SAG a produção de modelos complexos de correção de questões de recuperação, interpretando computacionalmente o conteúdo de respostas curtas em textos de escrita livre.
 
 Um problema diretamente associado ao modelo de interpretação textual, entretanto, é a busca de convergência entre as respostas. É uma dificuldade a extração do viés de resposta em questões discursivas factuais com múltiplos contextos. Além disso, existe ainda maior complexidade para lidar com questões que resultam em respostas opinativas, individuais ou subjetivas \cite{bailey2008}. Apesar do conteúdo, é esperado do sistema que, independente do conteúdo recebido do professor, lide com a liberdade de escrita do estudante e analize a convergência entre respostas na tentativa de recuperar padrões compatíveis \cite{saha2018}. 
 
@@ -70,7 +140,7 @@ Portanto, temos como âmbito principal a criação de modelos para aproximar o c
 
 \begin{itemize}
 \item Organizar os \textit{datasets} públicos da literatura para estabelecer uma comparação com resultados obtidos em estudos correlatos \cite{burrows2015};
-\item Estudar o impacto das técnicas de Processamento de Linguagem Natural e Recuperação da Informação para a identificação da relação termo-classe de forma gramatical, morfológica, semântica, sintática, estatística ou espacial \cite{galhardi2018a, kumar2019, sahu2020};
+\item Estudar o impacto das técnicas de Processamento de Linguagem Natural e Recuperação da Informação para a identificação da relação termo-classe de forma gramatical, morfológica, semântica, sintática, estatística ou sequencial \cite{galhardi2018a, kumar2019, sahu2020};
 \item Interpretar minuciosamente as respostas e o alinhamento do conteúdo, observando a frequência de ocorrência e co-ocorrência de termos segundo sua relevância \cite{jordan2012, saha2018, ding2020};
 \item Elaborar e ajustar a avaliação de forma eficiente, assimilando o critério estabelecido pelo professor \cite{zesch2015, condor2020, pado2021};
 \item Criar modelos avaliativos robustos, associando as categorias de nota aos padrões textuais \cite{butcher2010, heilman2015, burrows2015};

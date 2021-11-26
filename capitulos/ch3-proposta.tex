@@ -151,7 +151,10 @@ Em relação a verificação dos coeficientes de SS, a otimização com \textit{
   \end{multicols}
 \end{itemize}
 
-A resultante da otimização em clustering é escolhida como o teste que apresenta a melhor coeficiente de SS e com maior número de \textit{clusters} formados. Enquanto o SS avalia a separabilidade dos agrupamentos, o maior número de \textit{clusters} formados indica, na perspectiva do modelo avaliativo, uma possível coincidência entre conteúdo e notas. O agrupamento selecionado é utilizado para amostragem em um percentual do conjunto de respostas disponíveis. Para avaliar qualitativamente os resultados de \textit{clusterização} utilizamos os índices \textit{Adjusted Rand Index} (ARI), \textit{Normalized Mutual Information} (NMI) e \textit{Clustering Accuracy} (CA) \cite{spalenza2019}.
+A resultante da otimização em clustering é escolhida como o teste que apresenta a melhor coeficiente de SS e com maior número de \textit{clusters} formados. Enquanto o SS avalia a separabilidade dos agrupamentos, o maior número de \textit{clusters} formados indica, na perspectiva do modelo avaliativo, uma possível coincidência entre conteúdo e notas. O agrupamento selecionado é utilizado para amostragem em um percentual do conjunto de respostas disponíveis. Para avaliar qualitativamente os resultados de \textit{clusterização} utilizamos os índices \textit{Homogeneity}, \textit{Completness} e \textit{Clustering Accuracy} (CA).
+
+\begin{comment}
+% Foram removidas as avaliações com ARI e NMI pelo alinhamento com os experimentos de clusterização.
 
 O ARI é um índice que compara a similaridade entre dois \textit{clusters} de dados, levando em consideração o rótulo atribuído a cada amostra segundo seu agrupamento. Desta forma, o ARI estabelece uma relação entre pares de grupos formados e os rótulos reais de cada amostra, considerando possíveis inversões nos agrupamentos resultantes. Em geral, essa similaridade (\textit{rand-index}) poderia ser calculada sem os rótulos, mas neste caso o índice é ajustado pela expectativa de ocorrência das classes. Portanto, o ajuste é dado com a associação entre cada classe $ d_{y} $ e sua representação segundo o \textit{cluster} $ c_{i} $. A Equação \ref{eq-ARI} apresenta o cálculo realizado por cada um deste índices de \textit{clusterização}.
 
@@ -180,6 +183,7 @@ MI_{(y, c)} = H(y) - H_{(y, c)}
 \begin{equation*}
 H_{(y)} = \sum_{i=1}^nP(y_{i})\log_{2}(P(y_{i}))
 \end{equation*}
+\end{comment}
 
 E, por fim, utilizamos a CA para avaliar a categorização por voto majoritário dos grupos formados. Assim, com CA verificamos se os \textit{clusters} são formados majoritáriamente por uma classe e, verificar a separação entre as classes. A Equação \ref{eq-CA} apresenta a contagem das amostras d com determinada classe y para cada um dos C \textit{clusters} formados.
 
