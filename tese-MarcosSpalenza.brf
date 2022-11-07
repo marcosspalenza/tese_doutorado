@@ -1,262 +1,322 @@
-\backcite {barreira2006}{{21}{1}{chapter.1}}
+\backcite {bogarin2018}{{21}{1}{chapter.1}}
 \backcite {casiraghi2017}{{21}{1}{chapter.1}}
 \backcite {oliveira2005}{{21}{1}{chapter.1}}
+\backcite {barreira2006}{{21}{1}{chapter.1}}
 \backcite {biggs1998}{{21}{1}{chapter.1}}
-\backcite {maquine2020}{{21}{1}{chapter.1}}
-\backcite {raes2020}{{21}{1}{chapter.1}}
-\backcite {paiva2012}{{21}{1}{chapter.1}}
-\backcite {bogarin2018}{{21}{1}{chapter.1}}
-\backcite {perez-marin2009}{{22}{1}{chapter.1}}
-\backcite {arter2006, spalenza2016a}{{25}{1}{table.caption.15}}
-\backcite {arter2006, spalenza2016a}{{25}{1}{table.caption.15}}
-\backcite {pado2021}{{25}{1.1}{section.1.1}}
-\backcite {perez-marin2009}{{25}{1.1}{section.1.1}}
-\backcite {leffa2003}{{25}{1.1}{section.1.1}}
-\backcite {filighera2020}{{25}{1.1}{section.1.1}}
-\backcite {burrows2015}{{25}{1.1}{section.1.1}}
-\backcite {gunther2012}{{26}{1.1}{section.1.1}}
-\backcite {bailey2008}{{26}{1.1}{section.1.1}}
-\backcite {saha2018}{{26}{1.1}{section.1.1}}
-\backcite {krithika2015}{{26}{1.1}{section.1.1}}
-\backcite {jordan2012, funayama2020}{{26}{1.1}{section.1.1}}
-\backcite {jordan2012, funayama2020}{{26}{1.1}{section.1.1}}
-\backcite {higgins2014}{{26}{1.1}{section.1.1}}
-\backcite {butcher2010, mohler2011, ramachandran2015a}{{26}{1.1}{section.1.1}}
-\backcite {butcher2010, mohler2011, ramachandran2015a}{{26}{1.1}{section.1.1}}
-\backcite {butcher2010, mohler2011, ramachandran2015a}{{26}{1.1}{section.1.1}}
-\backcite {zesch2015, horbach2018}{{26}{1.1}{section.1.1}}
-\backcite {zesch2015, horbach2018}{{26}{1.1}{section.1.1}}
-\backcite {butcher2010}{{27}{1.1}{section.1.1}}
+\backcite {maquine2020}{{22}{1}{chapter.1}}
+\backcite {raes2020}{{22}{1}{chapter.1}}
+\backcite {dunlap2005}{{22}{1}{chapter.1}}
+\backcite {paiva2012}{{22}{1}{chapter.1}}
+\backcite {pado2021}{{24}{1}{table.caption.14}}
+\backcite {kumar2019}{{25}{1}{table.caption.14}}
+\backcite {arter2006, spalenza2016a}{{26}{1}{table.caption.15}}
+\backcite {arter2006, spalenza2016a}{{26}{1}{table.caption.15}}
+\backcite {pado2021}{{27}{1.1}{section.1.1}}
+\backcite {burrows2015}{{27}{1.1}{section.1.1}}
+\backcite {perez-marin2009}{{27}{1.1}{section.1.1}}
+\backcite {leffa2003}{{27}{1.1}{section.1.1}}
 \backcite {filighera2020}{{27}{1.1}{section.1.1}}
-\backcite {dzikovska2012}{{27}{1.1}{section.1.1}}
-\backcite {marvaniya2018}{{27}{1.1}{section.1.1}}
-\backcite {ramachandran2015a}{{27}{1.1}{section.1.1}}
-\backcite {horbach2018}{{27}{1.1}{section.1.1}}
-\backcite {spalenza2016a}{{27}{1.1}{section.1.1}}
-\backcite {saha2018}{{27}{1.1}{section.1.1}}
-\backcite {sakaguchi2015, riordan2019, sahu2020}{{27}{1.1}{section.1.1}}
-\backcite {sakaguchi2015, riordan2019, sahu2020}{{27}{1.1}{section.1.1}}
-\backcite {sakaguchi2015, riordan2019, sahu2020}{{27}{1.1}{section.1.1}}
-\backcite {dzikovska2013, saha2019}{{27}{1.1}{section.1.1}}
-\backcite {dzikovska2013, saha2019}{{27}{1.1}{section.1.1}}
-\backcite {funayama2020}{{27}{1.1}{section.1.1}}
+\backcite {bonthu2021}{{27}{1.1}{section.1.1}}
+\backcite {burrows2015}{{27}{1.1}{section.1.1}}
+\backcite {bailey2008}{{28}{1.1}{section.1.1}}
+\backcite {saha2018, lui2022}{{28}{1.1}{section.1.1}}
+\backcite {saha2018, lui2022}{{28}{1.1}{section.1.1}}
+\backcite {krithika2015}{{28}{1.1}{section.1.1}}
+\backcite {jordan2012, funayama2020}{{28}{1.1}{section.1.1}}
+\backcite {jordan2012, funayama2020}{{28}{1.1}{section.1.1}}
+\backcite {higgins2014}{{28}{1.1}{section.1.1}}
+\backcite {funayama2020}{{28}{1.1}{section.1.1}}
 \backcite {chakraborty2017, kumar2019}{{28}{1.1}{section.1.1}}
 \backcite {chakraborty2017, kumar2019}{{28}{1.1}{section.1.1}}
-\backcite {ding2020}{{28}{1.1}{section.1.1}}
 \backcite {azad2020}{{28}{1.1}{section.1.1}}
 \backcite {artstein2008, pado2021}{{28}{1.1}{section.1.1}}
 \backcite {artstein2008, pado2021}{{28}{1.1}{section.1.1}}
 \backcite {condor2020}{{28}{1.1}{section.1.1}}
-\backcite {kumar2019}{{28}{1.1}{section.1.1}}
-\backcite {marvaniya2018}{{28}{1.1}{section.1.1}}
-\backcite {burrows2015}{{28}{1.1}{section.1.1}}
-\backcite {romero2010}{{29}{1.2}{section.1.2}}
-\backcite {han2011}{{29}{1.2}{section.1.2}}
-\backcite {jurafsky2009}{{29}{1.2}{section.1.2}}
-\backcite {morettin2010}{{29}{1.2}{section.1.2}}
-\backcite {baeza2011}{{29}{1.2}{section.1.2}}
-\backcite {romero2010}{{29}{1.2}{section.1.2}}
-\backcite {everitt2011}{{29}{1.2}{section.1.2}}
-\backcite {pado2021}{{29}{1.2}{section.1.2}}
-\backcite {artstein2008}{{29}{1.2}{section.1.2}}
-\backcite {burrows2015}{{30}{1.3}{section.1.3}}
-\backcite {galhardi2018a, kumar2019, sahu2020}{{30}{1.3}{section.1.3}}
-\backcite {galhardi2018a, kumar2019, sahu2020}{{30}{1.3}{section.1.3}}
-\backcite {galhardi2018a, kumar2019, sahu2020}{{30}{1.3}{section.1.3}}
-\backcite {jordan2012, saha2018, ding2020}{{31}{1.3}{section.1.3}}
-\backcite {jordan2012, saha2018, ding2020}{{31}{1.3}{section.1.3}}
-\backcite {jordan2012, saha2018, ding2020}{{31}{1.3}{section.1.3}}
-\backcite {zesch2015, condor2020, pado2021}{{31}{1.3}{section.1.3}}
-\backcite {zesch2015, condor2020, pado2021}{{31}{1.3}{section.1.3}}
-\backcite {zesch2015, condor2020, pado2021}{{31}{1.3}{section.1.3}}
-\backcite {butcher2010, heilman2015, burrows2015}{{31}{1.3}{section.1.3}}
-\backcite {butcher2010, heilman2015, burrows2015}{{31}{1.3}{section.1.3}}
-\backcite {butcher2010, heilman2015, burrows2015}{{31}{1.3}{section.1.3}}
-\backcite {ding2020, filighera2020}{{31}{1.3}{section.1.3}}
-\backcite {ding2020, filighera2020}{{31}{1.3}{section.1.3}}
-\backcite {higgins2014, funayama2020, pado2021}{{31}{1.3}{section.1.3}}
-\backcite {higgins2014, funayama2020, pado2021}{{31}{1.3}{section.1.3}}
-\backcite {higgins2014, funayama2020, pado2021}{{31}{1.3}{section.1.3}}
-\backcite {marvaniya2018, mizumoto2019, suzen2020}{{31}{1.3}{section.1.3}}
-\backcite {marvaniya2018, mizumoto2019, suzen2020}{{31}{1.3}{section.1.3}}
-\backcite {marvaniya2018, mizumoto2019, suzen2020}{{31}{1.3}{section.1.3}}
-\backcite {madero2019}{{33}{2}{chapter.2}}
-\backcite {siemens2012, romero2010}{{33}{2}{chapter.2}}
-\backcite {siemens2012, romero2010}{{33}{2}{chapter.2}}
-\backcite {ferreiramello2019}{{33}{2}{chapter.2}}
-\backcite {burrows2015}{{33}{2}{chapter.2}}
-\backcite {oliveira2013}{{33}{2}{chapter.2}}
-\backcite {johnstone2002}{{33}{2}{chapter.2}}
-\backcite {bilgin2017}{{33}{2}{chapter.2}}
-\backcite {ming2005}{{33}{2}{chapter.2}}
-\backcite {perez-marin2009}{{33}{2}{chapter.2}}
-\backcite {butcher2010}{{34}{2}{chapter.2}}
-\backcite {bailey2008}{{34}{2}{chapter.2}}
-\backcite {bezerra2008}{{34}{2}{chapter.2}}
-\backcite {burrows2015}{{34}{2}{chapter.2}}
-\backcite {bailey2008}{{35}{2}{figure.caption.16}}
-\backcite {siddiqi2008}{{35}{2}{figure.caption.16}}
-\backcite {ding2020}{{35}{2}{figure.caption.16}}
-\backcite {suzen2020}{{35}{2}{figure.caption.17}}
-\backcite {almeida-junior2017}{{35}{2}{figure.caption.17}}
-\backcite {filighera2020}{{35}{2}{figure.caption.17}}
-\backcite {ramachandran2015b}{{35}{2}{figure.caption.17}}
-\backcite {funayama2020}{{35}{2}{figure.caption.17}}
-\backcite {fowler2021}{{35}{2}{figure.caption.17}}
-\backcite {horbach2018}{{36}{2.1}{section.2.1}}
-\backcite {heilman2015}{{36}{2.1}{section.2.1}}
-\backcite {sung2019a}{{36}{2.1}{section.2.1}}
-\backcite {banjade2015, roy2016}{{36}{2.1}{section.2.1}}
-\backcite {banjade2015, roy2016}{{36}{2.1}{section.2.1}}
-\backcite {kar2017, jimenez2013}{{36}{2.1}{section.2.1}}
-\backcite {kar2017, jimenez2013}{{36}{2.1}{section.2.1}}
-\backcite {ramachandran2015a}{{36}{2.1}{section.2.1}}
-\backcite {burrows2015}{{36}{2.1}{section.2.1}}
-\backcite {ramachandran2015b, wang2019}{{36}{2.1}{section.2.1}}
-\backcite {ramachandran2015b, wang2019}{{36}{2.1}{section.2.1}}
-\backcite {mizumoto2019, marvaniya2018}{{37}{2.1}{section.2.1}}
-\backcite {mizumoto2019, marvaniya2018}{{37}{2.1}{section.2.1}}
-\backcite {pribadi2017, butcher2010}{{37}{2.1}{section.2.1}}
-\backcite {pribadi2017, butcher2010}{{37}{2.1}{section.2.1}}
-\backcite {kumar2019, lun2020}{{37}{2.1}{section.2.1}}
-\backcite {kumar2019, lun2020}{{37}{2.1}{section.2.1}}
-\backcite {zhang2016}{{37}{2.1}{section.2.1}}
-\backcite {basu2013, zesch2015}{{37}{2.1}{section.2.1}}
-\backcite {basu2013, zesch2015}{{37}{2.1}{section.2.1}}
-\backcite {oliveira2014}{{37}{2.1}{section.2.1}}
-\backcite {everitt2011}{{37}{2.1}{section.2.1}}
-\backcite {baeza2011}{{37}{2.2}{section.2.2}}
-\backcite {jurafsky2009}{{38}{2.2}{section.2.2}}
-\backcite {paiva2012, yang2021}{{38}{2.2}{section.2.2}}
-\backcite {paiva2012, yang2021}{{38}{2.2}{section.2.2}}
-\backcite {pado2021}{{38}{2.2}{section.2.2}}
-\backcite {condor2020}{{38}{2.2}{section.2.2}}
-\backcite {azad2020}{{38}{2.2}{section.2.2}}
-\backcite {mohler2011}{{38}{2.2}{section.2.2}}
-\backcite {galhardi2018a}{{38}{2.3}{section.2.3}}
-\backcite {mohler2009}{{38}{2.3}{section.2.3}}
-\backcite {riordan2019, galhardi2018b}{{38}{2.3}{section.2.3}}
-\backcite {riordan2019, galhardi2018b}{{38}{2.3}{section.2.3}}
-\backcite {kumar2019, saha2018}{{39}{2.3}{section.2.3}}
-\backcite {kumar2019, saha2018}{{39}{2.3}{section.2.3}}
-\backcite {tan2020}{{39}{2.3}{section.2.3}}
-\backcite {sahu2020}{{39}{2.3}{section.2.3}}
-\backcite {banjade2016}{{39}{2.3}{section.2.3}}
-\backcite {baeza2011}{{39}{2.3}{section.2.3}}
-\backcite {sultan2016}{{39}{2.3}{section.2.3}}
-\backcite {landauer1998}{{39}{2.3}{section.2.3}}
-\backcite {basu2013, sahu2020}{{39}{2.3}{section.2.3}}
-\backcite {basu2013, sahu2020}{{39}{2.3}{section.2.3}}
-\backcite {mohler2009}{{39}{2.3}{section.2.3}}
-\backcite {saha2018, zesch2018}{{39}{2.3}{section.2.3}}
-\backcite {saha2018, zesch2018}{{39}{2.3}{section.2.3}}
-\backcite {ramachandran2015b, roy2016}{{39}{2.3}{section.2.3}}
-\backcite {ramachandran2015b, roy2016}{{39}{2.3}{section.2.3}}
-\backcite {kumar2017}{{39}{2.3}{section.2.3}}
-\backcite {manning1999}{{39}{2.3}{section.2.3}}
-\backcite {sakaguchi2015, sultan2016}{{39}{2.3}{section.2.3}}
-\backcite {sakaguchi2015, sultan2016}{{39}{2.3}{section.2.3}}
-\backcite {jimenez2013}{{40}{2.3}{section.2.3}}
-\backcite {higgins2014, spalenza2016a}{{40}{2.3}{section.2.3}}
-\backcite {higgins2014, spalenza2016a}{{40}{2.3}{section.2.3}}
-\backcite {zhang2020, marvaniya2018}{{40}{2.3}{section.2.3}}
-\backcite {zhang2020, marvaniya2018}{{40}{2.3}{section.2.3}}
-\backcite {jurafsky2009}{{40}{2.3}{section.2.3}}
-\backcite {krithika2015, spalenza2016b, horbach2018}{{40}{2.3}{section.2.3}}
-\backcite {krithika2015, spalenza2016b, horbach2018}{{40}{2.3}{section.2.3}}
-\backcite {krithika2015, spalenza2016b, horbach2018}{{40}{2.3}{section.2.3}}
-\backcite {sung2019b, ghavidel2020}{{40}{2.3}{section.2.3}}
-\backcite {sung2019b, ghavidel2020}{{40}{2.3}{section.2.3}}
-\backcite {goldberg2017}{{40}{2.3}{section.2.3}}
-\backcite {riordan2017}{{40}{2.3}{section.2.3}}
-\backcite {funayama2020}{{40}{2.4}{section.2.4}}
-\backcite {mohler2011}{{40}{2.4}{section.2.4}}
-\backcite {yang2021}{{41}{2.4}{section.2.4}}
-\backcite {jordan2012, mao2018}{{41}{2.4}{section.2.4}}
-\backcite {jordan2012, mao2018}{{41}{2.4}{section.2.4}}
-\backcite {burrows2015}{{41}{2.4}{section.2.4}}
-\backcite {jimenez2013}{{41}{2.4}{section.2.4}}
-\backcite {kar2017, chakraborty2017}{{41}{2.4}{section.2.4}}
-\backcite {kar2017, chakraborty2017}{{41}{2.4}{section.2.4}}
-\backcite {azad2020}{{41}{2.4}{section.2.4}}
-\backcite {filighera2020}{{41}{2.4}{section.2.4}}
-\backcite {ramachandran2015b, butcher2010}{{41}{2.4}{section.2.4}}
-\backcite {ramachandran2015b, butcher2010}{{41}{2.4}{section.2.4}}
-\backcite {tan2020}{{41}{2.4}{section.2.4}}
-\backcite {kumar2019}{{41}{2.4}{section.2.4}}
-\backcite {ziai2012, menini2019}{{41}{2.4}{section.2.4}}
-\backcite {ziai2012, menini2019}{{41}{2.4}{section.2.4}}
-\backcite {fowler2021}{{41}{2.4}{section.2.4}}
-\backcite {riordan2019, ding2020}{{41}{2.4}{section.2.4}}
-\backcite {riordan2019, ding2020}{{41}{2.4}{section.2.4}}
-\backcite {filighera2020}{{42}{2.4}{section.2.4}}
-\backcite {galhardi2018b}{{42}{2.4}{section.2.4}}
-\backcite {suzen2020}{{42}{2.4}{section.2.4}}
-\backcite {zhang2016, saha2019, camus2020}{{42}{2.4}{section.2.4}}
-\backcite {zhang2016, saha2019, camus2020}{{42}{2.4}{section.2.4}}
-\backcite {zhang2016, saha2019, camus2020}{{42}{2.4}{section.2.4}}
-\backcite {burrows2015, zesch2018}{{42}{2.4}{section.2.4}}
-\backcite {burrows2015, zesch2018}{{42}{2.4}{section.2.4}}
-\backcite {jordan2012}{{42}{2.4}{section.2.4}}
-\backcite {roy2018}{{42}{2.4}{section.2.4}}
-\backcite {sung2019a, saha2019}{{42}{2.4}{section.2.4}}
-\backcite {sung2019a, saha2019}{{42}{2.4}{section.2.4}}
-\backcite {burrows2015}{{43}{3}{chapter.3}}
-\backcite {spalenza2018}{{44}{3}{chapter.3}}
-\backcite {marneffe2021}{{48}{3.1.4}{subsection.3.1.4}}
-\backcite {pirovani2019}{{48}{3.1.4}{subsection.3.1.4}}
-\backcite {marneffe2021}{{48}{3.1.4}{subsection.3.1.4}}
-\backcite {baeza2011}{{49}{3.1.4}{subsection.3.1.4}}
-\backcite {spalenza2020}{{49}{3.1.4}{subsection.3.1.4}}
-\backcite {baeza2011}{{50}{3.1.5}{subsection.3.1.5}}
-\backcite {spalenza2020}{{50}{3.1.5}{equation.3.1.1}}
-\backcite {spalenza2019}{{51}{3.2.1}{subsection.3.2.1}}
-\backcite {everitt2011}{{51}{3.2.1}{subsection.3.2.1}}
-\backcite {calinskiharabasz1974}{{51}{3.2.1}{subsection.3.2.1}}
-\backcite {daviesbouldin1979}{{51}{3.2.1}{subsection.3.2.1}}
-\backcite {rousseeuw1987}{{51}{3.2.1}{subsection.3.2.1}}
-\backcite {maimon2005}{{51}{3.2.1}{subsection.3.2.1}}
-\backcite {spalenza2019}{{52}{3.2.1}{subsection.3.2.1}}
-\backcite {han2011}{{52}{3.2.1}{subsection.3.2.1}}
-\backcite {spalenza2019}{{52}{3.2.1}{subsection.3.2.1}}
-\backcite {aleksander1984, wisard2020}{{55}{3.3.1}{subsection.3.3.1}}
-\backcite {aleksander1984, wisard2020}{{55}{3.3.1}{subsection.3.3.1}}
-\backcite {manning1999}{{55}{3.3.1}{subsection.3.3.1}}
-\backcite {pado2021}{{56}{3.3.1}{subsection.3.3.1}}
-\backcite {cohen1960}{{56}{3.3.1}{subsection.3.3.1}}
-\backcite {artstein2008}{{56}{3.3.1}{subsection.3.3.1}}
-\backcite {mohler2011}{{59}{3.3.2}{equation.3.3.6}}
-\backcite {jordan2012}{{59}{3.4}{section.3.4}}
-\backcite {nascimento2020}{{61}{3.4}{table.caption.21}}
-\backcite {nascimento2020}{{61}{3.4}{table.caption.21}}
-\backcite {ribeiro2016}{{64}{3.4.1}{table.caption.23}}
-\backcite {spalenza2016a}{{64}{3.4.1}{figure.caption.24}}
-\backcite {morettin2010}{{67}{4.1}{section.4.1}}
-\backcite {dzikovska2012}{{68}{4.1.1}{subsection.4.1.1}}
-\backcite {dzikovska2013}{{68}{4.1.1}{subsection.4.1.1}}
-\backcite {dzikovska2012}{{69}{4.1.2}{subsection.4.1.2}}
-\backcite {dzikovska2013}{{69}{4.1.2}{subsection.4.1.2}}
-\backcite {basu2013}{{70}{4.1.4}{subsection.4.1.4}}
-\backcite {riordan2017}{{70}{4.1.4}{subsection.4.1.4}}
-\backcite {jordan2012}{{71}{4.1.5}{subsection.4.1.5}}
-\backcite {mohler2011}{{71}{4.1.6}{subsection.4.1.6}}
-\backcite {galhardi2018b}{{72}{4.1.7}{subsection.4.1.7}}
-\backcite {nascimento2020}{{72}{4.1.8}{subsection.4.1.8}}
-\backcite {pissinati2014}{{73}{4.1.9}{subsection.4.1.9}}
-\backcite {spalenza2019}{{73}{4.2.1}{subsection.4.2.1}}
-\backcite {burrows2015}{{76}{4.2.2}{subsection.4.2.2}}
-\backcite {dzikovska2013}{{77}{4.2.2}{subsection.4.2.2}}
-\backcite {dzikovska2013, ramachandran2015a,sahu2020}{{77}{4.2.2}{figure.caption.30}}
-\backcite {dzikovska2013, ramachandran2015a,sahu2020}{{77}{4.2.2}{figure.caption.30}}
-\backcite {dzikovska2013, ramachandran2015a,sahu2020}{{77}{4.2.2}{figure.caption.30}}
-\backcite {ramachandran2015a, sahu2020}{{78}{4.2.2}{figure.caption.30}}
-\backcite {ramachandran2015a, sahu2020}{{78}{4.2.2}{figure.caption.30}}
-\backcite {filighera2020}{{78}{4.2.2}{figure.caption.30}}
-\backcite {butcher2010}{{80}{4.2.2}{table.caption.31}}
-\backcite {basu2013}{{81}{4.2.2}{table.caption.33}}
-\backcite {mohler2011}{{83}{4.2.2}{figure.caption.37}}
-\backcite {ramachandran2015b, kumar2017, sahu2020}{{83}{4.2.2}{figure.caption.37}}
-\backcite {ramachandran2015b, kumar2017, sahu2020}{{83}{4.2.2}{figure.caption.37}}
-\backcite {ramachandran2015b, kumar2017, sahu2020}{{83}{4.2.2}{figure.caption.37}}
-\backcite {nascimento2020}{{84}{4.2.2}{figure.caption.37}}
-\backcite {romero2010}{{87}{5.1}{section.5.1}}
+\backcite {ding2020}{{28}{1.1}{section.1.1}}
+\backcite {dzikovska2012, lui2022}{{29}{1.1}{section.1.1}}
+\backcite {dzikovska2012, lui2022}{{29}{1.1}{section.1.1}}
+\backcite {butcher2010, mohler2011, ramachandran2015a, condor2021}{{29}{1.1}{section.1.1}}
+\backcite {butcher2010, mohler2011, ramachandran2015a, condor2021}{{29}{1.1}{section.1.1}}
+\backcite {butcher2010, mohler2011, ramachandran2015a, condor2021}{{29}{1.1}{section.1.1}}
+\backcite {butcher2010, mohler2011, ramachandran2015a, condor2021}{{29}{1.1}{section.1.1}}
+\backcite {zesch2015, horbach2018}{{29}{1.1}{section.1.1}}
+\backcite {zesch2015, horbach2018}{{29}{1.1}{section.1.1}}
+\backcite {filighera2020}{{29}{1.1}{section.1.1}}
+\backcite {marvaniya2018}{{29}{1.1}{section.1.1}}
+\backcite {ramachandran2015a}{{29}{1.1}{section.1.1}}
+\backcite {artstein2008}{{29}{1.1}{section.1.1}}
+\backcite {horbach2018, condor2021}{{29}{1.1}{section.1.1}}
+\backcite {horbach2018, condor2021}{{29}{1.1}{section.1.1}}
+\backcite {spalenza2016a}{{30}{1.1}{section.1.1}}
+\backcite {saha2018}{{30}{1.1}{section.1.1}}
+\backcite {sakaguchi2015, riordan2019, sahu2020}{{30}{1.1}{section.1.1}}
+\backcite {sakaguchi2015, riordan2019, sahu2020}{{30}{1.1}{section.1.1}}
+\backcite {sakaguchi2015, riordan2019, sahu2020}{{30}{1.1}{section.1.1}}
+\backcite {dzikovska2013, saha2019}{{30}{1.1}{section.1.1}}
+\backcite {dzikovska2013, saha2019}{{30}{1.1}{section.1.1}}
+\backcite {kumar2019}{{30}{1.1}{section.1.1}}
+\backcite {marvaniya2018, bernius2022}{{30}{1.1}{section.1.1}}
+\backcite {marvaniya2018, bernius2022}{{30}{1.1}{section.1.1}}
+\backcite {burrows2015}{{30}{1.1}{section.1.1}}
+\backcite {romero2010}{{31}{1.2}{section.1.2}}
+\backcite {morettin2010}{{31}{1.2}{section.1.2}}
+\backcite {silva2007, miller2020}{{31}{1.2}{section.1.2}}
+\backcite {silva2007, miller2020}{{31}{1.2}{section.1.2}}
+\backcite {romero2010}{{31}{1.2}{section.1.2}}
+\backcite {everitt2011, spalenza2019}{{31}{1.2}{section.1.2}}
+\backcite {everitt2011, spalenza2019}{{31}{1.2}{section.1.2}}
+\backcite {artstein2008, pado2021}{{31}{1.2}{section.1.2}}
+\backcite {artstein2008, pado2021}{{31}{1.2}{section.1.2}}
+\backcite {bernius2022}{{32}{1.2}{section.1.2}}
+\backcite {burrows2015}{{32}{1.3}{section.1.3}}
+\backcite {galhardi2018a, kumar2019, sahu2020}{{32}{1.3}{section.1.3}}
+\backcite {galhardi2018a, kumar2019, sahu2020}{{32}{1.3}{section.1.3}}
+\backcite {galhardi2018a, kumar2019, sahu2020}{{32}{1.3}{section.1.3}}
+\backcite {jordan2012, saha2018, ding2020}{{32}{1.3}{section.1.3}}
+\backcite {jordan2012, saha2018, ding2020}{{32}{1.3}{section.1.3}}
+\backcite {jordan2012, saha2018, ding2020}{{32}{1.3}{section.1.3}}
+\backcite {zesch2015, condor2020, lui2022}{{33}{1.3}{section.1.3}}
+\backcite {zesch2015, condor2020, lui2022}{{33}{1.3}{section.1.3}}
+\backcite {zesch2015, condor2020, lui2022}{{33}{1.3}{section.1.3}}
+\backcite {butcher2010, heilman2015, burrows2015}{{33}{1.3}{section.1.3}}
+\backcite {butcher2010, heilman2015, burrows2015}{{33}{1.3}{section.1.3}}
+\backcite {butcher2010, heilman2015, burrows2015}{{33}{1.3}{section.1.3}}
+\backcite {ding2020, filighera2020}{{33}{1.3}{section.1.3}}
+\backcite {ding2020, filighera2020}{{33}{1.3}{section.1.3}}
+\backcite {higgins2014, funayama2020, pado2021}{{33}{1.3}{section.1.3}}
+\backcite {higgins2014, funayama2020, pado2021}{{33}{1.3}{section.1.3}}
+\backcite {higgins2014, funayama2020, pado2021}{{33}{1.3}{section.1.3}}
+\backcite {mizumoto2019, suzen2020, bernius2022}{{33}{1.3}{section.1.3}}
+\backcite {mizumoto2019, suzen2020, bernius2022}{{33}{1.3}{section.1.3}}
+\backcite {mizumoto2019, suzen2020, bernius2022}{{33}{1.3}{section.1.3}}
+\backcite {sweeta2021}{{35}{2}{chapter.2}}
+\backcite {madero2019}{{35}{2}{chapter.2}}
+\backcite {siemens2012, romero2010}{{35}{2}{chapter.2}}
+\backcite {siemens2012, romero2010}{{35}{2}{chapter.2}}
+\backcite {ferreira-mello2019}{{35}{2}{chapter.2}}
+\backcite {sweeta2021}{{35}{2}{chapter.2}}
+\backcite {burrows2015}{{35}{2}{chapter.2}}
+\backcite {perez-marin2009}{{35}{2}{chapter.2}}
+\backcite {oliveira2013}{{35}{2}{chapter.2}}
+\backcite {johnstone2002}{{35}{2}{chapter.2}}
+\backcite {bilgin2017}{{35}{2}{chapter.2}}
+\backcite {ming2005}{{35}{2}{chapter.2}}
+\backcite {butcher2010, bernius2022}{{36}{2}{chapter.2}}
+\backcite {butcher2010, bernius2022}{{36}{2}{chapter.2}}
+\backcite {bailey2008}{{36}{2}{chapter.2}}
+\backcite {bezerra2008}{{36}{2}{chapter.2}}
+\backcite {spalenza2017}{{36}{2}{chapter.2}}
+\backcite {almeida-junior2017}{{36}{2}{figure.caption.16}}
+\backcite {bailey2008}{{36}{2}{figure.caption.16}}
+\backcite {spalenza2017}{{37}{2}{figure.caption.16}}
+\backcite {siddiqi2008}{{37}{2}{figure.caption.17}}
+\backcite {ding2020}{{37}{2}{figure.caption.17}}
+\backcite {suzen2020, filighera2020}{{37}{2}{figure.caption.17}}
+\backcite {suzen2020, filighera2020}{{37}{2}{figure.caption.17}}
+\backcite {ramachandran2015b}{{37}{2}{figure.caption.17}}
+\backcite {funayama2020}{{37}{2}{figure.caption.17}}
+\backcite {fowler2021}{{37}{2}{figure.caption.17}}
+\backcite {bishop2006}{{37}{2.1}{section.2.1}}
+\backcite {kumar2020}{{37}{2.1}{section.2.1}}
+\backcite {horbach2018}{{37}{2.1}{section.2.1}}
+\backcite {basu2013, zhang2016, marvaniya2018}{{37}{2.1}{section.2.1}}
+\backcite {basu2013, zhang2016, marvaniya2018}{{37}{2.1}{section.2.1}}
+\backcite {basu2013, zhang2016, marvaniya2018}{{37}{2.1}{section.2.1}}
+\backcite {heilman2015}{{38}{2.1}{section.2.1}}
+\backcite {bishop2006}{{38}{2.1}{section.2.1}}
+\backcite {sung2019a}{{38}{2.1}{section.2.1}}
+\backcite {banjade2015, roy2016}{{38}{2.1}{section.2.1}}
+\backcite {banjade2015, roy2016}{{38}{2.1}{section.2.1}}
+\backcite {kar2017, jimenez2013}{{38}{2.1}{section.2.1}}
+\backcite {kar2017, jimenez2013}{{38}{2.1}{section.2.1}}
+\backcite {ramachandran2015a}{{38}{2.1}{section.2.1}}
+\backcite {ramachandran2015b, wang2019}{{38}{2.1}{section.2.1}}
+\backcite {ramachandran2015b, wang2019}{{38}{2.1}{section.2.1}}
+\backcite {mizumoto2019, marvaniya2018}{{38}{2.1}{section.2.1}}
+\backcite {mizumoto2019, marvaniya2018}{{38}{2.1}{section.2.1}}
+\backcite {pribadi2017, butcher2010}{{38}{2.1}{section.2.1}}
+\backcite {pribadi2017, butcher2010}{{38}{2.1}{section.2.1}}
+\backcite {kumar2019, lun2020}{{39}{2.1}{section.2.1}}
+\backcite {kumar2019, lun2020}{{39}{2.1}{section.2.1}}
+\backcite {kumar2020}{{39}{2.1}{section.2.1}}
+\backcite {oliveira2014}{{39}{2.1}{section.2.1}}
+\backcite {everitt2011}{{39}{2.1}{section.2.1}}
+\backcite {bishop2006}{{39}{2.1}{section.2.1}}
+\backcite {baeza2011}{{39}{2.2}{section.2.2}}
+\backcite {jurafsky2009}{{39}{2.2}{section.2.2}}
+\backcite {paiva2012, yang2021}{{39}{2.2}{section.2.2}}
+\backcite {paiva2012, yang2021}{{39}{2.2}{section.2.2}}
+\backcite {pado2021}{{40}{2.2}{section.2.2}}
+\backcite {condor2020}{{40}{2.2}{section.2.2}}
+\backcite {azad2020}{{40}{2.2}{section.2.2}}
+\backcite {mohler2011}{{40}{2.2}{section.2.2}}
+\backcite {galhardi2018a}{{40}{2.3}{section.2.3}}
+\backcite {mohler2009}{{40}{2.3}{section.2.3}}
+\backcite {riordan2019, galhardi2018b}{{40}{2.3}{section.2.3}}
+\backcite {riordan2019, galhardi2018b}{{40}{2.3}{section.2.3}}
+\backcite {kumar2019, saha2018}{{40}{2.3}{section.2.3}}
+\backcite {kumar2019, saha2018}{{40}{2.3}{section.2.3}}
+\backcite {tan2020}{{40}{2.3}{section.2.3}}
+\backcite {sahu2020}{{40}{2.3}{section.2.3}}
+\backcite {banjade2016}{{41}{2.3}{section.2.3}}
+\backcite {baeza2011}{{41}{2.3}{section.2.3}}
+\backcite {sultan2016}{{41}{2.3}{section.2.3}}
+\backcite {landauer1998}{{41}{2.3}{section.2.3}}
+\backcite {basu2013, sahu2020}{{41}{2.3}{section.2.3}}
+\backcite {basu2013, sahu2020}{{41}{2.3}{section.2.3}}
+\backcite {mohler2009}{{41}{2.3}{section.2.3}}
+\backcite {saha2018, zesch2018}{{41}{2.3}{section.2.3}}
+\backcite {saha2018, zesch2018}{{41}{2.3}{section.2.3}}
+\backcite {ramachandran2015b, roy2016}{{41}{2.3}{section.2.3}}
+\backcite {ramachandran2015b, roy2016}{{41}{2.3}{section.2.3}}
+\backcite {kumar2017}{{41}{2.3}{section.2.3}}
+\backcite {manning1999}{{41}{2.3}{section.2.3}}
+\backcite {sakaguchi2015, sultan2016}{{41}{2.3}{section.2.3}}
+\backcite {sakaguchi2015, sultan2016}{{41}{2.3}{section.2.3}}
+\backcite {jimenez2013}{{41}{2.3}{section.2.3}}
+\backcite {higgins2014, spalenza2016a}{{41}{2.3}{section.2.3}}
+\backcite {higgins2014, spalenza2016a}{{41}{2.3}{section.2.3}}
+\backcite {zhang2020, marvaniya2018}{{41}{2.3}{section.2.3}}
+\backcite {zhang2020, marvaniya2018}{{41}{2.3}{section.2.3}}
+\backcite {jurafsky2009}{{41}{2.3}{section.2.3}}
+\backcite {krithika2015, spalenza2016b, horbach2018}{{42}{2.3}{section.2.3}}
+\backcite {krithika2015, spalenza2016b, horbach2018}{{42}{2.3}{section.2.3}}
+\backcite {krithika2015, spalenza2016b, horbach2018}{{42}{2.3}{section.2.3}}
+\backcite {sung2019b, ghavidel2020}{{42}{2.3}{section.2.3}}
+\backcite {sung2019b, ghavidel2020}{{42}{2.3}{section.2.3}}
+\backcite {goldberg2017}{{42}{2.3}{section.2.3}}
+\backcite {riordan2017}{{42}{2.3}{section.2.3}}
+\backcite {funayama2020}{{42}{2.4}{section.2.4}}
+\backcite {mohler2011}{{42}{2.4}{section.2.4}}
+\backcite {yang2021}{{42}{2.4}{section.2.4}}
+\backcite {jordan2012, mao2018}{{42}{2.4}{section.2.4}}
+\backcite {jordan2012, mao2018}{{42}{2.4}{section.2.4}}
+\backcite {burrows2015}{{42}{2.4}{section.2.4}}
+\backcite {jimenez2013}{{42}{2.4}{section.2.4}}
+\backcite {kar2017, chakraborty2017}{{43}{2.4}{section.2.4}}
+\backcite {kar2017, chakraborty2017}{{43}{2.4}{section.2.4}}
+\backcite {azad2020}{{43}{2.4}{section.2.4}}
+\backcite {filighera2020}{{43}{2.4}{section.2.4}}
+\backcite {ramachandran2015b, butcher2010}{{43}{2.4}{section.2.4}}
+\backcite {ramachandran2015b, butcher2010}{{43}{2.4}{section.2.4}}
+\backcite {tan2020}{{43}{2.4}{section.2.4}}
+\backcite {kumar2019}{{43}{2.4}{section.2.4}}
+\backcite {ziai2012, menini2019}{{43}{2.4}{section.2.4}}
+\backcite {ziai2012, menini2019}{{43}{2.4}{section.2.4}}
+\backcite {fowler2021}{{43}{2.4}{section.2.4}}
+\backcite {riordan2019, ding2020}{{43}{2.4}{section.2.4}}
+\backcite {riordan2019, ding2020}{{43}{2.4}{section.2.4}}
+\backcite {filighera2020}{{43}{2.4}{section.2.4}}
+\backcite {galhardi2018b}{{43}{2.4}{section.2.4}}
+\backcite {suzen2020}{{43}{2.4}{section.2.4}}
+\backcite {zhang2016, saha2019, camus2020}{{43}{2.4}{section.2.4}}
+\backcite {zhang2016, saha2019, camus2020}{{43}{2.4}{section.2.4}}
+\backcite {zhang2016, saha2019, camus2020}{{43}{2.4}{section.2.4}}
+\backcite {burrows2015, zesch2018}{{44}{2.4}{section.2.4}}
+\backcite {burrows2015, zesch2018}{{44}{2.4}{section.2.4}}
+\backcite {jordan2012}{{44}{2.4}{section.2.4}}
+\backcite {roy2018}{{44}{2.4}{section.2.4}}
+\backcite {sung2019a, saha2019}{{44}{2.4}{section.2.4}}
+\backcite {sung2019a, saha2019}{{44}{2.4}{section.2.4}}
+\backcite {burrows2015, bonthu2021, haller2022}{{45}{3}{chapter.3}}
+\backcite {burrows2015, bonthu2021, haller2022}{{45}{3}{chapter.3}}
+\backcite {burrows2015, bonthu2021, haller2022}{{45}{3}{chapter.3}}
+\backcite {baeza2011}{{46}{3}{figure.caption.18}}
+\backcite {mohapatra2017}{{46}{3}{figure.caption.18}}
+\backcite {spalenza2018}{{46}{3}{figure.caption.18}}
+\backcite {baeza2011}{{48}{3.1}{figure.caption.20}}
+\backcite {han2011}{{49}{3.1.1}{subsection.3.1.1}}
+\backcite {baeza2011}{{52}{3.1.4}{subsection.3.1.4}}
+\backcite {marneffe2021}{{52}{3.1.4}{subsection.3.1.4}}
+\backcite {pirovani2019}{{52}{3.1.4}{subsection.3.1.4}}
+\backcite {marneffe2021}{{52}{3.1.4}{subsection.3.1.4}}
+\backcite {spalenza2020}{{52}{3.1.4}{subsection.3.1.4}}
+\backcite {ding2020}{{52}{3.1.4}{subsection.3.1.4}}
+\backcite {filighera2020}{{52}{3.1.4}{subsection.3.1.4}}
+\backcite {sahu2020}{{52}{3.1.4}{subsection.3.1.4}}
+\backcite {baeza2011}{{53}{3.1.5}{subsection.3.1.5}}
+\backcite {spalenza2020}{{53}{3.1.5}{equation.3.1.1}}
+\backcite {spalenza2019}{{55}{3.2.1}{subsection.3.2.1}}
+\backcite {everitt2011}{{55}{3.2.1}{subsection.3.2.1}}
+\backcite {everitt2011}{{55}{3.2.1}{subsection.3.2.1}}
+\backcite {calinskiharabasz1974}{{55}{3.2.1}{subsection.3.2.1}}
+\backcite {daviesbouldin1979}{{55}{3.2.1}{subsection.3.2.1}}
+\backcite {rousseeuw1987}{{55}{3.2.1}{subsection.3.2.1}}
+\backcite {maimon2005}{{55}{3.2.1}{subsection.3.2.1}}
+\backcite {spalenza2019}{{56}{3.2.1}{subsection.3.2.1}}
+\backcite {han2011}{{56}{3.2.1}{subsection.3.2.1}}
+\backcite {rousseeuw1987}{{57}{3.2.2}{subsection.3.2.2}}
+\backcite {aleksander1984, wisard2020}{{59}{3.3.1}{subsection.3.3.1}}
+\backcite {aleksander1984, wisard2020}{{59}{3.3.1}{subsection.3.3.1}}
+\backcite {manning1999}{{59}{3.3.1}{subsection.3.3.1}}
+\backcite {pado2021}{{60}{3.3.1}{subsection.3.3.1}}
+\backcite {cohen1960}{{60}{3.3.1}{subsection.3.3.1}}
+\backcite {artstein2008}{{60}{3.3.1}{subsection.3.3.1}}
+\backcite {manning2008}{{60}{3.3.1}{equation.3.3.2}}
+\backcite {manning2008}{{61}{3.3.1}{equation.3.3.3}}
+\backcite {morettin2010}{{62}{3.3.2}{subsection.3.3.2}}
+\backcite {mohler2011}{{63}{3.3.2}{equation.3.3.4}}
+\backcite {nascimento2020}{{65}{3.4.1}{table.caption.24}}
+\backcite {nascimento2020}{{65}{3.4.1}{table.caption.24}}
+\backcite {almeida-junior2017}{{65}{3.4.1}{table.caption.24}}
+\backcite {spalenza2016a}{{66}{3.4.2}{subsection.3.4.2}}
+\backcite {ribeiro2016}{{66}{3.4.2}{subsection.3.4.2}}
+\backcite {sahu2020}{{66}{3.4.2}{figure.caption.26}}
+\backcite {spalenza2016a}{{69}{4}{chapter.4}}
+\backcite {ishioka2017}{{69}{4.1}{section.4.1}}
+\backcite {gomaa2019}{{69}{4.1}{section.4.1}}
+\backcite {ziai2012}{{69}{4.1}{section.4.1}}
+\backcite {agarwal2020}{{69}{4.1}{section.4.1}}
+\backcite {ding2020}{{69}{4.1}{section.4.1}}
+\backcite {condor2021}{{69}{4.1}{section.4.1}}
+\backcite {zhang2020}{{69}{4.1}{section.4.1}}
+\backcite {morettin2010}{{69}{4.1}{section.4.1}}
+\backcite {dzikovska2012}{{71}{4.1.1}{subsection.4.1.1}}
+\backcite {dzikovska2013}{{71}{4.1.1}{subsection.4.1.1}}
+\backcite {dzikovska2012}{{71}{4.1.2}{subsection.4.1.2}}
+\backcite {dzikovska2013}{{71}{4.1.2}{subsection.4.1.2}}
+\backcite {basu2013}{{73}{4.1.4}{subsection.4.1.4}}
+\backcite {riordan2017}{{73}{4.1.4}{subsection.4.1.4}}
+\backcite {jordan2012}{{73}{4.1.5}{subsection.4.1.5}}
+\backcite {mohler2011}{{74}{4.1.6}{subsection.4.1.6}}
+\backcite {galhardi2018b}{{74}{4.1.7}{subsection.4.1.7}}
+\backcite {nascimento2020}{{75}{4.1.8}{subsection.4.1.8}}
+\backcite {pissinati2014}{{75}{4.1.9}{subsection.4.1.9}}
+\backcite {spalenza2019}{{76}{4.2.1}{subsection.4.2.1}}
+\backcite {dzikovska2013}{{80}{4.2.2}{subsection.4.2.2}}
+\backcite {sahu2020}{{81}{4.2.2}{figure.caption.33}}
+\backcite {galhardi2018c}{{81}{4.2.2}{figure.caption.33}}
+\backcite {burrows2015}{{81}{4.2.2}{figure.caption.33}}
+\backcite {riordan2017}{{81}{4.2.2}{figure.caption.33}}
+\backcite {ramachandran2015a, ramachandran2015b}{{82}{4.2.2}{figure.caption.33}}
+\backcite {ramachandran2015a, ramachandran2015b}{{82}{4.2.2}{figure.caption.33}}
+\backcite {sahu2020}{{83}{4.2.2}{figure.caption.34}}
+\backcite {roy2016}{{84}{4.2.2}{figure.caption.34}}
+\backcite {galhardi2018c}{{84}{4.2.2}{figure.caption.34}}
+\backcite {saha2018}{{84}{4.2.2}{figure.caption.34}}
+\backcite {riordan2017}{{84}{4.2.2}{figure.caption.34}}
+\backcite {gomaa2019}{{84}{4.2.2}{figure.caption.34}}
+\backcite {filighera2020}{{84}{4.2.2}{figure.caption.34}}
+\backcite {butcher2010}{{86}{4.2.2}{figure.caption.36}}
+\backcite {basu2013}{{86}{4.2.2}{figure.caption.36}}
+\backcite {malik2021}{{86}{4.2.2}{figure.caption.38}}
+\backcite {lui2022}{{86}{4.2.2}{figure.caption.38}}
+\backcite {galhardi2020}{{87}{4.2.2}{figure.caption.38}}
+\backcite {galhardi2018b}{{88}{4.2.2}{figure.caption.40}}
+\backcite {galhardi2020}{{88}{4.2.2}{figure.caption.40}}
+\backcite {gomes-rocha2021}{{88}{4.2.2}{figure.caption.40}}
+\backcite {steimel2020}{{90}{4.2.2}{figure.caption.42}}
+\backcite {riordan2019}{{91}{4.2.2}{figure.caption.42}}
+\backcite {heilman2015}{{91}{4.2.2}{figure.caption.42}}
+\backcite {kumar2017, saha2018}{{91}{4.2.2}{table.caption.43}}
+\backcite {kumar2017, saha2018}{{91}{4.2.2}{table.caption.43}}
+\backcite {riordan2017, saha2018, gomaa2019, ramachandran2015b}{{92}{4.2.2}{figure.caption.44}}
+\backcite {riordan2017, saha2018, gomaa2019, ramachandran2015b}{{92}{4.2.2}{figure.caption.44}}
+\backcite {riordan2017, saha2018, gomaa2019, ramachandran2015b}{{92}{4.2.2}{figure.caption.44}}
+\backcite {riordan2017, saha2018, gomaa2019, ramachandran2015b}{{92}{4.2.2}{figure.caption.44}}
+\backcite {roy2016}{{92}{4.2.2}{figure.caption.44}}
+\backcite {kumar2017}{{92}{4.2.2}{figure.caption.44}}
+\backcite {gaddipati2020}{{92}{4.2.2}{figure.caption.44}}
+\backcite {spalenza2017}{{93}{4.2.2}{figure.caption.44}}
+\backcite {nascimento2020}{{94}{4.2.2}{table.caption.45}}
+\backcite {romero2010}{{97}{5.1}{section.5.1}}

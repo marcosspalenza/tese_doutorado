@@ -5,12 +5,13 @@
 \chapter{Experimentos e Resultados}
 \label{cap-experimentos}
 
-O \textit{p}Nota é um sistema que foi produzido com o andamento de experimentos em plataformas AVA na Universidade Federal do Espírito Santo (UFES). Nesse período, durante o desenvolvimento foram adicionadas diferentes técnicas para validar a capacidade de compreensão linguística e avaliativa do modelo SAG proposto. Os testes envolveram um conjunto de atividades com mais de 126 questões e 2805 respostas. Nestes testes foram analisadas formas distintas de escrita e em diferentes níveis de instrução, do Ensino Básico à Pós-Graduação, abordando tópicos distintos como Computação, Ciências, Filosofia, Economia e Medicina. Entretanto, para avaliar o sistema apresentamos aqui uma série de experimentos com \textit{datasets} encontrados na literatura.
+O \textit{p}Nota é um sistema que foi produzido com o andamento de experimentos em plataformas AVA na Universidade Federal do Espírito Santo (UFES). Nesse período, durante o desenvolvimento adicionamos diferentes técnicas para desenvolver a compreensão linguística e avaliativa do modelo SAG proposto. Os testes envolveram um conjunto de atividades com mais de 126 questões e 2805 respostas \cite{spalenza2016a}. Nestes testes foram analisadas formas distintas de escrita e em diferentes níveis de instrução, do Ensino Básico à Pós-Graduação, abordando tópicos distintos como Computação, Arquivologia, Ciências, Filosofia, Economia e Medicina. Entretanto, para avaliar o sistema apresentamos aqui uma série de experimentos com \textit{datasets} encontrados na literatura.
 
-Esse capítulo apresenta três séries de experimentos. A primeira avalia a parte fundamental da técnica de \textit{Active Learning} do sistema \textit{p}Nota, com o uso da \textit{clusterização} para a identificação dos principais itens de resposta em cada base de dados. A segunda apresenta os métodos de classificação, a qualidade do aprendizado do sistema na predição de notas e sua adequação ao modelo esperado pelo tutor. Por fim, o terceiro módulo reflete como os modelos de resposta são formados pelo sistema e apresentados como feedback aos alunos e professores.
+Esse capítulo apresenta os experimentos das duas etapas avaliativas. A primeira avalia a parte fundamental da técnica de \textit{Active Learning} do sistema \textit{p}Nota, com o uso da \textit{clusterização} para a identificação dos principais itens de resposta em cada base de dados. Na sequência, a segunda apresenta os métodos de classificação, a qualidade do aprendizado do sistema na predição de notas e sua adequação ao modelo esperado pelo tutor.
 
-\section{Base de Dados}
- Nove bases de dados foram selecionadas de acordo com a literatura, em português e inglês. Cada base de dados foi utilizada conforme as suas características. As bases de dados foram organizadas segundo o formato da nota, entre ordinais, discretas e contínua \cite{morettin2010}.
+\section{\textit{Datasets}}
+
+De acordo com a literatura, selecionamos nove bases de dados, em português e inglês. Cada base de dados foi utilizada conforme a sua disponibilidade e suas características. Alguns \textit{datasets} estão em linguagens que seria possível o processamento mas precisamos de maior conhecimento da linguagem para adaptação do \textit{p}Nota, como o \textit{JapaneseSAS} (japonês) \cite{ishioka2017}, \textit{Cairo University Dataset} (árabe) \cite{gomaa2019}, \textit{Corpus of Reading comprehension Exercises in German (CREG)} (alemão) \cite{ziai2012}, \textit{Science Answer Assessment (ScAA)} (hindi) \cite{agarwal2020} e o \textit{Chinese Educational Short Answers (CESA)} (chinês) \cite{ding2020}. Outros \textit{datasets} foram descartados pela indisponibilidade, como o \textit{Critical Reasoning for College Readiness (CR4CR) Assessment} \cite{condor2021}, o \textit{Cordillera Corpus} \cite{zhang2020}, dentre outros inúmeros privados. Nesse caso se enquadram grande quantidade de artigos, com coleta de dados local e sem acesso público. Dentre as nove citadas na literatura que tivemos acesso, organizamos por formato das notas atribuídas: ordinais, discretas e contínua \cite{morettin2010}. 
 
 Em bases de dados com notas \textit{ordinais} o método avaliativo do tutor é dado de forma textual e categórica. A representação do rótulo não estabelece escalas para o sistema, não sendo possível mensurar a diferenças na escala \textit{a priori}. O modelo formado deve compreender as estruturas textuais de forma simbólica, caracterizando a essência de cada nível. Portanto, o classificador deve ser robusto para aprender a relevância das respostas pela equivalência de palavras-chave. Basicamente, é fundamental para o classificador produzir um modelo com as informações essenciais para a resposta receber tal categoria e reproduzir o modelo.
 
@@ -22,7 +23,7 @@ Por fim, a avaliação \textit{discreta} numérica é a mais comum. Esse modelo 
 \begin{table}[!h]
 \begin{tabular}{r |c c c c} 
  \hline
- Base de Dados & Quest{\~o}es & Respostas & Modelo Avaliativo & Linguagem \\ \hline
+ Dataset & Quest{\~o}es & Respostas & Modelo Avaliativo & Linguagem \\ \hline
  SEMEVAL2013 Beetle & 47 & 4380 & ordinal & Ingl{\^e}s \\
  SEMEVAL2013 SciEntsBank & 143 & 5509 & ordinal & Ingl{\^e}s \\
  Kaggle ASAP-SAS & 10 & 17043 & discreto & Ingl{\^e}s \\
@@ -40,10 +41,10 @@ Por fim, a avaliação \textit{discreta} numérica é a mais comum. Esse modelo 
 \end{table}
 \end{center}
 
-A Tabela \ref{tab-datasets} descreve os nove \textit{datasets} utilizados nos experimentos deste capítulo. Através das características apresentadas, sabendo que cada \textit{dataset} contém uma quantidade regular de respotas, observamos a grande diversidade de quantidade de respostas por questão. Com questões de 30 até mais de 1800 respostas. É importante destacar ainda que, a definição de respostas curtas e as características textuais das respostas de cada um destes \textit{datasets} foram apresentadas no Capítulo \label{cap1-intro}, em especial na Tabela \ref{tab-features}. No total, esse \textit{corpora} apresenta um total de 337 questões e 61.268 respostas. Cada base de dados e sua descrição completa é apresentada a seguir:
+A Tabela \ref{tab-datasets} descreve os nove \textit{datasets} utilizados nos experimentos deste capítulo. Através das características apresentadas, identificamos uma regularidade interna de cada \textit{dataset}. Entretanto, entre os \textit{datasets} existe uma variação muito grande com questões de 30 até mais de 1800 respostas. É importante destacar ainda que, a definição de respostas curtas e as características textuais das respostas de cada um destes \textit{datasets} foram apresentadas no Capítulo \label{cap1-intro}, em especial na Tabela \ref{tab-features}. No total, esse \textit{corpora} apresenta um total de 347 questões e 68.945 respostas. Cada base de dados e sua descrição completa é apresentada a seguir:
 
 
-\subsection{Base de Dados \textit{Beetle} do \textit{SEMEVAL'2013 : Task 7} \textit{(Inglês)}}
+\subsection{Dataset \textit{Beetle} do \textit{SEMEVAL'2013 : Task 7} \textit{(Inglês)}}
 \label{beetle-db}
 
 \textit{Beetle} \cite{dzikovska2012} é um dos \textit{datasets} utilizados durante o \textit{International Workshop on Semantic Evaluation - SEMEVAL'2013}. O \textit{SEMEVAL} seleciona anualmente uma série de desafios em análise semântica e apresenta no formato de competição. O \textit{corpus Beetle} foi selecionado para a \textit{Task 7: The Joint Student Response Analysis and 8th Recognizing Textual Entailment Challenge} \cite{dzikovska2013}. Portanto, a competição consistia em duas propostas. A primeira é a análise e avaliação das respostas obtidas e a segunda o reconhecimento da relação textual entre as respostas coletadas e a expectativa de resposta do professor.
@@ -53,7 +54,7 @@ Esse \textit{dataset} consiste em uma coleção de interações entre estudantes
 Foram aplicadas questões categorizadas em dois tipos factuais e explicativas. As questões factuais requerem que o aluno nomeie diretamente determinados objetos ou propriedades. Equanto isso, as questões explicativas demandam que o aluno desenvolva a resposta em uma ou duas frases. Para a formação do \textit{dataset} foram adicionadas apenas as atividades do segundo tipo, pois representam maior complexidade para sistemas computacionais. No total foram selecionadas 47 questões com 4380 respostas. A avaliação foi feita conforme o domínio demonstrado sobre o assunto em cinco categorias: \textit{correct}, \textit{partially-correct-incomplete}, \textit{contradictory}, \textit{irrelevant} e \textit{non-domain}. Durante a anotação o coeficiente \textit{Kappa} obtido foi de 69\% de concordância.
 
 
-\subsection{Base de Dados \textit{SciEntsBank} do \textit{SEMEVAL'2013 : Task 7} \textit{(Inglês)}}
+\subsection{Dataset \textit{SciEntsBank} do \textit{SEMEVAL'2013 : Task 7} \textit{(Inglês)}}
 \label{scientsbank-db}
 
 O \textit{corpus Science Entailments Bank (SciEntsBank)} \cite{dzikovska2012} é um dos \textit{datasets} utilizados durante o \textit{International Workshop on Semantic Evaluation - SEMEVAL'2013} \cite{dzikovska2013}, com foco na avaliação de sistemas conforme a sua capacidade de análise e exploração semântica da linguagem. É uma base de dados formadas pela avaliação de questões da disciplina de Ciências. Na avaliação 16 assuntos distintos são abordados entre ciências físicas, ciências da terra, ciências da vida, ciências do espaço, pensamento científico e tecnologia. 
@@ -66,10 +67,10 @@ As questões são parte da \textit{Berkeley Lawrence Hall of Science Assessing S
 [('contradictory', 1160), ('correct', 1841), ('irrelevant', 130), ('non_domain', 218), ('partially_correct_incomplete', 1031)] 4380 BEETLE 
 \end{comment}
 
-\subsection{Base de Dados do Concurso ASAP-SAS no \textit{Kaggle} \textit{(Inglês)}}
+\subsection{Dataset do Concurso ASAP-SAS no \textit{Kaggle} \textit{(Inglês)}}
 \label{kaggle-db}
 
-A base de dados \textit{ASAP - SAS}, \textit{Automated Student Assessment Prize - Short Answer Scoring} é uma competição proposta pela \textit{Hewllet Foundation} na plataforma \textit{Kaggle} \footnote{The Hewlett Foundation - Short Answer Scoring: https://www.kaggle.com/c/asap-sas}. A \textit{ASAP} consistiu em três fases:
+A origem da base de dados \textit{ASAP - SAS}, \textit{Automated Student Assessment Prize - Short Answer Scoring} é uma competição proposta pela \textit{Hewllet Foundation} na plataforma \textit{Kaggle} \footnote{The Hewlett Foundation - Short Answer Scoring: https://www.kaggle.com/c/asap-sas}. A competição consistiu em três fases:
 
 \begin{itemize}
 \item Fase 1:  Demonstração em respostas longas (redações); 
@@ -77,12 +78,12 @@ A base de dados \textit{ASAP - SAS}, \textit{Automated Student Assessment Prize 
 \item Fase 3:  Demonstração simbólica matemática/lógica (gráficos e diagramas).
 \end{itemize}
 
-O objetivo da competição foi descobrir novos sistemas de apoio ao desenvolvimento de escolas e professores. Especificamente, as três fases destacam a atividade lenta e de alto custo de avaliar manualmente testes, mesmo que com padrões bem definidos. Uma consequência disso é a redução do uso de questões discursivas nas escolas, dando preferência para as questões objetivas para evitar a sobrecarga de trabalho. Isso evidencia uma gradativa redução da capacidade dos professores em incentivar o pensamento crítico e as habilidades de escrita. Portanto, os sistemas de apoio, são uma possível solução para suportar os métodos de correção, avaliação e feedback ao conteúdo textual dos alunos.
+Seu objetivo era descobrir novos sistemas de apoio ao desenvolvimento de escolas e professores. Especificamente, as três fases destacam a atividade lenta e de alto custo de avaliar manualmente testes, mesmo que com padrões bem definidos. Uma consequência disso é a redução do uso de questões discursivas nas escolas, dando preferência para as questões objetivas para evitar a sobrecarga de trabalho. Isso evidencia uma gradativa redução da capacidade dos professores em incentivar o pensamento crítico e as habilidades de escrita. Portanto, os sistemas de apoio, são uma possível solução para suportar os métodos de correção, avaliação e feedback ao conteúdo textual dos alunos.
 
 Neste contexto, a competição apresentou 10 questões multidiciplinares, de ciências à artes. Estão distribuidas 17043 respostas de alunos dentre essas atividades. Para chegar nessa quantidade, foram selecionadas por volta de 1700 respostas dentre 3000 respostas em cada atividade. Cada resposta tem aproximadamente 50 palavras. A primeira avaliação foi dada pelo primeiro especialista como nota final e a segunda nota foi atribuída apenas para demonstrar o nível de confiança da primeira nota. A avaliação apresentada por dois especialistas apresentou concordância de 90\% no coeficiente \textit{Kappa}.
 
 
-\subsection{Base de Dados \textit{Powergrading} \textit{(Inglês)}}
+\subsection{Dataset \textit{Powergrading} \textit{(Inglês)}}
 \label{powergrading-db}
 Elaborado através do \textit{United States Citizenship Exam} (USCIS) em 2012, a base de dados \textit{Powergrading} contém 10 questões e 6980 respostas \cite{basu2013}. Desenvolvida originalmente para destacar a possibilidade de avaliação massiva, o \textit{dataset} selecionou 698 respostas para cada uma das questões. As respostas foram geradas com \textit{Amazon Mechanical Turk}, serviço remoto de análise manual de conteúdo para anotação da \textit{Amazon}. Foi coletada por um grupo de pesquisa da \textit{Microsoft}\footnote{Powergrading: https://www.microsoft.com/en-us/download/details.aspx?id=52397} e cada questão acompanha um modelo de resposta e as respostas recebidas para cada questão.  Além disso, acompanha o \textit{dataset} outras 10 questões não avaliadas.
 
@@ -93,22 +94,22 @@ Respostas não coincidentes em cada questão
 q1 - 1 q2 - 12 q3 - 145 q4 - 45 q5 - 18 q6 - 52 q7 - 20 q8 - 17 q13 - 108 q20 - 52
 \end{comment}
 
-\subsection{Base de Dados da \textit{UK Open University} \textit{(Inglês)}}
+\subsection{Dataset da \textit{UK Open University} \textit{(Inglês)}}
 \label{openunv-db}
 
 A base de dados da \textit{UK Open University} é um conjunto de questões coletadas na disciplina de introdução à ciências, denominada \textit{S103 - Discovering Science} \cite{jordan2012}. O foco do conjunto de atividades são abordagens em questões factuais bem concisas, não excedendo 20 palavras. Os alunos receberam as atividades através do ambiente da \textit{Intelligent Assessment Technologies (IAT)}, o \textit{FreeText Author}. O \textit{FreeText Author} foi utilizado como um método de \textit{CAA} de modo interativo e com resultado automático analizando a resposta do aluno segundo os padrões de resposta conhecidos. O sistema permitiu uma sequência de envios e apresentava comentários da resposta como \textit{feedback} para os alunos. Dependendo da complexidade da resposta, o tempo de retorno dos resultado varia muito entre alguns poucos minutos até mais do que um dia.
 
-Dentre as 20 questões, esse \textit{dataset} apresenta diferentes quantidades de respostas entre 511 e 1897. A avaliação é discreta e binária, definindo cada resposta como correta ou incorreta. Não existe notas intermediárias, representando diretamente se o aluno atendeu ou não os requisitos da resposta.
+O \textit{dataset} é de acesso privado, mas foi disponibilizado pelos autores para este estudo. Dentre suas 20 questões, esse \textit{dataset} apresenta diferentes quantidades de respostas entre 511 e 1897. A avaliação é discreta e binária, definindo cada resposta como correta ou incorreta. Não existe notas intermediárias, representando diretamente se o aluno atendeu ou não os requisitos da resposta. 
 
 
-\subsection{Base de dados da \textit{University of North Texas} \textit{(Inglês)}}
+\subsection{Dataset da \textit{University of North Texas} \textit{(Inglês)}}
 \label{ntexasunv-db}
 
 O \textit{dataset} da \textit{University of North Texas - UNT} \cite{mohler2011}, conhecido como \textit{Texas dataset} \footnote{Texas Dataset: https://web.eecs.umich.edu/{\textasciitilde}mihalcea/downloads.html}, é uma coleção de questões discursivas extraída no curso de Ciência da Computação. Composta por 80 atividades únicas, esse conjunto é composto por dez listas de exercícios com até sete questões e dois testes com dez questões cada. Foram aplicados em um ambiente virtual de aprendizagem durante a disciplina de Estrutura de Dados para 31 alunos. No total o \textit{dataset} é composto por 2273 respostas de alunos dentre as 80 atividades.
 
 A avaliação foi feita com cinco notas discretas, de 5 equivalente a resposta perfeita até 0 completamente incorreta. Foram avaliadas por dois avaliadores independentes, estudantes do curso de Ciência da Computação. Para os autores, o modelo seguido pelo sistema deve ser a resultante da média ente os avaliadores, em intervalo contínuo. Dentre as notas atribuídas, 57,7\% das respostas receberam a mesma nota. Enquanto isso, um nível de diferença entre as notas representou 22,9\% do total de respostas. Foi constatado também que, dentre as diferenças na avaliação, o avaliador 1 atribuia maiores notas 76\% das vezes.
 
-\subsection{Base de dados \textit{PTASAG} no \textit{Kaggle} \textit{(Português)}}
+\subsection{Dataset \textit{PTASAG} no \textit{Kaggle} \textit{(Português)}}
 \label{ptasag-db}
 
 A \textit{PTASAG - Portuguese Automatic Short Answer Grading Data} é uma base de dados brasileira apresentada por \cite{galhardi2018b} e disponibilizada na plataforma \textit{Kaggle} \footnote{PT-ASAG-2018: https://www.kaggle.com/lucasbgalhardi/pt-asag-2018}. Foi coletada pela Universidade Federal do Pampa - Unipampa em conjunto com cinco professores de biologia do Ensino Fundamental. Foram criadas 15 atividades com base no sistema Auto-Avaliador CIR. Em biologia, os tópicos abordados foram sobre o corpo humano. Cada questão acompanha uma lista de conceitos, as respostas avaliadas e as respostas candidatas criadas pelos professores como referência. Foram criadas entre duas e quatro respostas candidatas contendo entre três e seis palavras-chave.
@@ -125,7 +126,7 @@ As atividades foram aplicadas ao Ensino Fundamental para 326 estudantes de 12 a 
 No total, participaram 659 estudantes com um total de 7473 respostas. Cada uma das 15 questões apresenta entre 348 e 615 respostas. Apenas 4 questões foram avalidas por mais de um avaliador para verificar a concordância entre avaliadores. O coefficiente \textit{Kappa} observado foi de, em média, 53.25\%.
 
 
-\subsection{Base de Dados do Projeto Feira Literária das Ciências Exatas \textit{(Português)}}
+\subsection{Dataset do Projeto Feira Literária das Ciências Exatas \textit{(Português)}}
 \label{findes-db}
 
 É um conjunto de dados coletados durante o Projeto Feira Literária das Ciências Exatas \cite{nascimento2020}. As questões foram obtidas durante uma Atividade Experimental Problematizada por meio de um livro paradidático, ou seja, cujo objetivo primário não é o apoio didático. O livro escolhido foi \textit{A Formula Secreta} de David Shephard. 
@@ -133,7 +134,7 @@ No total, participaram 659 estudantes com um total de 7473 respostas. Cada uma d
 Conforme o livro, os professores formularam 10 atividades e ministraram para 70 alunos do 5º ano de Ensino Fundamental. Essas atividades ministradas descreviam situações práticas de Química básica. No total, o conjunto de dados conta com 10 questões, 700 respostas e suas respectivas avaliações.
 
 
-\subsection{Base de Dados do Vestibular UFES \textit{(Português)}}
+\subsection{Dataset do Vestibular UFES \textit{(Português)}}
 \label{vest-ufes-db}
 
 A base de dados VestUFES \cite{pissinati2014} é uma amostra das questões discursivas de Português do vestibular da UFES em 2012. A amostra selecionada contém 460 respostas divididas igualmente entre as 5 questões de língua portuguesa, também referentes a respostas dadas por 92 diferentes alunos.
@@ -142,7 +143,7 @@ Cada resposta foi avaliada por dois avaliadores. De acordo com o vestibular da u
 
 
 \begin{comment}
-\subsection{Base de Dados das Disciplinas UFES \textit{(Português)} \label{disciplinas-ufes-db}
+\subsection{Dataset das Disciplinas UFES \textit{(Português)} \label{disciplinas-ufes-db}
 Essa base de dados foi coletada de algumas disciplinas ministradas na Universidade Federal do Espírito Santo - UFES entre 2015 e 2016 através do Moodle do Laboratório Computação de Alto Desempenho - LCAD. Entre as disciplinas estão Metodologia e Técnicas de Pesquisa Científica, Filosofia e Tecnologia da Informação II. Totalizando 45 atividades, neste \textit{dataset} foram recebidas 1162 submissões com média 25,82 e desvio padrão de 13,54 respostas por atividade.
 
 O diferencial dessa base de dados é a mudança de características nas respostas encontradas nas múltiplas disciplinas, professores e alunos. Observam-se alterações consideráveis quanto ao tamanho, número de grupos, critério avaliativo ou objetividade. 
@@ -152,305 +153,479 @@ O diferencial dessa base de dados é a mudança de características nas resposta
 \section{Experimentos}
 \label{sec-experimentos}
 
-A série de experimentos realizados têm como intúito demonstrar o uso do \textit{p}Nota, em conjunto com o professor, de forma a criar modelos com bom desempenho na atribução de notas. Além disso, através dos \textit{datasets} conhecidos na literatura, podemos comparar a proposta de análise de estruturas textuais com os principais trabalhos publicados. Em uma primeira comparação avaliaremos a qualidade dos \textit{clusters} formados. Na sequência, apresentamos comparativos com as técnicas utilizadas na literatura nos desafios de uma forma geral. E, por fim, verificamos o desempenho do sistema quanto ao ganho de informação, em uma forma de validar a capacidade de aprendizado do modelo linguístico.
+Os experimentos realizados têm como intúito demonstrar a qualidade do método proposto de \textit{Active Learning}, com otimização do esforço de anotação humano. Assim, esperamos uma boa forma na amostragem tal qual o ganho de desempenho nos resultados de classificação. Através dos \textit{datasets} conhecidos da literatura, comparamos nossa proposta de análise das estruturas textuais em relação aos principais trabalhos publicados. Inicialmente os experimentos mostram o desempenho da etapa de \textit{clusterização} com a caracterização dos \textit{clusters} formados. Essa etapa indica a qualidade da amostragem em relação ao objetivo da atribuição de notas. Na sequência apresentamos comparativos com os classificadores da literatura, tentando maximizar os resultados obtidos com qualidade compatível aos demais trabalhos.
+
 
 \subsection{Resultados de \textit{Clusterização}}
 \label{sec-res-clustering}
 
-Em uma primeira análise, observamos o processo de \textit{clusterização} através do propósito da aplicação em \textit{Active Learning}. 
+Nessa primeira anális, observamos a qualidade dos \textit{clusters} formados. Assim, investigamos se a forma utilizada para construção dos \textit{clusters} foi efetiva para formação das amostras. Nessa etapa é essencial que a amostragem colete toda diversidade de notas, adquirindo conhecimento que torna possível comparar os níveis de nota. Neste identificamos as regiões que estabelecem diferenças entre contextos, com identificação de equivalências e divergências, isolando \textit{outliers}. Assim, essa primeira etapa é definitiva para a qualidade do aprendizado via \textit{Active Learning}.
 
-
-
-os resultados dos \textit{clusters} formados para os conjuntos de atividades através do processo de otimização \cite{spalenza2019}. Os resultados obtidos, visando ter \textit{clusters} mais homogêneos após a otimização, são caracterizados pela 
-
-
-
-Analisamos os resultados segundo três métricas de informação e o grau de similaridade entre grupos. Para isso, utilizamos as métricas ARI, NMI e CA, descritas na Seção \ref{subsec-clusterizacao}. Os resultados médios obtidos para os conjuntos de dados são apresentados na Tabela \ref{tab-clstr-index}.
+A formação dos \textit{clusters} foi feita com base em uma otimização do \textit{elbow method}, caracterizando a dispersão das amostras \cite{spalenza2019}. Os resultados obtidos, visam ter \textit{clusters} mais homogêneos, segundo os índices de validação. O índice utilizado foio CVS, avaliando o coeficiente de variação do tamanho dos \textit{clusters} formados, evitando grande concentração. É um detalhe observado em \textit{clusters} com grandes percentuais de amostras os múltiplos contextos e a sobreposição entre as notas atribuídas. Na avaliação dos clusters, utilizamosas métricas CA, HS e CS, descritas na Seção \ref{subsec-clusterizacao}. Os resultados obtidos em cada um dos \textit{datasets} é apresentado na Tabela \ref{tab-clstr-index}.
 
 \begin{table}[!h]
-\begin{center}
-\begin{tabular}{r | r r r }
- \hline
-
-\textit{Dataset}  & CA & HS & CS \\ \hline 
-SEMEVAL2013 Beetle & 0,5521 & 0,1127 & 0,3128 \\
-SEMEVAL2013 SciEntsBank SciEntsBank & 0,5747 & 0,1152 & 0,2071 \\
-UK Open University  & 0,7604 & 0,1752 & 0,0647 \\
-Projeto Feira Liter{\'a}ria & 0,5529 & 0,0848 & 0,2896 \\
-Kaggle ASAP-SAS   & 0,5215 & 0,0216 & 0,0801 \\
-Powergrading & 0,8537 & 0,3747 & 0,1331 \\
-Kaggle PTASAG  & 0,4863 & 0,0732 & 0,1663 \\
-University of North Texas & - & - & - \\
-VestUFES & - & - & - \\
- \hline
-\end{tabular}
-\end{center}
+\centering
 \caption{Bases de dados e índices qualitativos de \textit{clusterização}.}
 \label{tab-clstr-index}
+\begin{tabular}{r | r r r }
+\hline
+    \textit{Dataset}  & CA & HS & CS \\ \hline 
+    SEMEVAL2013 Beetle & 0,5897 & 0,2895 & 0,1856 \\
+    SEMEVAL2013 SciEntsBank SciEntsBank & 0,6064 & 0,2357 & 0,1789 \\
+    UK Open University  & 0,7628 & 0,2825 & 0,0667 \\
+    Projeto Feira Liter{\'a}ria & 0,6414 & 0,3920 & 0,2574 \\
+    Kaggle ASAP-SAS  & 0,5364 & 0,1065 & 0,0741 \\
+    Powergrading & 0,9032 & 0,6773 & 0,0760 \\
+    Kaggle PTASAG  & 0,5208 & 0,2282 & 0,1418 \\
+    University of North Texas & - & - & - \\
+    VestUFES & - & - & - \\
+\hline
+\hline
+\end{tabular}
 \end{table}
 
-A Tabela \ref{tab-clstr-index} demonstra que, apesar da baixa relação entre \textit{clusters} e sua representação direta como rótulos, temos excelentes resultados quanto à classificação. Isso indica que o sistema apresenta uma capacidade de particionamento dos dados em núcleos distintos de uma mesma classe. Na prática, uma categoria é representada por mais que um \textit{cluster}, seja formado por \textit{outliers} (até 10 amostras), grupos com pares de categorias ou grupos com padrões consistentes. Um quarto tipo seriam os grupos com padrões aleatórios agrupados, em geral não desejável. Neste último caso, os resultados não contribuem muito para a passagem de informações entre as etapas de amostragem por \textit{clusterização} e classificação. Com alinhamento direto ao método de \textit{clusterização} proposto pelos autores, o \textit{dataset Powergrading} apresentou alto desempenho logo de partida com nosso método. Por outro lado, com grande gradação de notas, os \textit{datasets} do \textit{SEMEVAL Beetle} e \textit{SciEntsBank} indicam grande complexidade quanto a homogeneidade dos grupos. Para destacar essa distinção entre os grupos e o conteúdo, apresentamos a diferença entre \textit{centróides} na Figura \ref{fig-hmPowergrading}.
+Na Tabela \ref{tab-clstr-index} mostramos um alto índice de relação entre \textit{clusters} e itens que receberam uma mesma nota. Isso reflete em um CA médio de 65,15\%, atingindo até 90,32\% no \textit{dataset} \textit{Powergrading}. O CA, através do voto majoritário, indica quantas amostras compartilham \textit{clusters} com diferentes avaliações. Pela atribuição de notas contínuas, os \textit{datasets} \textit{University of North Texas} e \textit{VestUFES} foram desconsiderados nessa análise.
 
+É um dos objetivos da etapa de clusterização que os grupos formados representem os tópicos abordados na questão. Assim, com efeito descritivo sobre os vínculos entre os \textit{cluster} e as notas, o CA indica o nível de complexidade para o reconhecimento de padrões e avaliação. No entanto, os índices HS e CS apontam a conexão entre cada classe de nota com os \textit{clusters} formados. Esses dois índices refletem algumas características dos problemas textuais.
+
+O primeiro indica o nível de homogeneidade, ou seja, o percentual de \textit{clusters} formados por uma mesma nota. Estabelecer essa separabilidade entre classes e \textit{clusters} é uma tarefa muito complexa. Em especial na análise textual, são comuns as avaliações distintas ocorrerem em respostas com algum nível de sobreposição de termos. Ou seja, notas distintas podem apresentar algum nível de similaridade e formarem um mesmo \textit{cluster}. Já o segundo indica a equivalência entre os \textit{clusters} formados e cada uma das instância de nota. No entanto, dada a liberdade textual, dificilmente as respostas que recebem uma mesma nota apresentam os mesmos termos como referência.
+
+Deste modo, \textit{datasets} com classificação binária tendem a ter alto desempenho na clusterização, como o \textit{Powergrading}. Porém, com muitos níveis de nota e textos maiores, \textit{datasets} como \textit{ASAP-SAS} e \textit{PTASAG}, tornam-se muito complexos para essa primeira etapa. O desempenho antes da etapa de amostragem mostra a eficiência dos classificadores para levar \textit{clusters} com divergências para uma melhoria considerável de desempenho. O desempenho das classificações após a amostragem é apresentada em detalhes na Seção \ref{sec-res-classificacao}. Para mostrar como os \textit{clusters} são formados por diferentes contextos, analisamos também a similaridade entre centróides. Indicando nesta etapa de \textit{Active Learning} que a \textit{clusterização} regionaliza as respostas segundo a interpretação dos contextos. A Figura \ref{fig-hmPowergrading} mostra qual foi o grau de similaridade encontrado nos \textit{clusters} formados para o \textit{dataset} \textit{Powergrading}.
 
 \begin{figure}[!h]
-\begin{minipage}[t]{.5\textwidth}
+\begin{minipage}[t]{.45\textwidth}
 \centering
-\includegraphics[width=\textwidth]{figuras/hmq2.png} 
+\includegraphics[width=\textwidth]{figuras/Powergrading/hm-q1.png} 
+\subcaption{Atividade q1}
 \end{minipage}%
-\begin{minipage}[t]{.5\textwidth}
+\begin{minipage}[t]{.45\textwidth}
 \centering
-\includegraphics[width=\textwidth]{figuras/hmq4.png}
+\includegraphics[width=\textwidth]{figuras/Powergrading/hm-q3.png} 
+\subcaption{Atividade q3}
 \end{minipage}%
 \hfill
-\begin{minipage}[t]{.5\textwidth}
+\begin{minipage}[t]{.45\textwidth}
 \centering
-\includegraphics[width=\textwidth]{figuras/hmq19.png}
+\includegraphics[width=\textwidth]{figuras/Powergrading/hm-q6.png} 
+\subcaption{Atividade q6}
 \end{minipage}%
-\begin{minipage}[t]{.5\textwidth}
+\begin{minipage}[t]{.45\textwidth}
 \centering
-\includegraphics[width=\textwidth]{figuras/hmq20.png}
+\includegraphics[width=\textwidth]{figuras/Powergrading/hm-q7.png} 
+\subcaption{Atividade q7}
 \end{minipage}
-\caption{Similaridade entre \textit{centróides} para as atividades q2, q4 e q19 e q20 em \textit{Powergrading}.}
+\caption{Similaridade entre \textit{centróides} para as atividades \textit{q1}, \textit{q3} e \textit{q6} e \textit{q7} em \textit{Powergrading}.}
 \label{fig-hmPowergrading}
 \end{figure}
 
-Como observamos nas imagens apresentadas na Figura \ref{fig-hmPowergrading}, existe a formação de grupos muito coesos. Essa coesão é explícita pela divergência do item médio (\textit{centróide}) os demais grupos. Como vemos através da matriz, em geral os índices de similaridade são menores que 0,25. Além disso, as atividades q2, q4, q19 e q20 apresentam respectivamente CA de 0,878, 0,805, 1,000 e 0,973. Isso demonstra a formação grupos divergentes mas com forte relação com a classe de nota. Para extração de padrões isso significa resultados de alta qualidade diretamente nos clusters formados. De certa forma este caso é incomum, ao qual esperamos lidar até com resultados de menor consistência nos \textit{clusters}. Denominamos agrupamentos consistentes aqueles que estão diretamente alinhados com a categoria atribuída. Entretanto, o cenário encontrado neste \textit{dataset} é o melhor possível, com padrões de resposta bem dispostos em \textit{clusters}. O caso oposto é dado pela diferença entre \textit{centróides} na Figura \ref{fig-hmSciEntsBank}.
-
+Como observamos na Figura \ref{fig-hmPowergrading}, os grupos de respostas formados são muito consistentes, apresentando baixa similaridade para os demais \textit{clusters}. Há nesses casos uma divergência do item médio (\textit{centróide}) do \textit{cluster} em relação aos demais grupos.  Denominamos agrupamentos consistentes aqueles que todas as respostas têm um mesmo alinhamento, recebendo posteriormente uma mesma classe de nota. A atividade \textit{q1}, por exemplo, apresenta similaridade média de apenas 0,0355. Mesmo a que apresenta \textit{clusters} mais próximos, a atividade \textit{q7} apresenta em média 0,1387 de similaridade. As outras duas em destaque, atividades \textit{q3} e \textit{q6}, atingem 0,1207 e 0,0730. Assim, a clusterização têm potencial de formar zonas de equivalência e divergência com alta qualidade para as etapas de atribuição de notas. Essa alta qualidade indica \textit{clusters} bem separados de acordo com o contexto. A Figura \ref{fig-hmSciEntsBank} apresenta um caso oposto com a diferença entre os \textit{centróides} dos \textit{clusters} para a atividade \textit{SciEntsBank}.
 
 \begin{figure}[!h]
-\begin{minipage}[t]{.5\textwidth}
+\begin{minipage}[t]{.45\textwidth}
 \centering
-\includegraphics[width=\textwidth]{figuras/hmEM16b.png} 
+\includegraphics[width=\textwidth]{figuras/seb/hm-EM16b.png} 
+\subcaption{Atividade EM16b}
 \end{minipage}%
-\begin{minipage}[t]{.5\textwidth}
+\begin{minipage}[t]{.45\textwidth}
 \centering
-\includegraphics[width=\textwidth]{figuras/hmEM35.png}
+\includegraphics[width=\textwidth]{figuras/seb/hm-EM21b.png}
+\subcaption{Atividade EM21b}
 \end{minipage}%
 \hfill
-\begin{minipage}[t]{.5\textwidth}
+\begin{minipage}[t]{.45\textwidth}
 \centering
-\includegraphics[width=\textwidth]{figuras/hmEM45c.png}
+\includegraphics[width=\textwidth]{figuras/seb/hm-EM27b.png} 
+\subcaption{Atividade EM27b}
 \end{minipage}%
-\begin{minipage}[t]{.5\textwidth}
+\begin{minipage}[t]{.45\textwidth}
 \centering
-\includegraphics[width=\textwidth]{figuras/hmFN17a.png}
+\includegraphics[width=\textwidth]{figuras/seb/hm-MX16a.png} 
+\subcaption{Atividade MX16a}
 \end{minipage}
-\caption{Similaridade entre \textit{centróides} para as atividades EM-16b, EM-35, EM-45c e FN-17a em \textit{SciEntsBank}.}
+\caption{Similaridade entre \textit{centróides} para as atividades \textit{EM16b}, \textit{EM21b}, \textit{EM27b} e \textit{MX16a} em \textit{SciEntsBank}.}
 \label{fig-hmSciEntsBank}
 \end{figure}
 
-Como observamos na Figura \ref{fig-hmSciEntsBank}, as atividades EM-16b, EM-35, EM-45c e FN-17a apresentam regiões de maior similaridade. Diferentemente do que foi notado na atividade anterior, neste temos algumas áreas coincidentes, acima de 0,35 destacadas em azul. As áreas em azul indicam um grau grande de similaridade entre centróides dos grupos e, por consequência, são compatíveis em certo nível. Por conta disso, podemos considerar que tais grupos podem ter diferentes perspectivas de uma mesma classe ou mesclar diferentes classes. Por consequência, em ambos os casos, torna-se maior a responsabilidade do classificador \textit{a posteriori}, para designar padrões refinados para tais \textit{clusters}. Por outro lado, os resultados em CA para as atividades EM-16b, EM-35, EM-45c e FN-17a são de 0,425, 0,625, 0,825 e 0,700 respectivamente. Notamos que as quatro atividades representam diferentes níveis em CA, inclusive com avaliações não coincidentes. Alinhado a isso, é fundamental que o classificador seja responsável por refinar o reconhecimento de padrões estabelecido na \textit{clusterização}, elevando o nível dos resultados alcançados.
+Como ilustrado na Figura \ref{fig-hmSciEntsBank}, temos clusterização mais complexa, em especial com poucas amostras. Diferente do que foi notado na questão anterior, temos situações distintas dentro de um mesmo \textit{dataset}. A primeira atividade \textit{EM16b} apresenta poucos \textit{clusters} e similaridade média de 0,3880. A segunda atividade \textit{EM21b} mostra uma boa separabilidade entre os dados com média de 0,0476 e máxima de 0,2442. A terceira atividade \textit{EM27b} mostra uma concentração entre alguns \textit{clusters}, com um núcleo de \textit{centróides} similares e outra parte bem distante, com similaridade média de 0,1361 e máxima entre \textit{centróides} de 0,3256. Por fim, a quarta atividade \textit{MX16a} mostra alguns \textit{clusters} muito próximos atingindo similaridade máxima de 0,6125 sendo a média entre \textit{centróides} de 0.1974.
+
+Pelo índice de similaridade parcial ou total dos clusters formados podemos considerar que algumas atividades mostram diferentes perspectivas de uma mesma classe ou mesclando diferentes classes. Assim, a identificação de padrões entre esses grupos de alta similaridade dependem de um bom reconhecimento de padrões \textit{a posteriori}. Assim, é compreensível que os níveis de CA destes \textit{clusters} sejam baixos. No entanto, é importante obter ganhos na etapa de classificação, elevando o nível dos resultados alcançados.
 
 \subsection{Resultados de \textit{Classificação}}
 \label{sec-res-classificacao}
 
-Após resultados bem sucedidos na \textit{clusterização}, com CA por voto majoritário com médias superiores à 50\%, realizamos a análise dos resultados de classificação. Tais experimentos caracterizam-se pela simetria com a maioria das publicações e desafios lançados em avaliação de respostas discursivas \cite{burrows2015}. Nestes encontramos um particionamento de 75\% de respostas selecionadas para treinamento e validação dos modelos e 25\% para avaliação do desempenho das propostas. No caso deste trabalho, as partições iniciais dos \textit{datasets} foram desconsideradas por conta da seleção de amostras de modo semi-supervisionado. Portanto, neste trabalho a amostragem dos 75\% foi realizada conforme a distribuição dos itens nos \textit{clusters} formados, como relatado em detalhes na Seção \ref{sec-amostragem}. Portanto, foram mantidos tais percentuais como limiar superior dos sistemas. Vale ressaltar que esse processo ainda representa uma redução considerável do trabalho de correção nos mesmos 25\%, apesar da maioria dos dados ser designada para avaliação do professor.
+Após os resultados obtidos na etapa de clusterização, realizamos a análise de classificação. Nestes, pegamos classificadores tradicionais para avaliar o ganho que tivemos com nossa proposta de \textit{Active Learning}. Tais experimentos, diferente do descrito para estudo dos \textit{clusters} formados, caracterizam-se pela simetria com  os artigos da literatura e os desafios da área. Como os \textit{datasets}, geralmente vem particionados, agrupamos conjuntos de treino e teste para que a nosso método \textit{não-supervisionado} realize os particionamentos, presenvando o percentual.
 
-Seguindo a característica da avaliação, vamos apresentar os resultados obtidos segundo a forma avaliativa adotada pelos professores. De forma mais complexa, temos os conjuntos de dados \textit{Beetle} e \textit{SciEntsBank} avaliados em 5 categorias textuais (ordinais) que indicam a completude da resposta conforme a expectativa do professor. Nesse aspecto, os \textit{datasets} do evento \textit{SEMEVAL' 2013}, apresentam 3 níveis de desafios. O primeiro nível é a avaliação de respostas não conhecidas, selecionadas aleatóriamente no conjunto de respostas (\textit{Unseen Answers}). O segundo nível compreende a correção de respostas em questões desconhecidas, ainda em um determinado domínio (\textit{Unseen Questions}). E, por fim, o terceiro nível está relacionado a análise de respostas em um domínio desconhecido (\textit{Unseen Domain}). Assim como a maioria dos sistemas SAG, o desafio que se enquadra no tópico aqui abordado é o primeiro (\textit{Unseen Answers}), avaliando conjuntos de respostas dentro de um mesmo tópico. 
+Neste estudo processamos cada atividade isoladamente, diferente de alguns estudos que utilizam atividades distintas durante o treinamento. Nesse caso, os sistemas são funcionais apenas dentro de um contexto. Entretanto, de caráter multidisciplinar, a tendência é o sistema receber blocos distintos de atividades, cada qual em um contexto.
 
-Com destaque para o desbalanceamento dos dados \cite{dzikovska2013}, ambos os \textit{datasets} foram anotados em 5 categorias: \textit{correct}, \textit{partially-correct-incomplete}, \textit{contradictory}, \textit{irrelevant} e \textit{non-domain}. Evidenciamos ainda a complexidade, inclusive semântica, para separar as três categorias inferiores, \textit{contradictory}, \textit{irrelevant} e \textit{non-domain}. Utilizando os 6 classificadores descritos na Seção \ref{subsec-classificacao}, apresentamos os resultados obtidos na Tabela \ref{tab-SEMEVAL75}.
+Outro fator comum é cada trabalho adotar uma métrica distinta de comparação, geralmente com vínculo ao trabalho. No entanto, utilizamos apenas as métricas de qualidade geral da classificação e regressão. Algumas métricas que não fazem sentido, como \textit{correlação de Pearson} e \textit{coeficiente Kappa} foram descartados, pois dependem da mesma base durante a avaliação. Não garantindo a paridade entre os grupos, o resultado não permite mensurar equivalência entre os sistemas. No entanto aplicamos as métricas descritas nas Seções \ref{subsec-classificacao} e \ref{subsec-regressao} para análise.
 
-\begin{table}[!h]
-\begin{center}
-\begin{tabular}{l r r r r r r r}
-    \hline
-    \multicolumn{7}{l}{\textbf{Beetle}} &  (5 Categorias) \\ \hline
-     & \multicolumn{7}{c}{M{\'e}tricas} \\
+Outro ponto importante é a amostragem observada nos trabalhos da literatura. O percentual de amostragem foi aplicado de acordo com o conjunto de dados e os demais trabalhos, variando entre 70 e 90\% das respostas. O alto percentual é comum pois facilmente conseguimos reaproveitar o treinamento para aplicar em novas amostras. Após o primeiro treinamento, apenas algumas intervenções do professor são necessárias para correção. Deste modo, gradativamente minimizamos o esforço do professor. Nestes casos, principalmente com o \textit{p}Nota, com novos grupos de dados para cada atividade tornam-se necessárias apenas avaliações pontuais para assimilar novos tópicos.
 
-    \input{tabelas/tab-Beetle75.tex}
+Seguindo a característica da avaliação, vamos apresentar os resultados obtidos segundo a forma avaliativa adotada pelos professores. De forma mais complexa, temos os conjuntos de dados \textit{Beetle} e \textit{SciEntsBank} avaliados em 5 categorias textuais (ordinais). Nestes \textit{datasets} do evento \textit{SEMEVAL' 2013}, apresentam 3 níveis de desafios. O primeiro nível é a avaliação de respostas não conhecidas, selecionadas aleatóriamente no conjunto de respostas (\textit{Unseen Answers}). O segundo nível compreende a correção de respostas em questões desconhecidas, ainda em um determinado domínio (\textit{Unseen Questions}). E, por fim, o terceiro nível está relacionado a análise de respostas em um domínio desconhecido (\textit{Unseen Domain}). Assim como a maioria dos sistemas SAG, o desafio que se enquadra no tópico aqui abordado é apenas o primeiro (\textit{Unseen Answers}), avaliando conjuntos de respostas dentro do tópico. 
 
-    \hline
-    \\
-    \\
-    \hline
-    \multicolumn{7}{l}{\textbf{SciEntsBank}} &  (5 Categorias) \\ \hline
-     & \multicolumn{7}{c}{M{\'e}tricas} \\
+Sendo a principal característica deste \textit{dataset} o desbalanceamento das classes \cite{dzikovska2013}, ambos os \textit{datasets} foram anotados em níveis de nota: \textit{correct}, \textit{partially-correct-incomplete}, \textit{contradictory}, \textit{irrelevant} e \textit{non-domain}. Evidenciamos ainda a complexidade, inclusive semântica, para separar as três categorias inferiores, \textit{contradictory}, \textit{irrelevant} e \textit{non-domain}. Utilizando os 6 classificadores descritos na Seção \ref{subsec-classificacao}, apresentamos os resultados obtidos na Tabela \ref{tab-SEMEVAL}.
 
-    \input{tabelas/tab-SciEntsBank75.tex}
-
-    \hline
-    \hline
-\end{tabular}
-\end{center}
+\begin{table}
+\centering
 \caption{Resultados dos seis classificadores testados nos \textit{datasets} do \textit{SEMEVAL' 2013}.}
-\label{tab-SEMEVAL75}
-\end{table}
-
-A Tabela \ref{tab-SEMEVAL75} caracteriza o desempenho do sistema com os seis classificadores testados. Fica evidente que a performance do sistema é superior no \textit{Beetle} em relação ao \textit{SciEntsBank}. Na primeira base de dados, há um equilíbrio entre os classificadores testados, com GBC, WSD, DTR e RDF alcançando F1-ponderado entre 55\% e 60\%. Os classificadores KNN e SVM apresentam uma ligeira queda neste índice, com 53,73\% e 52,36\% respectivamente. Enquanto isso, na segunda, temos resultados consistentes do GBC e DTR, com F1-ponderado de 43\% e F1-macro acima de 30\%. Os demais classificadores apresentaram F1-ponderado abaixo de 40\%. Deste modo, os valores em análise destacam características da formação dos conjuntos de dados. O \textit{dataset Beetle} apresenta cerca de 84 respostas por questão. Enquanto isso, o \textit{SciEntsBank} contém apenas 37 respostas em média por questão, ficando evidente a diferença entre eles. Os resultados obtidos também estão ilustrados na Figura \ref{fig-semeval75}.
-
-\begin{figure}[!h]
-\centering
-\includegraphics[width=\textwidth]{figuras/Beetle-75.png}
-
-\includegraphics[width=\textwidth]{figuras/SciEntsBank-75.png}
-\caption{Resultados obtidos nos \textit{datasets Beetle} e \textit{SciEntsBank} pelos classificadores em comparação com os principais encontrados na literatura.}
-\label{fig-semeval75}
-\end{figure}
-
-Na Figura \ref{fig-semeval75}, os gráficos destacam os valores obtidos nas métricas F1-macro e F1-ponderado conforme os principais resultados da literatura \cite{dzikovska2013, ramachandran2015a,sahu2020}. Conforme os trabalhos da literatura, evidenciamos a distância dos resultados obtidos em relação ao que foi apresentado como o \textit{estado da arte} neste cenário. Apesar disso, ambos os resultados são superiores ao \textit{baseline} proposto. Nesta perspectiva, abordagens com a criação de modelos de resposta, utilizando informações adicionais sobre o tema ou expressões regulares, sobressaem com melhor desempenho mas, em geral, demandam maior esforço do professor \cite{ramachandran2015a, sahu2020}. No entanto, isto indica que tais estratégias seguem um único viés de resposta, tornando-se menos efetivas ao lidar com variações linguísticas \cite{filighera2020}.
-
-Ainda, temos dentre as 4380 respostas do \textit{Beetle} 1841 anotadas como \textit{correct}, 1160 como \textit{contradictory} e 1031 como \textit{partially-correct-incomplete}. Por outro lado, apenas 218 foram avaliadas como \textit{non-domain} e 130 como \textit{irrelevant}. Considerando ainda a distribuição de classes, a situação é agravada em relação ao \textit{SciEntsBank}. Dentre as 5509 respostas, 2241 foram dadas como \textit{correct}, 1437 como \textit{partially-correct-incomplete}, 1248 como \textit{irrelevant} e 557 como \textit{contradictory}. Só constam neste \textit{dataset} 26 respostas anotadas como \textit{non-domain} dentre as 143 questões. Notoriamente, são poucas amostras para algumas categorias que se destacam quando vemos que, em média, o primeiro \textit{dataset} apresenta 93 respostas por questão enquanto o segundo apresenta apenas 38 respostas. Portando, apesar da complexidade de avaliar tal questão, os resultados são positivos, aprimorando resultados esperados conforme a distribuição de \textit{clusters}.
-
-Em outra perspectiva, com dados discretos, analisamos os resultados dos \textit{datasets Open University}, \textit{Powergrading} e \textit{Kaggle ASAP-SAS}. Inicialmente abordaremos o \textit{dataset} da \textit{Open University}, por conta do formato de anotação. Neste conjunto de dados a cada resposta foi designada a nota 0 ou nota 1, como respostas corretas ou incorretas. Bem distinta dos \textit{datasets Beetle} e \textit{SciEntsBank}, este conjunto contém mais de 23 mil respostas e, em média, 1190 respostas para cada questão. Isso impacta diretamente na construção de modelos de resposta, com uma variedade de padrões para uma mesma classe, sendo possível a identificação de núcleos de resposta bem consistentes segundo a simetria da classe. Os resultados apresentados na Tabela \ref{tab-OU75} refletem justamente este aspecto.
-
-\begin{table}[!h]
-\begin{center}
-\begin{tabular}{l r r r r r r r}
+\label{tab-SEMEVAL}
+\begin{tabular}{l r r r r r}
     \hline
-    \multicolumn{7}{l}{\textbf{Open University}} &  (2 Categorias) \\ \hline
-     & \multicolumn{7}{c}{M{\'e}tricas} \\ \cline{2-8}
+    \multicolumn{4}{l}{\textbf{Beetle}} &  \multicolumn{2}{r}{(5 Categorias)} \\ \hline
+    & \multicolumn{5}{c}{M{\'e}tricas} \\ \cline{2-6}
 
-    \input{tabelas/tab-OpenUniv75.tex}
+     & ACC & PRE & REC & F1(m) & F1(w) \\ \cline{2-6}
+    DTR & 61,90\% & 41,14\% & 43,08\% & 40,82\% & 60,01\% \\
+    GBC & \textbf{62,32\%} & \textbf{41,63\%} & \textbf{43,66\%} & \textbf{41,25\%} & \textbf{60,06\%} \\
+    KNN & 59,80\% & 35,98\% & 39,21\% & 36,38\% & 56,26\% \\
+    RDF & 60,67\% & 39,21\% & 40,65\% & 38,67\% & 58,35\% \\
+    SVM & 60,06\% & 36,86\% & 42,56\% & 38,10\% & 54,70\% \\
+    WSD & 60,76\% & 37,28\% & 40,40\% & 37,59\% & 56,95\% \\
 
+    \hline
+    \\
+    \\
+    \hline
+    \multicolumn{4}{l}{\textbf{SciEntsBank}} &  \multicolumn{2}{r}{(5 Categorias)} \\ \hline
+     & \multicolumn{5}{c}{M{\'e}tricas} \\ \cline{2-6}
+
+     & ACC & PRE & REC & F1(m) & F1(w) \\ \cline{2-6}
+    DTR & 48,79\% & 38,94\% & 39,30\% & 38,01\% & 39,30\% \\
+    GBC & \textbf{50,62\%} & \textbf{40,43\%} & 42,50\% & \textbf{39,93\%} & \textbf{49,04\%} \\
+    KNN & 43,16\% & 34,88\% & 36,13\% & 33,89\% & 41,86\% \\
+    RDF & 49,49\% & 37,84\% & \textbf{43,25\%} & 38,96\% & 45,67\% \\
+    SVM & 46,51\% & 32,89\% & 41,01\% & 35,31\% & 40,45\% \\
+    WSD & 47,43\% & 36,45\% & 40,21\% & 36,97\% & 44,43\% \\
     \hline
     \hline
 \end{tabular}
-\end{center}
+\end{table}
+
+A Tabela \ref{tab-SEMEVAL} mostra o desempenho do sistema com os seis classificadores testados. Fica evidente que a performance do sistema é superior no \textit{Beetle} em relação ao \textit{SciEntsBank}. No \textit{dataset} \textit{Beetle} o melhor resultado obtido foi com o GBC, com ACC médio de 62,32\% e F1-ponderado de 60,06\%. No entanto, a diferença foi bem pequena em relação aos demais classificadores. No \textit{dataset} \textit{SciEntsBank} o resultado foi diferente, com o GBC apresentando resultados bem superiores em relação a alguns classificadores, com ACC médio de 50,62\% e F1-ponderado de 49,04\%. O KNN apresentou baixo desempenho, com ACC de apenas 43,16\%, devido aos vários níveis de nota dentre as poucas respostas. Comparamos os resultados obtidos no \textit{dataset} \textit{Beetle} na Figura \ref{fig-semeval-beetle}.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=.6\textwidth]{figuras/beetle/res-beetle-acc.png}
+\includegraphics[width=.6\textwidth]{figuras/beetle/res-beetle-mfs.png}
+\includegraphics[width=.6\textwidth]{figuras/beetle/res-beetle-wfs.png}
+\caption{Resultados obtidos no \textit{dataset} \textit{Beetle}.}
+\label{fig-semeval-beetle}
+\end{figure}
+
+
+Na Figura \ref{fig-semeval-beetle}, mostramos o desempenho do \textit{p}Nota e dos trabalhos da literatura em ACC, F1-macro e F1-ponderado. O melhor resultado é apresentado por \cite{sahu2020}, com uma estratégia que realiza a combinação de vários níveis da estrutura textual, atingindo ACC de 66,6\% e F1-ponderado de 70,91\%. Neste, os autores incluem \textit{features} de similaridade semântica, de sobreposição léxica, de recuperação da informação, de similaridade de tópicos, similaridade entre \textit{feedbacks} e de alinhamento textual. Portanto, temos uma ampla aquisição de informação, combinando os métodos tradicionais \textit{Latent Semantic Analysis} (LSA), \textit{word embeddings}, \textit{Recall Oriented Understudy for Gisting Evaluation} (ROUGE), \textit{TF-IDF}, \textit{LDA}, dentre outros. A avaliação é dada posterioremente com ensembles usando \textit{Random-Forest}.
+
+No estudo realizado por \cite{galhardi2018c} encontramos também uma combinação de \textit{features} que incluem estatísticas textuais, como o cálculo de erros, tamanhos de resposta e contagem de palavras por sentença. Essas estruturas eram comuns nos primeiros trabalhos da área, hoje avançando com análise da linguagem \cite{burrows2015}. Usando \textit{Random Forests} e \textit{Extreme Gradient Boosting} os autores alcançaram ACC de 68,3\% e F1-ponderado de 57\%. Um terceiro destaque vale para o trabalho de \cite{riordan2017}, com F1-ponderado de 63,3\%. Nesse caso, os autores não divulgaram as demais métricas. O resultado foi alcançado combinando \textit{word-embeddings}, \textit{Convolutional Neural Networks} (CNN) e \textit{Long Short-Term Memory} (LSTM). As notas são dadas no \textit{layer} de agregação por um modelo linear. Outra técnica aplicada é a sumarização, avaliando as respostas ao mensurar a similaridade dos grafos textuais \cite{ramachandran2015a, ramachandran2015b}. Essa estratégia ainda depende de combinar vários trechos da atividade, desde o enunciado até o quadro de \textit{rubrics}. De forma geral, os resultados obtidos no \textit{Beetle} são bem próximos entre eles. O desempenho intermediário indica o desafio de compreender as 5 categorias do \textit{dataset}. Outra perspectiva é dada nos resultados do \textit{SciEntsBank}, apresentados na Figura \ref{fig-semeval-seb}.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=.6\textwidth]{figuras/seb/res-seb-acc.png}
+\includegraphics[width=.6\textwidth]{figuras/seb/res-seb-mfs.png}
+\includegraphics[width=.6\textwidth]{figuras/seb/res-seb-wfs.png}
+\caption{Resultados obtidos no \textit{dataset} \textit{SciEntsBank}.}
+\label{fig-semeval-seb}
+\end{figure}
+
+
+Na Figura \ref{fig-semeval-seb} vemos que, apesar da aplicação no mesmo desafio, temos vários trabalhos que foram aplicados apenas nesse segundo. O melhor resultado é apresentado por \cite{sahu2020}, com F1-ponderado de 92,5\%. Porém, esse desempenho muito superior é incomum, pois não apresenta o mesmo resultado no \textit{Beetle}. Os autores relatam como maior ganho de desempenho as técnicas de similaridade semântica e sobreposição textual. Portanto, as atividades têm potencial de ter alto desempenho com técnicas de construção de regras e expressões regulares.
+
+O estudo realizado por \cite{roy2016} apresentou ACC de 56,5\% e F1-ponderado de 67,2\%. Tal como mencionado, os autores estudaram técnicas para aquisição de padrões sequenciais, comparando com as respostas candidatas. O método em uma forma geral foi feito no nível de \textit{tokens}, identificando sobreposição entre as respostas. A técnica tem desempenho muito superior em algumas classes, dado o alto F1-ponderado mas acompanhado de um ACC menor que outros trabalhos da literatura. Técnicas mais recentes foram propostas por \cite{galhardi2018c} e \cite{saha2018}. O primeiro alcançou resultados ACC média de 65,9\% e F1-ponderado de 62,8\% usando \textit{Random Forests} e \textit{Extreme Gradient Boosting}. Enquanto o segundo aplicou 6 níveis de análise dos termos, apostando no \textit{Histogram of Partial Similarity}. Este aplica um score de similaridade entre a resposta candidata e cada uma das respostas. As palavras são comparadas pela similaridade de cosseno dos pares em \textit{word embeddings}. 
+
+A aplicação feita com LSTMs realizada por \cite{riordan2017} alcançou F1-ponderado de 53,3\%. Uma proposta parecida foi realizada por \cite{gomaa2019}. Os autores realizam uma composição com vetores semânticos via \textit{skip-thought}, comparando os vetores resiltantes. Os vetores são dados através de pares, pelo produto e pela diferença entre uma resposta e a resposta candidata. O resultado alcançado é de F1-ponderado de 65,6\% em média. 
+
+Pela baixa quantidade de amostras, no \textit{SciEntsBank} os sistemas têm maior dificuldade de adquirir conhecimento por categoria de nota. Por isso, os sistemas que apresentaram melhores resultados foram os que utilizaram a sobreposição dos termos com resposta candidata. No entanto, isto indica que tais estratégias seguem um único viés de resposta, tornando-se menos efetivas ao lidar com variações linguísticas \cite{filighera2020}.
+
+A hipótese que levantamos é que a adição de informação foi um diferencial, dado o pequeno número de amostras por classe. Ao todo, o \textit{SciEntsBank} contém em média apenas 37 respostas por questão, enquanto o \textit{Beetle} apresenta 84 respostas. Dentre as 4380 respostas do \textit{Beetle}, 1841 foram anotadas como \textit{correct}, 1160 como \textit{contradictory} e 1031 como \textit{partially-correct-incomplete}. Por outro lado, apenas 218 foram avaliadas como \textit{non-domain} e 130 como \textit{irrelevant}. Considerando ainda a distribuição de classes, a situação é agravada em relação ao \textit{SciEntsBank}. Dentre as 5509 respostas, 2241 foram dadas como \textit{correct}, 1437 como \textit{partially-correct-incomplete}, 1248 como \textit{irrelevant} e 557 como \textit{contradictory}. Só constam neste \textit{dataset} 26 respostas anotadas como \textit{non-domain} dentre as 143 questões. Notoriamente, são poucas amostras para algumas categorias que se destacam quando vemos que, em média, o primeiro \textit{dataset} apresenta 93 respostas por questão enquanto o segundo apresenta apenas 38 respostas. Portando, apesar da complexidade de avaliar tal questão, os resultados são positivos, aprimorando resultados esperados conforme a distribuição de \textit{clusters}.
+
+Na sequência temos os resultados obtidos com o \textit{dataset} \textit{Open University}. Neste conjunto de dados a avaliação designada foi binária, com notas 0 ou 1. Assim, a avaliação foi dada apenas como corretas ou incorretas. Bem distinta dos \textit{datasets Beetle} e \textit{SciEntsBank}, este conjunto contém mais de 23 mil respostas e, em média, 1190 respostas para cada questão. Isso impacta diretamente na construção de modelos de resposta, com uma variedade de padrões para uma mesma classe, sendo possível a identificação de núcleos de resposta bem consistentes segundo a simetria da classe. Os resultados apresentados na Tabela \ref{tab-OU} refletem justamente este aspecto.
+
+\begin{table}
+\centering
 \caption{Resultados de classificação para o \textit{dataset OpenUniversity}.}
-\label{tab-OU75}
-\end{table}
-
-É evidente, através dos resultados em destaque na Tabela \ref{tab-OU75}, que a grande quantidade de padrões de nota aumentam consideravelmente a qualidade de classificação. Com ACC de 96,15\%, o algoritmo GBC captura detalhes nas respostas e formas de avaliação muito próximas do modelo do professor. Por conta disso, podemos dizer que a captura das estruturas de linguagem analisadas foram de alta qualidade. Com isso, o sistema um classificador retorna um excelente modelo de avaliação, compatível com as expectativas do professor. De acordo com as classes, os classificadores GBC, RDF e DT apresentam F1-ponderado acima de 90\%. A Figura \ref{fig-OU75} apresenta os resultados obtidos neste \textit{dataset} em relação aos descritos pelos autores em sua publicação \cite{butcher2010}.
-
-\begin{figure}[!h]
-\centering
-\includegraphics[width=\textwidth]{figuras/OU-75.png}
-\caption{Comparação do sistema dos autores do \textit{dataset Open University} em relação ao \textit{p}Nota.}
-\label{fig-OU75}
-\end{figure}
-
-A Figura \ref{fig-OU75} caracteriza a proximidade do modelo GBC do \textit{p}Nota com o \textit{IAT}, sistema aplicado na \textit{Open University}. Como o artigo destaca, o sistema tem conhecimento sobre o conteúdo e regras de associação de respostas com o tema para a produção de \textit{feedbacks} direcionados. Portanto, tal trabalho contém uma base de conhecimento sobre o tema para além do que é formado pelas atividades. Entretanto, apenas com os exemplos anotados, o \textit{p}Nota produz um modelo consistente, com desempenho equivalente aos modelos voltados ao tema.
-
-Anotado de forma similar ao \textit{Open University}, o \textit{dataset Powergrading} também contém respostas avaliadas de forma binária (correto 1 ou incorreto 0). Porém, o \textit{Powergrading} é avaliado por três avaliadores. Com as notas binárias, o objetivo é atender o resultado coincidente entre os avaliadores humanos. O desempenho obtido pelo \textit{p}Nota neste \textit{dataset} é caracterizado na Tabela \ref{tab-PG75}.
-
-\begin{table}[!h]
-\begin{center}
-\begin{tabular}{l r r r r r r r}
+\label{tab-OU}
+\begin{tabular}{l r r r r r}
     \hline
-    \multicolumn{7}{l}{\textbf{Powergrading}} &  (2 Categorias) \\ \hline
-     & \multicolumn{7}{c}{M{\'e}tricas} \\ \cline{2-8}
+    \multicolumn{4}{l}{\textbf{Open University}} &  \multicolumn{2}{r}{(2 Categorias)} \\ \hline
+     & \multicolumn{5}{c}{M{\'e}tricas} \\ \cline{2-6}
 
-    \input{tabelas/tab-Powergrading75.tex}
+     & ACC & PRE & REC & F1(m) & F1(w) \\ \cline{2-6}
+    DTR & 96,44\% & 93,66\% & \textbf{93,26\%} & 93,21\% & 96,46\% \\
+    GBC & \textbf{96,80\%} & \textbf{96,39\%} & 92,80\% & \textbf{93,64\%} & \textbf{96,60\%} \\
+    KNN & 84,62\% & 82,09\% & 78,12\% & 77,50\% & 83,80\% \\
+    RDF & 93,62\% & 93,58\% & 88,75\% & 89,79\% & 93,37\% \\
+    SVM & 91,45\% & 91,04\% & 85,21\% & 85,41\% & 90,16\% \\
+    WSD & 90,44\% & 90,47\% & 84,89\% & 84,78\% & 89,56\% \\
 
     \hline
     \hline
 \end{tabular}
-\end{center}
-\caption{Resultados de classificação para o \textit{dataset Powergrading}.}
-\label{tab-PG75}
 \end{table}
 
-A Tabela \ref{tab-PG75} aponta o desemepenho dos classificadores no \textit{dataset Powergrading}, inclusive superiores a média de 90\% em CA (voto majoritário). Nesse aspecto, todos os 6 classificadores apresentam ACC e F1-ponderado acima de 99\%, reflexo direto da homogeneidade dos \textit{clusters}formados na etapa anterior \cite{basu2013}. Em aspecto similar ao observado no \textit{dataset Open University}, com muitas amostras os modelos das classes se tornam muito consistentes. Os resultados observados ficam evidentes na Figura \ref{fig-PG75}.
+É evidente, através dos resultados obtidos e apresentados na Tabela \ref{tab-OU75}, que a grande quantidade de amostras melhorou consideravelmente o desempenho do sistema. Sendo assim, o \textit{p}Nota atingiu média de 96,8\% de ACC e 96,6\% de F1-ponderado. A simplificação dos padrões de nota para um esquema de avaliação binário é um fator que torna mais simples diferencias o que contribui positivamente e negativamente com cada classe. A Figura \ref{fig-OU} apresenta um comparativo do desempenho do \textit{p}Nota em relação a publicação dos autores.
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=\textwidth]{figuras/Powergrading-75}
-\caption{Resultados dos classificadores com dados do \textit{dataset Powergrading}.}
-\label{fig-PG75}
+\includegraphics[width=.6\textwidth]{figuras/OU/res-ou-acc.png}
+\caption{Resultados obtidos no \textit{dataset} da \textit{Open University}.}
+\label{fig-OU}
 \end{figure}
 
-Podemos, através da Figura \ref{fig-PG75}, destacar a relação da \textit{clusterização} na amostragem para o classificador. Apresentando textos restritos ao tema, sucintos e em \textit{clusters} homogêneos, são formados classificadores com alto desempenho. Deste modo, com modelos bem definidos nas etapas de \textit{clusterização} e classificação produzimos avaliadores SAG muito similares ao tutor. Por outro lado, em alguns \textit{datasets} a diversidade textual, a característica das notas atribuídas, os modelos linguísticos e a expectativa de resposta influenciam muito na capacidade do avaliador automático. Todas estas características são evidenciadas com conteúdos mais complexos, como a base de dados da competição do \textit{Kaggle ASAP-SAS}.
+A Figura \ref{fig-OU} demonstra a alta qualidade da classificação automática em relação ao que foi reportado entre especialistas. Os especialistas atingiram entre eles ACC média de 91,33\%. Os autores \cite{butcher2010} reportaram ACC de 96,49\%. Porém, os três sistemas aplicados utilizam regras e expressões regulares, o que demanda de maior esforço para inicio das correções. Assim, o sistema deve aguardar enquanto o professor elabora as regras de correção. Como o estudo destaca, o IAT usa o conhecimento sobre o conteúdo e as regras de associação de respostas para criação de \textit{feedbacks} direcionados ao tema.
 
+Outro \textit{dataset} similar é o \textit{Powergrading}. Este \textit{dataset} também conta com muitas amostras e classificação binária. Foi criado por \cite{basu2013} para estudos que aplicam técnicas de clusterização na atribuição de notas. Portanto, uma hipótese é que neste caso há maior separabilidade entre as classes e baixa taxa de sobreposição, algo incomum para respostas discursivas. Os resultados obtidos pelo \textit{p}Nota são apresentados na Tabela \ref{tab-PG}.
 
+\begin{table}
+\centering
+\caption{Resultados de classificação para o \textit{dataset Powergrading}.}
+\label{tab-PG}
+\begin{tabular}{l r r r r r}
+    \hline
+    \multicolumn{4}{l}{\textbf{Powergrading}} & \multicolumn{2}{r}{(2 Categorias)} \\ \hline
+     & \multicolumn{5}{c}{M{\'e}tricas} \\ \cline{2-6}
 
-\begin{comment}
+     & ACC & PRE & REC & F1(m) & F1(w) \\ \cline{2-6}
+    DTR & 99,79\% & 97,96\% & \textbf{98,68\%} & 98,28\% & 99,80\% \\
+    GBC & 99,71\% & 97,46\% & 98,64\% & 97,93\% & 99,74\% \\
+    KNN & 99,79\% & 97,96\% & \textbf{98,68\%} & 98,28\% & 99,80\% \\
+    RDF & 99,79\% & 97,96\% & \textbf{98,68\%} & 98,28\% & 99,80\% \\
+    SVM & \textbf{99,86\%} & \textbf{99,93\%} & 97,50\% & \textbf{98,30\%} & \textbf{99,83\%} \\
+    WSD & 99,79\% & 97,96\% & \textbf{98,68\%} & 98,28\% & 99,80\% \\
 
-Edição a partir daqui
-\end{comment}
+    \hline
+    \hline
+\end{tabular}
+\end{table}
 
+Como a Tabela \ref{tab-PG75} aponta, alcançamos um bom desempenho com o \textit{p}Nota. Neste, todos os 6 classificadores apresentam apenas erros pontuais, atingindo ACC de 99,86\% e F1-ponderado de 99,83\%. Neste caso, o alto desempenho do SVM reforça a hipótese de baixa sobreposição de \textit{features} entre as classes. Os resultados em relação aos demais trabalhos da literatura são apresentados na Figura \ref{fig-PG}.
 
-Em outra perspectiva, temos o \textit{dataset} da \textit{University of North Texas} da avaliação com poucos dados. Neste conjunto, cada questão contém 30 respostas. Todas as perguntas são referentes a disciplina de Estrutura de Dados do curso de Ciência da Computação. Assim, como os demais procedimentos, sem usar respostas candidatas, utilizamos a amostragem através dos grupos resultantes da \textit{clusterização}. Foi avaliada a atribuição de notas para três anotações do conjunto de dados: \textit{Avaliador1}, \textit{Avaliador2} e a \textit{Média}. Os resultados obtidos com os algoritmos de regressão LINR, LSSR, KNRG, DTRG, WSRG na atribuição de notas entre 0 e 5 são apresentados na Tabela \ref{tab-UNT75}.
+\begin{figure}[!h]
+\centering
+\includegraphics[width=.6\textwidth]{figuras/Powergrading/res-pg-acc.png}
+\includegraphics[width=.6\textwidth]{figuras/Powergrading/res-pg-mfs.png}
+\caption{Resultados dos classificadores com dados do \textit{dataset} \textit{Powergrading}.}
+\label{fig-PG}
+\end{figure}
+
+Na Figura \ref{fig-PG} temos um alta qualidade de avaliação entre humanos, mas replicada pelos sistemas. Entre especialistas o F1-macro observado foi de 97\%. O estudo realizado por \cite{malik2021}, com foco na formação de \textit{feedbacks} explicativos. Os autores utilizaram \textit{Deep Learning} para elaborar a \textit{Neural Approximate Parsing with Generative Grading} (GG-NAP), Essa técnica visa decompor as respostas para identificar os trechos que compõe uma resposta correta. Entretanto, o método não foi feito apenas para respostas discursivas, mas também para atividades com linguagens de programação e programação em blocos. O desempenho como avaliador alcançado é de 93\% de F1-macro. 
+
+Outra proposta foi apontada por \cite{lui2022}, usando clusterização e análise de divergências entre as amostras, atingindo F1-macro médio de 97,03\%. O método de clusterização aplicado é um \textit{multi-objective evolutionary clustering}, trabalhando os agrupamentos como uma população, buscando o refinamento para aproximar de uma resposta otimizada por \textit{cluster}. A ideia é aumentar a qualidade dos \textit{clusters} segundo suas menções, elegendo sua representação. Portanto, este conjunto de dados reflete como a etapa de clusterização é efetiva para coleta de informações, recuperando a resposta ideal. Entretanto, por mais que ocorram as subpartições entre \textit{clusters} em ambas as propostas, há preocupação com as características que não encontramos no \textit{dataset} \textit{Powergrading}, como altos índices de \textit{outliers} e a \textit{subjetividade} na avaliação.
+
+Seguindo a mesma plataforma avaliativa, o \textit{PTASAG} foi descrito no trabalho de \cite{galhardi2020}. Neste, os autores investigam o impacto das \textit{features} na formação de um bom avaliador. Os níveis estudados foram representação em \textit{n-grams}, representação em \textit{word embeddings}, similaridade léxica, similaridade em \textit{word embeddings}, similaridade em \textit{WordNet} e estatísticas textuais, apresentando nessa ordem maior qualidade. Nessa linha, foram estudadas técnicas primárias (como o tamanho das respostas) até as técnicas consolidadas de \textit{word embeddings} (Word2Vec, GloVe e FastText). Portanto, o estudo sugere que o maior ganho na avaliação deste \textit{dataset} foi a análise das sequências textuais. O desempenho apresentado pelo \textit{p}Nota é mostrado na Tabela \ref{tab-PTASAG}.
 
 \begin{table}[!h]
-\begin{center}
+\centering
+\caption{Resultados de classificação para o \textit{PTASAG}.}
+\label{tab-PTASAG}
+\begin{tabular}{l r r r r r}
+    \hline
+    \multicolumn{4}{l}{\textbf{PTASAG}} & \multicolumn{2}{r}{(4 Categorias)} \\ \hline
+     & \multicolumn{5}{c}{M{\'e}tricas} \\ \cline{2-6}
+
+     & ACC & PRE & REC & F1(m) & F1(w) \\ \cline{2-6}
+    DTR & 88,10\% & 61,39\% & 60,98\% & 60,25\% & 88,01\% \\
+    GBC & 90,29\% & 66,14\% & 66,27\% & 64,55\% & 91,07\% \\
+    KNN & 87,78\% & 65,77\% & 67,36\% & 64,44\% & 88,46\% \\
+    RDF & \textbf{94,49\%} & \textbf{69,04\%} & \textbf{67,98\%} & \textbf{67,32\%} & \textbf{94,05\%} \\
+    SVM & 79,13\% & 61,22\% & 61,91\% & 56,55\% & 78,61\% \\
+    WSD & 86,33\% & 61,83\% & 62,71\% & 60,48\% & 87,60\% \\
+
+    \hline
+    \hline
+\end{tabular}
+\end{table}
+
+A Tabela \ref{tab-PTASAG} mostra o desempenho da nossa proposta de SAG. Os resultados obtidos mostram alto desempenho com RDF. Nossa técnica atingiu ACC e F1-ponderado de 94,49\% e 94,05\% respectivamente. Comparando com os níveis de F1-macro, podemos considerar que existe um grande desbalanceamento entre os quatro níveis de nota. Assim, o maior desafio encontrado neste \textit{dataset} é aprender a avaliar as categorias com amostragem desbalanceada. Os resultados em relação a outros trabalhos da literatura são apresetados na Figura \ref{fig-PTASAG}.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=.6\textwidth]{figuras/PTASAG/res-ptasag-acc.png}
+\includegraphics[width=.6\textwidth]{figuras/PTASAG/res-ptasag-wfs.png}
+\caption{Resultados dos classificadores com dados do \textit{dataset} \textit{PTASAG}.}
+\label{fig-PTASAG}
+\end{figure}
+
+Ainda com poucos trabalhos na literatura, a Figura \ref{fig-PTASAG} mostra o desempenho dos estudos realizados no \textit{dataset} \textit{PTASAG}. Nesse estudo, os autores reportaram ACC média de 68,8\% e F1-ponderado de 68,09\% com a tecnica aqui mencionada \cite{galhardi2018b}. Porém, o ganho obtido com as técnicas de \textit{word-embeddings} não foram reportados nas métricas acima, mesmo apresentando um ganho menor do que a análise de \textit{n-grams} \cite{galhardi2020}. Isso acontece pois o coeficiente \textit{kappa} é recomendado para mensurar a equivalência entre pares de avaliadores. Entretanto não permite uma comparação justa com diferentes grupos de amostra.
+
+Em um trabalho mais recente, \cite{gomes-rocha2021} estudou a calibração de oito classificadores para este \textit{dataset}. Dentre os testes estão os classificadores \textit{Logistic Regression}, \textit{K-Nearest Neighbors}, \textit{Support Vector Machines}, \textit{Bernoulli Naive Bayes}, \textit{Extra Trees}, \textit{Random Forest}, \textit{AdaBoost} e \textit{Multi-layer Perceptron}. \textit{Random Forest} apresentou os melhores resultados com ACC de 68,8\%, mas com ganho marginal em relação a outros classificadores. Os autores também apresentam a F1 e PRE acima de 90\%, mas os resultados aparentam incompatibilidade com a ACC descrita.
+
+
+Este processo de avaliação também ocorre com um dos principais \textit{datasets} da literatura. Com origem em uma competição, o \textit{ASAP-SAS} foi criado com partições fixas de treino e teste, com a proporta de avaliação pelo coeficiente \textit{kappa} quadrático. Os resultados da classificação obtidos pelo \textit{p}Nota são apresentados na Tabela \ref{tab-ASAP-SAS}.
+
+
+\begin{table}[!h]
+\centering
+\caption{Resultados de classificação para o \textit{ASAP-SAS}.}
+\label{tab-ASAP-SAS}
+\begin{tabular}{l r r r r r}
+    \hline
+    \multicolumn{4}{l}{\textbf{ASAP-SAS}} & \multicolumn{2}{r}{(4 Categorias)} \\ \hline
+     & \multicolumn{5}{c}{M{\'e}tricas} \\ \cline{2-6}
+
+    & ACC & PRE & REC & F1(m) &  F1(w) \\ \cline{2-6}
+    DTR & 61,03\% & 46,54\% & 47,01\% & 46,39\% & 61,02\% \\
+    GBC & \textbf{69,11\%} & \textbf{56,16\%} & \textbf{50,54\%} & \textbf{50,92\%} & \textbf{67,14\%} \\
+    KNN & 51,79\% & 38,06\% & 40,36\% & 36,11\% & 52,17\% \\
+    RDF & 63,71\% & 51,27\% & 42,19\% & 39,20\% & 57,85\% \\
+    SVM & 62,01\% & 44,69\% & 40,29\% & 35,44\% & 54,09\% \\
+    WSD & 52,72\% & 44,65\% & 37,39\% & 30,56\% & 48,23\% \\
+
+    \hline
+    \hline
+\end{tabular}
+\end{table}
+
+A Tabela \ref{tab-ASAP-SAS} mostra o desempenho de cada um dos classificadores com o \textit{p}Nota. Um destaque é a grande diferença entre as técnicas, caracterizando a formação de sub-espaços complexos para cada nota. Por conta disso, encontramos uma diferença de 17,32\% entre GBC e KNN, sendo o primeiro o melhor desempenho com ACC de 69,11\% e F1-ponderado de 67,14\%. Entretando, para comparar com a literatura selecionamos os trabalhos que apresentam além do coeficiente \textit{kappa} o nível de erro encontrado na avaliação, com MAE, MSE e RMSE, mesmo sendo um \textit{dataset} com notas discretas. Assim, o nível de erro apresentado na literatura são descritos na Figura \ref{fig-ASAP-SAS}.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=.6\textwidth]{figuras/ASAP/res-asap-mae.png}
+\includegraphics[width=.6\textwidth]{figuras/ASAP/res-asap-mse.png}
+\includegraphics[width=.6\textwidth]{figuras/ASAP/res-asap-rmse.png}
+\caption{Resultados dos classificadores com dados do \textit{dataset} \textit{ASAP-SAS}.}
+\label{fig-ASAP-SAS}
+\end{figure}
+
+Como a Figura \ref{fig-ASAP-SAS} destaca, o nível de erro apresentado pelo \textit{p}Nota é de 0,3558 pontos de MAE e 0,4527 pontos de MSE. As notas deste \textit{dataset} vão de 0 até 3 pontos. Portanto, o erro resultante leva em conta que não existe gradação entre as 4 classes de nota. O melhor resultado é apresentado por \cite{steimel2020}, com MSE de 0,2055 pontos. Os autores aplicaram \textit{Deep Learning}, utilizando \textit{BERT}, uma \textit{bidirectional transformer} com 12 \textit{layers}. A principal mudança aplicada foi o teste de \textit{mean} e \textit{max-pooling} no lugar do padrão aplicado pela rede. Esse trabalho apresenta um ganho interessante em relação ao trabalho anterior dos autores \cite{riordan2019}. Neste primeiro, foi utilizada uma \textit{bidirectional Gated Recurrent Unit}, pré-treinada em uma \textit{word-embeddings}. O principal diferencial deste estudo é a combinação de representações dos documentos (palavras e caracteres) em \textit{Multilayer Perceptron Attention}.
+
+Outro trabalho realizado foi apresentado por \cite{heilman2015}. Neste estudo foi aplicado \textit{Support Vector Regression}, combinando estruturas sintáticas e semânticas. Para entender a influência de algumas respostas no treinamento, foram replicadas as amostras como forma de reforço. No entanto, os resultados obtidos indicam MAE de 0,64 pontos e um RMSE de 0,80 pontos.
+
+Na mesma linha das avaliações contínuas também temos o \textit{dataset} da \textit{University of North Texas}. Esse \textit{dataset} é bem diferente, com apenas 30 respostas por questão. Cada questão foi avaliada por dois avaliadores, \textit{Avaliador1} e \textit{Avaliador2}, em notas de 0 a 5 discretas. Porém, o objetivo é minimizar o erro para a \textit{Média} extraída entre eles. A Tabela \ref{tab-UNT} detalha os resultados obtidos via técnicas de regressão para cada uma das 3 avaliações.
+
+
+\begin{table}[!h]
+\centering
+\caption{Índices de erro obtidos em cada um dos cenários de avaliação do \textit{dataset} da \textit{University of North Texas}.}
+\label{tab-UNT}
 \begin{tabular}{p{5cm} r r r }
     \hline
-    \multicolumn{4}{l}{\textbf{University of North Texas} (Notas 0 - 5)} \\ \hline
+    \multicolumn{3}{l}{\textbf{University of North Texas}} & (Notas 0 - 5) \\ \hline
      & \multicolumn{3}{c}{M{\'e}tricas} \\
 
-    \input{tabelas/tab-UNT75.tex}
+    & \multicolumn{3}{l}{Avaliador1} \\ \cline{2-4}
+     & MAE & MSE & RMSE \\
+    LINR & 1,0066 & \textbf{2,5069} & \textbf{1,1955} \\
+    LSSR & 1,3273 & 3,1713 & 1,4712 \\
+    KNRG & 0,9366 & 2,9032 & 1,2557 \\
+    DTRG & \textbf{0,9233} & 3,7338 & 1,4482 \\
+    WSRG & 1,2832 & 3,0113 & 1,4240 \\
+    \\
+    & \multicolumn{3}{l}{Avaliador2} \\ \cline{2-4}
+     & MAE & MSE & RMSE \\
+    LINR & \textbf{0,4752} & \textbf{0,6099} & \textbf{0,6119} \\
+    LSSR & 0,6502 & 0,8605 & 0,7640 \\
+    KNRG & 0,4917 & 0,7550 & 0,6658 \\
+    DTRG & 0,5121 & 1,2002 & 0,7856 \\
+    WSRG & 0,6523 & 0,8839 & 0,7680 \\
+    \\
+    & \multicolumn{3}{l}{Média} \\ \cline{2-4}
+     & MAE & MSE & RMSE \\
+    LINR & \textbf{0,5058} & \textbf{0,5476} & \textbf{0,6199} \\
+    LSSR & 0,7299 & 0,8464 & 0,8170 \\
+    KNRG & 0,5055 & 0,6804 & 0,6765 \\
+    DTRG & 0,5811 & 1,1244 & 0,8372 \\
+    WSRG & 0,7024 & 0,8088 & 0,7920 \\
 
     \hline
     \hline
 \end{tabular}
-\end{center}
-\caption{Índices de erro para cada algoritmos de regressão resultantes de cada um dos três cenários de avaliação do \textit{dataset} da \textit{University of North Texas}.}
-\label{tab-UNT75}
 \end{table}
 
-A Tabela \ref{tab-UNT75} detalha o desempenho de cada algoritmo de regressão para as métricas MAE, MSE e RMSE. Nos resultados, destacamos a divergência entre avaliadores, com o \textit{Avaliador 1} sendo mais irregular na análise do sistema. Por outro lado, observando os classificadores, ressaltamos a capacidade de reconhecimento de padrões mais efetiva aos modelos do \textit{Avaliador 2} e da \textit{Média}. A diferença entre os melhores resultados se destacam, para o primeiro avaliador obtemos RMSE de 1,1930 pontos. Enquanto isso, para o segundo obtemos RMSE de 0,6099 pontos, uma queda de 0,5831 pontos. Neste conjunto de dados, conforme a literatura, o RMSE foi utilizado como padrão para comparações com os demais trabalhos, buscando minimizar o erro obtido de acordo com a nota média. As Figuras \ref{fig-UNT-Err} e \ref{fig-UNT-RMSE} detalham os erros encontrados para as três métricas por cada um dos algoritmos e a comparação com o RMSE dos trabalhos da literatura.
-
-\begin{figure}[!h]
-\begin{minipage}[t]{.5\textwidth}
- \centering
- \includegraphics[width=\textwidth]{figuras/UNT-MAE.png}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{.5\textwidth}
- \centering
- \includegraphics[width=\textwidth]{figuras/UNT-MSE.png}
-\end{minipage}
-\caption{Índices de MAE e MSE para os algoritmos testados em cada um dos três cenários de avaliação do \textit{dataset} da \textit{University of North Texas}.}
-\label{fig-UNT-Err}
-\end{figure}
+A Tabela \ref{tab-UNT} mostra o nível de erro para cada avaliação, com destaque para a \textit{Média}. O \textit{p}Nota apresenta MAE de 0,5058, MSE de 0,5476 e RMSE de 0,6199 pontos. Por conta dessa baixa quantidade de amostras, temos um problema na comparação com os demais estudos da literatura. Alguns métodos utilizam até 12-\textit{Fold} durante a avaliação \cite{kumar2017, saha2018}. No caso do \textit{p}Nota, com treino fixado pelo método de clusterização, aplicamos aqui 75\% das amostras para treinamento tal qual encontramos em outros \textit{datasets} da literatura.
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=\textwidth]{figuras/UNT-RMSE}
-\caption{Comparação entre o índice de RMSE obtidos pelo sistema e modelos propostos na literatura.}
-\label{fig-UNT-RMSE}
+\includegraphics[width=.6\textwidth]{figuras/UNT/res-unt-rmse.png}
+\caption{Resultados dos avaliadores com dados do \textit{dataset} \textit{University of North Texas}.}
+\label{fig-UNT}
 \end{figure}
 
-Como as Figuras \ref{fig-UNT-Err} e \ref{fig-UNT-RMSE} ilustram, existe uma grande diferença entre os avaliadores. O erro observado entre humanos em RMSE é de 0,66 pontos \cite{mohler2011}. Em uma comparação com demais métodos de avaliação, podemos destacar os excelentes resultados obtidos com o algoritmo de regressão linear simples LINR, como o melhor em todos os três cenários. Entretanto, dentre os algoritmos de regressão testados observamos consistência entre resultados, com pequenas variações entre os algoritmos. Enquanto na literatura o menor resultado observado é de 0,793 em RMSE, alcançamos resultados de 0,617 com LINR, seguido pelo KNRG com 0,677 pontos. Dada a avaliação com base no alinhamento com a resposta candidata elaborada pelo professor, os resultados obtidos reforçam que o uso da amostragem na produção do critério avaliativo pode ser muito efetivo. Assim, o estudo da distribuição de amostras torna o sistema conhecedor da dinâmica de avaliação realizando, neste caso, a interpolação em um espectro de notas conhecido. Esse nível, apesar da amostragem pré-estabelecida, caracteriza-se por um RMSE bem abaixo do observado até o momento na literatura \cite{ramachandran2015b, kumar2017, sahu2020}.
 
+Na Figura \ref{fig-UNT} mostra um detalhe interessante na evolução dos sistemas SAG. Os sistemas mais recentes, em ordem da esquerda para direita, aumentaram consideravelmente o erro nesse \textit{dataset}. Nesse cenário, o menor erro encontrado foi obtido pelo \textit{p}Nota, com apenas 0,619 pontos de RMSE para a média dos avaliadores. Isso acontece com os métodos já descritos \cite{riordan2017, saha2018, gomaa2019, ramachandran2015b}. 
 
+A divergência observada entre os especilistas neste \textit{dataset} foi de 0,66 pontos. Apenas o trabalho descrito por \cite{roy2016} chegou nesse nível, com RMSE de 0,65 pontos. Seu diferencial, como comentado anteriormente, foi uma métrica de sobreposição entre respostas, calculando equivalência e divergências entre as respostas. Em um trabalho mais elaborado, \cite{kumar2017} atingiu 0,77 pontos de RMSE com uma técnica específica de \textit{pooling} aplicada em \textit{Siamese LSTMs}. Para reforço do aprendizado com poucas amostras, os autores utilizaram \textit{data aumentation}. Enquanto uma LSTM trabalha no \textit{encodding} da resposta candidata, a segunda realiza o \textit{encodding} das respostas dos alunos. O \textit{layer} que avalia a compatibilidade utiliza a \textit{Earth mover distance pooling}. Esta distância calcula a transferência mínima para aproximar os dois vetores na comparação de sequencias em \textit{word embeddings}.
 
+O trabalho mais recente de \cite{gaddipati2020} mostra uma comparação do desempenho de modelos de \textit{Transfer Learning}. Dentre eles temos o ELMo, GPT, GPT-2 e BERT. Os autores utilizaram 70\% dos dados para treino e 30\% para teste. Os autores compararam os resultados com outros métodos de análise vetorial tradicionais como TF-IDF, \textit{Word2Vec}, \textit{GloVe} e \textit{FastText}. O melhor resultado obtido foi com o ELMO, com 0,978 pontos de RMSE. Ainda neste estudo os autores destacam o problema do desbalanceamento das notas, com média de 4,17 pontos por resposta. Tornando bem complexa a tarefa de aprendizado para níveis menores de nota.
 
-
-Adicionalmente, utilizamos dados \textit{Projeto Feira Literária} para ilustrar os resultados em dados nacionais. Em português, tais dados são um comparativo direto aos resultados obtidos em dados do exterior. Este dado foi coletado em conjunto com os autores para descrição da aplicação do \textit{p}Nota e seu uso por professores \cite{nascimento2020}. Este caracteriza-se pela presença de erros de escrita e conteúdos fora de tópico, sendo fatores avaliados negativamente pelo tutor. A Tabela \ref{tab-findes75} caracteriza o desempenho de cada um dos seis classificadores e seus resultados alcançados na avaliação das questões do projeto.
+Outros dois \textit{datasets} aplicados foram com dados locais. O \textit{dataset} \textit{VestUFES} foi utilizado durante os anos para o desenvolvimento do \textit{p}Nota \cite{spalenza2017}. Este primeiro é aplicado com dados do vestibular da universidade. Ele contém notas normalizadas para a escala de 0 a 10, mas foi avaliador inicialmente em notas contínuas entre 0 e 2 pontos. Os resultados de avaliação do \textit{p}Nota são apresentados na Tabela \ref{tab-VEST}.
 
 \begin{table}[!h]
-\begin{center}
-\begin{tabular}{l r r r r r r r}
+\centering
+\caption{Índices de erro obtidos em cada um dos cenários de avaliação do \textit{dataset} do \textit{VestUFES}.}
+\label{tab-VEST}
+\begin{tabular}{p{5cm} r r r }
     \hline
-    \multicolumn{7}{l}{\textbf{Projeto Feira Liter{\'a}ria}} & (4 Categorias) \\ \hline
-     & \multicolumn{7}{c}{M{\'e}tricas} \\ \cline{2-8}
+    \multicolumn{3}{l}{\textbf{VestUFES}} & (Notas 0 - 10) \\ \hline
+     & \multicolumn{3}{c}{M{\'e}tricas} \\
 
-    \input{tabelas/tab-findes75.tex}
+    & \multicolumn{3}{l}{Avaliador1} \\ \cline{2-4}
+     & MAE & MSE & RMSE \\
+    LINR & 1,8614 & \textbf{6,0562} & \textbf{2,3261} \\
+    LSSR & 2,4570 & 9,5859 & 2,9596 \\
+    KNRG & 1,9058 & 6,8529 & 2,5057 \\
+    DTRG & \textbf{1,6348} & 7,0130 & 2,5333 \\
+    WSRG & 2,4665 & 9,6489 & 2,9515 \\
+    \\
+    & \multicolumn{3}{l}{Avaliador2} \\ \cline{2-4}
+     & MAE & MSE & RMSE \\
+    LINR & 1,7943 & \textbf{5,2526} & \textbf{2,1898} \\
+    LSSR & 2,4358 & 8,5399 & 2,8264 \\
+    KNRG & 1,7290 & 6,3471 & 2,3781 \\
+    DTRG & \textbf{1,6783} & 7,7696 & 2,6739 \\
+    WSRG & 2,4282 & 8,5112 & 2,8111 \\
+
+    & \multicolumn{3}{l}{Final} \\ \cline{2-4}
+     & MAE & MSE & RMSE \\
+    LINR & 1,8556 & \textbf{5,4816} & \textbf{2,2326} \\
+    LSSR & 2,5365 & 9,5175 & 2,9435 \\
+    KNRG & \textbf{1,7667} & 6,7042 & 2,3789 \\
+    DTRG & 1,8457 & 8,3614 & 2,6566 \\
+    WSRG & 2,5256 & 9,4779 & 2,9198 \\
 
     \hline
     \hline
 \end{tabular}
-\end{center}
-\caption{Resultados de classificação para o \textit{Projeto Feira Literária}.}
-\label{tab-findes75}
 \end{table}
 
-Conforme a Tabela \ref{tab-findes75}, observamos que dos seis classificadores testados, três apresentam resultados de boa qualidade. Apesar dos desafios do conjunto de dados, os algoritmos RDF, WSD e GBC apresentam resultados superiores a 60\% em ACC e F1-ponderado. Com 70 respostas e a pluralidade de estruturas textuais encontradas, destacamos a similaridade entre o desafio de correção dos datasets \textit{Beetle} e \textit{SciEntsBank} no ensino de ciências. Porém, podemos ressaltar como uma diferença melhores índices de PRE, REC e F1-macro. Podemos observar através da Figura \ref{fig-findes75} a proximidade destes índices com o grau de ACC alcançado.
+A Tabela \ref{tab-VEST} mostra resultados distintos entre as notas individuais dos avaliadores e o resultado médio. Tanto para o \textit{Avaliador 1} quanto para o \textit{Avaliador 2}, o menor nível de erro observado em MAE foi dado pelo DTRG. No entanto, para a nota média o KNRG apresentou melhor desempenho com MAE de 1,7667 pontos.
 
-\begin{figure}[!h]
+O segundo \textit{dataset} local foi desenvolvido em 2019 para retratar um pouco melhor os resultados em dados nacionais. O \textit{dataset} do \textit{Projeto Feira Literária} foi coletado em conjunto com os autores para descrição da aplicação do \textit{p}Nota e seu uso por professores \cite{nascimento2020}. Este caracteriza-se pela presença de erros de escrita e conteúdos fora de tópico, sendo fatores avaliados negativamente pelo tutor. A Tabela \ref{tab-FINDES} caracteriza o desempenho de cada um dos seis classificadores e seus resultados alcançados na avaliação das questões do projeto.
+
+
+\begin{table}[!h]
 \centering
-\includegraphics[width=\textwidth]{figuras/Findes-75}
-\caption{Resultados alcançados para os classificadores com dados em português do \textit{Projeto Feira Literária}.}
-\label{fig-findes75}
-\end{figure}
+\caption{Resultados de classificação para o \textit{Projeto Feira Literária}.}
+\label{tab-FINDES}
+\begin{tabular}{l r r r r r}
+    \hline
+    \multicolumn{4}{l}{\textbf{Projeto Feira Literária}} & \multicolumn{2}{r}{(4 Categorias)} \\ \hline
+     & \multicolumn{5}{c}{M{\'e}tricas} \\ \cline{2-6}
 
-Nessa perspectiva, a Figura \ref{fig-findes75} representa um equilíbrio dos classificadores na produção de modelos por nota e a avaliação em geral de cada categoria. Quatro classificadores, RDF, WSD, GBC e DTR, apresentam alto desempenho, enquanto KNN e SVM destoam com resultados inferiores a 50\% em F1-ponderado. Portanto, os modelos avaliativos gerados demonstram complexidade mas em geral têm bons resultados.
+     & ACC & PRE & REC & F1(m) & F1(w) \\ \cline{2-6}
+    DTR & 77,86\% & 59,99\% & 59,29\% & 58,42\% & 76,84\% \\
+    GBC & \textbf{78,58\%} & 59,58\% & 59,57\% & 57,07\% & \textbf{77,74\%} \\ 
+    KNN & 65,00\% & 58,72\% & 58,02\% & 54,75\% & 66,91\% \\
+    RDF & 78,57\% & \textbf{61,82\%} & \textbf{64,98\%} & \textbf{61,36\%} & 76,53\% \\
+    SVM & 72,86\% & 51,49\% & 57,85\% & 49,34\% & 67,66\% \\
+    WSD & 75,71\% & 54,77\% & 61,24\% & 56,14\% & 74,57\% \\
 
+    \hline
+    \hline
+\end{tabular}
+\end{table}
 
-\subsection{Resultados de \textit{Amostragem}}
-\label{sec-res-amostragem}
-
+Conforme a Tabela \ref{tab-FINDES}, temos alta qualidade de de três classificadores RDF, DTR e GBC. Esse último, em especial, teve o maior desempenho com 78,58\% de ACC. Com 70 respostas e a pluralidade de estruturas textuais encontradas, destacamos a semelhança deste com o desafio de correção dos datasets \textit{Beetle} e \textit{SciEntsBank} no ensino de ciências.
 
 \section{Discussão de Resultados}
 \label{sec-discussao}
 
-Os sistemas SAG têm características interessantes e de grande complexidade. Ao tempo que é um desafio lidar com diferentes tamanhos e padrões de resposta, ainda existem grande impacto o critério de avaliação. O desbalanceamento entre classes, os múltiplos padrões de resposta e a baixa quantidade de exemplos tornam complexa a criação de modelos avaliativos robustos.
+Os sistemas SAG apresentam uma diversidade de características, com diferentes estudos e técnicas aplicadas. É uma área que evoluiu muito com o tempo, principalmente com a adoção em massa do EaD. Dos sistemas mais rígidos, que operam com regras e padrões pré-fixados, até hoje com maior profundidade dos modelos com análises de NLP. Isso inclui técnicas de ML e \textit{Deep Learning} aparecendo nos trabalhos mais recentes. Essas características também são um reflexo dos \textit{datasets}, com diferentes formas de escrita e avaluação. Tornando a verificação textual mais complexa e com necessidade de critérios mais robustos de avaliação.
 
-De qualquer forma, por conta da dinâmica de avaliação própria de cada questão, vemos dentro de cada base de dados múltiplas perspectivas. Enquanto parte destoa com dificuldade no processo avaliativo, outras questões apresentam alto desempenho avaliativo com qualidade superior até a avaliação entre humanos. Um destaque no método avaliativo do \textit{p}Nota quando comparado à demais abordagens da literatura é a capacidade de processamento em várias linguagens. Nesse aspecto, a adaptabilidade do sistema com a análise personalizada da estrutura linguística caracteriza-se como um diferencial das abordagens mais recentes. Em sua aplicação, o sistema demanda entre 5 minutos e 6 horas de processamento conforme o número de características e amostras do conjunto de dados, desconsiderando o processo de anotação do professor. Logo, é fundamental adequar o sistema ao uso cotidiano do tutor e seu ritmo de correção, tendo em vista a entrega rápida de resultados em sala.
+De qualquer forma, pela dinâmica dos trabalhos na área, vemos que é muito complexa a tarefa de se adequar a todos os cenários. Nessa perspectiva, vemos um ótimo desempenho do \textit{p}Nota, sendo equiparável aos resultados da literatura em todos os cenários testados. O vínculo do método avaliativo com as características textuais encontrado no \textit{p}Nota têm maior capacidade de resolver questões do que boa parte dos sistemas da literatura. Isso porquê a proposta aqui descrita busca compreender diferenças encontradas nos dados antes do processo avaliativo. De forma geral, a preocupação com a modelagem do critério avaliativo torna mais efetiva a contextualização sobre o tema. Portanto, um sistema contextualizado tende a aparesentar bom desempenho como avaliador.
 
-Na criação do modelo linguístico, os sistemas trabalham o alinhamento entre o conjunto de respostas e as respostas candidatas. Entretanto, a proposta apresentada neste trabalho busca a evolução do modelo criado iterativamente com a avaliação do professor. Para além da análise textual o sistema prioriza a conexão entre conteúdo e critério avaliativo. Deste modo, as nuances textuais interpretadas pelo tutor durante a avaliação são destacadas com o modelo estabelecido no modelo de atribuição de notas. Superdimensionados para a avaliação de uma determinada disciplina ou tema, os modelos rígidos divergem bastante da aplicação dos sistemas SAG no cotidiano do professor. Assim, o tutor espera que o sistema seja capaz de reduzir o esforço de correção, dando suporte ao seu método assim que requisitado. Portanto, independente do cenário ao qual é aplicado, o sistema SAG deve lidar com as respostas buscando minorar a demanda de verificação do conteúdo caracterizando as demandas de ensino-aprendizagem.
+Além disso, o sistema precisa de apenas algo entre 6 minutos e 1 hora para processamento em um computador comum. Essa \textit{performance} foi avaliada em um computador XXX. O tempo de execução é definido segundo o número de etapas e o número de características encontradas nas amostras do conjunto de dados. Desconsideramos nesse cálculo o tempo de anotação do professor. Logo, esse tipo de sistema deve atender ao problema e, simultâneamente, ser associado a rotina de avaliação do professor.
 
-Além disso, ainda é importante salientar que, apesar de serem comuns os modelos rígidos, direcionados a domínios específicos ou dependentes de regras, o modelo proposto neste trabalho foi o mesmo aplicado para todas as questões. Por conta disso, inclui-se na qualidade dos resultados obtidos a capacidade do próprio sistema na adaptação ao tema e ao modelo de avaliação. Nesta linha, poucos parâmetros são passados, tornando o sistema uma cadeia de decisões sobre o processo. A lista completa de parâmetros está no Capítulo \ref{manual-pNota}.
+Assim, na criação do modelo linguístico, de uma forma geral os sistemas trabalham o alinhamento entre o conjunto de respostas e as respostas candidatas. Entretanto, a proposta apresentada neste trabalho busca iterações com o professor para evolução do modelo criado. Para além da análise textual o sistema prioriza a conexão entre conteúdo e critério avaliativo. Deste modo, as nuances do contexto são interpretadas pelo tutor durante a avaliação, destacada com o critério de atribuição de notas. Superdimensionados para a avaliação de uma determinada disciplina ou tema, os modelos rígidos divergem bastante da aplicação dos sistemas SAG no cotidiano do professor. Assim, o professor espera que o sistema seja capaz de reduzir o esforço de correção, dando suporte ao seu método assim que requisitado. Portanto, independente do cenário ao qual é aplicado, o sistema SAG deve lidar com as respostas como parte do ensino-aprendizagem, buscando minorar a demanda de verificação do conteúdo.
 
-Portanto, a escolha dos modelos segundo seu alinhamento com a avaliação humana acrescenta fluidez no processo de correção. Tornamos o modelo flexível para que, cada modelo seja utilizado nas situações ao qual melhor se adequa. O nível de adequação entre o modelo e a expectativa do professor é dada através das medidas de correlação de \textit{Pearson} ou coeficiente \textit{Kappa}. A tendência, então, é que os métodos de classificação ou de regressão selecionados sejam os que tem desempenho superior, com o professor auditando os resultados realizando apenas pequenos ajustes.
+Ainda é importante salientar que, dentre todas as comparações criadas com os \textit{datasets} disponíveis, o modelo proposto neste trabalho foi o mesmo aplicado para todas as questões. Enquanto isso, parte dos trabalhos são rígidos e contextuais, direcionados a domínios específicos ou dependentes de regras. Por conta disso, inclui-se na qualidade dos resultados obtidos a capacidade do próprio sistema na adaptação ao tema e ao modelo de avaliação. Sendo parte das etapas do \textit{p}Nota a calibração dos processos.
+
+Portanto, a escolha dos modelos segundo seu alinhamento com a avaliação humana acrescenta fluidez na correção. Tornamos o \textit{p}Nota flexível para buscar estudar o contexto aplicado a cada questão. A tendência, então, é que os métodos selecionados, sejam de classificação ou de regressão, apresentem o melhor desempenho. Fazendo parte do ciclo avaliativo, o professor continuamente realiza a audição dos resultados e aplicando os ajustes necessários. Conforme os resultados estejam adequados para a disciplina, a ideia é que a ferramenta colabore também em sala de aula, apoiando os resultados com \textit{feedbacks} direcionados.

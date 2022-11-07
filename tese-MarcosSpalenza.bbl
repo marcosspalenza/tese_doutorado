@@ -5,6 +5,14 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
+\bibitem[Agarwal, Gupta e Baghel 2020]{agarwal2020}
+\abntrefinfo{Agarwal, Gupta e Baghel}{AGARWAL; GUPTA; BAGHEL}{2020}
+{AGARWAL, D.; GUPTA, S.; BAGHEL, N. {{S}c{AA}: A Dataset for Automated Short
+  Answer Grading of Children{'}s free-text Answers in {H}indi and {M}arathi}.
+  In:  \emph{Proceedings of the 17th International Conference on Natural
+  Language Processing (ICON)}. Patna, India: NLP Association of India (NLPAI),
+  2020. v.~17, p. 430--436.}
+
 \bibitem[Aleksander, Thomas e Bowden 1984]{aleksander1984}
 \abntrefinfo{Aleksander, Thomas e Bowden}{ALEKSANDER; THOMAS; BOWDEN}{1984}
 {ALEKSANDER, I.; THOMAS, W.~V.; BOWDEN, P.~A. Wisard - a radical step forward
@@ -85,6 +93,13 @@
 \emph{Transactions of the Association for Computational Linguistics}, MIT
   Press, v.~1, n.~1, p. 391--402, 2013.}
 
+\bibitem[Bernius, Krusche e Bruegge 2022]{bernius2022}
+\abntrefinfo{Bernius, Krusche e Bruegge}{BERNIUS; KRUSCHE; BRUEGGE}{2022}
+{BERNIUS, J.~P.; KRUSCHE, S.; BRUEGGE, B. {Machine Learning Based Feedback on
+  Textual Student Answers in Large Courses}.
+\emph{Computers and Education: Artificial Intelligence}, Elsevier, v.~3, n.~1,
+  p. 100081.1--100081.16, 2022.}
+
 \bibitem[Bezerra 2008]{bezerra2008}
 \abntrefinfo{Bezerra}{BEZERRA}{2008}
 {BEZERRA, M.~A. {Quest{\~o}es Discursivas para Avalia{\c c}{\~a}o Escolar}.
@@ -111,6 +126,13 @@
   Mining}.
 \emph{Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery},
   Wiley Online Library, v.~8, n.~1, p. e1230, 2018.}
+
+\bibitem[Bonthu, Sree e Krishna-Prasad 2021]{bonthu2021}
+\abntrefinfo{Bonthu, Sree e Krishna-Prasad}{BONTHU; SREE; KRISHNA-PRASAD}{2021}
+{BONTHU, S.; SREE, S. R.; KRISHNA-PRASAD, M. H.~M. {Automated Short Answer
+  Grading Using Deep Learning: A Survey}. In:  \emph{Proceedings of the 5th
+  International Cross-Domain Conference for Machine Learning and Knowledge
+  Extraction (CD-MAKE'2021)}. Virtual Event: Springer, 2021. v.~5, p. 61--78.}
 
 \bibitem[Burrows, Gurevych e Stein 2015]{burrows2015}
 \abntrefinfo{Burrows, Gurevych e Stein}{BURROWS; GUREVYCH; STEIN}{2015}
@@ -167,6 +189,13 @@
   Artificial Intelligence in Education}. Ifrane, Morocco: Springer
   International Publishing, 2020.  (AIED' 2020, v.~21), p. 74--79.}
 
+\bibitem[Condor, Litster e Pardos 2021]{condor2021}
+\abntrefinfo{Condor, Litster e Pardos}{CONDOR; LITSTER; PARDOS}{2021}
+{CONDOR, A.; LITSTER, M.; PARDOS, Z. {Automatic Short Answer Grading with SBERT
+  on Out-of-Sample Questions}. In:  \emph{Proceedings of the 14th International
+  Conference on Educational Data Mining (EDM)}. Virtual Event: ERIC, 2021.
+  v.~14, p. 345--352.}
+
 \bibitem[Davies e Bouldin 1979]{daviesbouldin1979}
 \abntrefinfo{Davies e Bouldin}{DAVIES; BOULDIN}{1979}
 {DAVIES, D.~L.; BOULDIN, D.~W. {A Cluster Separation Measure}.
@@ -180,6 +209,12 @@
   Input}. In:  \emph{Proceedings of the 28th International Conference on
   Computational Linguistics}. Barcelona, Spain (Virtual Event): International
   Committee on Computational Linguistics, 2020. v.~28, p. 882--892.}
+
+\bibitem[Dunlap 2005]{dunlap2005}
+\abntrefinfo{Dunlap}{DUNLAP}{2005}
+{DUNLAP, J.~C. {Workload Reduction in Online Courses: Getting Some Shuteye}.
+\emph{Performance Improvement}, Wiley Online Library, v.~44, n.~5, p. 18--25,
+  2005.}
 
 \bibitem[Dzikovska et al. 2013]{dzikovska2013}
 \abntrefinfo{Dzikovska et al.}{DZIKOVSKA et al.}{2013}
@@ -232,6 +267,27 @@
   Online Event: Association for Computational Linguistics, 2020. v.~58, p.
   237--243.}
 
+\bibitem[Gaddipati, Nair e Pl{\"o}ger 2020]{gaddipati2020}
+\abntrefinfo{Gaddipati, Nair e Pl{\"o}ger}{GADDIPATI; NAIR; PL{\"O}GER}{2020}
+{GADDIPATI, S.~K.; NAIR, D.; PL{\"O}GER, P.~G. \emph{{Comparative Evaluation of
+  Pretrained Transfer Learning Models on Automatic Short Answer Grading}}.
+Sankt Augustin, Germany, 2020.}
+
+\bibitem[Galhardi, Souza e Brancher 2020]{galhardi2020}
+\abntrefinfo{Galhardi, Souza e Brancher}{GALHARDI; SOUZA; BRANCHER}{2020}
+{GALHARDI, L.; SOUZA, R. de; BRANCHER, J. {Automatic Grading of Portuguese
+  Short Answers Using a Machine Learning Approach}. In:  \emph{Anais do XVI
+  Simp{\'o}sio Brasileiro de Sistemas de Informa{\c c}{\~a}o (SBSI'2020)}.
+  S{\~a}o Bernardo do Campo (SP), Brazil (Online Event): Sociedade Brasileira
+  de Computa{\c c}{\~a}o, 2020. v.~16, p. 109--124.}
+
+\bibitem[Galhardi et al. 2018]{galhardi2018b}
+\abntrefinfo{Galhardi et al.}{GALHARDI et al.}{2018}
+{GALHARDI, L.~B. et al. {Portuguese Automatic Short Answer Grading}. In:
+  \emph{Proceedings of the 29th Brazilian Symposium on Computers in Education
+  (SBIE'2018)}. Fortaleza (CE), Brazil: Sociedade Brasileira de Computa{\c
+  c}{\~ a}o, 2018. v.~29, p. 1373--1382.}
+
 \bibitem[Galhardi e Brancher 2018]{galhardi2018a}
 \abntrefinfo{Galhardi e Brancher}{GALHARDI; BRANCHER}{2018}
 {GALHARDI, L.~B.; BRANCHER, J.~D. {Machine Learning Approach for Automatic
@@ -240,7 +296,7 @@
   Trujillo, Peru: Springer International Publishing, 2018.  (IBERAMIA 2018,
   v.~16), p. 380--391.}
 
-\bibitem[Galhardi et al. 2018]{galhardi2018b}
+\bibitem[Galhardi et al. 2018]{galhardi2018c}
 \abntrefinfo{Galhardi et al.}{GALHARDI et al.}{2018}
 {GALHARDI, L.~B. et al. {Exploring Distinct Features for Automatic Short Answer
   Grading}. In:  \emph{Anais do XV Encontro Nacional de Intelig{\^e}ncia
@@ -260,12 +316,26 @@
   Processing}}. 1st. ed. San Rafael (CA), USA: Morgan \& Claypool Publishers,
   2017.}
 
-\bibitem[Gunther e Lopes-J{\'u}nior 2012]{gunther2012}
-\abntrefinfo{Gunther e Lopes-J{\'u}nior}{GUNTHER; LOPES-J{\'U}NIOR}{2012}
-{GUNTHER, H.; LOPES-J{\'U}NIOR, J. {Perguntas Abertas Versus Perguntas
-  Fechadas: Uma Compara{\c c}{\~a}o Emp{\'\i}rica}.
-\emph{Psicologia: Teoria e Pesquisa}, Universidade de Bras{\'i}lia, v.~6, n.~2,
-  p. 203--213, 2012.}
+\bibitem[Gomaa e Fahmy 2019]{gomaa2019}
+\abntrefinfo{Gomaa e Fahmy}{GOMAA; FAHMY}{2019}
+{GOMAA, W.~H.; FAHMY, A.~A. {Ans2vec: A Scoring System for Short Answers}. In:
+  \emph{The International Conference on Advanced Machine Learning Technologies
+  and Applications (AMLTA'2019)}. Cairo, Egypt: Springer, 2019. v.~4, p.
+  586--595.}
+
+\bibitem[Gomes-Rocha et al. 2021]{gomes-rocha2021}
+\abntrefinfo{Gomes-Rocha et al.}{GOMES-ROCHA et al.}{2021}
+{GOMES-ROCHA, F. et al. {Supervised Machine Learning for Automatic Assessment
+  of Free-Text Answers}. In:  \emph{Proceeding of the 20th Mexican
+  International Conference on Artificial Intelligence (MICAI'2021)}. Mexico
+  City, Mexico (Online Event): Springer International Publishing, 2021. v.~20,
+  p. 3--12.}
+
+\bibitem[Haller et al. 2022]{haller2022}
+\abntrefinfo{Haller et al.}{HALLER et al.}{2022}
+{HALLER, S. et al. \emph{{Survey on Automated Short Answer Grading with Deep
+  Learning: from Word Embeddings to Transformers}}.
+Twente, Netherlands, 2022.}
 
 \bibitem[Han, Pei e Kamber 2011]{han2011}
 \abntrefinfo{Han, Pei e Kamber}{HAN; PEI; KAMBER}{2011}
@@ -292,6 +362,13 @@ Princeton (NJ), USA, 2014.}
   In:  \emph{Proceedings of the Eleventh International Conference on Language
   Resources and Evaluation ({LREC} 2018)}. Miyazaki, Japan: European Language
   Resources Association (ELRA), 2018.  (LREC 2018, v.~11), p. 4065--4071.}
+
+\bibitem[Ishioka e Kameda 2017]{ishioka2017}
+\abntrefinfo{Ishioka e Kameda}{ISHIOKA; KAMEDA}{2017}
+{ISHIOKA, T.; KAMEDA, M. {Overwritable Automated Japanese Short-Answer Scoring
+  and Support System}. In:  \emph{Proceedings of the International Conference
+  on Web Intelligence (WI'2017)}. Leipzig, Germany: Association for Computing
+  Machinery, 2017. v.~1, p. 50--56.}
 
 \bibitem[Jimenez, Becerra e Gelbukh 2013]{jimenez2013}
 \abntrefinfo{Jimenez, Becerra e Gelbukh}{JIMENEZ; BECERRA; GELBUKH}{2013}
@@ -369,6 +446,13 @@ Princeton (NJ), USA, 2014.}
   Models}}.
 Rio de Janeiro (RJ), Brazil, 2020.}
 
+\bibitem[Lui, Ng e Cheung 2022]{lui2022}
+\abntrefinfo{Lui, Ng e Cheung}{LUI; NG; CHEUNG}{2022}
+{LUI, A. K.-F.; NG, S.-C.; CHEUNG, S. W.-N. {A Framework for Effectively
+  Utilising Human Grading Input in Automated Short Answer Grading}.
+\emph{International Journal of Mobile Learning and Organisation}, Inderscience
+  Publishers, v.~16, n.~3, p. 266--286, 2022.}
+
 \bibitem[Lun et al. 2020]{lun2020}
 \abntrefinfo{Lun et al.}{LUN et al.}{2020}
 {LUN, J. et al. {Multiple Data Augmentation Strategies for Improving
@@ -387,9 +471,22 @@ Rio de Janeiro (RJ), Brazil, 2020.}
 {MAIMON, O.; ROKACH, L. \emph{{Data Mining and Knowledge Discovery Handbook}}.
   1st. ed. New York (NY), USA: Springer, 2005.}
 
+\bibitem[Malik et al. 2021]{malik2021}
+\abntrefinfo{Malik et al.}{MALIK et al.}{2021}
+{MALIK, A. et al. {Generative Grading: Near Human-level Accuracy for Automated
+  Feedback on Richly Structured Problems}. In:  \emph{Proceedings of The 14th
+  International Conference on Educational Data Mining (EDM)}. Online Event:
+  ERIC, 2021. v.~14, p. 275--286.}
+
+\bibitem[Manning, Raghavan e Schutze 2008]{manning2008}
+\abntrefinfo{Manning, Raghavan e Schutze}{MANNING; RAGHAVAN; SCHUTZE}{2008}
+{MANNING, C.~D.; RAGHAVAN, P.; SCHUTZE, H. \emph{{Introduction to Information
+  Retrieval}}. 39th. ed. Cambridge (MA), USA: Cambridge University Press,
+  2008.}
+
 \bibitem[Manning e Schutze 1999]{manning1999}
 \abntrefinfo{Manning e Schutze}{MANNING; SCHUTZE}{1999}
-{MANNING, C.; SCHUTZE, H. \emph{{Foundations of Statistical Natural Language
+{MANNING, C.~D.; SCHUTZE, H. \emph{{Foundations of Statistical Natural Language
   Processing}}. 1st. ed. Cambridge (MA), USA: MIT Press, 1999.}
 
 \bibitem[Mao et al. 2018]{mao2018}
@@ -425,6 +522,14 @@ Rio de Janeiro (RJ), Brazil, 2020.}
   Computational Linguistics}. Bari, Italy: CEUR-WS, 2019.  (CLiC-it, v.~6), p.
   48.1--48.7.}
 
+\bibitem[Miller, Linder e Mebane 2020]{miller2020}
+\abntrefinfo{Miller, Linder e Mebane}{MILLER; LINDER; MEBANE}{2020}
+{MILLER, B.; LINDER, F.; MEBANE, W.~R. {Active Learning Approaches for Labeling
+  Text: Review and Assessment of the Performance of Active Learning
+  Approaches}.
+\emph{Political Analysis}, Cambridge University Press, v.~28, n.~4, p.
+  532--551, 2020.}
+
 \bibitem[Ming 2005]{ming2005}
 \abntrefinfo{Ming}{MING}{2005}
 {MING, L.~S. {Reduction of Teacher Workload in a Formative Assessment
@@ -439,6 +544,12 @@ Rio de Janeiro (RJ), Brazil, 2020.}
   the Fourteenth Workshop on Innovative Use of NLP for Building Educational
   Applications}. Florence, Italy: Association for Computational Linguistics,
   2019. v.~14, p. 316--325.}
+
+\bibitem[Mohapatra e Mohanty 2017]{mohapatra2017}
+\abntrefinfo{Mohapatra e Mohanty}{MOHAPATRA; MOHANTY}{2017}
+{MOHAPATRA, S.; MOHANTY, R. {Adopting MOOCs for Afforable Quality Education}.
+\emph{Education and Information Technologies}, Springer, v.~22, n.~5, p.
+  2027--2053, 2017.}
 
 \bibitem[Mohler, Bunescu e Mihalcea 2011]{mohler2011}
 \abntrefinfo{Mohler, Bunescu e Mihalcea}{MOHLER; BUNESCU; MIHALCEA}{2011}
@@ -653,6 +764,12 @@ New Delhi, India, 2019.}
   Vancouver, Canada: Association for Computing Machinery, 2012.  (LAK '12,
   v.~2), p. 252--254.}
 
+\bibitem[Silva e Ribeiro 2007]{silva2007}
+\abntrefinfo{Silva e Ribeiro}{SILVA; RIBEIRO}{2007}
+{SILVA, C.; RIBEIRO, B. {On Text-based Mining with Active Learning and
+  Background Knowledge Using SVM}.
+\emph{Soft Computing}, Springer, v.~11, n.~6, p. 519--530, 2007.}
+
 \bibitem[Spalenza et al. 2018]{spalenza2018}
 \abntrefinfo{Spalenza et al.}{SPALENZA et al.}{2018}
 {SPALENZA, M.~A. et al. {Uma Ferramenta para Minera{\c c}{\~a}o de Dados
@@ -692,6 +809,13 @@ New Delhi, India, 2019.}
   \emph{Proceedings of the 19th International Conference on Intelligent Systems
   Design and Applications}. Auburn (WA), USA: Springer International
   Publishing, 2019.  (ISDA 2019, v.~19), p. 150--161.}
+
+\bibitem[Steimel e Riordan 2020]{steimel2020}
+\abntrefinfo{Steimel e Riordan}{STEIMEL; RIORDAN}{2020}
+{STEIMEL, K.; RIORDAN, B. {Towards Instance-Based Content Scoring with
+  Pre-Trained Transformer Models}. In:  \emph{Proceedings of the Thirty-Fourth
+  AAAI Conference on Artificial Intelligence}. New York (NY), USA: AAAI Press,
+  2020. v.~34, p.~1--3.}
 
 \bibitem[Sultan, Salazar e Sumner 2016]{sultan2016}
 \abntrefinfo{Sultan, Salazar e Sumner}{SULTAN; SALAZAR; SUMNER}{2016}

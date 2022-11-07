@@ -1,17 +1,20 @@
-\babel@toc {brazil}{}
-\contentsline {figure}{\numberline {1}{\ignorespaces A extração da informação e os tipos tradicionais de atividade aplicadas no cotidiano de sala de aula.\relax }}{34}{figure.caption.16}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Extração de informação em questões discursivas: entre respostas pequenas não-convergentes e a subjetividade das competências na avaliação de redações.\relax }}{35}{figure.caption.17}%
-\contentsline {figure}{\numberline {3}{\ignorespaces \textit {Framework} de transferência de dados, interligando plataformas AVA e as ferramentas de EDM.\relax }}{44}{figure.caption.18}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Enunciado da questão \textit {Sandstone} aplicada na \textit {Open University}.\relax }}{60}{figure.caption.19}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Gráficos exibindo os resultados de classificação do \textit {Random Forest} para a atividade \textit {Sandstone} da \textit {Open University}.\relax }}{63}{figure.caption.22}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Exemplo de uma resposta marcada com palavras identificadas como mais relevantes para a atividade \textit {Sandstone} da \textit {Open University}.\relax }}{66}{figure.caption.24}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Similaridade entre \textit {centróides} para as atividades q2, q4 e q19 e q20 em \textit {Powergrading}.\relax }}{75}{figure.caption.27}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Similaridade entre \textit {centróides} para as atividades EM-16b, EM-35, EM-45c e FN-17a em \textit {SciEntsBank}.\relax }}{76}{figure.caption.28}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Resultados obtidos nos \textit {datasets Beetle} e \textit {SciEntsBank} pelos classificadores em comparação com os principais encontrados na literatura.\relax }}{79}{figure.caption.30}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Comparação do sistema dos autores do \textit {dataset Open University} em relação ao \textit {p}Nota.\relax }}{80}{figure.caption.32}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Resultados dos classificadores com dados do \textit {dataset Powergrading}.\relax }}{81}{figure.caption.34}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Índices de MAE e MSE para os algoritmos testados em cada um dos três cenários de avaliação do \textit {dataset} da \textit {University of North Texas}.\relax }}{83}{figure.caption.36}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Comparação entre o índice de RMSE obtidos pelo sistema e modelos propostos na literatura.\relax }}{84}{figure.caption.37}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Resultados alcançados para os classificadores com dados em português do \textit {Projeto Feira Literária}.\relax }}{85}{figure.caption.39}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Resultados de todos os 6 algoritmos de classificação para a atividade exemplo.\relax }}{121}{figure.caption.46}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Matriz de confusão de todos os 6 algoritmos de classificação para a atividade exemplo.\relax }}{122}{figure.caption.47}%
+\babel@toc {brazil}{}\relax 
+\contentsline {figure}{\numberline {1}{\ignorespaces A extração da informação e os tipos tradicionais de atividade aplicadas no cotidiano de sala de aula.\relax }}{36}{figure.caption.16}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Extração de informação em questões discursivas: entre respostas pequenas não-convergentes e a subjetividade das competências na avaliação de redações.\relax }}{37}{figure.caption.17}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Esquema do \textit {p}Nota dividido em seus 4 módulos.\relax }}{45}{figure.caption.18}%
+\contentsline {figure}{\numberline {4}{\ignorespaces \textit {Framework} utilizado para transferência de dados, interligando plataformas AVA e o servidor do \textit {p}Nota.\relax }}{47}{figure.caption.19}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Detalhe do módulo de \textit {Extração das Componentes Textuais} no esquema do \textit {p}Nota.\relax }}{48}{figure.caption.20}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Módulo de \textit {Particionamento do Conjunto de Respostas} no esquema do \textit {p}Nota.\relax }}{54}{figure.caption.21}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Etapa de construção do \textit {Modelo Avaliativo} no esquema do \textit {p}Nota.\relax }}{58}{figure.caption.22}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Módulo de \textit {Relatórios e Feedbacks} no esquema do \textit {p}Nota.\relax }}{64}{figure.caption.23}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Resultados de desempenho do exemplo \textit {PTASAG Atividade 46}.\relax }}{66}{figure.caption.25}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Destaques na resposta do estudante \#1995 do \textit {PTASAG Atividade 46}.\relax }}{67}{figure.caption.26}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Similaridade entre \textit {centróides} para as atividades \textit {q1}, \textit {q3} e \textit {q6} e \textit {q7} em \textit {Powergrading}.\relax }}{78}{figure.caption.30}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Similaridade entre \textit {centróides} para as atividades \textit {EM16b}, \textit {EM21b}, \textit {EM27b} e \textit {MX16a} em \textit {SciEntsBank}.\relax }}{79}{figure.caption.31}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Resultados obtidos no \textit {dataset} \textit {Beetle}.\relax }}{82}{figure.caption.33}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Resultados obtidos no \textit {dataset} \textit {SciEntsBank}.\relax }}{83}{figure.caption.34}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Resultados obtidos no \textit {dataset} da \textit {Open University}.\relax }}{85}{figure.caption.36}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Resultados dos classificadores com dados do \textit {dataset} \textit {Powergrading}.\relax }}{87}{figure.caption.38}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Resultados dos classificadores com dados do \textit {dataset} \textit {PTASAG}.\relax }}{89}{figure.caption.40}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Resultados dos classificadores com dados do \textit {dataset} \textit {ASAP-SAS}.\relax }}{90}{figure.caption.42}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Resultados dos avaliadores com dados do \textit {dataset} \textit {University of North Texas}.\relax }}{91}{figure.caption.44}%
