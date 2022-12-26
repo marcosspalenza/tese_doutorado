@@ -19,8 +19,10 @@ Por outro lado, outra situação acontece com bases de dados avaliados com notas
 
 Por fim, a avaliação \textit{discreta} numérica é a mais comum. Esse modelo favorece também os sistemas computacionais na criação da representação de resposta por categoria de nota. Ao tempo que a categoria induz a equivalência de todas as respostas ao qual foi associada. Assim, o sistema consegue mensurar equivalência e divergências pelos indícios de proximidade entre respostas avaliadas já conhecidas para além da mesma categoria. O desafio do sistema com este tipo de nota é criar um bom modelo de classificação que aprenda essa relação dupla. Para além da categoria das respostas, o sistema passa a ter que interpretar as informações fundamentais de cada classe e a escala de divergência para as demais categorias. A Tabela \ref{tab-datasets} apresenta os detalhes de cada \textit{dataset}, incluindo o número de questões, o total de respostas, o modelo avaliativo aplicado e a linguagem.
 
-\begin{center}
 \begin{table}[!h]
+\centering
+\caption{Bases de dados e suas principais caracter{\'i}sticas.}
+\label{tab-datasets}
 \begin{tabular}{r |c c c c} 
  \hline
  Dataset & Quest{\~o}es & Respostas & Modelo Avaliativo & Linguagem \\ \hline
@@ -36,10 +38,7 @@ Por fim, a avaliação \textit{discreta} numérica é a mais comum. Esse modelo 
  \hline
  \hline
 \end{tabular}
-\caption{Bases de dados e suas principais caracter{\'i}sticas.}
-\label{tab-datasets}
 \end{table}
-\end{center}
 
 A Tabela \ref{tab-datasets} descreve os nove \textit{datasets} utilizados nos experimentos deste capítulo. Através das características apresentadas, identificamos uma regularidade interna de cada \textit{dataset}. Entretanto, entre os \textit{datasets} existe uma variação muito grande com questões de 30 até mais de 1800 respostas. É importante destacar ainda que, a definição de respostas curtas e as características textuais das respostas de cada um destes \textit{datasets} foram apresentadas no Capítulo \label{cap1-intro}, em especial na Tabela \ref{tab-features}. No total, esse \textit{corpora} apresenta um total de 347 questões e 68.945 respostas. Cada base de dados e sua descrição completa é apresentada a seguir:
 
@@ -361,7 +360,7 @@ Na sequência temos os resultados obtidos com o \textit{dataset} \textit{Open Un
 \end{tabular}
 \end{table}
 
-É evidente, através dos resultados obtidos e apresentados na Tabela \ref{tab-OU75}, que a grande quantidade de amostras melhorou consideravelmente o desempenho do sistema. Sendo assim, o \textit{p}Nota atingiu média de 96,8\% de ACC e 96,6\% de F1-ponderado. A simplificação dos padrões de nota para um esquema de avaliação binário é um fator que torna mais simples diferencias o que contribui positivamente e negativamente com cada classe. A Figura \ref{fig-OU} apresenta um comparativo do desempenho do \textit{p}Nota em relação a publicação dos autores.
+É evidente, através dos resultados obtidos e apresentados na Tabela \ref{tab-OU}, que a grande quantidade de amostras melhorou consideravelmente o desempenho do sistema. Sendo assim, o \textit{p}Nota atingiu média de 96,8\% de ACC e 96,6\% de F1-ponderado. A simplificação dos padrões de nota para um esquema de avaliação binário é um fator que torna mais simples diferencias o que contribui positivamente e negativamente com cada classe. A Figura \ref{fig-OU} apresenta um comparativo do desempenho do \textit{p}Nota em relação a publicação dos autores.
 
 \begin{figure}[!h]
 \centering
@@ -396,7 +395,7 @@ Outro \textit{dataset} similar é o \textit{Powergrading}. Este \textit{dataset}
 \end{tabular}
 \end{table}
 
-Como a Tabela \ref{tab-PG75} aponta, alcançamos um bom desempenho com o \textit{p}Nota. Neste, todos os 6 classificadores apresentam apenas erros pontuais, atingindo ACC de 99,86\% e F1-ponderado de 99,83\%. Neste caso, o alto desempenho do SVM reforça a hipótese de baixa sobreposição de \textit{features} entre as classes. Os resultados em relação aos demais trabalhos da literatura são apresentados na Figura \ref{fig-PG}.
+Como a Tabela \ref{tab-PG} aponta, alcançamos um bom desempenho com o \textit{p}Nota. Neste, todos os 6 classificadores apresentam apenas erros pontuais, atingindo ACC de 99,86\% e F1-ponderado de 99,83\%. Neste caso, o alto desempenho do SVM reforça a hipótese de baixa sobreposição de \textit{features} entre as classes. Os resultados em relação aos demais trabalhos da literatura são apresentados na Figura \ref{fig-PG}.
 
 \begin{figure}[!h]
 \centering
@@ -406,7 +405,7 @@ Como a Tabela \ref{tab-PG75} aponta, alcançamos um bom desempenho com o \textit
 \label{fig-PG}
 \end{figure}
 
-Na Figura \ref{fig-PG} temos um alta qualidade de avaliação entre humanos, mas replicada pelos sistemas. Entre especialistas o F1-macro observado foi de 97\%. O estudo realizado por \cite{malik2021}, com foco na formação de \textit{feedbacks} explicativos. Os autores utilizaram \textit{Deep Learning} para elaborar a \textit{Neural Approximate Parsing with Generative Grading} (GG-NAP), Essa técnica visa decompor as respostas para identificar os trechos que compõe uma resposta correta. Entretanto, o método não foi feito apenas para respostas discursivas, mas também para atividades com linguagens de programação e programação em blocos. O desempenho como avaliador alcançado é de 93\% de F1-macro. 
+Na Figura \ref{fig-PG} temos um alta qualidade de avaliação entre humanos, mas replicada pelos sistemas. Entre especialistas o F1-macro observado foi de 97\%. O estudo realizado por \cite{malik2021}, com foco na formação de \textit{feedbacks} explicativos. Os autores utilizaram DL para elaborar a \textit{Neural Approximate Parsing with Generative Grading} (GG-NAP), Essa técnica visa decompor as respostas para identificar os trechos que compõe uma resposta correta. Entretanto, o método não foi feito apenas para respostas discursivas, mas também para atividades com linguagens de programação e programação em blocos. O desempenho como avaliador alcançado é de 93\% de F1-macro. 
 
 Outra proposta foi apontada por \cite{lui2022}, usando clusterização e análise de divergências entre as amostras, atingindo F1-macro médio de 97,03\%. O método de clusterização aplicado é um \textit{multi-objective evolutionary clustering}, trabalhando os agrupamentos como uma população, buscando o refinamento para aproximar de uma resposta otimizada por \textit{cluster}. A ideia é aumentar a qualidade dos \textit{clusters} segundo suas menções, elegendo sua representação. Portanto, este conjunto de dados reflete como a etapa de clusterização é efetiva para coleta de informações, recuperando a resposta ideal. Entretanto, por mais que ocorram as subpartições entre \textit{clusters} em ambas as propostas, há preocupação com as características que não encontramos no \textit{dataset} \textit{Powergrading}, como altos índices de \textit{outliers} e a \textit{subjetividade} na avaliação.
 
@@ -485,7 +484,7 @@ A Tabela \ref{tab-ASAP-SAS} mostra o desempenho de cada um dos classificadores c
 \label{fig-ASAP-SAS}
 \end{figure}
 
-Como a Figura \ref{fig-ASAP-SAS} destaca, o nível de erro apresentado pelo \textit{p}Nota é de 0,3558 pontos de MAE e 0,4527 pontos de MSE. As notas deste \textit{dataset} vão de 0 até 3 pontos. Portanto, o erro resultante leva em conta que não existe gradação entre as 4 classes de nota. O melhor resultado é apresentado por \cite{steimel2020}, com MSE de 0,2055 pontos. Os autores aplicaram \textit{Deep Learning}, utilizando \textit{BERT}, uma \textit{bidirectional transformer} com 12 \textit{layers}. A principal mudança aplicada foi o teste de \textit{mean} e \textit{max-pooling} no lugar do padrão aplicado pela rede. Esse trabalho apresenta um ganho interessante em relação ao trabalho anterior dos autores \cite{riordan2019}. Neste primeiro, foi utilizada uma \textit{bidirectional Gated Recurrent Unit}, pré-treinada em uma \textit{word-embeddings}. O principal diferencial deste estudo é a combinação de representações dos documentos (palavras e caracteres) em \textit{Multilayer Perceptron Attention}.
+Como a Figura \ref{fig-ASAP-SAS} destaca, o nível de erro apresentado pelo \textit{p}Nota é de 0,3558 pontos de MAE e 0,4527 pontos de MSE. As notas deste \textit{dataset} vão de 0 até 3 pontos. Portanto, o erro resultante leva em conta que não existe gradação entre as 4 classes de nota. O melhor resultado é apresentado por \cite{steimel2020}, com MSE de 0,2055 pontos. Os autores aplicaram DL com \textit{BERT}, uma \textit{bidirectional transformer} com 12 \textit{layers}. A principal mudança aplicada foi o teste de \textit{mean} e \textit{max-pooling} no lugar do padrão aplicado pela rede. Esse trabalho apresenta um ganho interessante em relação ao trabalho anterior dos autores \cite{riordan2019}. Neste primeiro, foi utilizada uma \textit{bidirectional Gated Recurrent Unit}, pré-treinada em uma \textit{word-embeddings}. O principal diferencial deste estudo é a combinação de representações dos documentos (palavras e caracteres) em \textit{Multilayer Perceptron Attention}.
 
 Outro trabalho realizado foi apresentado por \cite{heilman2015}. Neste estudo foi aplicado \textit{Support Vector Regression}, combinando estruturas sintáticas e semânticas. Para entender a influência de algumas respostas no treinamento, foram replicadas as amostras como forma de reforço. No entanto, os resultados obtidos indicam MAE de 0,64 pontos e um RMSE de 0,80 pontos.
 
@@ -618,11 +617,11 @@ Conforme a Tabela \ref{tab-FINDES}, temos alta qualidade de de três classificad
 \section{Discussão de Resultados}
 \label{sec-discussao}
 
-Os sistemas SAG apresentam uma diversidade de características, com diferentes estudos e técnicas aplicadas. É uma área que evoluiu muito com o tempo, principalmente com a adoção em massa do EaD. Dos sistemas mais rígidos, que operam com regras e padrões pré-fixados, até hoje com maior profundidade dos modelos com análises de NLP. Isso inclui técnicas de ML e \textit{Deep Learning} aparecendo nos trabalhos mais recentes. Essas características também são um reflexo dos \textit{datasets}, com diferentes formas de escrita e avaluação. Tornando a verificação textual mais complexa e com necessidade de critérios mais robustos de avaliação.
+Os sistemas SAG apresentam uma diversidade de características, com diferentes estudos e técnicas aplicadas. É uma área que evoluiu muito com o tempo, principalmente com a adoção em massa do EaD. Dos sistemas mais rígidos, que operam com regras e padrões pré-fixados, até hoje com maior profundidade dos modelos com análises de NLP. Isso inclui técnicas de ML e DL aparecendo nos trabalhos mais recentes. Essas características também são um reflexo dos \textit{datasets}, com diferentes formas de escrita e avaluação. Tornando a verificação textual mais complexa e com necessidade de critérios mais robustos de avaliação.
 
 De qualquer forma, pela dinâmica dos trabalhos na área, vemos que é muito complexa a tarefa de se adequar a todos os cenários. Nessa perspectiva, vemos um ótimo desempenho do \textit{p}Nota, sendo equiparável aos resultados da literatura em todos os cenários testados. O vínculo do método avaliativo com as características textuais encontrado no \textit{p}Nota têm maior capacidade de resolver questões do que boa parte dos sistemas da literatura. Isso porquê a proposta aqui descrita busca compreender diferenças encontradas nos dados antes do processo avaliativo. De forma geral, a preocupação com a modelagem do critério avaliativo torna mais efetiva a contextualização sobre o tema. Portanto, um sistema contextualizado tende a aparesentar bom desempenho como avaliador.
 
-Além disso, o sistema precisa de apenas algo entre 6 minutos e 1 hora para processamento em um computador comum. Essa \textit{performance} foi avaliada em um computador XXX. O tempo de execução é definido segundo o número de etapas e o número de características encontradas nas amostras do conjunto de dados. Desconsideramos nesse cálculo o tempo de anotação do professor. Logo, esse tipo de sistema deve atender ao problema e, simultâneamente, ser associado a rotina de avaliação do professor.
+Além disso, o sistema precisa de apenas algo entre 6 minutos e 1 hora para processamento em um computador comum. Essa \textit{performance} foi avaliada em um computador com processador Intel Core i7-8700 (3,2GHz x 12) com 16 GB de memória, portando uma placa de vídeo NVIDIA GeForce GTX 1070. O tempo de execução é definido segundo o número de etapas e o número de características encontradas nas amostras do conjunto de dados. Desconsideramos nesse cálculo o tempo de anotação do professor. Logo, esse tipo de sistema deve atender ao problema e, simultâneamente, ser associado a rotina de avaliação do professor.
 
 Assim, na criação do modelo linguístico, de uma forma geral os sistemas trabalham o alinhamento entre o conjunto de respostas e as respostas candidatas. Entretanto, a proposta apresentada neste trabalho busca iterações com o professor para evolução do modelo criado. Para além da análise textual o sistema prioriza a conexão entre conteúdo e critério avaliativo. Deste modo, as nuances do contexto são interpretadas pelo tutor durante a avaliação, destacada com o critério de atribuição de notas. Superdimensionados para a avaliação de uma determinada disciplina ou tema, os modelos rígidos divergem bastante da aplicação dos sistemas SAG no cotidiano do professor. Assim, o professor espera que o sistema seja capaz de reduzir o esforço de correção, dando suporte ao seu método assim que requisitado. Portanto, independente do cenário ao qual é aplicado, o sistema SAG deve lidar com as respostas como parte do ensino-aprendizagem, buscando minorar a demanda de verificação do conteúdo.
 

@@ -17,7 +17,7 @@ Neste trabalho, apresentamos o \textit{p}Nota, um SAG que aplica \textit{Active 
 
 Deste modo, tal qual ilustrado na Figura \ref{fig-esquema}, o sistema é composto por quatro módulos. Além disso, outros três processos dependem do estado do documento na avaliação. O primeiro módulo é o de \textit{Extração das Componentes Textuais}, que realiza os ciclos de coleta de dados, verificação textual, extração da informação e organização do conhecimento. Neste módulo o sistema analisa cada resposta com aplicação de tratamentos textuais para padronização e aquisição de conhecimento. O resultado desta etapa é um conjunto de vetores de documentos com múltiplos níveis de análise da linguagem empregada.
 
-O segundo módulo é composto pelas técnicas de \textit{Particionamento do Conjunto de Respostas}. Neste núcleo empregamos métodos de otimização em \textit{clustering} para uma seleção representativa do conteúdo textual. A representação criada pelas amostras que definem o aprendizado do sistema. Por conta disso, as amostras são escolhidas pela sua distribuição espacial \cite{baeza2011}, buscando incluir todas os tópicos abordados no tema da questão. Aqui, aplicamos técnicas de otimização selecionando o agrupamento com melhor desempenho nos índices qualitativos. 
+O segundo módulo é composto pelas técnicas de \textit{Particionamento do Conjunto de Respostas}. Neste núcleo empregamos métodos de otimização em \textit{clustering} para uma seleção representativa do conteúdo textual. A representação criada pelas amostras que definem o aprendizado do sistema. Por conta disso, as amostras são escolhidas pela sua distribuição espacial \cite{salton1975, baeza2011}, buscando incluir todas os tópicos abordados no tema da questão. Aqui, aplicamos técnicas de otimização selecionando o agrupamento com melhor desempenho nos índices qualitativos. 
 
 A próxima etapa recebe as atividades particionadas em clusters e com a atribuição de notas nas amostras selecionadas. Neste terceiro módulo, com a construção dos \textit{Modelos Avaliativos}, é realizada a calibração dos classificadores e a atribuição das demais notas. A calibração dos algoritmos busca refinar o critério avaliativo para compreender qual é a relação entre os termos e a nota resultante. Ao fim desta etapa, as notas geradas colaborativamente entre professor e sistema são encaminhadas aos alunos.
 
@@ -34,7 +34,8 @@ Antes da execução do sistema, existe a aplicação em sala de aula. Através d
 
 A Figura \ref{fig-framework} apresenta a forma empregada na extração de informação dos AVA. Com a configuração, o módulo acessa cada cliente e transfere as atividades para o servidor de processamento do \textit{p}Nota. Então, o \textit{p}Nota solicita via AVA as requisições de avaliação e, após os resultados, também envia as notas para a plataforma. Adicionalmente, os \textit{feedbacks} gerados também são encaminhados individualmente para cada aluno. Na plataforma, após a apresentação das notas, o professor também pode realizar os ajustes necessários caso o resultado não esteja totalmente alinhado ao seu critério.
 
-O professor, controla via plataforma o processamento, sendo aberto para determinar a finalização da atividade diretamente nela. Da mesma forma, a nota atribuída pelo professor é considerada a correta, sendo objetivo do sistema realizar ajustes nas notas ainda não determinadas. É livre ao professor a alteração de qualquer nota mesmo que ainda em processo de análise do sistema. No controle do processo avaliativo, o professor fica responsável por monitorar a atribuição de notas e ajustar os resultados propostos pelo sistema.
+O professor, controla via plataforma o processamento, sendo aberto para determinar a finalização da atividade diretamente nela. O professor é livre para realizar alterações de qualquer nota mesmo que ainda esteja em análise pelo sistema. No controle do processo avaliativo, o professor fica responsável por monitorar a atribuição de notas e ajustar os resultados propostos pelo sistema.
+
 
 \section{Extração das Componentes Textuais}
 \label{sec-componentes-textuais}
@@ -174,7 +175,7 @@ Realizamos o particionamento das respostas utilizando técnicas de clusterizaç�
 
 Para isso, precisamos que os \textit{clusters} sejam bons descritores do contexto, captando bem esse aspecto de equivalências e divergências textuais. A forma que adotamos para definir o equilíbrio é a otimização via \textit{elbow method} \cite{everitt2011}. Esse método compreende testar uma sequência de parâmetros da clusterização para identificar a melhor combinação de \textit{clusters} formados segundo uma métrica de qualidade. Em geral, a métrica de qualidade é diretamente relacionada com o propósito de uso dos \textit{clusters}.
 
-Dentre as métricas estudadas estão \textit{Calinski-Harabasz Score} (CHS) \cite{calinskiharabasz1974}, \textit{Davies-Bouldin Score} (DBS) \cite{daviesbouldin1979}, \textit{Silhouette Score} (SS) \cite{rousseeuw1987}, \textit{Sum of Squared Errors} (SSE) \cite{maimon2005} e o \textit{Coeficiente de Variação} do tamanho do cluster (CVS). Essas métricas são denominadas \textit{Índices de Validação Interna} e avaliam os agrupamentos sem considerar a anotação de cada amostra, ou seja, sem a supervisão do especialista.
+Dentre as métricas estudadas estão \textit{Calinski-Harabasz Score} (CHS) \cite{calinskiharabasz1974}, \textit{Davies-Bouldin Score} (DBS) \cite{daviesbouldin1979}, \textit{Silhouette Score} (SS) \cite{rousseeuw1987}, \textit{Sum of Squared Errors} (SSE) \cite{maimon2005} e o \textit{Coeficiente de Variação} do tamanho do cluster (CVS). Essas métricas são denominadas \textit{Índices de Validação Interna} e avaliam os agrupamentos sem considerar a classe de cada amostra.
 
 Cada índice é uma heurística utilizada para mensurar, sob diferentes perspectivas, a qualidade dos \textit{clusters} gerados em relação a outras formas de agrupamento de um mesmo \textit{dataset}. CHS mensura a razão entre a dispersão dos itens intra-\textit{cluster} e a dispersão extra-\textit{cluster}. DBS é o indice que estabelece a relação entre a média de similaridade entre as amostras do \textit{cluster} para a média de similaridade entre-\textit{clusters}. SS é a média entre as distâncias das amostras pertencentes a um \textit{cluster} em relação às amostras do \textit{cluster} mais próximo. SSE é uma métrica que avalia o erro de cada amostra que compõe um \textit{cluster} em relação ao seu centróide. O centróide é o ponto médio dos itens que constituem cada \textit{cluster}. Portanto, o centróide é uma instância representante da dispersão dos itens no \textit{cluster}, porém é um ponto artificial e não necessáriamente uma amostra que o compõe. Por fim, CVS avalia o equilíbrio entre o número de amostras agrupadas em cada \textit{cluster}, avaliando a diferença entre o maior grupo e o menor grupo formados.
 
@@ -208,7 +209,20 @@ O processo de otimização, para teste dos parâmetros de clusterização com o 
   \end{multicols}
 \end{itemize}
 
-O agrupamento selecionado é utilizado para amostragem em um percentual do conjunto de respostas disponíveis. Ainda avaliamos de forma qualitativa essa seleção segundo três índices \textit{Homogeneity} (HS), \textit{Completness} (CS) e \textit{Clustering Accuracy} (CA). Em uma ótica diferente da formação dos clusters, com os índices qualitativos mensuramos o impacto de \textit{clusterizações} pela supervisão do especialista. Assim, identificamos o comportaamento das classes de nota na distribuição pela homogeneidade e pela classificação amostral. Assim, estudamos formas de amplificar os resultados de classificação com uma melhor amostragem.
+O agrupamento selecionado é utilizado para amostragem em um percentual do conjunto de respostas disponíveis. Ainda avaliamos de forma qualitativa essa seleção segundo três índices \textit{Homogeneity} (HS), \textit{Completness} (CS) e \textit{Clustering Accuracy} (CA). Em uma ótica diferente da formação dos clusters, com os índices qualitativos mensuramos o impacto de resultados da clusterização pela distribuição das classes. Esses são chamados \textit{Índices de Validação Externa}.
+
+CA é o índice que avalia o desempenho da clusterização enquanto classificador por voto majoritário. Nesse cenário cada \textit{cluster} é representado pela sua principal classe, mostando a coesão dos grupos para sua representação de classe. Esse índice também estabelece um \textit{baseline} de desempenho de classificação. Essa métrica é simétrica a ACC, descrita na Equação \ref{eq-classification} da Seção \ref{subsec-classificacao}. HS é o índice que mensura se os \textit{clusters} são formados apenas por uma classe \cite{rosenberg2007}. CS por outro lado, avalia se todos os itens de uma classe estão presentes em um mesmo \textit{cluster} \cite{rosenberg2007}. Ambos são métricas que avaliam a entropia ($H$) dos \textit{clusters} dada a anotação das amostras, apresentadas na Equação \ref{eq-hs-cs}.
+
+\begin{equation}
+Homogeneity = 1 - \frac{H(y_{c} | \hat{y}_{c})}{H(y_{c})}
+\label{eq-hs-cs}
+\end{equation}
+
+\begin{equation*}
+Completness = 1 - \frac{H(y_{c} | \hat{y}_{c})}{H(\hat{y}_{c})}
+\end{equation*}
+
+A Equação \ref{eq-hs-cs} apresenta as métricas HS e CS como referências para a concentração das classes reais ($y_{c}$) dada a distribuição dos \textit{clusters} ($\hat{y}_{c}$). Assim, identificamos o comportamento das classes de nota na distribuição pela entropia. Tais métricas permitem a identificação \textit{a posteriori} dos resultados mais coesos de clusterização. A concentração de classe por \textit{cluster}, permitem uma melhor amostragem sendo possível amplificar os resultados obtidos na etapa de classificação.
 
 
 \subsection{Seleção de Amostras}
@@ -303,9 +317,9 @@ A Equação \ref{eq-classification-nlabels} mostra as métricas qualitativas apl
 
 Outra forma de atribuição de nota é a não-categórica. Nesses casos, chamamos de notas contínuas, pois apresentam um intervalo de notas possíveis mas sem níveis específicos. São aplicados os métodos de regressão, estimando a nota pelo nível de similaridade entre respostas. Nesse formato ainda se enquadram as noções de \textit{equivalêcia} e \textit{divergência} entre as \textit{features} das respostas na avaliação. Os cinco métodos de regressão aplicados são a \textit{Regressão Linear}, \textit{Lasso}, \textit{K-Nearest Neighboors}, \textit{Decision Tree} e \textit{WiSARD}.
 
-A Regressão Linear (LNREG) é um algoritmo que avalia a tendência linear das amostras segundo sua distribuição. Essa tendência linear busca, no espaço n-dimensional das características, definir os coeficientes de reta que minimizam o resíduo entre as amostras. É importante para o algoritmo determinar uma função de tendência dos dados. Minimizar o erro através dos coeficientes da função reflete na simplificação do conjunto de dados. Entretanto, é determinante que o modelo não apresente \textit{overfitting} e um baixo desempenho com o viés dos dados de treinamento. Por outro lado, como espera-se do algoritmo, a aquisição de informação deve extrair um modelo que minimamente descreva os dados conhecidos, evitando a ocorrência de \textit{underfitting}. Assim, o modelo simplificado deve ser direcionado ao desempenho linear e não apenas à associação forte com o conjunto de treinamento. Também é utilizada uma variante do LNREG tradicional, denominada \textit{Least Absolute Shrinkage and Selection Operator - Lasso} (LSREG), que utiliza a normalização dos dados com a função $ L1 $, reduzindo a complexidade do modelo de dados e previnindo o \textit{overfitting}.
+A Regressão Linear (LNRG) é um algoritmo que avalia a tendência linear das amostras segundo sua distribuição. Essa tendência linear busca, no espaço n-dimensional das características, definir os coeficientes de reta que minimizam o resíduo entre as amostras. É importante para o algoritmo determinar uma função de tendência dos dados. Minimizar o erro através dos coeficientes da função reflete na simplificação do conjunto de dados. Entretanto, é determinante que o modelo não apresente \textit{overfitting} e um baixo desempenho com o viés dos dados de treinamento. Por outro lado, como espera-se do algoritmo, a aquisição de informação deve extrair um modelo que minimamente descreva os dados conhecidos, evitando a ocorrência de \textit{underfitting}. Assim, o modelo simplificado deve ser direcionado ao desempenho linear e não apenas à associação forte com o conjunto de treinamento. Também é utilizada uma variante do LNRG tradicional, denominada \textit{Least Absolute Shrinkage and Selection Operator - Lasso} (LSSR), que utiliza a normalização dos dados com a função $ L1 $, reduzindo a complexidade do modelo de dados e previnindo o \textit{overfitting}.
 
-Os demais três modelos, são similares aos modelos utilizados na classificação. O \textit{K-Nearest Neighboors} (KNREG), assim como o algoritmo de classificação, observa a distribuição dos dados e define o valor resultante de acordo com a vizinhança. Assim, o resultado de cada amostra de valor desconhecido é a interpolação entre os valores das $ K $ amostras mais próximas conhecidas. De forma semelhante, \textit{Decision Tree} (DTREG) observa características semelhantes entre amostras e, por equivalência, divide em subgrupos. A subdivisão dos itens na árvore e o particionamento em subgrupos delimita regiões específicas com resultantes correspondentes por aproximação. Desta forma, após o particionamento das regiões amostrais em zonas de decisão, o valor dado para todas as amostras ali categorizadas é a média conhecida do subgrupo de treinamento. De forma similar funciona a WiSARD (WSREG), organizando registradores com as notas das respostas similares atribuindo o valor médio do registrador para respostas de padrão equivalente.
+Os demais três modelos, são similares aos modelos utilizados na classificação. O \textit{K-Nearest Neighboors} (KNRG), assim como o algoritmo de classificação, observa a distribuição dos dados e define o valor resultante de acordo com a vizinhança. Assim, o resultado de cada amostra de valor desconhecido é a interpolação entre os valores das $ K $ amostras mais próximas conhecidas. De forma semelhante, \textit{Decision Tree} (DTRG) observa características semelhantes entre amostras e, por equivalência, divide em subgrupos. A subdivisão dos itens na árvore e o particionamento em subgrupos delimita regiões específicas com resultantes correspondentes por aproximação. Desta forma, após o particionamento das regiões amostrais em zonas de decisão, o valor dado para todas as amostras ali categorizadas é a média conhecida do subgrupo de treinamento. De forma similar funciona a WiSARD (WSRG), organizando registradores com as notas das respostas similares atribuindo o valor médio do registrador para respostas de padrão equivalente.
 
 Para seleção do regressor mais adequado utilizamos a correlação de \textit{Pearson}. Pela correlação mensuramos a compatibilidade dos avaliadores como pares, do sistema e do professor. Nessa visão, maiores índices de correlação indicam distribuições equivalentes de distribuição de notas \cite{morettin2010}. Isso implica em modelos avaliativos mais equivalentes ao método avaliativo do professor. Já a avaliação é dada pelo resíduo entre as duas notas, considerando como ideal o modelo que apresenta uma série de notas próximas do que foi atribuído pelo professor. Assim, para mensurar a diferença entre a expectativa do professor e a nota resultante do sistema utilizamos três métricas: o \textit{Mean Absolute Error} (MAE), o \textit{Mean Squared Error} (MSE) e o \textit{Root Mean Squared Error} (RMSE)
 
@@ -352,6 +366,8 @@ Os relatórios buscam passar por cada etapa do \textit{p}Nota para mostrar como 
 
 \begin{table}[!b]
 \centering
+\caption{Particionamento das amostras em treino e teste na atividade exemplo \textit{PTASAG Atividade 46}.}
+\label{tab-ptasag-train-46}
 \begin{tabular}{|c c c c|} \hline
 \multicolumn{3}{|l}{Dataset} & Amostras\\ 
 
@@ -363,9 +379,6 @@ Treino (Un.) & Treino (\%)  & Teste (Un.) & Teste (\%) \\ \hline
 
 \hline \hline
 \end{tabular}
-\caption{Particionamento das amostras em treino e teste na atividade exemplo \textit{PTASAG Atividade 46}.}
-\ref{fig-}
-\label{tab-ptasag-train-46}
 \end{table}
 
 
@@ -399,17 +412,19 @@ O primeiro modelo realiza a aplicação de cores nas respostas, identificando qu
 
 \begin{figure}[!h]
  \centering
- \includegraphics[width=.5\textwidth]{figuras/exemplo/highlight.jpeg}
- \caption{Destaques na resposta do estudante \#1995 do \textit{PTASAG Atividade 46}.}
+ \includegraphics[width=.75\textwidth]{figuras/exemplo/highlight.jpeg}
+ \caption{Destaques nos principais termos da resposta do estudante \#1995 do \textit{PTASAG Atividade 46}.}
  \label{fig-highlight-46}
 \end{figure}
 
-Como a Figura \ref{fig-highlight-46} apresenta, os termos \textit{coração}, \textit{sangue} e \textit{pressão} são destaques dessa resposta. Porém, os termos podem ser encontrados nas demais respostas, por isso também identificamos que o contexto apresenta 63\% de correlação com demais menções que receberam nota 3. Um segundo modelo, também em níveis textuais, extrai o conteúdo chave, de acordo com os tópicos mencionados por nível de nota. Nesse nível aplicamos \textit{Latent Dirichlet Allocation} (LDA) no reconhecimento da composição de nota, ou seja os termos que em tese são essenciais para receber cada uma das classes. O LDA é uma técnica que aplica estatística descritiva para equivalência parcial dos dados. Nesse caso, a identificação da compatibilidade vetorial entre os textos que compõe um determinado nível de nota \cite{sahu2020}. Portanto, os dois são complementares, enquanto o primeiro observa cada resposta pela perspectiva da avaliação, este segundo realiza o oposto. 
+Como a Figura \ref{fig-highlight-46} apresenta, os termos \textit{coração}, \textit{sangue} e \textit{pressão} são destaques dessa resposta. Porém, os termos podem ser encontrados nas demais respostas, por isso também identificamos que o contexto apresenta 63\% de correlação com demais menções que receberam nota 3. Um segundo modelo, também em níveis textuais, extrai o conteúdo chave, de acordo com os tópicos mencionados por nível de nota. Nesse nível aplicamos LDA \cite{hoffman2013} no reconhecimento da composição de nota, ou seja os termos que em tese são essenciais para receber cada uma das classes. O LDA é uma técnica que aplica estatística descritiva para equivalência parcial dos dados. Nesse caso, a identificação da compatibilidade vetorial entre os textos que compõe um determinado nível de nota \cite{sahu2020}. Portanto, os dois são complementares, enquanto o primeiro observa cada resposta pela perspectiva da avaliação, este segundo realiza o oposto. 
 
 Apesar do acompanhamento da dinâmica do sistema no processo avaliativo, é complexo ao sistema identificar padrões coerentes de resposta. Para isso, utilizamos o quadro de \textit{rubrics} para representar o modelo avaliativo elaborado pelo sistema em conjunto com o professor. O quadro de \textit{rubrics} é um modelo de caracterização do processo avaliativo conforme o modelo de resposta esperado para cada nota. Após o processo avaliativo esse processo torna-se um descritor, determinando na perspectiva dos estudantes quais foram as principais características elencadas para cada nota. Na Tabela \ref{tab-rubrics-exemplo} temos um exemplo do quadro de \textit{rubrics} para a nota 3 da \textit{Atividade 46}.
 
-
-\begin{table}[!b]
+\begin{table}[!h]
+\centering
+\caption{Tabela de \textit{rubrics} para as duas notas encontradas na atividade exemplo e as respostas mais alinhadas com as palavras selecionadas pelo LDA.}
+\label{tab-rubrics-exemplo}
 \footnotesize
 \begin{tabular}{ p{2cm} | p{14cm}}
 \multicolumn{2}{l}{\textbf{PTASAG : Atividade 46}} \\ \hline
@@ -426,8 +441,6 @@ Apesar do acompanhamento da dinâmica do sistema no processo avaliativo, é comp
 479 & As \textit{veias} \textit{levam} o \textit{sangue} dos tecidos para o \textit{coracao} e possuem baixa \textit{pressao} ja as \textit{arterias} possuem alta \textit{pressao} e \textit{levam} \textit{sangue} do \textit{coracao} para o \textit{corpo}\\ \hline
 \hline
 \end{tabular}
-\caption{Tabela de \textit{rubrics} para as duas notas encontradas na atividade exemplo e as respostas mais alinhadas com as palavras selecionadas pelo LDA.}
-\label{tab-rubrics-exemplo}
 \end{table}
 
 Como podemos observar, na Tabela \ref{tab-rubrics-exemplo}, podemos coletar os tópicos mais relevantes em cada uma das categorias para destacar os principais termos das respostas. No exemplo a resposta nota 3 fica evidente. Esta deve citar a relação entre o \textit{corpo} e o \textit{coração}, com a \textit{pressão} \textit{arterial} levando o sangue, e retornando pelas \textit{veias}. Então, a função do \textit{rubrics} é definir os padrões de resposta do sistema e, adicionalmente, criar relatórios expliquem o formato avaliativo em apoio ao professor.
