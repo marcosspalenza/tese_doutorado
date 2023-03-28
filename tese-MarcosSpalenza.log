@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.5.6)  7 NOV 2022 09:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.1.16)  28 MAR 2023 01:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -518,16 +518,16 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language58). Reported on input line 105.
+(babel)             (\language21). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language58). Reported on input line 108.
+(babel)             (\language21). Reported on input line 108.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel-french/french.ldf
 Language: french 2021/07/20 v3.5m French support from the babel system
 Package babel Info: Hyphen rules for 'acadian' set to \l@french
-(babel)             (\language13). Reported on input line 91.
+(babel)             (\language77). Reported on input line 91.
 Package babel Info: Hyphen rules for 'canadien' set to \l@french
-(babel)             (\language13). Reported on input line 92.
+(babel)             (\language77). Reported on input line 92.
 \FB@nonchar=\count324
 Package babel Info: Making : an active character on input line 430.
 Package babel Info: Making ; an active character on input line 431.
@@ -561,7 +561,7 @@ Package babel Info: Making > an active character on input line 722.
 (/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/brazil.ldf
 Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
 Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
-(babel)             (\language34). Reported on input line 111.
+(babel)             (\language29). Reported on input line 111.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
@@ -1686,14 +1686,14 @@ Overfull \hbox (16.61041pt too wide) in paragraph at lines 415--416
 
 ] [17
 
-] [18
-
-] (./tese-MarcosSpalenza.toc
+] [18] (./tese-MarcosSpalenza.toc
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 35.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 17.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 37.
- [19]
+ [19
+
+]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <14.4> on input line 65.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1731,100 +1731,124 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-[22] [23]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22]
+[23]
+
+LaTeX Warning: Citation `campana-filho2017' on page 24 undefined on input line 
+69.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[26]
+Underfull \vbox (badness 1571) has occurred while \output is active []
 
- [26]
-[27]
+ [27]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [29]
-[30]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [31]
-[32]) [33]
+ [30]
+[31]
+Underfull \vbox (badness 1077) has occurred while \output is active []
+
+ [32]
+[33]) [34]
 \openout2 = `capitulos/ch2-literatura.aux'.
 
- (./capitulos/ch2-literatura.tex [34
+ (./capitulos/ch2-literatura.tex
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <17.28> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 15.
+
+
+LaTeX Warning: Citation `sweta2021' on page 35 undefined on input line 17.
+
+[35
 
 
 
 
 ]
 
-LaTeX Warning: Citation `sweeta2021' on page 35 undefined on input line 11.
+LaTeX Warning: Citation `ferreira-mello2019' on page 36 undefined on input line
+ 19.
 
 
-LaTeX Warning: Citation `ferreira-mello2019' on page 35 undefined on input line
- 13.
+LaTeX Warning: Citation `sweta2021' on page 36 undefined on input line 19.
 
 
-LaTeX Warning: Citation `sweeta2021' on page 35 undefined on input line 13.
+LaTeX Warning: Citation `spalenza2017' on page 36 undefined on input line 27.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [35]
-
-LaTeX Warning: Citation `spalenza2017' on page 36 undefined on input line 21.
-
-<figuras/tiposAtividade.png, id=679, 634.62094pt x 469.00218pt>
+<figuras/tiposAtividade.png, id=687, 634.62094pt x 469.00218pt>
 File: figuras/tiposAtividade.png Graphic file (type png)
 <use figuras/tiposAtividade.png>
-Package pdftex.def Info: figuras/tiposAtividade.png  used on input line 25.
+Package pdftex.def Info: figuras/tiposAtividade.png  used on input line 31.
 (pdftex.def)             Requested size: 455.0pt x 336.26434pt.
 
-LaTeX Warning: Citation `spalenza2017' on page 36 undefined on input line 30.
-
-[36 <./figuras/tiposAtividade.png>]
-<figuras/aprendizadoSAG.png, id=696, 707.64375pt x 228.10219pt>
-File: figuras/aprendizadoSAG.png Graphic file (type png)
-<use figuras/aprendizadoSAG.png>
-Package pdftex.def Info: figuras/aprendizadoSAG.png  used on input line 34.
-(pdftex.def)             Requested size: 455.0pt x 146.66707pt.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <17.28> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 42.
-
-
-LaTeX Warning: Citation `bishop2006' on page 37 undefined on input line 44.
-
-
-LaTeX Warning: Citation `kumar2020' on page 37 undefined on input line 44.
-
-
-LaTeX Warning: Citation `bishop2006' on page 37 undefined on input line 46.
-
-[37 <./figuras/aprendizadoSAG.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38]
+ [36]
 
-LaTeX Warning: Citation `kumar2020' on page 39 undefined on input line 56.
+LaTeX Warning: Citation `spalenza2017' on page 37 undefined on input line 36.
+
+<figuras/aprendizadoSAG.png, id=708, 707.64375pt x 228.10219pt>
+File: figuras/aprendizadoSAG.png Graphic file (type png)
+<use figuras/aprendizadoSAG.png>
+Package pdftex.def Info: figuras/aprendizadoSAG.png  used on input line 40.
+(pdftex.def)             Requested size: 455.0pt x 146.66707pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[37 <./figuras/tiposAtividade.png>]
+
+LaTeX Warning: Citation `bishop2006' on page 38 undefined on input line 50.
 
 
-LaTeX Warning: Citation `bishop2006' on page 39 undefined on input line 56.
+LaTeX Warning: Citation `kumar2020' on page 38 undefined on input line 50.
 
 
-Underfull \vbox (badness 1571) has occurred while \output is active []
+LaTeX Warning: Citation `bishop2006' on page 38 undefined on input line 52.
+
+[38 <./figuras/aprendizadoSAG.png>]
+
+LaTeX Warning: Citation `kumar2020' on page 39 undefined on input line 62.
+
+
+LaTeX Warning: Citation `bishop2006' on page 39 undefined on input line 62.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [39]
 Underfull \vbox (badness 1571) has occurred while \output is active []
 
  [40]
+
+LaTeX Warning: Citation `blei2003' on page 41 undefined on input line 73.
+
+
+LaTeX Warning: Citation `zhang2022' on page 41 undefined on input line 73.
+
+
+LaTeX Warning: Citation `mikolov2013' on page 41 undefined on input line 77.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [41]
-[42])
+Underfull \vbox (badness 1571) has occurred while \output is active []
+
+ [42])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [43]
@@ -1832,7 +1856,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \openout2 = `capitulos/ch3-proposta.aux'.
 
  (./capitulos/ch3-proposta.tex
-<figuras/estrutura-pNota.png, id=997, 993.7125pt x 619.31375pt>
+<figuras/estrutura-pNota.png, id=998, 993.7125pt x 619.31375pt>
 File: figuras/estrutura-pNota.png Graphic file (type png)
 <use figuras/estrutura-pNota.png>
 Package pdftex.def Info: figuras/estrutura-pNota.png  used on input line 12.
@@ -1843,12 +1867,14 @@ Package pdftex.def Info: figuras/estrutura-pNota.png  used on input line 12.
 
 
  <./figuras/estrutura-pNota.png>]
+
+LaTeX Warning: Citation `salton1975' on page 46 undefined on input line 20.
+
 <figuras/framework-moodle.png, id=1012, 881.2925pt x 431.6125pt>
 File: figuras/framework-moodle.png Graphic file (type png)
 <use figuras/framework-moodle.png>
 Package pdftex.def Info: figuras/framework-moodle.png  used on input line 30.
 (pdftex.def)             Requested size: 455.0pt x 222.83282pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1859,415 +1885,386 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <figuras/esquema-ect-pNota.png, id=1021, 1119.18124pt x 896.34875pt>
 File: figuras/esquema-ect-pNota.png Graphic file (type png)
 <use figuras/esquema-ect-pNota.png>
-Package pdftex.def Info: figuras/esquema-ect-pNota.png  used on input line 46.
+Package pdftex.def Info: figuras/esquema-ect-pNota.png  used on input line 47.
 (pdftex.def)             Requested size: 455.0pt x 364.41434pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [47 <./figuras/framework-moodle.png>]
-Overfull \hbox (20.38599pt too wide) in paragraph at lines 53--54
+Overfull \hbox (20.38599pt too wide) in paragraph at lines 54--55
 []\T1/lmr/m/n/12 (-20) As res-pos-tas, que são re-ce-bi-das em for-mato bruto, 
 par-tem en-tão para pré-processamentos
  []
 
-[48 <./figuras/esquema-ect-pNota.png>] [49] [50] [51]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [52]
-[53]
+[48 <./figuras/esquema-ect-pNota.png>] [49] [50] [51] [52] [53]
 <figuras/esquema-pcr-pNota.png, id=1095, 1276.77pt x 754.82pt>
 File: figuras/esquema-pcr-pNota.png Graphic file (type png)
 <use figuras/esquema-pcr-pNota.png>
-Package pdftex.def Info: figuras/esquema-pcr-pNota.png  used on input line 162.
+Package pdftex.def Info: figuras/esquema-pcr-pNota.png  used on input line 163.
 
 (pdftex.def)             Requested size: 455.0pt x 268.9938pt.
  [54 <./figuras/esquema-pcr-pNota.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [55]
+
+LaTeX Warning: Citation `rosenberg2007' on page 56 undefined on input line 214.
+
+
+
+LaTeX Warning: Citation `rosenberg2007' on page 56 undefined on input line 214.
+
+
+
+LaTeX Warning: Reference `eq-hs-cs' on page 56 undefined on input line 214.
+
 [56]
-<figuras/esquema-ma-pNota.png, id=1137, 1255.69125pt x 654.445pt>
+
+LaTeX Warning: Reference `eq-hs-cs' on page 57 undefined on input line 225.
+
+[57]
+<figuras/esquema-ma-pNota.png, id=1144, 1255.69125pt x 654.445pt>
 File: figuras/esquema-ma-pNota.png Graphic file (type png)
 <use figuras/esquema-ma-pNota.png>
-Package pdftex.def Info: figuras/esquema-ma-pNota.png  used on input line 233.
+Package pdftex.def Info: figuras/esquema-ma-pNota.png  used on input line 246.
 (pdftex.def)             Requested size: 455.0pt x 237.13786pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[57] [58 <./figuras/esquema-ma-pNota.png>]
+ [58 <./figuras/esquema-ma-pNota.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 250.
-
+(Font)              <5> on input line 263.
+ [59]
 Underfull \vbox (badness 1924) has occurred while \output is active []
 
- [59]
-[60] [61]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [62]
-<figuras/esquema-rf-pNota.png, id=1208, 963.6pt x 722.7pt>
+ [60]
+[61] [62] [63]
+<figuras/esquema-rf-pNota.png, id=1222, 963.6pt x 722.7pt>
 File: figuras/esquema-rf-pNota.png Graphic file (type png)
 <use figuras/esquema-rf-pNota.png>
-Package pdftex.def Info: figuras/esquema-rf-pNota.png  used on input line 337.
+Package pdftex.def Info: figuras/esquema-rf-pNota.png  used on input line 350.
 (pdftex.def)             Requested size: 455.0pt x 341.24597pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[63]
-
-LaTeX Warning: Reference `fig-' on page 64 undefined on input line 367.
-
-[64 <./figuras/esquema-rf-pNota.png>]
-<figuras/exemplo/exemplo-ptasag-rdf.png, id=1229, 462.528pt x 346.896pt>
+ [64 <./figuras/esquema-rf-pNota.png>]
+<figuras/exemplo/exemplo-ptasag-rdf.png, id=1239, 462.528pt x 346.896pt>
 File: figuras/exemplo/exemplo-ptasag-rdf.png Graphic file (type png)
 <use figuras/exemplo/exemplo-ptasag-rdf.png>
 Package pdftex.def Info: figuras/exemplo/exemplo-ptasag-rdf.png  used on input 
-line 385.
+line 397.
 (pdftex.def)             Requested size: 364.00139pt x 273.01265pt.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 393.
  [65]
-<figuras/exemplo/highlight.jpeg, id=1243, 537.00626pt x 670.505pt>
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 405.
+<figuras/exemplo/highlight.jpeg, id=1253, 537.00626pt x 200.75pt>
 File: figuras/exemplo/highlight.jpeg Graphic file (type jpg)
 <use figuras/exemplo/highlight.jpeg>
-Package pdftex.def Info: figuras/exemplo/highlight.jpeg  used on input line 402
+Package pdftex.def Info: figuras/exemplo/highlight.jpeg  used on input line 414
 .
-(pdftex.def)             Requested size: 227.5pt x 284.0554pt.
+(pdftex.def)             Requested size: 341.25pt x 127.56978pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+LaTeX Warning: Citation `hoffman2013' on page 66 undefined on input line 419.
+
 [66 <./figuras/exemplo/exemplo-ptasag-rdf.png>]
-Overfull \hbox (24.64407pt too wide) in paragraph at lines 414--429
-[][] 
+Overfull \hbox (24.64407pt too wide) in paragraph at lines 428--443
+ [][] 
  []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) [67 <./figuras/exemplo/highlight.jpeg>] [68]
 \openout2 = `capitulos/ch4-avaliacao.aux'.
 
  (./capitulos/ch4-avaliacao.tex
-Underfull \vbox (badness 2564) has occurred while \output is active []
-
- [69
+[69
 
 
 
 
 ]
-Overfull \hbox (0.8501pt too wide) in paragraph at lines 24--39
-[][] 
+Overfull \hbox (0.8501pt too wide) in paragraph at lines 26--41
+ [][] 
  []
 
 [70] [71] [72] [73] [74] [75] [76]
-<figuras/Powergrading/hm-q1.png, id=1367, 462.528pt x 346.896pt>
+<figuras/Powergrading/hm-q1.png, id=1376, 462.528pt x 346.896pt>
 File: figuras/Powergrading/hm-q1.png Graphic file (type png)
 <use figuras/Powergrading/hm-q1.png>
-Package pdftex.def Info: figuras/Powergrading/hm-q1.png  used on input line 198
+Package pdftex.def Info: figuras/Powergrading/hm-q1.png  used on input line 197
 .
 (pdftex.def)             Requested size: 204.74861pt x 153.561pt.
-<figuras/Powergrading/hm-q3.png, id=1368, 462.528pt x 346.896pt>
+<figuras/Powergrading/hm-q3.png, id=1377, 462.528pt x 346.896pt>
 File: figuras/Powergrading/hm-q3.png Graphic file (type png)
 <use figuras/Powergrading/hm-q3.png>
-Package pdftex.def Info: figuras/Powergrading/hm-q3.png  used on input line 203
+Package pdftex.def Info: figuras/Powergrading/hm-q3.png  used on input line 202
 .
 (pdftex.def)             Requested size: 204.74861pt x 153.561pt.
-<figuras/Powergrading/hm-q6.png, id=1369, 462.528pt x 346.896pt>
+<figuras/Powergrading/hm-q6.png, id=1378, 462.528pt x 346.896pt>
 File: figuras/Powergrading/hm-q6.png Graphic file (type png)
 <use figuras/Powergrading/hm-q6.png>
-Package pdftex.def Info: figuras/Powergrading/hm-q6.png  used on input line 209
+Package pdftex.def Info: figuras/Powergrading/hm-q6.png  used on input line 208
 .
 (pdftex.def)             Requested size: 204.74861pt x 153.561pt.
-<figuras/Powergrading/hm-q7.png, id=1370, 462.528pt x 346.896pt>
+<figuras/Powergrading/hm-q7.png, id=1379, 462.528pt x 346.896pt>
 File: figuras/Powergrading/hm-q7.png Graphic file (type png)
 <use figuras/Powergrading/hm-q7.png>
-Package pdftex.def Info: figuras/Powergrading/hm-q7.png  used on input line 214
+Package pdftex.def Info: figuras/Powergrading/hm-q7.png  used on input line 213
 .
 (pdftex.def)             Requested size: 204.74861pt x 153.561pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--217
+Underfull \hbox (badness 10000) in paragraph at lines 195--216
 [][][]
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuras/seb/hm-EM16b.png, id=1373, 462.528pt x 346.896pt>
+<figuras/seb/hm-EM16b.png, id=1382, 462.528pt x 346.896pt>
 File: figuras/seb/hm-EM16b.png Graphic file (type png)
 <use figuras/seb/hm-EM16b.png>
-Package pdftex.def Info: figuras/seb/hm-EM16b.png  used on input line 226.
+Package pdftex.def Info: figuras/seb/hm-EM16b.png  used on input line 225.
 (pdftex.def)             Requested size: 204.74861pt x 153.561pt.
-<figuras/seb/hm-EM21b.png, id=1374, 462.528pt x 346.896pt>
+<figuras/seb/hm-EM21b.png, id=1383, 462.528pt x 346.896pt>
 File: figuras/seb/hm-EM21b.png Graphic file (type png)
 <use figuras/seb/hm-EM21b.png>
-Package pdftex.def Info: figuras/seb/hm-EM21b.png  used on input line 231.
+Package pdftex.def Info: figuras/seb/hm-EM21b.png  used on input line 230.
 (pdftex.def)             Requested size: 204.74861pt x 153.561pt.
-<figuras/seb/hm-EM27b.png, id=1375, 462.528pt x 346.896pt>
+<figuras/seb/hm-EM27b.png, id=1384, 462.528pt x 346.896pt>
 File: figuras/seb/hm-EM27b.png Graphic file (type png)
 <use figuras/seb/hm-EM27b.png>
-Package pdftex.def Info: figuras/seb/hm-EM27b.png  used on input line 237.
+Package pdftex.def Info: figuras/seb/hm-EM27b.png  used on input line 236.
 (pdftex.def)             Requested size: 204.74861pt x 153.561pt.
-<figuras/seb/hm-MX16a.png, id=1376, 462.528pt x 346.896pt>
+<figuras/seb/hm-MX16a.png, id=1385, 462.528pt x 346.896pt>
 File: figuras/seb/hm-MX16a.png Graphic file (type png)
 <use figuras/seb/hm-MX16a.png>
-Package pdftex.def Info: figuras/seb/hm-MX16a.png  used on input line 242.
+Package pdftex.def Info: figuras/seb/hm-MX16a.png  used on input line 241.
 (pdftex.def)             Requested size: 204.74861pt x 153.561pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--245
+Underfull \hbox (badness 10000) in paragraph at lines 223--244
 [][][]
  []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [77]
+[78 <./figuras/Powergrading/hm-q1.png> <./figuras/Powergrading/hm-q3.png> <./fi
+guras/Powergrading/hm-q6.png> <./figuras/Powergrading/hm-q7.png>]
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [78 <./figuras/Powergrading/hm-q1.png> <./figuras/Powergrading/hm-q3.png> <./f
-iguras/Powergrading/hm-q6.png> <./figuras/Powergrading/hm-q7.png>] [79 <./figur
-as/seb/hm-EM16b.png> <./figuras/seb/hm-EM21b.png> <./figuras/seb/hm-EM27b.png> 
-<./figuras/seb/hm-MX16a.png>]
-<figuras/beetle/res-beetle-acc.png, id=1407, 703.62875pt x 467.7475pt>
-File: figuras/beetle/res-beetle-acc.png Graphic file (type png)
-<use figuras/beetle/res-beetle-acc.png>
-Package pdftex.def Info: figuras/beetle/res-beetle-acc.png  used on input line 
-308.
-(pdftex.def)             Requested size: 273.00278pt x 181.47867pt.
-<figuras/beetle/res-beetle-mfs.png, id=1408, 703.62875pt x 467.7475pt>
-File: figuras/beetle/res-beetle-mfs.png Graphic file (type png)
-<use figuras/beetle/res-beetle-mfs.png>
-Package pdftex.def Info: figuras/beetle/res-beetle-mfs.png  used on input line 
-309.
-(pdftex.def)             Requested size: 273.00278pt x 181.47867pt.
-<figuras/beetle/res-beetle-wfs.png, id=1409, 703.62875pt x 467.7475pt>
-File: figuras/beetle/res-beetle-wfs.png Graphic file (type png)
-<use figuras/beetle/res-beetle-wfs.png>
-Package pdftex.def Info: figuras/beetle/res-beetle-wfs.png  used on input line 
-310.
-(pdftex.def)             Requested size: 273.00278pt x 181.47867pt.
+LaTeX Warning: Citation `bendavid2008' on page 79 undefined on input line 259.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Citation `delgado2019' on page 79 undefined on input line 259.
 
-
+[79 <./figuras/seb/hm-EM16b.png> <./figuras/seb/hm-EM21b.png> <./figuras/seb/hm
+-EM27b.png> <./figuras/seb/hm-MX16a.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [80]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [81]
-<figuras/seb/res-seb-acc.png, id=1437, 801.99625pt x 532.99126pt>
-File: figuras/seb/res-seb-acc.png Graphic file (type png)
-<use figuras/seb/res-seb-acc.png>
-Package pdftex.def Info: figuras/seb/res-seb-acc.png  used on input line 322.
-(pdftex.def)             Requested size: 273.00278pt x 181.43422pt.
-<figuras/seb/res-seb-mfs.png, id=1438, 801.99625pt x 532.99126pt>
-File: figuras/seb/res-seb-mfs.png Graphic file (type png)
-<use figuras/seb/res-seb-mfs.png>
-Package pdftex.def Info: figuras/seb/res-seb-mfs.png  used on input line 323.
-(pdftex.def)             Requested size: 273.00278pt x 181.43422pt.
-<figuras/seb/res-seb-wfs.png, id=1439, 801.99625pt x 532.99126pt>
-File: figuras/seb/res-seb-wfs.png Graphic file (type png)
-<use figuras/seb/res-seb-wfs.png>
-Package pdftex.def Info: figuras/seb/res-seb-wfs.png  used on input line 324.
-(pdftex.def)             Requested size: 273.00278pt x 181.43422pt.
+<figuras/beetle/res-beetle-acc.png, id=1418, 703.62875pt x 467.7475pt>
+File: figuras/beetle/res-beetle-acc.png Graphic file (type png)
+<use figuras/beetle/res-beetle-acc.png>
+Package pdftex.def Info: figuras/beetle/res-beetle-acc.png  used on input line 
+307.
+(pdftex.def)             Requested size: 273.00278pt x 181.47867pt.
+<figuras/beetle/res-beetle-mfs.png, id=1419, 703.62875pt x 467.7475pt>
+File: figuras/beetle/res-beetle-mfs.png Graphic file (type png)
+<use figuras/beetle/res-beetle-mfs.png>
+Package pdftex.def Info: figuras/beetle/res-beetle-mfs.png  used on input line 
+308.
+(pdftex.def)             Requested size: 273.00278pt x 181.47867pt.
+<figuras/beetle/res-beetle-wfs.png, id=1420, 703.62875pt x 467.7475pt>
+File: figuras/beetle/res-beetle-wfs.png Graphic file (type png)
+<use figuras/beetle/res-beetle-wfs.png>
+Package pdftex.def Info: figuras/beetle/res-beetle-wfs.png  used on input line 
+309.
+(pdftex.def)             Requested size: 273.00278pt x 181.47867pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
+Underfull \vbox (badness 2932) has occurred while \output is active []
+
+ [81]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [82 <./figuras/beetle/res-beetle-acc.png> <./figuras/beetle/res-beetle-mfs.png
 > <./figuras/beetle/res-beetle-wfs.png>]
+<figuras/seb/res-seb-acc.png, id=1450, 801.99625pt x 532.99126pt>
+File: figuras/seb/res-seb-acc.png Graphic file (type png)
+<use figuras/seb/res-seb-acc.png>
+Package pdftex.def Info: figuras/seb/res-seb-acc.png  used on input line 321.
+(pdftex.def)             Requested size: 273.00278pt x 181.43422pt.
+<figuras/seb/res-seb-mfs.png, id=1451, 801.99625pt x 532.99126pt>
+File: figuras/seb/res-seb-mfs.png Graphic file (type png)
+<use figuras/seb/res-seb-mfs.png>
+Package pdftex.def Info: figuras/seb/res-seb-mfs.png  used on input line 322.
+(pdftex.def)             Requested size: 273.00278pt x 181.43422pt.
+<figuras/seb/res-seb-wfs.png, id=1452, 801.99625pt x 532.99126pt>
+File: figuras/seb/res-seb-wfs.png Graphic file (type png)
+<use figuras/seb/res-seb-wfs.png>
+Package pdftex.def Info: figuras/seb/res-seb-wfs.png  used on input line 323.
+(pdftex.def)             Requested size: 273.00278pt x 181.43422pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [83 <./figuras/seb/res-seb-acc.png> <./figuras/seb/res-seb-mfs.png> <./figuras
+ [83]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [84 <./figuras/seb/res-seb-acc.png> <./figuras/seb/res-seb-mfs.png> <./figuras
 /seb/res-seb-wfs.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [84]
-
-LaTeX Warning: Reference `tab-OU75' on page 85 undefined on input line 364.
-
-<figuras/OU/res-ou-acc.png, id=1477, 703.62875pt x 467.7475pt>
+<figuras/OU/res-ou-acc.png, id=1484, 703.62875pt x 467.7475pt>
 File: figuras/OU/res-ou-acc.png Graphic file (type png)
 <use figuras/OU/res-ou-acc.png>
-Package pdftex.def Info: figuras/OU/res-ou-acc.png  used on input line 368.
+Package pdftex.def Info: figuras/OU/res-ou-acc.png  used on input line 367.
 (pdftex.def)             Requested size: 273.00278pt x 181.47867pt.
 
-Underfull \vbox (badness 3312) has occurred while \output is active []
 
- [85 <./figuras/OU/res-ou-acc.png>]
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Warning: Reference `tab-PG75' on page 86 undefined on input line 399.
 
-<figuras/Powergrading/res-pg-acc.png, id=1490, 703.62875pt x 467.7475pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [85]
+<figuras/Powergrading/res-pg-acc.png, id=1497, 703.62875pt x 467.7475pt>
 File: figuras/Powergrading/res-pg-acc.png Graphic file (type png)
 <use figuras/Powergrading/res-pg-acc.png>
 Package pdftex.def Info: figuras/Powergrading/res-pg-acc.png  used on input lin
-e 403.
+e 402.
 (pdftex.def)             Requested size: 273.00278pt x 181.47867pt.
-<figuras/Powergrading/res-pg-mfs.png, id=1491, 703.62875pt x 467.7475pt>
+<figuras/Powergrading/res-pg-mfs.png, id=1498, 703.62875pt x 467.7475pt>
 File: figuras/Powergrading/res-pg-mfs.png Graphic file (type png)
 <use figuras/Powergrading/res-pg-mfs.png>
 Package pdftex.def Info: figuras/Powergrading/res-pg-mfs.png  used on input lin
-e 404.
+e 403.
 (pdftex.def)             Requested size: 273.00278pt x 181.47867pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [86]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [87 <./figuras/Powergrading/res-pg-acc.png> <./figuras/Powergrading/res-pg-mfs
-.png>]
-<figuras/PTASAG/res-ptasag-acc.png, id=1514, 801.99625pt x 532.99126pt>
+[86 <./figuras/OU/res-ou-acc.png>] [87 <./figuras/Powergrading/res-pg-acc.png> 
+<./figuras/Powergrading/res-pg-mfs.png>]
+<figuras/PTASAG/res-ptasag-acc.png, id=1521, 801.99625pt x 532.99126pt>
 File: figuras/PTASAG/res-ptasag-acc.png Graphic file (type png)
 <use figuras/PTASAG/res-ptasag-acc.png>
 Package pdftex.def Info: figuras/PTASAG/res-ptasag-acc.png  used on input line 
-441.
+440.
 (pdftex.def)             Requested size: 273.00278pt x 181.43422pt.
-<figuras/PTASAG/res-ptasag-wfs.png, id=1515, 801.99625pt x 532.99126pt>
+<figuras/PTASAG/res-ptasag-wfs.png, id=1522, 801.99625pt x 532.99126pt>
 File: figuras/PTASAG/res-ptasag-wfs.png Graphic file (type png)
 <use figuras/PTASAG/res-ptasag-wfs.png>
 Package pdftex.def Info: figuras/PTASAG/res-ptasag-wfs.png  used on input line 
-442.
+441.
 (pdftex.def)             Requested size: 273.00278pt x 181.43422pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [88]
-<figuras/ASAP/res-asap-mae.png, id=1531, 801.99625pt x 532.99126pt>
-File: figuras/ASAP/res-asap-mae.png Graphic file (type png)
-<use figuras/ASAP/res-asap-mae.png>
-Package pdftex.def Info: figuras/ASAP/res-asap-mae.png  used on input line 481.
-
-(pdftex.def)             Requested size: 273.00278pt x 181.43422pt.
-<figuras/ASAP/res-asap-mse.png, id=1532, 801.99625pt x 532.99126pt>
-File: figuras/ASAP/res-asap-mse.png Graphic file (type png)
-<use figuras/ASAP/res-asap-mse.png>
-Package pdftex.def Info: figuras/ASAP/res-asap-mse.png  used on input line 482.
-
-(pdftex.def)             Requested size: 273.00278pt x 181.43422pt.
-<figuras/ASAP/res-asap-rmse.png, id=1533, 801.99625pt x 532.99126pt>
-File: figuras/ASAP/res-asap-rmse.png Graphic file (type png)
-<use figuras/ASAP/res-asap-rmse.png>
-Package pdftex.def Info: figuras/ASAP/res-asap-rmse.png  used on input line 483
-.
-(pdftex.def)             Requested size: 273.00278pt x 181.43422pt.
-
-Underfull \vbox (badness 4819) has occurred while \output is active []
-
- [89 <./figuras/PTASAG/res-ptasag-acc.png> <./figuras/PTASAG/res-ptasag-wfs.png
->] [90 <./figuras/ASAP/res-asap-mae.png> <./figuras/ASAP/res-asap-mse.png> <./f
-iguras/ASAP/res-asap-rmse.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuras/UNT/res-unt-rmse.png, id=1562, 801.99625pt x 532.99126pt>
-File: figuras/UNT/res-unt-rmse.png Graphic file (type png)
-<use figuras/UNT/res-unt-rmse.png>
-Package pdftex.def Info: figuras/UNT/res-unt-rmse.png  used on input line 537.
-(pdftex.def)             Requested size: 273.00278pt x 181.43422pt.
-[91 <./figuras/UNT/res-unt-rmse.png>]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [92]
+ [89 <./figuras/PTASAG/res-ptasag-acc.png> <./figuras/PTASAG/res-ptasag-wfs.png
+>]
+<figuras/ASAP/res-asap-mae.png, id=1546, 801.99625pt x 532.99126pt>
+File: figuras/ASAP/res-asap-mae.png Graphic file (type png)
+<use figuras/ASAP/res-asap-mae.png>
+Package pdftex.def Info: figuras/ASAP/res-asap-mae.png  used on input line 480.
 
-LaTeX Warning: Citation `spalenza2017' on page 93 undefined on input line 549.
+(pdftex.def)             Requested size: 273.00278pt x 181.43422pt.
+<figuras/ASAP/res-asap-mse.png, id=1547, 801.99625pt x 532.99126pt>
+File: figuras/ASAP/res-asap-mse.png Graphic file (type png)
+<use figuras/ASAP/res-asap-mse.png>
+Package pdftex.def Info: figuras/ASAP/res-asap-mse.png  used on input line 481.
 
-[93] [94]) [95]
+(pdftex.def)             Requested size: 273.00278pt x 181.43422pt.
+<figuras/ASAP/res-asap-rmse.png, id=1548, 801.99625pt x 532.99126pt>
+File: figuras/ASAP/res-asap-rmse.png Graphic file (type png)
+<use figuras/ASAP/res-asap-rmse.png>
+Package pdftex.def Info: figuras/ASAP/res-asap-rmse.png  used on input line 482
+.
+(pdftex.def)             Requested size: 273.00278pt x 181.43422pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [90]
+<figuras/UNT/res-unt-rmse.png, id=1568, 801.99625pt x 532.99126pt>
+File: figuras/UNT/res-unt-rmse.png Graphic file (type png)
+<use figuras/UNT/res-unt-rmse.png>
+Package pdftex.def Info: figuras/UNT/res-unt-rmse.png  used on input line 536.
+(pdftex.def)             Requested size: 273.00278pt x 181.43422pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [91 <./figuras/ASAP/res-asap-mae.png> <./figuras/ASAP/res-asap-mse.png> <./fig
+uras/ASAP/res-asap-rmse.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [92 <./figuras/UNT/res-unt-rmse.png>]
+
+LaTeX Warning: Citation `spalenza2017' on page 93 undefined on input line 548.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [93]
+[94]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [95])
+[96]
 \openout2 = `capitulos/ch5-conclusoes.aux'.
 
- (./capitulos/ch5-conclusoes.tex [96
+ (./capitulos/ch5-conclusoes.tex [97
 
 
 
 
-] [97]) [98]
-(./tese-MarcosSpalenza.bbl (./tese-MarcosSpalenza.brf)
+] [98]) [99] (./tese-MarcosSpalenza.bbl (./tese-MarcosSpalenza.brf)
 \tf@brf=\write6
 \openout6 = `tese-MarcosSpalenza.brf'.
 
+ [100
 
-bibitemlist
-[99
-
-
-
-] [100] [101] [102] [103] [104] [105] [106] [107] [108] [109]) [110]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 507.
-
-[111
-
-
-] [112]
-\openout2 = `apendices.aux'.
-
- (./apendices.tex
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <24.88> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 5.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 7
-2.
- (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
-72.
-
-(/usr/share/texmf/tex/latex/lm/ts1lmtt.fd
-File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: TS1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-Package microtype Info: Character `texttrademark ' is missing
-(microtype)             in font `TS1/lmtt/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <9> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 72.
- [113
 
 
 ]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 72.
- [114]
-Overfull \hbox (30.49135pt too wide) in paragraph at lines 102--102
-[]| \T1/lmtt/m/n/9 clusters.txt - Todos os índices de cluster resultantes de cl
-usterização dos testes completos. 
- []
+bibitemlist
+[101] [102] [103] [104] [105] [106] [107] [108] [109] [110] [111]) [112]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uppercase' on input line 551.
+
+[113
 
 
-Overfull \hbox (33.79884pt too wide) in paragraph at lines 102--102
-[]| \T1/lmtt/m/n/9 cluster{Id}.txt - particionamento do resultado selecionado e
-m arquivos individuais de índices
- []
-
-[115] [116] [117] [118
-
-] [119])
+] [114]
 No file tese-MarcosSpalenza.ind.
 
 Package caption Warning: Unused \captionsetup[lstlisting] on input line 136.
@@ -2286,8 +2283,7 @@ AED: lastpage setting LastPage
 
 (./tese-MarcosSpalenza.aux (./capitulos/ch1-introducao.aux)
 (./capitulos/ch2-literatura.aux) (./capitulos/ch3-proposta.aux)
-(./capitulos/ch4-avaliacao.aux) (./capitulos/ch5-conclusoes.aux)
-(./apendices.aux))
+(./capitulos/ch4-avaliacao.aux) (./capitulos/ch5-conclusoes.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -2299,22 +2295,19 @@ Package rerunfilecheck Warning: File `tese-MarcosSpalenza.brf' has changed.
 (rerunfilecheck)                Rerun to get bibliographical references right.
 
 Package rerunfilecheck Info: Checksums for `tese-MarcosSpalenza.brf':
-(rerunfilecheck)             Before: 89515E7C4D0A23CA89DBC20EEE3A1A90;17919
-(rerunfilecheck)             After:  747179A0F81C276F4C3423B7AD1094E8;18141.
+(rerunfilecheck)             Before: 747179A0F81C276F4C3423B7AD1094E8;18141
+(rerunfilecheck)             After:  13B246C97125B55AD0EC82976035B59E;18888.
  ) 
 Here is how much of TeX's memory you used:
- 38072 strings out of 478287
- 678140 string characters out of 5849290
- 1066355 words of memory out of 5000000
- 54757 multiletter control sequences out of 15000+600000
- 610332 words of font info for 303 fonts, out of 8000000 for 9000
+ 37947 strings out of 478287
+ 676050 string characters out of 5849289
+ 1065476 words of memory out of 5000000
+ 54653 multiletter control sequences out of 15000+600000
+ 601959 words of font info for 293 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,13n,94p,1792b,820s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exi
+ 99i,13n,94p,1774b,830s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exi
 st, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist
-, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist
 , replaced by a fixed one
@@ -2331,10 +2324,25 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
+pdfTeX warning (dest): name{equation.3.3.2} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{appendix.B} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{section.A.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.A.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{appendix.A} has been referenced but does not exist,
+ replaced by a fixed one
+
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvip
-s/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/
-texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-
-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fon
+s/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/sha
+re/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/
+lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fon
 ts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pf
 b></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></us
@@ -2349,13 +2357,11 @@ are/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public
 /lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/sha
 re/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public
 /lm/lmsso17.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/l
-mtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmtti10.pfb>
-Output written on tese-MarcosSpalenza.pdf (121 pages, 1884283 bytes).
+texmf/fonts/type1/public/lm/lmsy8.pfb>
+Output written on tese-MarcosSpalenza.pdf (116 pages, 1766306 bytes).
 PDF statistics:
- 2412 PDF objects out of 2487 (max. 8388607)
- 2146 compressed objects within 22 object streams
- 367 named destinations out of 1000 (max. 500000)
- 81042 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 2362 PDF objects out of 2487 (max. 8388607)
+ 2108 compressed objects within 22 object streams
+ 363 named destinations out of 1000 (max. 500000)
+ 74354 words of extra memory for PDF output out of 89155 (max. 10000000)
 
